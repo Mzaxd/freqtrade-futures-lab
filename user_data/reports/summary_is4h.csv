@@ -1,3 +1,5 @@
-label,strategy,timerange,trades,profit_total_pct,cagr_pct,max_drawdown_pct,sharpe,sortino,calmar,profit_factor,winrate_pct,avg_profit_pct,expectancy_ratio,trades_long,trades_short,avg_duration_h,fee_cost_usdt,funding_cost_usdt,liquidations,market_change_pct,final_balance
-is4h_DonchianBreakoutV2b,DonchianBreakoutV2b,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,211,-28.87,-15.66,30.13,-1.9,-4.36,-2.51,0.43,29.4,-5.58,-0.4,110,101,22.0,192.1,-224.64,0,180.5,7113.23
-is4h_TrendBaselineV1b,TrendBaselineV1b,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,86,-6.18,-3.14,7.19,-0.48,-1.14,-2.25,0.54,31.4,-1.79,-0.32,34,52,25.2,108.99,-16.08,0,180.5,9382.43
+label,strategy,timerange,trades,profit_total_pct,cagr_pct,max_drawdown_pct,dd_duration_days,sharpe,sortino,calmar,profit_factor,winrate_pct,avg_profit_pct,expectancy_ratio,trades_long,trades_short,avg_duration_h,fee_cost_usdt,funding_cost_usdt,liquidations,market_change_pct,final_balance
+is4h_DonchianBreakoutV2b,DonchianBreakoutV2b,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,211,-28.87,-15.66,30.13,716.7,-1.9,-4.36,-2.51,0.43,29.4,-5.58,-0.4,110,101,22.0,192.1,-224.64,0,180.5,7113.23
+is4h_TrendBaselineV1b,TrendBaselineV1b,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,86,-6.18,-3.14,7.19,475.2,-0.48,-1.14,-2.25,0.54,31.4,-1.79,-0.32,34,52,25.2,108.99,-16.08,0,180.5,9382.43
+is4h_TrendVolFundingV3b,TrendVolFundingV3b,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,49,-0.58,-0.29,2.83,475.2,-0.04,-0.1,-0.54,0.91,34.7,0.43,-0.06,22,27,30.9,63.6,-5.85,0,180.5,9941.51
+is4h_check_TrendVolFundingV3,TrendVolFundingV3,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,212,-22.7,-12.08,23.2,695.3,-2.32,-4.67,-2.56,0.37,25.0,-1.59,-0.47,99,113,5.2,462.05,-11.58,0,189.4,7729.98

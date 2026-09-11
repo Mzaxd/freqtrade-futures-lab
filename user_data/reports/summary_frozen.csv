@@ -1,5 +1,5 @@
-label,strategy,timerange,trades,profit_total_pct,cagr_pct,max_drawdown_pct,sharpe,sortino,calmar,profit_factor,winrate_pct,avg_profit_pct,expectancy_ratio,trades_long,trades_short,avg_duration_h,fee_cost_usdt,funding_cost_usdt,liquidations,market_change_pct,final_balance
-isfinal_TrendBaselineV1b,TrendBaselineV1b,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,120,52.23,23.38,14.58,0.52,3.21,9.37,1.57,40.0,7.53,0.34,50,70,157.7,334.95,-423.65,0,180.5,15223.48
-isfinal_TrendVolFundingV3b,TrendVolFundingV3b,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,69,46.55,21.06,9.37,0.44,3.28,13.0,2.04,44.9,12.81,0.57,29,40,189.6,179.45,-206.97,0,180.5,14654.53
-val_TrendBaselineV1b,TrendBaselineV1b,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,54,0.16,0.16,10.69,0.0,0.03,0.08,1.0,25.9,1.52,0.0,31,23,117.5,159.8,-63.72,0,394.4,10016.03
-val_TrendVolFundingV3b,TrendVolFundingV3b,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,40,-5.32,-5.32,12.47,-0.18,-1.03,-2.23,0.79,22.5,-0.27,-0.16,20,20,103.6,115.65,0.94,0,394.4,9468.45
+label,strategy,timerange,trades,profit_total_pct,cagr_pct,max_drawdown_pct,dd_duration_days,sharpe,sortino,calmar,profit_factor,winrate_pct,avg_profit_pct,expectancy_ratio,trades_long,trades_short,avg_duration_h,fee_cost_usdt,funding_cost_usdt,liquidations,market_change_pct,final_balance
+isfinal_TrendBaselineV1b,TrendBaselineV1b,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,120,52.23,23.38,14.58,190.2,0.52,3.21,9.37,1.57,40.0,7.53,0.34,50,70,157.7,334.95,-423.65,0,180.5,15223.48
+isfinal_TrendVolFundingV3b,TrendVolFundingV3b,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,69,46.55,21.06,9.37,190.2,0.44,3.28,13.0,2.04,44.9,12.81,0.57,29,40,189.6,179.45,-206.97,0,180.5,14654.53
+val_TrendBaselineV1b,TrendBaselineV1b,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,54,0.16,0.16,10.69,117.0,0.0,0.03,0.08,1.0,25.9,1.52,0.0,31,23,117.5,159.8,-63.72,0,394.4,10016.03
+val_TrendVolFundingV3b,TrendVolFundingV3b,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,40,-5.32,-5.32,12.47,117.0,-0.18,-1.03,-2.23,0.79,22.5,-0.27,-0.16,20,20,103.6,115.65,0.94,0,394.4,9468.45

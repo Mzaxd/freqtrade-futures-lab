@@ -25,10 +25,10 @@ REPORTS = ROOT / "user_data/reports"
 
 COLS = [
     "label", "strategy", "timerange", "trades", "profit_total_pct", "cagr_pct",
-    "max_drawdown_pct", "sharpe", "sortino", "calmar", "profit_factor",
-    "winrate_pct", "avg_profit_pct", "expectancy_ratio", "trades_long",
-    "trades_short", "avg_duration_h", "fee_cost_usdt", "funding_cost_usdt",
-    "liquidations", "market_change_pct", "final_balance",
+    "max_drawdown_pct", "dd_duration_days", "sharpe", "sortino", "calmar",
+    "profit_factor", "winrate_pct", "avg_profit_pct", "expectancy_ratio",
+    "trades_long", "trades_short", "avg_duration_h", "fee_cost_usdt",
+    "funding_cost_usdt", "liquidations", "market_change_pct", "final_balance",
 ]
 
 
@@ -58,6 +58,7 @@ def one_row(label: str, zip_path: Path) -> dict:
             "profit_total_pct": round(s["profit_total"] * 100, 2),
             "cagr_pct": round((s.get("cagr") or 0) * 100, 2),
             "max_drawdown_pct": round(s["max_drawdown_account"] * 100, 2),
+            "dd_duration_days": round((s.get("drawdown_duration_s") or 0) / 86400, 1),
             "sharpe": round(s.get("sharpe") or 0, 2),
             "sortino": round(s.get("sortino") or 0, 2),
             "calmar": round(s.get("calmar") or 0, 2),
