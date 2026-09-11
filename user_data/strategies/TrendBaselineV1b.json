@@ -1,0 +1,29 @@
+{
+  "strategy_name": "TrendBaselineV1b",
+  "params": {
+    "roi": {
+      "0": 100.0
+    },
+    "stoploss": {
+      "stoploss": -0.3
+    },
+    "trailing": {
+      "trailing_stop": false,
+      "trailing_stop_positive": null,
+      "trailing_stop_positive_offset": 0.0,
+      "trailing_only_offset_is_reached": false
+    },
+    "max_open_trades": {
+      "max_open_trades": 3
+    },
+    "buy": {
+      "adx_min": 16
+    },
+    "sell": {
+      "atr_stop_mult": 3.9,
+      "atr_trail_mult": 3.0
+    }
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2026-09-11 16:05:10.510485+00:00"
+}

@@ -1,5 +1,7 @@
 # Core: freqtrade version is PINNED for reproducibility (see README.md)
-freqtrade==2026.8
+freqtrade[hyperopt]==2026.8
+# freqtrade 2026.8 imports cloudpickle from joblib.externals, removed in joblib>=1.5 -> pin below
+joblib==1.4.2
 
 # Reporting / analysis extras
 plotly>=5.24

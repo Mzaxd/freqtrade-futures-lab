@@ -21,6 +21,4 @@ mkdir -p user_data/hyperopt_results user_data/logs
   --epochs "$EPOCHS" \
   --random-state 42 \
   --timerange 20210101-20230101 \
-  --job-processor auto \
-  --export-filename "user_data/hyperopt_results/${STRATEGY}_IS.hyperopt" \
   2>&1 | tee "user_data/logs/hyperopt_${STRATEGY}.log" | tail -30
