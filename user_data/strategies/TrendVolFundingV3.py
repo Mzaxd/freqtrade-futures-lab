@@ -48,15 +48,17 @@ class TrendVolFundingV3(IStrategy):
     ema_fast = 20
     ema_slow = 50
     ema_trend = 200
-    adx_min = IntParameter(15, 30, default=20, space="buy")
+    # defaults = IS plateau medians (hyperopt round3, 250 epochs, SharpeHyperOptLoss, seed=42;
+    # 216/250 epochs profitable; see reports/plateau_TrendVolFundingV3b.md)
+    adx_min = IntParameter(15, 30, default=16, space="buy")
     atr_period = 14
-    atr_stop_mult = DecimalParameter(2.0, 4.0, default=3.0, decimals=1, space="sell")
-    atr_trail_mult = DecimalParameter(1.0, 3.0, default=1.5, decimals=1, space="sell")
+    atr_stop_mult = DecimalParameter(2.0, 4.0, default=2.1, decimals=1, space="sell")
+    atr_trail_mult = DecimalParameter(1.0, 5.0, default=3.8, decimals=1, space="sell")
     # volatility regime filter
     vol_lookback = 720  # hours (30 days)
     vol_min_periods = 200
-    vol_pct_min = DecimalParameter(0.05, 0.35, default=0.20, decimals=2, space="buy")
-    vol_pct_max = DecimalParameter(0.70, 0.98, default=0.92, decimals=2, space="buy")
+    vol_pct_min = DecimalParameter(0.05, 0.35, default=0.15, decimals=2, space="buy")
+    vol_pct_max = DecimalParameter(0.70, 0.98, default=0.91, decimals=2, space="buy")
     # funding crowding filter (per 8h interval; typical neutral = 0.0001 = 0.01%)
     funding_max_abs = DecimalParameter(0.0001, 0.0006, default=0.0003, decimals=4, space="buy")
     risk_pct = 0.01

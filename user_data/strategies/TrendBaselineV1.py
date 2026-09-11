@@ -57,11 +57,13 @@ class TrendBaselineV1(IStrategy):
     ema_slow = 50
     ema_trend = 200
     # ADX trend-strength filter
-    adx_min = IntParameter(15, 30, default=20, space="buy")
+    # defaults = IS plateau medians (hyperopt round3, 250 epochs, SharpeHyperOptLoss, seed=42;
+    # 187/250 epochs profitable; see reports/plateau_TrendBaselineV1b.md)
+    adx_min = IntParameter(15, 30, default=17, space="buy")
     # ATR stop / trailing
     atr_period = 14
-    atr_stop_mult = DecimalParameter(2.0, 4.0, default=3.0, decimals=1, space="sell")
-    atr_trail_mult = DecimalParameter(1.0, 3.0, default=1.5, decimals=1, space="sell")
+    atr_stop_mult = DecimalParameter(2.0, 6.0, default=2.6, decimals=1, space="sell")
+    atr_trail_mult = DecimalParameter(1.0, 5.0, default=4.2, decimals=1, space="sell")
     # risk per trade as fraction of equity
     risk_pct = 0.01
     # fixed leverage (never above 3)

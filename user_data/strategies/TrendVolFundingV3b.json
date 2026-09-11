@@ -1,0 +1,32 @@
+{
+  "strategy_name": "TrendVolFundingV3b",
+  "params": {
+    "roi": {
+      "0": 100.0
+    },
+    "stoploss": {
+      "stoploss": -0.3
+    },
+    "trailing": {
+      "trailing_stop": false,
+      "trailing_stop_positive": null,
+      "trailing_stop_positive_offset": 0.0,
+      "trailing_only_offset_is_reached": false
+    },
+    "max_open_trades": {
+      "max_open_trades": 3
+    },
+    "buy": {
+      "adx_min": 16,
+      "funding_max_abs": 0.0003,
+      "vol_pct_max": 0.97,
+      "vol_pct_min": 0.19
+    },
+    "sell": {
+      "atr_stop_mult": 2.0,
+      "atr_trail_mult": 4.9
+    }
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2026-09-11 16:26:47.284780+00:00"
+}
