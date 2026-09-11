@@ -1,0 +1,6 @@
+# Core: freqtrade version is PINNED for reproducibility (see README.md)
+freqtrade==2026.8
+
+# Reporting / analysis extras
+plotly>=5.24
+matplotlib>=3.8

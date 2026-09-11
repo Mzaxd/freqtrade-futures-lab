@@ -1,0 +1,11 @@
+data binaries not tracked
+user_data/data/
+user_data/logs/
+user_data/backtest_results/*.json
+user_data/backtest_results/*.meta.json
+user_data/backtest_results/last_result
+user_data/hyperopt_results/*.fthypt
+user_data/hyperopt_results/last_result
+__pycache__/
+.venv/
+.DS_Store
