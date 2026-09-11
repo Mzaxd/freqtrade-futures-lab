@@ -27,4 +27,4 @@ EOF
   fi
 done
 
-./scripts/run_backtest.sh "$STRATEGY" "$TIMERANGE" "$TAG" --datadir "$DST"
+./scripts/run_backtest.sh "$STRATEGY" "$TIMERANGE" "$TAG" --datadir "user_data/data_stress/binance"

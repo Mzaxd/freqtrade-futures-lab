@@ -80,32 +80,45 @@ make download        # = scripts/download_data.sh 20190101 20260912
 
 回测引擎语义：信号在 K 线 t 收盘计算，t+1 开盘成交；所有指标仅用已收盘 K 线（`process_only_new_candles=True`，Donchian 通道 `shift(1)`，无未来函数）。
 
-## 5. 策略版本与迭代日志（每轮一个假设变更）
+## 5. 策略版本与迭代日志（每轮一个假设变更，git 历史可查）
 
-| 版本 | 文件 | 核心逻辑 | 周期 | 状态 |
-|---|---|---|---|---|
-| v1 | `TrendBaselineV1.py` | EMA20/50 交叉 + EMA200 方向 + ADX 过滤；ATR 初始/追踪止损 + 时间止损 | 1h | IS 基线：亏损（见报告） |
-| v1b | `TrendBaselineV1b.py` | 同 v1，唯一变更：周期 1h→4h（降频摊成本） | 4h | — |
-| v2 | `DonchianBreakoutV2.py` | 96 根 Donchian 突破 + 4h EMA200 方向过滤；ATR 止损 | 1h | IS 基线：亏损 |
-| v2b | `DonchianBreakoutV2b.py` | 同 v2，唯一变更：周期 1h→4h（趋势过滤相应升为 1d EMA200） | 4h | — |
-| v3 | `TrendVolFundingV3.py` | v1 核心 + ATR 分位数波动率带过滤 + 资金费率拥挤过滤 | 1h | IS 基线：亏损（但最轻） |
-| v3b | `TrendVolFundingV3b.py` | 同 v3，唯一变更：周期 1h→4h（波动率窗口换算为 180×4h） | 4h | — |
+| 版本 | 文件 | 核心逻辑 | 周期 | IS 2021-22 结果 | 结局 |
+|---|---|---|---|---|---|
+| v1 | `TrendBaselineV1.py` | EMA20/50 交叉 + EMA200 方向 + ADX；ATR 初始/追踪止损 + 时间止损 | 1h | -30.8%（成本吞噬） | 淘汰：结构性成本劣势 |
+| v1b | `TrendBaselineV1b.py` | 同 v1，唯一变更：周期→4h | 4h | 默认 -6.2% → hyperopt 高原中位数参数 **+52.2%**（Sharpe 0.52，DD 14.6%） | **最终候选** |
+| v2 | `DonchianBreakoutV2.py` | 96 根 Donchian 突破 + 4h EMA200 过滤 | 1h | -79.9% | 淘汰 |
+| v2b | `DonchianBreakoutV2b.py` | 同 v2，周期→4h（过滤升为 1d EMA200） | 4h | -28.9% → hyperopt 全空间最优仍 -11.4% | **淘汰（无盈利参数区域）** |
+| v3 | `TrendVolFundingV3.py` | v1 + 波动率分位带过滤 + funding 拥挤过滤 | 1h | -22.7% | 淘汰 |
+| v3b | `TrendVolFundingV3b.py` | 同 v3，周期→4h | 4h | hyperopt +46.6%（高原 216/250 盈利） | 验证集 -5.3%，负于 v1b → 淘汰 |
 
-共同约束：禁止马丁格尔/加仓/网格（`position_adjustment_enable=False`）；每笔 ATR 止损； catastrophic stoploss -0.30（价格口径）；时间止损 21-28 天。
+**冻结参数（v1b）**：adx_min=17，atr_stop_mult=2.6，atr_trail_mult=4.2（=hyperopt 盈利 epochs 中位数，非单点最优；见 `reports/plateau_TrendBaselineV1b.md`）。
 
-## 6. 验证协议与报告索引
+共同约束：禁止马丁格尔/加仓/网格（`position_adjustment_enable=False`）；每笔 ATR 止损；catastrophic stoploss -0.30；时间止损 28 天；单笔风险 1% 权益；杠杆固定 3x。
 
-| 阶段 | 时间窗 | 报告 |
-|---|---|---|
-| 样本内 IS | 2021-01-01 → 2022-12-31 | `reports/summary_is*.md` |
-| 验证集 VAL | 2023-01-01 → 2023-12-31 | `reports/summary_val*.md` |
-| Walk-forward | 训练 2y / 测试 6m 滚动（冻结参数，不做逐窗调参——文档化局限） | `reports/summary_walkforward_*.md` |
-| 压力测试 | 参数扰动 ±10%/±20%、延迟 1-2 根入场、随机跳过 10%/20%、费率 2x/3x、funding×2、分交易对、分牛熊震荡段 | `reports/summary_stress_*.md` |
-| 样本外 OOS | 2024-01-01 → 2026-09-11，**仅一次** | `reports/summary_oos*.md` |
-| 最终结论 | — | `reports/final_conclusion.md` |
-| Dry-run 计划 | ≥4-8 周 | `reports/dry_run_plan.md` |
+## 6. 验证结果总览与报告索引
+
+| 阶段 | 窗口 | 关键结果 | 报告 |
+|---|---|---|---|
+| 样本内 IS | 2021-2022 | +52.2%，Sharpe 0.52，DD 14.6% | `reports/summary_is*.md`、`summary_frozen.md` |
+| 验证集 VAL | 2023 | **+0.16%，Sharpe 0.00**（选择 v1b 胜出） | `reports/summary_frozen.md` |
+| **样本外 OOS（仅一次）** | 2024-01→2026-09 | **+19.8%（年化+6.9%），DD 16.0%，Sharpe 0.21，PF 1.23，146 笔，0 爆仓** | `reports/summary_oos_final.md`、`curve_oos_TrendBaselineV1b.png` |
+| Walk-forward | 9×6个月，2022H2→2026H2 | 5 胜 4 负，累计约 +2%，单窗 DD≤14% | `reports/summary_walkforward_TrendBaselineV1b.md` |
+| 压力测试 | 2021-2023 | 费率×2/×3：+45.4/+39.9%；funding×2：+45.2%；延迟1/2根：+11.7/+13.3%；跳过10/20%：+8.1/**-2.1%**；扰动±10-20%：+5~+24%；BTC/ETH/SOL 单独：+1.8/+11.5/+35.8%；牛/熊/震荡：+41.7/+7.5/+0.2% | `reports/summary_stress_v1b_isval.md`、`summary_stress_extra_v1b.md` |
+| 参数敏感性 | 250 epochs | 187/250 盈利（62%），高原成立 | `reports/plateau_*.md` |
+| 未来函数检测 | 2022 | `lookahead-analysis` has_bias=**No** | 命令见本节末 |
+| 数据质量 | 全样本 | 缺失0/重复0/空值0 | `reports/data_quality_report.md` |
+| Dry-run | — | 未启动（候选未达门槛）；计划已备 | `reports/dry_run_plan.md` |
+| **最终结论** | — | **不推荐进入 dry-run（Sharpe 0.21 远低于 1，验证集无优势，WF 胜负各半）** | `reports/final_conclusion.md` |
+
+未来函数检测命令：
+```bash
+.venv/bin/freqtrade lookahead-analysis --userdir user_data \
+  --config user_data/configs/config_futures.json \
+  --strategy TrendBaselineV1b --timerange 20220101-20230101
+```
 
 > 2019-09→2020-12 保留为指标预热期，不计入任何评估窗口。
+> WF 采用冻结参数滚动（未逐窗重优化）——文档化局限，见 final_conclusion.md。
 
 ## 7. 一键复现
 
