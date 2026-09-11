@@ -1,0 +1,272 @@
+{
+ "BTC_USDT_USDT": {
+  "n": 17448,
+  "acc4": 0.3563,
+  "acc4_ci95": 0.0071,
+  "majority4": 0.6873,
+  "acc3": 0.4066,
+  "majority3": 0.7552,
+  "median_lag_h": 11.0,
+  "median_lag_4h_bars": 2.8,
+  "state_distribution": {
+   "trend_up": 0.3952,
+   "trend_down": 0.0797,
+   "range": 0.4119,
+   "turbulent": 0.1132
+  },
+  "transition_matrix": [
+   [
+    0.0,
+    0.045,
+    0.924,
+    0.03
+   ],
+   [
+    0.07,
+    0.0,
+    0.5,
+    0.43
+   ],
+   [
+    0.589,
+    0.261,
+    0.0,
+    0.15
+   ],
+   [
+    0.087,
+    0.44,
+    0.473,
+    0.0
+   ]
+  ],
+  "per_class": {
+   "trend_up": {
+    "recall": 0.413,
+    "precision": 0.096,
+    "support": 1597
+   },
+   "trend_down": {
+    "recall": 0.078,
+    "precision": 0.119,
+    "support": 2114
+   },
+   "range": {
+    "recall": 0.412,
+    "precision": 0.687,
+    "support": 11992
+   },
+   "turbulent": {
+    "recall": 0.259,
+    "precision": 0.229,
+    "support": 1745
+   }
+  },
+  "econ": {
+   "trend_up": {
+    "fwd_ret_mean_pct": 0.51,
+    "fwd_ret_tstat": 9.74,
+    "fwd_vol_mean_pct": 0.45,
+    "n": 6896
+   },
+   "trend_down": {
+    "fwd_ret_mean_pct": 0.668,
+    "fwd_ret_tstat": 5.55,
+    "fwd_vol_mean_pct": 0.466,
+    "n": 1391
+   },
+   "range": {
+    "fwd_ret_mean_pct": 0.628,
+    "fwd_ret_tstat": 12.34,
+    "fwd_vol_mean_pct": 0.471,
+    "n": 7186
+   },
+   "turbulent": {
+    "fwd_ret_mean_pct": 1.783,
+    "fwd_ret_tstat": 15.66,
+    "fwd_vol_mean_pct": 0.572,
+    "n": 1975
+   }
+  }
+ },
+ "ETH_USDT_USDT": {
+  "n": 17448,
+  "acc4": 0.3633,
+  "acc4_ci95": 0.0071,
+  "majority4": 0.6901,
+  "acc3": 0.4251,
+  "majority3": 0.7672,
+  "median_lag_h": 11.0,
+  "median_lag_4h_bars": 2.8,
+  "state_distribution": {
+   "trend_up": 0.4001,
+   "trend_down": 0.0729,
+   "range": 0.4096,
+   "turbulent": 0.1174
+  },
+  "transition_matrix": [
+   [
+    0.0,
+    0.021,
+    0.93,
+    0.049
+   ],
+   [
+    0.075,
+    0.0,
+    0.522,
+    0.404
+   ],
+   [
+    0.561,
+    0.234,
+    0.0,
+    0.205
+   ],
+   [
+    0.098,
+    0.467,
+    0.435,
+    0.0
+   ]
+  ],
+  "per_class": {
+   "trend_up": {
+    "recall": 0.435,
+    "precision": 0.11,
+    "support": 1766
+   },
+   "trend_down": {
+    "recall": 0.085,
+    "precision": 0.127,
+    "support": 1897
+   },
+   "range": {
+    "recall": 0.418,
+    "precision": 0.704,
+    "support": 12040
+   },
+   "turbulent": {
+    "recall": 0.214,
+    "precision": 0.183,
+    "support": 1745
+   }
+  },
+  "econ": {
+   "trend_up": {
+    "fwd_ret_mean_pct": 0.283,
+    "fwd_ret_tstat": 4.73,
+    "fwd_vol_mean_pct": 0.525,
+    "n": 6981
+   },
+   "trend_down": {
+    "fwd_ret_mean_pct": -0.365,
+    "fwd_ret_tstat": -2.4,
+    "fwd_vol_mean_pct": 0.563,
+    "n": 1272
+   },
+   "range": {
+    "fwd_ret_mean_pct": 0.447,
+    "fwd_ret_tstat": 7.6,
+    "fwd_vol_mean_pct": 0.548,
+    "n": 7146
+   },
+   "turbulent": {
+    "fwd_ret_mean_pct": 1.317,
+    "fwd_ret_tstat": 11.37,
+    "fwd_vol_mean_pct": 0.654,
+    "n": 2049
+   }
+  }
+ },
+ "SOL_USDT_USDT": {
+  "n": 17448,
+  "acc4": 0.3467,
+  "acc4_ci95": 0.0071,
+  "majority4": 0.6851,
+  "acc3": 0.4062,
+  "majority3": 0.7543,
+  "median_lag_h": 17.0,
+  "median_lag_4h_bars": 4.2,
+  "state_distribution": {
+   "trend_up": 0.4092,
+   "trend_down": 0.0528,
+   "range": 0.4236,
+   "turbulent": 0.1145
+  },
+  "transition_matrix": [
+   [
+    0.0,
+    0.038,
+    0.939,
+    0.022
+   ],
+   [
+    0.04,
+    0.0,
+    0.508,
+    0.452
+   ],
+   [
+    0.634,
+    0.176,
+    0.0,
+    0.191
+   ],
+   [
+    0.062,
+    0.472,
+    0.466,
+    0.0
+   ]
+  ],
+  "per_class": {
+   "trend_up": {
+    "recall": 0.364,
+    "precision": 0.074,
+    "support": 1447
+   },
+   "trend_down": {
+    "recall": 0.045,
+    "precision": 0.112,
+    "support": 2302
+   },
+   "range": {
+    "recall": 0.425,
+    "precision": 0.687,
+    "support": 11954
+   },
+   "turbulent": {
+    "recall": 0.196,
+    "precision": 0.171,
+    "support": 1745
+   }
+  },
+  "econ": {
+   "trend_up": {
+    "fwd_ret_mean_pct": 0.843,
+    "fwd_ret_tstat": 8.88,
+    "fwd_vol_mean_pct": 0.852,
+    "n": 7139
+   },
+   "trend_down": {
+    "fwd_ret_mean_pct": 1.831,
+    "fwd_ret_tstat": 5.41,
+    "fwd_vol_mean_pct": 1.105,
+    "n": 921
+   },
+   "range": {
+    "fwd_ret_mean_pct": 1.174,
+    "fwd_ret_tstat": 12.33,
+    "fwd_vol_mean_pct": 0.907,
+    "n": 7391
+   },
+   "turbulent": {
+    "fwd_ret_mean_pct": 2.134,
+    "fwd_ret_tstat": 11.53,
+    "fwd_vol_mean_pct": 1.18,
+    "n": 1997
+   }
+  }
+ }
+}

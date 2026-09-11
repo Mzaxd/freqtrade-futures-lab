@@ -1,0 +1,185 @@
+{
+ "BTC_USDT_USDT": {
+  "n": 17448,
+  "accuracy": 0.6775,
+  "acc_ci95": 0.0069,
+  "majority_baseline": 0.8038,
+  "median_switch_lag_bars": 22.0,
+  "state_distribution": {
+   "trend_up": 0.1423,
+   "trend_down": 0.0496,
+   "range": 0.8042,
+   "turbulent": 0.004
+  },
+  "transition_matrix": [
+   [
+    0.0,
+    0.018,
+    0.875,
+    0.107
+   ],
+   [
+    0.127,
+    0.0,
+    0.818,
+    0.055
+   ],
+   [
+    0.447,
+    0.511,
+    0.0,
+    0.043
+   ],
+   [
+    0.538,
+    0.462,
+    0.0,
+    0.0
+   ]
+  ],
+  "per_class": {
+   "trend_up": {
+    "recall": 0.155,
+    "precision": 0.086,
+    "support": 1379
+   },
+   "trend_down": {
+    "recall": 0.035,
+    "precision": 0.032,
+    "support": 801
+   },
+   "range": {
+    "recall": 0.824,
+    "precision": 0.824,
+    "support": 14024
+   },
+   "turbulent": {
+    "recall": 0.018,
+    "precision": 0.319,
+    "support": 1244
+   }
+  }
+ },
+ "ETH_USDT_USDT": {
+  "n": 17448,
+  "accuracy": 0.584,
+  "acc_ci95": 0.0073,
+  "majority_baseline": 0.768,
+  "median_switch_lag_bars": 36.0,
+  "state_distribution": {
+   "trend_up": 0.1827,
+   "trend_down": 0.0871,
+   "range": 0.7212,
+   "turbulent": 0.0091
+  },
+  "transition_matrix": [
+   [
+    0.0,
+    0.015,
+    0.94,
+    0.045
+   ],
+   [
+    0.149,
+    0.0,
+    0.791,
+    0.06
+   ],
+   [
+    0.431,
+    0.466,
+    0.0,
+    0.103
+   ],
+   [
+    0.368,
+    0.632,
+    0.0,
+    0.0
+   ]
+  ],
+  "per_class": {
+   "trend_up": {
+    "recall": 0.169,
+    "precision": 0.071,
+    "support": 1335
+   },
+   "trend_down": {
+    "recall": 0.047,
+    "precision": 0.029,
+    "support": 931
+   },
+   "range": {
+    "recall": 0.736,
+    "precision": 0.784,
+    "support": 13400
+   },
+   "turbulent": {
+    "recall": 0.03,
+    "precision": 0.342,
+    "support": 1782
+   }
+  }
+ },
+ "SOL_USDT_USDT": {
+  "n": 17448,
+  "accuracy": 0.3002,
+  "acc_ci95": 0.0068,
+  "majority_baseline": 0.4643,
+  "median_switch_lag_bars": 38.0,
+  "state_distribution": {
+   "trend_up": 0.3195,
+   "trend_down": 0.2441,
+   "range": 0.3359,
+   "turbulent": 0.1005
+  },
+  "transition_matrix": [
+   [
+    0.0,
+    0.183,
+    0.461,
+    0.357
+   ],
+   [
+    0.175,
+    0.0,
+    0.675,
+    0.149
+   ],
+   [
+    0.293,
+    0.637,
+    0.0,
+    0.07
+   ],
+   [
+    0.56,
+    0.44,
+    0.0,
+    0.0
+   ]
+  ],
+  "per_class": {
+   "trend_up": {
+    "recall": 0.321,
+    "precision": 0.071,
+    "support": 1232
+   },
+   "trend_down": {
+    "recall": 0.195,
+    "precision": 0.062,
+    "support": 1361
+   },
+   "range": {
+    "recall": 0.411,
+    "precision": 0.568,
+    "support": 8101
+   },
+   "turbulent": {
+    "recall": 0.185,
+    "precision": 0.712,
+    "support": 6754
+   }
+  }
+ }
+}
