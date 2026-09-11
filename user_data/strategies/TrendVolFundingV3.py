@@ -10,6 +10,7 @@
 # Sizing identical to v1 (risk ~1% equity, 3x leverage). No martingale / adding / grid.
 from datetime import datetime, timedelta
 
+import pandas as pd
 import talib.abstract as ta
 from pandas import DataFrame
 
@@ -18,7 +19,6 @@ from freqtrade.strategy import (
     IStrategy,
     IntParameter,
     DecimalParameter,
-    informative,
     stoploss_from_absolute,
 )
 
@@ -54,6 +54,7 @@ class TrendVolFundingV3(IStrategy):
     atr_trail_mult = DecimalParameter(1.0, 3.0, default=1.5, decimals=1, space="sell")
     # volatility regime filter
     vol_lookback = 720  # hours (30 days)
+    vol_min_periods = 200
     vol_pct_min = DecimalParameter(0.05, 0.35, default=0.20, decimals=2, space="buy")
     vol_pct_max = DecimalParameter(0.70, 0.98, default=0.92, decimals=2, space="buy")
     # funding crowding filter (per 8h interval; typical neutral = 0.0001 = 0.01%)
@@ -63,13 +64,22 @@ class TrendVolFundingV3(IStrategy):
     time_stop_hours = 24 * 28
     # ===================================================================
 
-    @informative("8h", candle_type="funding_rate")
-    def populate_funding_8h(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
-        # passthrough: the funding df carries a single 'funding_rate' column
-        return dataframe
-
     def informative_pairs(self):
-        return []
+        # funding rate series for the whitelist pairs (needed in dry-run/live;
+        # in backtest the data is read from disk directly).
+        pairs = self.dp.current_whitelist() if self.dp else []
+        return [(p, "8h", "funding_rate") for p in pairs]
+
+    @staticmethod
+    def _merge_funding(dataframe: DataFrame, funding: DataFrame) -> DataFrame:
+        """Attach the most recent *past* funding rate to every candle (merge_asof
+        backward: funding event at time T is visible to candles dated >= T)."""
+        fund = funding[["date", "funding_rate"]].rename(columns={"funding_rate": "funding_rate_8h"})
+        fund = fund.dropna().sort_values("date")
+        dataframe = pd.merge_asof(
+            dataframe.sort_values("date"), fund, on="date", direction="backward"
+        )
+        return dataframe
 
     def populate_indicators(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
         dataframe["ema_fast"] = ta.EMA(dataframe, timeperiod=self.ema_fast)
@@ -80,9 +90,14 @@ class TrendVolFundingV3(IStrategy):
 
         # volatility percentile over trailing window (inclusive of current closed candle)
         atr_pct = dataframe["atr"] / dataframe["close"]
-        dataframe["atr_pct_rank"] = atr_pct.rolling(self.vol_lookback, min_periods=200).rank(pct=True)
+        dataframe["atr_pct_rank"] = atr_pct.rolling(self.vol_lookback, min_periods=self.vol_min_periods).rank(pct=True)
 
-        # funding rate merged by the decorator as 'funding_rate_8h' (ffilled, only past values)
+        # funding rate: most recent past 8h rate attached to each candle
+        try:
+            funding = self.dp.get_pair_dataframe(metadata["pair"], "8h", candle_type="funding_rate")
+            dataframe = self._merge_funding(dataframe, funding)
+        except Exception:
+            dataframe["funding_rate_8h"] = 0.0
         if "funding_rate_8h" not in dataframe.columns:
             dataframe["funding_rate_8h"] = 0.0
         return dataframe

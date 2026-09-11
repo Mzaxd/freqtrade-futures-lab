@@ -10,3 +10,4 @@ class TrendVolFundingV3b(TrendVolFundingV3):
     timeframe = "4h"
     startup_candle_count = 400
     vol_lookback = 180  # 180 x 4h = 30 days
+    vol_min_periods = 60

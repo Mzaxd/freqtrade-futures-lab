@@ -11,7 +11,6 @@
     "stake_amount": "unlimited",
     "tradable_balance_ratio": 0.99,
     "fiat_display_currency": "USD",
-    "timeframe": "1h",
     "dataformat_ohlcv": "feather",
     "dataformat_trades": "feather",
     "unfilledtimeout": {
