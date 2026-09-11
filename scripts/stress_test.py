@@ -19,28 +19,25 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 STRAT_DIR = ROOT / "user_data/strategies"
 
-PARAMS = {  # strategy -> (base class, key params and their perturbations)
-    "TrendBaselineV1": {
-        "base": "TrendBaselineV1",
+PARAMS = {  # strategy -> key params and their perturbation template + frozen default
+    "TrendBaselineV1b": {
         "params": {
-            "adx_min": ("IntParameter(15, 30, default={}, space='buy')", 20),
-            "atr_stop_mult": ("DecimalParameter(2.0, 4.0, default={}, decimals=1, space='sell')", 3.0),
-            "atr_trail_mult": ("DecimalParameter(1.0, 3.0, default={}, decimals=1, space='sell')", 1.5),
+            "adx_min": ("IntParameter(15, 30, default={}, space='buy')", 17),
+            "atr_stop_mult": ("DecimalParameter(2.0, 6.0, default={}, decimals=1, space='sell')", 2.6),
+            "atr_trail_mult": ("DecimalParameter(1.0, 5.0, default={}, decimals=1, space='sell')", 4.2),
         },
     },
-    "TrendVolFundingV3": {
-        "base": "TrendVolFundingV3",
+    "TrendVolFundingV3b": {
         "params": {
-            "adx_min": ("IntParameter(15, 30, default={}, space='buy')", 20),
-            "atr_stop_mult": ("DecimalParameter(2.0, 4.0, default={}, decimals=1, space='sell')", 3.0),
-            "atr_trail_mult": ("DecimalParameter(1.0, 3.0, default={}, decimals=1, space='sell')", 1.5),
-            "vol_pct_min": ("DecimalParameter(0.05, 0.35, default={}, decimals=2, space='buy')", 0.20),
-            "vol_pct_max": ("DecimalParameter(0.70, 0.98, default={}, decimals=2, space='buy')", 0.92),
+            "adx_min": ("IntParameter(15, 30, default={}, space='buy')", 16),
+            "atr_stop_mult": ("DecimalParameter(2.0, 4.0, default={}, decimals=1, space='sell')", 2.1),
+            "atr_trail_mult": ("DecimalParameter(1.0, 5.0, default={}, decimals=1, space='sell')", 3.8),
+            "vol_pct_min": ("DecimalParameter(0.05, 0.35, default={}, decimals=2, space='buy')", 0.15),
+            "vol_pct_max": ("DecimalParameter(0.70, 0.98, default={}, decimals=2, space='buy')", 0.91),
             "funding_max_abs": ("DecimalParameter(0.0001, 0.0006, default={}, decimals=4, space='buy')", 0.0003),
         },
     },
-    "DonchianBreakoutV2": {
-        "base": "DonchianBreakoutV2",
+    "DonchianBreakoutV2b": {
         "params": {
             "entry_lookback": ("IntParameter(48, 168, default={}, space='buy')", 96),
             "exit_lookback": ("IntParameter(24, 72, default={}, space='sell')", 48),
@@ -108,7 +105,7 @@ def clamp_dec(v, lo, hi):
 def build_variants(strategy: str) -> dict[str, str]:
     """Return {class_name: file_content} for all stress variants."""
     spec = PARAMS[strategy]
-    base = spec["base"]
+    base = strategy  # variants subclass the strategy itself
     variants: dict[str, str] = {}
 
     for pname, (tmpl, default) in spec["params"].items():

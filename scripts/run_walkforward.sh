@@ -21,14 +21,11 @@ WINDOWS=(
 )
 
 for W in "${WINDOWS[@]}"; do
+  TAG="wf_${W:0:6}"
   echo "=== walk-forward test window $W ==="
-  ./scripts/run_backtest.sh "$STRATEGY" "$W" "wf_${W:0:6]}" > /dev/null
+  ./scripts/run_backtest.sh "$STRATEGY" "$W" "$TAG" > /dev/null
 done
 
 # summarize all walk-forward windows
-python3 - <<EOF
-import subprocess, glob
-zips = sorted(glob.glob("user_data/backtest_results/wf_*_${STRATEGY}.zip"))
-subprocess.run([".venv/bin/python", "scripts/summarize_results.py", "walkforward_${STRATEGY}"] + zips, check=True)
-EOF
+.venv/bin/python scripts/summarize_results.py "walkforward_${STRATEGY}" user_data/backtest_results/wf_*_"${STRATEGY}".zip
 echo "walk-forward summary written to user_data/reports/summary_walkforward_${STRATEGY}.{csv,md}"
