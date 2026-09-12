@@ -1,6 +1,7 @@
 {
     "$schema": "https://schema.freqtrade.io/schema.json",
     "bot_name": "opt4-volatilitysystem-dryrun",
+    "initial_state": "running",
     "dry_run": true,
     "dry_run_wallet": 10000,
     "trading_mode": "futures",
