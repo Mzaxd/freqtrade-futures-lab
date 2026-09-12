@@ -71,6 +71,11 @@
 - 空头腿在熊市已证明价值（OOS +373），牛市拖累可用"波动率状态门控"替代方向门控；
 - 跨交易所（Bybit/OKX）数据稳健性验证。
 
+## 6.5 未来函数独立检测
+
+`freqtrade lookahead-analysis`（2023-04→2023-07）：**has_bias=No**（0/20 信号有偏）。
+局限性说明：该工具截断 OHLCV 重算信号，而 regime CSV 为预计算序列——CSV 本身的因果性由构造保证（mom_z/ATR 分位均为滚动窗口、驻留平滑前向、阈值仅 IS 选定、merge_asof backward），工具主要验证了 4h informative 合并与指标管线无前视。
+
 ## 7. 交付物索引（全部在库，git 逐轮提交）
 
 - 架构：`user_data/strategies/regime_detector.py`（独立模块）、`regime_loader.py`、`regime_router.py`、`sub_standalone.py`（3 子策略独立版）、历史版本 sub_momentum/sub_trendshort/sub_meanrev.py
