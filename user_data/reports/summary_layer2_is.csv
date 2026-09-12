@@ -1,0 +1,4 @@
+label,strategy,timerange,trades,profit_total_pct,cagr_pct,max_drawdown_pct,dd_duration_days,sharpe,sortino,calmar,profit_factor,winrate_pct,avg_profit_pct,expectancy_ratio,trades_long,trades_short,avg_duration_h,fee_cost_usdt,funding_cost_usdt,liquidations,market_change_pct,final_balance
+is2_meanreversion_MeanReversion,MeanReversion,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,1339,-92.23,-72.13,92.45,725.6,-20.17,-26.57,-2.61,0.18,15.1,-2.93,-0.7,718,621,2.6,974.72,58.58,0,189.4,776.52
+is2_momentumbreakout_MomentumBreakout,MomentumBreakout,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,267,-29.95,-16.3,31.19,710.2,-1.27,-3.63,-2.51,0.59,25.5,-4.51,-0.31,267,0,45.4,274.75,-439.01,0,180.5,7005.4
+is2_trendshort_TrendShort,TrendShort,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,60,1.52,0.76,3.52,147.5,0.08,0.24,1.13,1.14,36.7,-0.28,0.09,0,60,71.3,56.83,0.97,0,180.5,10152.14
