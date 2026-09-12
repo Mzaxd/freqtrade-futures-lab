@@ -46,10 +46,14 @@ def one_row(label: str, zip_path: Path) -> dict:
     out = {"label": label}
     for strat_name, s in data["strategy"].items():
         trades = pd.DataFrame(s["trades"])
-        fee_cost = float((trades["amount"] * trades["open_rate"] * trades["fee_open"]
-                          + trades["amount"] * trades["close_rate"] * trades["fee_close"]).sum())
-        funding_cost = float(trades["funding_fees"].sum())
-        liq = int((trades["exit_reason"] == "liquidation").sum())
+        if len(trades) > 0:
+            fee_cost = float((trades["amount"] * trades["open_rate"] * trades["fee_open"]
+                              + trades["amount"] * trades["close_rate"] * trades["fee_close"]).sum())
+            funding_cost = float(trades["funding_fees"].sum())
+            liq = int((trades["exit_reason"] == "liquidation").sum())
+        else:
+            fee_cost = funding_cost = 0.0
+            liq = 0
         # funding_fees sign in freqtrade: positive = cost to the trade? we report magnitude split by sign
         out.update({
             "strategy": strat_name,

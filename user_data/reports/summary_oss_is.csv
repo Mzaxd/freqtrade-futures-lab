@@ -1,0 +1,5 @@
+label,strategy,timerange,trades,profit_total_pct,cagr_pct,max_drawdown_pct,dd_duration_days,sharpe,sortino,calmar,profit_factor,winrate_pct,avg_profit_pct,expectancy_ratio,trades_long,trades_short,avg_duration_h,fee_cost_usdt,funding_cost_usdt,liquidations,market_change_pct,final_balance
+oss_is_FAdxSmaStrategy,FAdxSmaStrategy,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,112,-3.93,-1.98,12.8,129.1,-0.1,-0.18,-0.8,0.91,36.6,-0.09,-0.06,47,65,15.0,341.95,43.63,0,189.4,9607.0
+oss_is_FOttStrategy,FOttStrategy,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0,0,0.0,0.0,0.0,0,189.4,10000.0
+oss_is_FSampleStrategy,FSampleStrategy,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,204,17.51,8.4,75.16,598.9,0.03,0.25,0.61,1.02,13.2,1.15,0.02,190,14,191.2,1617.46,-5268.28,0,189.4,11750.56
+oss_is_FSupertrendStrategy,FSupertrendStrategy,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,1026,63.75,27.96,23.92,128.3,0.86,1.17,6.98,1.08,66.6,0.18,0.03,1026,0,14.6,4870.37,-2304.19,0,189.4,16374.77

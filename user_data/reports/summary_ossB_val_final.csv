@@ -1,0 +1,7 @@
+label,strategy,timerange,trades,profit_total_pct,cagr_pct,max_drawdown_pct,dd_duration_days,sharpe,sortino,calmar,profit_factor,winrate_pct,avg_profit_pct,expectancy_ratio,trades_long,trades_short,avg_duration_h,fee_cost_usdt,funding_cost_usdt,liquidations,market_change_pct,final_balance
+ossB_VolatilitySystem_val,VolatilitySystem,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,75,166.8,166.8,17.16,13.1,0.55,1.42,50.87,1.79,38.7,3.61,0.49,38,37,344.3,675.98,-821.13,0,390.7,26680.49
+ossB_FSampleStrategy_val,FSampleStrategy,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,44,71.94,71.94,20.65,103.0,0.49,21.21,18.23,2.41,25.0,5.56,1.06,39,5,483.4,135.36,-650.82,0,390.7,17193.98
+ossB_MultiMa_val,MultiMa,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,48,-0.59,-0.59,18.93,137.3,-0.01,-0.01,-0.16,0.98,60.4,0.09,-0.01,48,0,90.8,144.58,-137.31,0,394.4,9940.85
+ossB_Supertrend_val,Supertrend,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,395,73.19,73.19,30.76,247.2,1.94,2.2,12.46,1.31,60.0,0.48,0.12,395,0,33.9,1752.79,-521.03,0,390.7,17319.19
+ossB_FSupertrendStrategy_val,FSupertrendStrategy,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,450,49.0,49.0,24.35,249.0,1.91,2.72,10.53,1.2,58.2,0.3,0.09,450,0,19.7,1865.41,-280.54,0,390.7,14899.83
+ossB_FReinforcedStrategy_val,FReinforcedStrategy,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,624,-29.3,-29.3,29.35,361.4,-8.94,-13.38,-5.23,0.33,17.1,-0.17,-0.56,343,281,0.8,1716.51,-1.63,0,390.7,7070.09
