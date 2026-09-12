@@ -149,8 +149,10 @@ def apply_turbulent_overlay(states: pd.DataFrame, f: pd.DataFrame) -> pd.DataFra
 def rule_states(f: pd.DataFrame, q_label: dict, mom_q: float | None = None) -> pd.DataFrame:
     """Rule core on the normalized t-stat momentum. Threshold 1.25 selected on
     the IS/train window only (sweep 0.75/1.0/1.25/1.5 by train acc3 with the
-    constraint that every state stays within the 5%-70% occupancy band)."""
-    THR = 1.25
+    constraint that every state stays within the 5%-70% occupancy band).
+    FTLAB_REGIME_THR env var allows ±10% perturbation stress tests."""
+    import os
+    THR = float(os.environ.get("FTLAB_REGIME_THR", "1.25"))
     mz = f["mom_z"].to_numpy()
     state = np.where(mz >= THR, 0, np.where(mz <= -THR, 1, 2))
     conf = np.clip(np.abs(mz) / (2 * THR), 0.15, 1.0)

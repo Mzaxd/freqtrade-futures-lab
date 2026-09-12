@@ -5,11 +5,13 @@ trailing windows; the turbulent overlay uses trailing percentile ranks).
 """
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 import pandas as pd
 
-REGIME_DIR = Path(__file__).resolve().parent.parent / "regimes"
+REGIME_DIR = Path(os.environ.get("FTLAB_REGIME_DIR",
+                                 str(Path(__file__).resolve().parent.parent / "regimes")))
 
 STATE_UP, STATE_DOWN, STATE_RANGE, STATE_TURB = 0, 1, 2, 3
 
