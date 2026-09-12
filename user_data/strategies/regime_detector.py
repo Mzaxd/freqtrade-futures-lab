@@ -294,8 +294,32 @@ def evaluate(states: pd.DataFrame, feats: pd.DataFrame, q: dict) -> dict:
             "per_class": per_class, "econ": econ}
 
 
+def dwell_smooth(states: pd.DataFrame, k: int = 2) -> pd.DataFrame:
+    """Causal dwell-time smoothing: a new state becomes official only after it
+    has held for k consecutive bars (iter-9: raw mom_z threshold flips on 1-2
+    bar noise near +/-1.25 and the router churned positions on every flip)."""
+    reg = states["regime"].to_numpy()
+    out = np.empty_like(reg)
+    cur = reg[0] if len(reg) else 0
+    pending, count = None, 0
+    for i, s in enumerate(reg):
+        if s == cur:
+            pending, count = None, 0
+        elif s == pending:
+            count += 1
+            if count >= k:
+                cur, pending, count = s, None, 0
+        else:
+            pending, count = s, 1
+        out[i] = cur
+    sm = states.copy()
+    sm["regime"] = out
+    return sm
+
+
 def get_states(f: pd.DataFrame, q: dict, rules: bool, art=None) -> pd.DataFrame:
-    return rule_states(f, q) if rules else causal_hmm_states(f, art)
+    core = rule_states(f, q) if rules else causal_hmm_states(f, art)
+    return dwell_smooth(core, k=2)
 
 
 def main():

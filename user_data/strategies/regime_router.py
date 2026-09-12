@@ -222,11 +222,13 @@ class RegimeRouter(IStrategy):
             df, idx = self._last_closed(pair, current_time)
             row = df.iloc[idx]
             regime = self._iv(row.get("regime")) if row.get("regime") == row.get("regime") else -1
-            # regime-mismatch exit: the state that justified the position is gone.
-            # turbulent (3) never forces exits - we don't dump positions into chaos.
-            allowed = {"trendlong": (0, 3), "trendshort": (1, 3), "meanrev": (2, 3)}
-            if regime in (0, 1, 2) and regime not in allowed.get(tag, (0, 1, 2, 3)):
-                return "regime_mismatch_exit"
+            # adverse-regime exit (iter-10): trend legs exit only when the state
+            # turns ADVERSE (opposite trend); range episodes are ridden out with
+            # the sub-strategy's own exits / trailing stop. MR premise breaks as
+            # soon as any strong trend starts. turbulent never forces exits.
+            adverse = {"trendlong": (1,), "trendshort": (0,), "meanrev": (0, 1)}
+            if regime in adverse.get(tag, ()):
+                return "adverse_regime_exit"
             if tag == "trendlong" and self._iv(row.get("tl_exit_4h")) == 1:
                 return "tl_signal_exit"
             if tag == "trendshort" and self._iv(row.get("ts_exit_4h")) == 1:
