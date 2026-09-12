@@ -95,6 +95,16 @@ OPT1_VolatilitySystem @ 2024-01→2026-09（一切冻结，单次零重试）：
 - **组合 v2（脚本修正后）更强**：corr 0.2275、50/50 组合 Calmar 19.66 ≥ 门槛 14.07——双 sleeve 是六阶段后唯一存活的改进。
 - 六阶段优化空间审计终版：**全部穷尽**；历史数据再无未烧部分。交付 dry-run 包 v2（Sleeve A `config_opt4_dryrun.json` + 可选 Sleeve B `config_momreg_sleeve_dryrun.json`）。
 
+## 阶段 7 遗珠计划（2026-09-12，详见 [phase7_salvage_final.md](phase7_salvage_final.md)）— 放宽协议 + 分家族 holdout
+
+五条被毙/冻结线重启深研，**3 过 2 灭**：
+- **NFI-Lite（真遗珠）**：DCA 依赖被家族消融破解，无 DCA 形态池内 +63.5%/**DD 4.0%**/PF 2.35、11 新币全正、corr(A)=-0.01——**危机收割凸性 sleeve**，三 sleeve 组合 A+B+NFI 40/40/20 把回撤 9.8%→6.9%、Calmar 16.3→18.2。
+- **SuperDD（过门）**：Supertrend 风险治理版，DD 79→27.5%，新币 -24.6→+34.2%（风险结构版才迁移），holdout +18.8%。
+- **Router 2.0（降级遗产）**：全路由不如静态 sleeve；**turbulent 暂停 overlay 是新币轴优于 OPT4 单体的资产**；v1"唯一 OOS 为正"系 3 币顺风窗局部现象。
+- Reversion v2 灭（新币 -12.2%，funding 收入系单事件补贴）；FreqAI 灭（改善=少交易减亏，自有特征重要性 2.76%，费率墙）——S4 中途死亡由 S4b 续命收尾。
+
+协议创新：2024-26 对非 VolSys 族首次作为一次性 holdout 使用（分家族烧毁账本）；11 新币对五族首次消耗。
+
 ---
 
 ## 产物索引

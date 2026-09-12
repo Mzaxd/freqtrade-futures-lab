@@ -1,0 +1,5 @@
+label,strategy,timerange,trades,profit_total_pct,cagr_pct,max_drawdown_pct,dd_duration_days,sharpe,sortino,calmar,profit_factor,winrate_pct,avg_profit_pct,expectancy_ratio,trades_long,trades_short,avg_duration_h,fee_cost_usdt,funding_cost_usdt,liquidations,market_change_pct,final_balance
+opt7_pool12_A_OPT7_SuperDD_A,OPT7_SuperDD_A,2021-01-01 00:00:00 -> 2024-01-01 00:00:00,928,54.57,15.62,88.19,707.1,0.1,0.52,1.08,1.03,17.5,0.87,0.03,928,0,55.1,6969.25,-7402.5,0,906.5,15457.08
+opt7_pool12_B_OPT7_SuperDD_B,OPT7_SuperDD_B,2021-01-01 00:00:00 -> 2024-01-01 00:00:00,2408,-99.95,-91.82,99.95,477.4,-7.73,-9.94,-1.74,0.46,26.7,-1.27,-0.4,2408,0,6.3,893.85,-504.66,0,906.5,5.48
+opt7_pool12_C_OPT7_SuperDD_C,OPT7_SuperDD_C,2021-01-01 00:00:00 -> 2024-01-01 00:00:00,1385,-84.25,-46.0,91.17,921.5,-0.89,-2.87,-1.61,0.87,24.3,-0.66,-0.1,1385,0,35.3,2398.42,-2336.49,0,906.5,1575.08
+opt7_pool12_D_OPT7_SuperDD_D,OPT7_Router20C,2021-01-01 00:00:00 -> 2024-01-01 00:00:00,933,883.79,114.27,28.47,118.8,1.4,6.69,54.16,1.83,39.5,1.69,0.5,478,455,89.5,4929.97,-3852.06,0,906.5,98379.47

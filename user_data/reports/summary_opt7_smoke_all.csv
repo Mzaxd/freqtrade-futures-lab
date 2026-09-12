@@ -1,0 +1,4 @@
+label,strategy,timerange,trades,profit_total_pct,cagr_pct,max_drawdown_pct,dd_duration_days,sharpe,sortino,calmar,profit_factor,winrate_pct,avg_profit_pct,expectancy_ratio,trades_long,trades_short,avg_duration_h,fee_cost_usdt,funding_cost_usdt,liquidations,market_change_pct,final_balance
+opt7_smoke_B_OPT7_SuperDD_B,OPT7_SuperDD_B,2021-04-01 00:00:00 -> 2021-06-01 00:00:00,115,-23.38,-79.67,25.23,58.2,-11.98,-27.97,-29.02,0.46,29.6,-1.58,-0.38,115,0,6.0,191.59,-143.91,0,15.6,7662.34
+opt7_smoke_C_OPT7_SuperDD_C,OPT7_SuperDD_C,2021-04-01 00:00:00 -> 2021-06-01 00:00:00,54,-14.21,-60.04,17.37,53.3,-3.33,-67.24,-25.62,0.57,37.0,-2.06,-0.27,54,0,17.9,92.55,-210.63,0,15.6,8578.72
+opt7_smoke_D_OPT7_SuperDD_D,OPT7_SuperDD_D,2021-04-01 00:00:00 -> 2021-06-01 00:00:00,115,-23.38,-79.67,25.23,58.2,-11.98,-27.97,-29.02,0.46,29.6,-1.58,-0.38,115,0,6.0,191.59,-143.91,0,15.6,7662.34
