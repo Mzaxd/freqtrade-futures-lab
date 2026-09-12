@@ -1,3 +1,5 @@
 label,strategy,timerange,trades,profit_total_pct,cagr_pct,max_drawdown_pct,dd_duration_days,sharpe,sortino,calmar,profit_factor,winrate_pct,avg_profit_pct,expectancy_ratio,trades_long,trades_short,avg_duration_h,fee_cost_usdt,funding_cost_usdt,liquidations,market_change_pct,final_balance
-ossA_nfi_3p_val,NostalgiaForInfinityX7,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,6,6.05,6.05,0.0,0.0,0.48,-100.0,-100.0,0,100.0,7.93,100.0,4,2,1.4,22.94,-1.19,0,390.7,10605.29
-ossA_nfi_12p_val,NostalgiaForInfinityX7,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,40,48.31,48.31,0.0,0.0,2.9,-100.0,-100.0,0,100.0,7.4,100.0,34,6,18.9,195.94,-4.9,0,167.3,14831.46
+ossA_nfi_3p_is,NostalgiaForInfinityX7,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,84,171.03,64.63,0.0,0.0,2.48,-100.0,-100.0,0.0,100.0,8.44,100.0,72,12,72.7,530.47,-153.99,0,193.7,27102.59
+ossA_nfi_3p_val,NostalgiaForInfinityX7,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,6,6.05,6.05,0.0,0.0,0.48,-100.0,-100.0,0.0,100.0,7.93,100.0,4,2,1.4,22.94,-1.19,0,390.7,10605.29
+ossA_nfi_12p_is,NostalgiaForInfinityX7,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,478,24244.87,1460.28,1.64,16.5,7.62,8.16,38683.46,116.41,99.6,7.8,0.48,434,44,26.2,97818.18,4300.3,0,227.0,2434486.85
+ossA_nfi_12p_val,NostalgiaForInfinityX7,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,40,48.31,48.31,0.0,0.0,2.9,-100.0,-100.0,0.0,100.0,7.4,100.0,34,6,18.9,195.94,-4.9,0,167.3,14831.46

@@ -5,8 +5,13 @@ user_data/backtest_results/*.json
 user_data/backtest_results/*.meta.json
 user_data/backtest_results/last_result
 user_data/hyperopt_results/*.fthypt
+user_data/hyperopt_results/*.pkl
 user_data/hyperopt_results/last_result
+user_data/models/
 __pycache__/
 .venv/
 .DS_Store
-research_openstrat/
+# research workspace: keep reports + configs, exclude regenerable heavy dirs
+research_openstrat/repos/
+research_openstrat/.venv-freqai/
+user_data/hyperopt_results/.last_result.json

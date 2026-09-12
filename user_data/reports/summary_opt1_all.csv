@@ -1,0 +1,7 @@
+label,strategy,timerange,trades,profit_total_pct,cagr_pct,max_drawdown_pct,dd_duration_days,sharpe,sortino,calmar,profit_factor,winrate_pct,avg_profit_pct,expectancy_ratio,trades_long,trades_short,avg_duration_h,fee_cost_usdt,funding_cost_usdt,liquidations,market_change_pct,final_balance
+opt1_VolatilitySystem_is,OPT1_VolatilitySystem,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,139,424.22,128.96,11.92,45.8,0.99,6.55,93.12,2.37,35.3,13.82,0.89,74,65,284.5,1187.1,-4190.02,0,189.4,52421.58
+opt1_VolatilitySystem_val,OPT1_VolatilitySystem,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,102,121.76,121.76,15.06,181.4,0.93,18.01,42.33,2.2,34.3,6.02,0.79,53,49,175.8,609.19,-439.29,0,390.7,22176.39
+opt1_FSupertrendStrategy_is,OPT1_FSupertrendStrategy,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,1709,23.03,10.92,34.37,146.2,0.27,0.27,1.75,1.02,60.3,0.12,0.01,841,868,22.1,6505.38,-1536.89,0,189.4,12302.93
+opt1_FSupertrendStrategy_val,OPT1_FSupertrendStrategy,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,751,-7.34,-7.34,40.14,253.3,-0.3,-0.37,-0.96,0.98,51.9,0.0,-0.01,448,303,24.2,2578.56,-18.84,0,390.7,9265.63
+opt1_MomRegime15mLb21_is,OPT1_MomRegime15mLb21,2021-01-01 00:00:00 -> 2023-01-01 00:00:00,60,542.5,153.48,36.03,412.0,0.29,0.77,39.4,1.84,43.3,14.32,0.47,60,0,305.7,1306.09,-11827.88,0,228.7,64249.73
+opt1_MomRegime15mLb21_val,OPT1_MomRegime15mLb21,2023-01-01 00:00:00 -> 2024-01-01 00:00:00,53,112.61,112.61,25.57,167.0,0.52,3.18,23.05,2.52,37.7,6.55,0.95,53,0,335.3,203.39,-706.62,0,168.4,21261.34

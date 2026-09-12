@@ -1,0 +1,7 @@
+# Backtest summary: opt1_oos
+
+Generated from: ['opt1_VolatilitySystem_oos.zip']
+
+| label                     | strategy              | timerange                                  |   trades |   profit_total_pct |   cagr_pct |   max_drawdown_pct |   dd_duration_days |   sharpe |   sortino |   calmar |   profit_factor |   winrate_pct |   avg_profit_pct |   expectancy_ratio |   trades_long |   trades_short |   avg_duration_h |   fee_cost_usdt |   funding_cost_usdt |   liquidations |   market_change_pct |   final_balance |
+|:--------------------------|:----------------------|:-------------------------------------------|---------:|-------------------:|-----------:|-------------------:|-------------------:|---------:|----------:|---------:|----------------:|--------------:|-----------------:|-------------------:|--------------:|---------------:|-----------------:|----------------:|--------------------:|---------------:|--------------------:|----------------:|
+| opt1_VolatilitySystem_oos | OPT1_VolatilitySystem | 2024-01-01 00:00:00 -> 2026-09-11 15:00:00 |      301 |              69.11 |      21.52 |              37.14 |              165.8 |     0.35 |      3.28 |     3.61 |            1.24 |          24.6 |                1 |               0.18 |           153 |            148 |              148 |         1442.69 |              -740.7 |              0 |                31.2 |           16911 |
