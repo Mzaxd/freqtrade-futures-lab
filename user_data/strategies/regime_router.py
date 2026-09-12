@@ -66,6 +66,7 @@ class RegimeRouter(IStrategy):
 
     leverage_fixed = 3
     min_conf = 0.35
+    RANGE_RISK_MULT = 0.5   # trend legs in range state take half risk (iter-13)
     # -----------------------------------------------------------------------------------
 
     @informative("4h")
@@ -115,13 +116,17 @@ class RegimeRouter(IStrategy):
         return dataframe
 
     def populate_entry_trend(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
-        conf_ok = dataframe["conf"] >= self.min_conf
-        up = (dataframe["regime"] == 0) & conf_ok
-        dn = (dataframe["regime"] == 1) & conf_ok
-        rg = (dataframe["regime"] == 2) & conf_ok
+        # iter-11: adverse-VETO routing. The detector's trend_up (72h momentum
+        # bursts, ~14% of time) is narrower than what makes the EMA engine money
+        # (sustained drift, often labelled "range"): permission-gating cut the
+        # best trades. Trend legs now trade in ANY non-adverse state and are
+        # only vetoed in the opposite trend / turbulent; MR stays range-only.
+        tl_ok = ~dataframe["regime"].isin([1, 3])
+        ts_ok = ~dataframe["regime"].isin([0, 3])
+        rg = dataframe["regime"] == 2
 
-        tl = (dataframe["tl_enter_4h"] == 1) & up
-        ts = (dataframe["ts_enter_4h"] == 1) & dn
+        tl = (dataframe["tl_enter_4h"] == 1) & tl_ok
+        ts = (dataframe["ts_enter_4h"] == 1) & ts_ok
         mr_l = (dataframe["mr_long_4h"] == 1) & rg & (tl != 1)
         mr_s = (dataframe["mr_short_4h"] == 1) & rg & (ts != 1)
 
@@ -172,7 +177,17 @@ class RegimeRouter(IStrategy):
             if atr <= 0:
                 return proposed_stake
             stop_pct = max(stop_mult * atr / float(row["close"]), 0.004)
-            risk = risk_scale_for_regime(int(row.get("regime", -1)), float(row.get("conf", 0) or 0), risk)
+            # iter-11: trend legs sized by state grade (iter-12): full risk in
+            # the aligned trend state, 0.6x in range (non-adverse but not
+            # favorable) - recovers drawdown control lost to veto-routing.
+            # MR keeps confidence-scaled sizing.
+            regime = int(row.get("regime", -1)) if row.get("regime") == row.get("regime") else -1
+            if tag == "meanrev":
+                risk = risk_scale_for_regime(regime, float(row.get("conf", 0) or 0), risk)
+            elif tag == "trendlong":
+                risk *= 1.0 if regime == 0 else self.RANGE_RISK_MULT
+            elif tag == "trendshort":
+                risk *= 1.0 if regime == 1 else self.RANGE_RISK_MULT
             if risk <= 0:
                 return 0.0
             equity = self.wallets.get_total_stake_amount()
