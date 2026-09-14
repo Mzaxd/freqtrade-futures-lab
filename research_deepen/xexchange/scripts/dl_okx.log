@@ -1,0 +1,150 @@
+2026-09-14 11:24:49,037 - freqtrade - INFO - freqtrade 2026.8
+2026-09-14 11:24:49,413 - numexpr.utils - INFO - Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
+2026-09-14 11:24:49,414 - numexpr.utils - INFO - NumExpr defaulting to 16 threads.
+2026-09-14 11:24:51,030 - freqtrade.configuration.load_config - INFO - Using config: research_deepen/xexchange/configs/okx_fut.json ...
+2026-09-14 11:24:51,031 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-09-14 11:24:51,032 - freqtrade.loggers - INFO - Logfile configured
+2026-09-14 11:24:51,032 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-09-14 11:24:51,032 - freqtrade.configuration.configuration - INFO - Parameter --timerange detected: 20200901-20240101 ...
+2026-09-14 11:24:51,033 - freqtrade.configuration.configuration - INFO - Using user-data directory: user_data ...
+2026-09-14 11:24:51,033 - freqtrade.configuration.directory_operations - INFO - Created data directory: None
+2026-09-14 11:24:51,033 - freqtrade.configuration.configuration - INFO - Using data directory: user_data\data\okx ...
+2026-09-14 11:24:51,035 - freqtrade.configuration.configuration - INFO - timeframes --timeframes: ['1h']
+2026-09-14 11:24:51,035 - freqtrade.configuration.configuration - INFO - Filter trades by timerange: 20200901-20240101
+2026-09-14 11:24:51,035 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-09-14 11:24:51,040 - freqtrade.exchange.check_exchange - INFO - Exchange "okx" is officially supported by the Freqtrade development team.
+2026-09-14 11:24:51,040 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-09-14 11:24:51,040 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-09-14 11:24:52,077 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-09-14 11:24:52,078 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.64
+2026-09-14 11:24:52,078 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2026-09-14 11:24:52,083 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2026-09-14 11:24:52,088 - freqtrade.exchange.exchange - INFO - Using Exchange "OKX"
+2026-09-14 11:24:52,088 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange class 'Okx' ...
+2026-09-14 11:24:52,088 - freqtrade.exchange.exchange - INFO - Markets were not loaded. Loading them now..
+2026-09-14 11:24:53,760 - freqtrade.exchange.exchange - INFO - Using cached leverage_tiers.
+2026-09-14 11:24:53,760 - freqtrade.exchange.exchange - INFO - Done initializing 0 markets.
+2026-09-14 11:24:53,767 - freqtrade.data.history.history_utils - INFO - About to download pairs: ['BTC/USDT:USDT', 'ETH/USDT:USDT', 'SOL/USDT:USDT', 'BNB/USDT:USDT', 'XRP/USDT:USDT', 'ADA/USDT:USDT', 
+'DOGE/USDT:USDT', 'AVAX/USDT:USDT', 'LINK/USDT:USDT', 'DOT/USDT:USDT', 'LTC/USDT:USDT', 'UNI/USDT:USDT'], intervals: ['1h'] to user_data\data\okx
+2026-09-14 11:24:53,809 - freqtrade.data.history.history_utils - INFO - Download history data for "BTC/USDT:USDT", 1h, futures and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:25:04,949 - freqtrade.data.history.history_utils - INFO - Downloaded data for BTC/USDT:USDT, 1h, futures with length 29399.
+2026-09-14 11:25:04,991 - freqtrade.data.history.history_utils - INFO - Download history data for "BTC/USDT:USDT", 1h, mark and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:25:38,186 - freqtrade.data.history.history_utils - INFO - Downloaded data for BTC/USDT:USDT, 1h, mark with length 29299.
+2026-09-14 11:25:38,203 - freqtrade.data.history.history_utils - INFO - Download history data for "BTC/USDT:USDT", 1h, funding_rate and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:26:43,512 - freqtrade.data.history.history_utils - INFO - Downloaded data for BTC/USDT:USDT, 1h, funding_rate with length 100.
+2026-09-14 11:26:43,517 - freqtrade.data.history.history_utils - INFO - Download history data for "ETH/USDT:USDT", 1h, futures and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:26:54,758 - freqtrade.data.history.history_utils - INFO - Downloaded data for ETH/USDT:USDT, 1h, futures with length 29399.
+2026-09-14 11:26:54,775 - freqtrade.data.history.history_utils - INFO - Download history data for "ETH/USDT:USDT", 1h, mark and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:27:27,936 - freqtrade.data.history.history_utils - INFO - Downloaded data for ETH/USDT:USDT, 1h, mark with length 29299.
+2026-09-14 11:27:27,961 - freqtrade.data.history.history_utils - INFO - Download history data for "ETH/USDT:USDT", 1h, funding_rate and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:28:03,644 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for ETH/USDT:USDT, 1h, funding_rate due 
+to RateLimitExceeded. Message: okx {"msg":"Too Many Requests","code":"50011"}". Retrying still for 4 times.
+2026-09-14 11:28:33,412 - freqtrade.data.history.history_utils - INFO - Downloaded data for ETH/USDT:USDT, 1h, funding_rate with length 100.
+2026-09-14 11:28:33,416 - freqtrade.data.history.history_utils - INFO - Download history data for "SOL/USDT:USDT", 1h, futures and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:28:44,643 - freqtrade.data.history.history_utils - INFO - Downloaded data for SOL/USDT:USDT, 1h, futures with length 25961.
+2026-09-14 11:28:44,659 - freqtrade.data.history.history_utils - INFO - Download history data for "SOL/USDT:USDT", 1h, mark and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:29:17,830 - freqtrade.data.history.history_utils - INFO - Downloaded data for SOL/USDT:USDT, 1h, mark with length 25861.
+2026-09-14 11:29:17,842 - freqtrade.data.history.history_utils - INFO - Download history data for "SOL/USDT:USDT", 1h, funding_rate and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:30:15,156 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for SOL/USDT:USDT, 1h, funding_rate due 
+to RateLimitExceeded. Message: okx {"msg":"Too Many Requests","code":"50011"}". Retrying still for 4 times.
+2026-09-14 11:30:23,340 - freqtrade.data.history.history_utils - INFO - Downloaded data for SOL/USDT:USDT, 1h, funding_rate with length 100.
+2026-09-14 11:30:23,353 - freqtrade.data.history.history_utils - INFO - Download history data for "BNB/USDT:USDT", 1h, futures and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:30:34,583 - freqtrade.data.history.history_utils - INFO - Downloaded data for BNB/USDT:USDT, 1h, futures with length 9161.
+2026-09-14 11:30:34,591 - freqtrade.data.history.history_utils - INFO - Download history data for "BNB/USDT:USDT", 1h, mark and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:31:07,753 - freqtrade.data.history.history_utils - INFO - Downloaded data for BNB/USDT:USDT, 1h, mark with length 9061.
+2026-09-14 11:31:07,774 - freqtrade.data.history.history_utils - INFO - Download history data for "BNB/USDT:USDT", 1h, funding_rate and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:32:12,975 - freqtrade.data.history.history_utils - INFO - Downloaded data for BNB/USDT:USDT, 1h, funding_rate with length 100.
+2026-09-14 11:32:12,981 - freqtrade.data.history.history_utils - INFO - Download history data for "XRP/USDT:USDT", 1h, futures and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:32:24,254 - freqtrade.data.history.history_utils - INFO - Downloaded data for XRP/USDT:USDT, 1h, futures with length 29399.
+2026-09-14 11:32:24,271 - freqtrade.data.history.history_utils - INFO - Download history data for "XRP/USDT:USDT", 1h, mark and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:32:57,599 - freqtrade.data.history.history_utils - INFO - Downloaded data for XRP/USDT:USDT, 1h, mark with length 29299.
+2026-09-14 11:32:57,613 - freqtrade.data.history.history_utils - INFO - Download history data for "XRP/USDT:USDT", 1h, funding_rate and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:33:28,249 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for XRP/USDT:USDT, 1h, funding_rate due 
+to RateLimitExceeded. Message: okx {"msg":"Too Many Requests","code":"50011"}". Retrying still for 4 times.
+2026-09-14 11:34:03,092 - freqtrade.data.history.history_utils - INFO - Downloaded data for XRP/USDT:USDT, 1h, funding_rate with length 100.
+2026-09-14 11:34:03,096 - freqtrade.data.history.history_utils - INFO - Download history data for "ADA/USDT:USDT", 1h, futures and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:34:14,352 - freqtrade.data.history.history_utils - INFO - Downloaded data for ADA/USDT:USDT, 1h, futures with length 29399.
+2026-09-14 11:34:14,371 - freqtrade.data.history.history_utils - INFO - Download history data for "ADA/USDT:USDT", 1h, mark and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:34:47,544 - freqtrade.data.history.history_utils - INFO - Downloaded data for ADA/USDT:USDT, 1h, mark with length 29299.
+2026-09-14 11:34:47,561 - freqtrade.data.history.history_utils - INFO - Download history data for "ADA/USDT:USDT", 1h, funding_rate and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:35:52,813 - freqtrade.data.history.history_utils - INFO - Downloaded data for ADA/USDT:USDT, 1h, funding_rate with length 100.
+2026-09-14 11:35:52,817 - freqtrade.data.history.history_utils - INFO - Download history data for "DOGE/USDT:USDT", 1h, futures and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:36:04,123 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOGE/USDT:USDT, 1h, futures with length 29399.
+2026-09-14 11:36:04,149 - freqtrade.data.history.history_utils - INFO - Download history data for "DOGE/USDT:USDT", 1h, mark and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:36:37,314 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOGE/USDT:USDT, 1h, mark with length 29299.
+2026-09-14 11:36:37,328 - freqtrade.data.history.history_utils - INFO - Download history data for "DOGE/USDT:USDT", 1h, funding_rate and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:36:39,714 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for DOGE/USDT:USDT, 1h, funding_rate due
+to RateLimitExceeded. Message: okx {"msg":"Too Many Requests","code":"50011"}". Retrying still for 4 times.
+2026-09-14 11:37:42,827 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOGE/USDT:USDT, 1h, funding_rate with length 100.
+2026-09-14 11:37:42,832 - freqtrade.data.history.history_utils - INFO - Download history data for "AVAX/USDT:USDT", 1h, futures and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:37:54,066 - freqtrade.data.history.history_utils - INFO - Downloaded data for AVAX/USDT:USDT, 1h, futures with length 28867.
+2026-09-14 11:37:54,083 - freqtrade.data.history.history_utils - INFO - Download history data for "AVAX/USDT:USDT", 1h, mark and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:38:08,776 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for AVAX/USDT:USDT, 1h, mark due to 
+RateLimitExceeded. Message: okx {"msg":"Too Many Requests","code":"50011"}". Retrying still for 4 times.
+2026-09-14 11:38:08,888 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for AVAX/USDT:USDT, 1h, mark due to 
+RateLimitExceeded. Message: okx {"msg":"Too Many Requests","code":"50011"}". Retrying still for 4 times.
+2026-09-14 11:38:27,506 - freqtrade.data.history.history_utils - INFO - Downloaded data for AVAX/USDT:USDT, 1h, mark with length 28767.
+2026-09-14 11:38:27,526 - freqtrade.data.history.history_utils - INFO - Download history data for "AVAX/USDT:USDT", 1h, funding_rate and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:39:32,809 - freqtrade.data.history.history_utils - INFO - Downloaded data for AVAX/USDT:USDT, 1h, funding_rate with length 100.
+2026-09-14 11:39:32,814 - freqtrade.data.history.history_utils - INFO - Download history data for "LINK/USDT:USDT", 1h, futures and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:39:44,208 - freqtrade.data.history.history_utils - INFO - Downloaded data for LINK/USDT:USDT, 1h, futures with length 29399.
+2026-09-14 11:39:44,227 - freqtrade.data.history.history_utils - INFO - Download history data for "LINK/USDT:USDT", 1h, mark and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:40:17,384 - freqtrade.data.history.history_utils - INFO - Downloaded data for LINK/USDT:USDT, 1h, mark with length 29299.
+2026-09-14 11:40:17,398 - freqtrade.data.history.history_utils - INFO - Download history data for "LINK/USDT:USDT", 1h, funding_rate and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:41:22,661 - freqtrade.data.history.history_utils - INFO - Downloaded data for LINK/USDT:USDT, 1h, funding_rate with length 100.
+2026-09-14 11:41:22,667 - freqtrade.data.history.history_utils - INFO - Download history data for "DOT/USDT:USDT", 1h, futures and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:41:33,936 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOT/USDT:USDT, 1h, futures with length 29399.
+2026-09-14 11:41:33,965 - freqtrade.data.history.history_utils - INFO - Download history data for "DOT/USDT:USDT", 1h, mark and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:42:07,171 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOT/USDT:USDT, 1h, mark with length 29299.
+2026-09-14 11:42:07,186 - freqtrade.data.history.history_utils - INFO - Download history data for "DOT/USDT:USDT", 1h, funding_rate and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:43:12,424 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOT/USDT:USDT, 1h, funding_rate with length 100.
+2026-09-14 11:43:12,438 - freqtrade.data.history.history_utils - INFO - Download history data for "LTC/USDT:USDT", 1h, futures and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:43:23,704 - freqtrade.data.history.history_utils - INFO - Downloaded data for LTC/USDT:USDT, 1h, futures with length 29399.
+2026-09-14 11:43:23,729 - freqtrade.data.history.history_utils - INFO - Download history data for "LTC/USDT:USDT", 1h, mark and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:43:56,938 - freqtrade.data.history.history_utils - INFO - Downloaded data for LTC/USDT:USDT, 1h, mark with length 29299.
+2026-09-14 11:43:56,963 - freqtrade.data.history.history_utils - INFO - Download history data for "LTC/USDT:USDT", 1h, funding_rate and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:45:02,203 - freqtrade.data.history.history_utils - INFO - Downloaded data for LTC/USDT:USDT, 1h, funding_rate with length 100.
+2026-09-14 11:45:02,208 - freqtrade.data.history.history_utils - INFO - Download history data for "UNI/USDT:USDT", 1h, futures and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:45:13,470 - freqtrade.data.history.history_utils - INFO - Downloaded data for UNI/USDT:USDT, 1h, futures with length 29011.
+2026-09-14 11:45:13,489 - freqtrade.data.history.history_utils - INFO - Download history data for "UNI/USDT:USDT", 1h, mark and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:45:46,686 - freqtrade.data.history.history_utils - INFO - Downloaded data for UNI/USDT:USDT, 1h, mark with length 28911.
+2026-09-14 11:45:46,703 - freqtrade.data.history.history_utils - INFO - Download history data for "UNI/USDT:USDT", 1h, funding_rate and store in user_data\data\okx. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:46:51,957 - freqtrade.data.history.history_utils - INFO - Downloaded data for UNI/USDT:USDT, 1h, funding_rate with length 100.
+Timeframe                 ----------------------------------------------------------------------------------------------------------------------------------------------- 3/3   100% • 0:01:49 • 0:00:00
+Downloading UNI/USDT:USDT ----------------------------------------------------------------------------------------------------------------------------------------------- 12/12 100% • 0:21:58 • 0:00:00

@@ -1,0 +1,9 @@
+[liq] liq_move=49.49%  eff-stop p50=4.48% max=15.00%  max 1m range=46.68%  breaches=0/436  liquidation exits=0
+  extreme: ETH/USDT:USDT 2021-05-19 13:11:00+00:00 range=46.7% open_nearby=False
+  extreme: LTC/USDT:USDT 2021-05-19 13:33:00+00:00 range=36.6% open_nearby=False
+  extreme: DOGE/USDT:USDT 2021-01-29 03:21:00+00:00 range=31.7% open_nearby=True
+  extreme: DOGE/USDT:USDT 2021-05-19 13:01:00+00:00 range=29.6% open_nearby=False
+  extreme: ETH/USDT:USDT 2021-05-19 13:10:00+00:00 range=29.3% open_nearby=False
+  extreme: LTC/USDT:USDT 2021-05-19 13:56:00+00:00 range=29.2% open_nearby=False
+  extreme: LTC/USDT:USDT 2021-05-19 13:58:00+00:00 range=29.1% open_nearby=False
+  extreme: LTC/USDT:USDT 2021-05-19 13:54:00+00:00 range=28.6% open_nearby=False

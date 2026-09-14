@@ -1,0 +1,558 @@
+2026-09-14 11:39:50,324 - freqtrade - INFO - freqtrade 2026.8
+2026-09-14 11:39:50,606 - numexpr.utils - INFO - Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
+2026-09-14 11:39:50,606 - numexpr.utils - INFO - NumExpr defaulting to 16 threads.
+2026-09-14 11:39:53,208 - freqtrade.configuration.load_config - INFO - Using config: research_deepen/freqai/configs/fai_base.json ...
+2026-09-14 11:39:53,211 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-09-14 11:39:53,212 - freqtrade.loggers - INFO - Logfile configured
+2026-09-14 11:39:53,212 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-09-14 11:39:53,213 - freqtrade.configuration.configuration - INFO - Using additional Strategy lookup path: research_deepen/freqai/strategies
+2026-09-14 11:39:53,213 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 4 ...
+2026-09-14 11:39:53,213 - freqtrade.configuration.configuration - INFO - Parameter --timerange detected: 20230101-20230115 ...
+2026-09-14 11:39:53,214 - freqtrade.configuration.configuration - INFO - Using user-data directory: user_data ...
+2026-09-14 11:39:53,215 - freqtrade.configuration.configuration - INFO - Using data directory: user_data\data\binance ...
+2026-09-14 11:39:53,215 - freqtrade.configuration.configuration - INFO - Parameter --export detected: trades ...
+2026-09-14 11:39:53,216 - freqtrade.configuration.configuration - INFO - Parameter --cache=none detected ...
+2026-09-14 11:39:53,216 - freqtrade.configuration.configuration - INFO - Filter trades by timerange: 20230101-20230115
+2026-09-14 11:39:53,217 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-09-14 11:39:53,225 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2026-09-14 11:39:53,226 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-09-14 11:39:53,226 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-09-14 11:39:53,229 - freqtrade.commands.optimize_commands - INFO - Starting freqtrade in Backtesting mode
+2026-09-14 11:39:53,229 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-09-14 11:39:53,229 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.64
+2026-09-14 11:39:53,231 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2026-09-14 11:39:53,237 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2026-09-14 11:39:53,244 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2026-09-14 11:39:55,137 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange class 'Binance' ...
+2026-09-14 11:39:55,154 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy FAI_V1 from 'D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\strategies\FAI_V1.py'...
+2026-09-14 11:39:55,155 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2026-09-14 11:39:55,156 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value from the configuration: USDT.
+2026-09-14 11:39:55,156 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value from the configuration: unlimited.
+2026-09-14 11:39:55,156 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value from the configuration: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 
+'unit': 'minutes'}.
+2026-09-14 11:39:55,157 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value from the configuration: 4.
+2026-09-14 11:39:55,157 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 100}
+2026-09-14 11:39:55,157 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 1h
+2026-09-14 11:39:55,158 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.99
+2026-09-14 11:39:55,158 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2026-09-14 11:39:55,158 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2026-09-14 11:39:55,158 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2026-09-14 11:39:55,159 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: True
+2026-09-14 11:39:55,159 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2026-09-14 11:39:55,159 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'market', 'exit': 'market', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2026-09-14 11:39:55,160 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2026-09-14 11:39:55,160 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2026-09-14 11:39:55,160 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2026-09-14 11:39:55,161 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 800
+2026-09-14 11:39:55,161 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2026-09-14 11:39:55,162 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: False
+2026-09-14 11:39:55,162 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2026-09-14 11:39:55,162 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2026-09-14 11:39:55,162 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2026-09-14 11:39:55,163 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2026-09-14 11:39:55,163 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2026-09-14 11:39:55,163 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2026-09-14 11:39:55,163 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2026-09-14 11:39:55,164 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 4
+2026-09-14 11:39:55,164 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-09-14 11:39:55,177 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from 
+'D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\freqtrade\plugins\pairlist\StaticPairList.py'...
+2026-09-14 11:39:55,187 - freqtrade.optimize.backtesting - INFO - Using fee 0.0500% - worst case fee from exchange (lowest tier).
+2026-09-14 11:39:55,187 - freqtrade.exchange.exchange - WARNING - Using 2 calls to get OHLCV. This can result in slower operations for the bot. Please check if you really need 800 candles for your 
+strategy.
+2026-09-14 11:39:55,188 - freqtrade.data.dataprovider - INFO - Increasing startup_candle_count for freqai on 1h to 1520
+2026-09-14 11:39:55,407 - freqtrade.optimize.backtesting - INFO - Loading data from 2022-10-29 16:00:00 up to 2023-01-15 00:00:00 (77 days).
+2026-09-14 11:39:55,935 - freqtrade.optimize.backtesting - INFO - Dataload complete. Calculating indicators
+2026-09-14 11:39:55,936 - freqtrade.optimize.backtesting - INFO - Running backtesting for Strategy FAI_V1
+2026-09-14 11:40:00,788 - freqtrade.resolvers.iresolver - INFO - Using resolved freqaimodel LightGBMClassifier from 
+'D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\freqtrade\freqai\prediction_models\LightGBMClassifier.py'...
+2026-09-14 11:40:00,789 - freqtrade.freqai.freqai_interface - INFO - Backtesting module configured to save all models.
+2026-09-14 11:40:00,789 - freqtrade.freqai.data_drawer - INFO - Could not find existing datadrawer, starting from scratch
+2026-09-14 11:40:00,789 - freqtrade.freqai.data_drawer - INFO - Could not find existing historic_predictions, starting from scratch
+2026-09-14 11:40:00,791 - freqtrade.freqai.freqai_interface - INFO - Set fresh train queue from whitelist. Queue: ['BTC/USDT:USDT', 'ETH/USDT:USDT', 'SOL/USDT:USDT', 'BNB/USDT:USDT', 'XRP/USDT:USDT', 
+'ADA/USDT:USDT', 'DOGE/USDT:USDT', 'AVAX/USDT:USDT', 'LINK/USDT:USDT', 'DOT/USDT:USDT', 'LTC/USDT:USDT', 'UNI/USDT:USDT']
+2026-09-14 11:40:00,794 - freqtrade.freqai.freqai_interface - INFO - Training 2 timeranges
+2026-09-14 11:40:00,795 - freqtrade.freqai.freqai_interface - INFO - Training BTC/USDT:USDT, 1/12 pairs from 2022-12-02 00:00:00 to 2023-01-01 00:00:00, 1/2 trains
+2026-09-14 11:40:00,795 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_btc_1672531200_prediction.feather
+2026-09-14 11:40:00,831 - FAI_V1 - INFO - FAI_V1 features for BTC/USDT:USDT (thr=0.020): 11 cols
+2026-09-14 11:40:00,838 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-BTC_1672531200\cb_btc_1672531200
+2026-09-14 11:40:00,839 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training BTC/USDT:USDT --------------------
+2026-09-14 11:40:00,841 - freqtrade.freqai.data_kitchen - INFO - BTC/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:00,842 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-04 to 2022-12-29 --------------------
+2026-09-14 11:40:00,861 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:00,861 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\joblib\externals\loky\backend\context.py:136: UserWarning: Could not find the number of physical cores for the following reason:
+[WinError 2] 系统找不到指定的文件。
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\joblib\externals\loky\backend\context.py", line 257, in _count_physical_cores
+    cpu_info = subprocess.run(
+               ^^^^^^^^^^^^^^^
+  File "C:\Users\Caihaohan\AppData\Roaming\uv\python\cpython-3.11.11-windows-x86_64-none\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Caihaohan\AppData\Roaming\uv\python\cpython-3.11.11-windows-x86_64-none\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Caihaohan\AppData\Roaming\uv\python\cpython-3.11.11-windows-x86_64-none\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:01,027 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training BTC/USDT:USDT (0.19 secs) --------------------
+2026-09-14 11:40:01,027 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:01,057 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:01,065 - freqtrade.freqai.freqai_interface - INFO - Training BTC/USDT:USDT, 1/12 pairs from 2022-12-09 00:00:00 to 2023-01-08 00:00:00, 2/2 trains
+2026-09-14 11:40:01,065 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_btc_1673136000_prediction.feather
+2026-09-14 11:40:01,073 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-BTC_1673136000\cb_btc_1673136000
+2026-09-14 11:40:01,074 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training BTC/USDT:USDT --------------------
+2026-09-14 11:40:01,077 - freqtrade.freqai.data_kitchen - INFO - BTC/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:01,077 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-11 to 2023-01-05 --------------------
+2026-09-14 11:40:01,081 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:01,081 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:01,194 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training BTC/USDT:USDT (0.12 secs) --------------------
+2026-09-14 11:40:01,196 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:01,216 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:01,227 - freqtrade.freqai.freqai_interface - INFO - Training 2 timeranges
+2026-09-14 11:40:01,229 - freqtrade.freqai.freqai_interface - INFO - Training ETH/USDT:USDT, 2/12 pairs from 2022-12-02 00:00:00 to 2023-01-01 00:00:00, 1/2 trains
+2026-09-14 11:40:01,229 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_eth_1672531200_prediction.feather
+2026-09-14 11:40:01,260 - FAI_V1 - INFO - FAI_V1 features for ETH/USDT:USDT (thr=0.020): 11 cols
+2026-09-14 11:40:01,268 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-ETH_1672531200\cb_eth_1672531200
+2026-09-14 11:40:01,268 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training ETH/USDT:USDT --------------------
+2026-09-14 11:40:01,272 - freqtrade.freqai.data_kitchen - INFO - ETH/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:01,272 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-04 to 2022-12-29 --------------------
+2026-09-14 11:40:01,276 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:01,277 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:01,390 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training ETH/USDT:USDT (0.12 secs) --------------------
+2026-09-14 11:40:01,390 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:01,412 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:01,418 - freqtrade.freqai.freqai_interface - INFO - Training ETH/USDT:USDT, 2/12 pairs from 2022-12-09 00:00:00 to 2023-01-08 00:00:00, 2/2 trains
+2026-09-14 11:40:01,418 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_eth_1673136000_prediction.feather
+2026-09-14 11:40:01,427 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-ETH_1673136000\cb_eth_1673136000
+2026-09-14 11:40:01,427 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training ETH/USDT:USDT --------------------
+2026-09-14 11:40:01,431 - freqtrade.freqai.data_kitchen - INFO - ETH/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:01,432 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-11 to 2023-01-05 --------------------
+2026-09-14 11:40:01,435 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:01,435 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:01,571 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training ETH/USDT:USDT (0.14 secs) --------------------
+2026-09-14 11:40:01,571 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:01,592 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:01,605 - freqtrade.freqai.freqai_interface - INFO - Training 2 timeranges
+2026-09-14 11:40:01,606 - freqtrade.freqai.freqai_interface - INFO - Training SOL/USDT:USDT, 3/12 pairs from 2022-12-02 00:00:00 to 2023-01-01 00:00:00, 1/2 trains
+2026-09-14 11:40:01,606 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_sol_1672531200_prediction.feather
+2026-09-14 11:40:01,637 - FAI_V1 - INFO - FAI_V1 features for SOL/USDT:USDT (thr=0.020): 11 cols
+2026-09-14 11:40:01,646 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-SOL_1672531200\cb_sol_1672531200
+2026-09-14 11:40:01,646 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training SOL/USDT:USDT --------------------
+2026-09-14 11:40:01,649 - freqtrade.freqai.data_kitchen - INFO - SOL/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:01,650 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-04 to 2022-12-29 --------------------
+2026-09-14 11:40:01,653 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:01,653 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:01,770 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training SOL/USDT:USDT (0.12 secs) --------------------
+2026-09-14 11:40:01,770 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:01,790 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:01,796 - freqtrade.freqai.freqai_interface - INFO - Training SOL/USDT:USDT, 3/12 pairs from 2022-12-09 00:00:00 to 2023-01-08 00:00:00, 2/2 trains
+2026-09-14 11:40:01,797 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_sol_1673136000_prediction.feather
+2026-09-14 11:40:01,805 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-SOL_1673136000\cb_sol_1673136000
+2026-09-14 11:40:01,805 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training SOL/USDT:USDT --------------------
+2026-09-14 11:40:01,808 - freqtrade.freqai.data_kitchen - INFO - SOL/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:01,808 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-11 to 2023-01-05 --------------------
+2026-09-14 11:40:01,812 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:01,812 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:01,912 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training SOL/USDT:USDT (0.11 secs) --------------------
+2026-09-14 11:40:01,913 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:01,931 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:01,943 - freqtrade.freqai.freqai_interface - INFO - Training 2 timeranges
+2026-09-14 11:40:01,944 - freqtrade.freqai.freqai_interface - INFO - Training BNB/USDT:USDT, 4/12 pairs from 2022-12-02 00:00:00 to 2023-01-01 00:00:00, 1/2 trains
+2026-09-14 11:40:01,945 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_bnb_1672531200_prediction.feather
+2026-09-14 11:40:01,976 - FAI_V1 - INFO - FAI_V1 features for BNB/USDT:USDT (thr=0.020): 11 cols
+2026-09-14 11:40:01,985 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-BNB_1672531200\cb_bnb_1672531200
+2026-09-14 11:40:01,985 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training BNB/USDT:USDT --------------------
+2026-09-14 11:40:01,988 - freqtrade.freqai.data_kitchen - INFO - BNB/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:01,989 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-04 to 2022-12-29 --------------------
+2026-09-14 11:40:01,992 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:01,993 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:02,097 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training BNB/USDT:USDT (0.11 secs) --------------------
+2026-09-14 11:40:02,097 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:02,117 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:02,122 - freqtrade.freqai.freqai_interface - INFO - Training BNB/USDT:USDT, 4/12 pairs from 2022-12-09 00:00:00 to 2023-01-08 00:00:00, 2/2 trains
+2026-09-14 11:40:02,123 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_bnb_1673136000_prediction.feather
+2026-09-14 11:40:02,131 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-BNB_1673136000\cb_bnb_1673136000
+2026-09-14 11:40:02,131 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training BNB/USDT:USDT --------------------
+2026-09-14 11:40:02,134 - freqtrade.freqai.data_kitchen - INFO - BNB/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:02,135 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-11 to 2023-01-05 --------------------
+2026-09-14 11:40:02,137 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:02,138 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:02,247 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training BNB/USDT:USDT (0.12 secs) --------------------
+2026-09-14 11:40:02,247 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:02,267 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:02,276 - freqtrade.freqai.freqai_interface - INFO - Training 2 timeranges
+2026-09-14 11:40:02,277 - freqtrade.freqai.freqai_interface - INFO - Training XRP/USDT:USDT, 5/12 pairs from 2022-12-02 00:00:00 to 2023-01-01 00:00:00, 1/2 trains
+2026-09-14 11:40:02,278 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_xrp_1672531200_prediction.feather
+2026-09-14 11:40:02,308 - FAI_V1 - INFO - FAI_V1 features for XRP/USDT:USDT (thr=0.020): 11 cols
+2026-09-14 11:40:02,316 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-XRP_1672531200\cb_xrp_1672531200
+2026-09-14 11:40:02,316 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training XRP/USDT:USDT --------------------
+2026-09-14 11:40:02,319 - freqtrade.freqai.data_kitchen - INFO - XRP/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:02,319 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-04 to 2022-12-29 --------------------
+2026-09-14 11:40:02,322 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:02,322 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:02,435 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training XRP/USDT:USDT (0.12 secs) --------------------
+2026-09-14 11:40:02,435 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:02,456 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:02,461 - freqtrade.freqai.freqai_interface - INFO - Training XRP/USDT:USDT, 5/12 pairs from 2022-12-09 00:00:00 to 2023-01-08 00:00:00, 2/2 trains
+2026-09-14 11:40:02,462 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_xrp_1673136000_prediction.feather
+2026-09-14 11:40:02,469 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-XRP_1673136000\cb_xrp_1673136000
+2026-09-14 11:40:02,470 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training XRP/USDT:USDT --------------------
+2026-09-14 11:40:02,472 - freqtrade.freqai.data_kitchen - INFO - XRP/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:02,472 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-11 to 2023-01-05 --------------------
+2026-09-14 11:40:02,476 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:02,477 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:02,589 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training XRP/USDT:USDT (0.12 secs) --------------------
+2026-09-14 11:40:02,589 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:02,609 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:02,620 - freqtrade.freqai.freqai_interface - INFO - Training 2 timeranges
+2026-09-14 11:40:02,621 - freqtrade.freqai.freqai_interface - INFO - Training ADA/USDT:USDT, 6/12 pairs from 2022-12-02 00:00:00 to 2023-01-01 00:00:00, 1/2 trains
+2026-09-14 11:40:02,622 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_ada_1672531200_prediction.feather
+2026-09-14 11:40:02,655 - FAI_V1 - INFO - FAI_V1 features for ADA/USDT:USDT (thr=0.020): 11 cols
+2026-09-14 11:40:02,662 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-ADA_1672531200\cb_ada_1672531200
+2026-09-14 11:40:02,664 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training ADA/USDT:USDT --------------------
+2026-09-14 11:40:02,666 - freqtrade.freqai.data_kitchen - INFO - ADA/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:02,667 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-04 to 2022-12-29 --------------------
+2026-09-14 11:40:02,669 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:02,670 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:02,772 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training ADA/USDT:USDT (0.11 secs) --------------------
+2026-09-14 11:40:02,773 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:02,793 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:02,797 - freqtrade.freqai.freqai_interface - INFO - Training ADA/USDT:USDT, 6/12 pairs from 2022-12-09 00:00:00 to 2023-01-08 00:00:00, 2/2 trains
+2026-09-14 11:40:02,798 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_ada_1673136000_prediction.feather
+2026-09-14 11:40:02,805 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-ADA_1673136000\cb_ada_1673136000
+2026-09-14 11:40:02,806 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training ADA/USDT:USDT --------------------
+2026-09-14 11:40:02,808 - freqtrade.freqai.data_kitchen - INFO - ADA/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:02,808 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-11 to 2023-01-05 --------------------
+2026-09-14 11:40:02,812 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:02,812 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:02,920 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training ADA/USDT:USDT (0.11 secs) --------------------
+2026-09-14 11:40:02,920 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:02,940 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:02,950 - freqtrade.freqai.freqai_interface - INFO - Training 2 timeranges
+2026-09-14 11:40:02,951 - freqtrade.freqai.freqai_interface - INFO - Training DOGE/USDT:USDT, 7/12 pairs from 2022-12-02 00:00:00 to 2023-01-01 00:00:00, 1/2 trains
+2026-09-14 11:40:02,952 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_doge_1672531200_prediction.feather
+2026-09-14 11:40:02,981 - FAI_V1 - INFO - FAI_V1 features for DOGE/USDT:USDT (thr=0.020): 11 cols
+2026-09-14 11:40:02,988 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-DOGE_1672531200\cb_doge_1672531200
+2026-09-14 11:40:02,988 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training DOGE/USDT:USDT --------------------
+2026-09-14 11:40:02,992 - freqtrade.freqai.data_kitchen - INFO - DOGE/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:02,992 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-04 to 2022-12-29 --------------------
+2026-09-14 11:40:02,995 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:02,996 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:03,109 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training DOGE/USDT:USDT (0.12 secs) --------------------
+2026-09-14 11:40:03,109 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:03,128 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:03,133 - freqtrade.freqai.freqai_interface - INFO - Training DOGE/USDT:USDT, 7/12 pairs from 2022-12-09 00:00:00 to 2023-01-08 00:00:00, 2/2 trains
+2026-09-14 11:40:03,133 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_doge_1673136000_prediction.feather
+2026-09-14 11:40:03,140 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-DOGE_1673136000\cb_doge_1673136000
+2026-09-14 11:40:03,141 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training DOGE/USDT:USDT --------------------
+2026-09-14 11:40:03,143 - freqtrade.freqai.data_kitchen - INFO - DOGE/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:03,144 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-11 to 2023-01-05 --------------------
+2026-09-14 11:40:03,146 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:03,146 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:03,275 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training DOGE/USDT:USDT (0.13 secs) --------------------
+2026-09-14 11:40:03,276 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:03,312 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:03,323 - freqtrade.freqai.freqai_interface - INFO - Training 2 timeranges
+2026-09-14 11:40:03,324 - freqtrade.freqai.freqai_interface - INFO - Training AVAX/USDT:USDT, 8/12 pairs from 2022-12-02 00:00:00 to 2023-01-01 00:00:00, 1/2 trains
+2026-09-14 11:40:03,324 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_avax_1672531200_prediction.feather
+2026-09-14 11:40:03,361 - FAI_V1 - INFO - FAI_V1 features for AVAX/USDT:USDT (thr=0.020): 11 cols
+2026-09-14 11:40:03,369 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-AVAX_1672531200\cb_avax_1672531200
+2026-09-14 11:40:03,369 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training AVAX/USDT:USDT --------------------
+2026-09-14 11:40:03,371 - freqtrade.freqai.data_kitchen - INFO - AVAX/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:03,371 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-04 to 2022-12-29 --------------------
+2026-09-14 11:40:03,374 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:03,375 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:03,472 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training AVAX/USDT:USDT (0.10 secs) --------------------
+2026-09-14 11:40:03,472 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:03,492 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:03,496 - freqtrade.freqai.freqai_interface - INFO - Training AVAX/USDT:USDT, 8/12 pairs from 2022-12-09 00:00:00 to 2023-01-08 00:00:00, 2/2 trains
+2026-09-14 11:40:03,496 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_avax_1673136000_prediction.feather
+2026-09-14 11:40:03,505 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-AVAX_1673136000\cb_avax_1673136000
+2026-09-14 11:40:03,506 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training AVAX/USDT:USDT --------------------
+2026-09-14 11:40:03,509 - freqtrade.freqai.data_kitchen - INFO - AVAX/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:03,510 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-11 to 2023-01-05 --------------------
+2026-09-14 11:40:03,514 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:03,514 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:03,617 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training AVAX/USDT:USDT (0.11 secs) --------------------
+2026-09-14 11:40:03,618 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:03,639 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:03,647 - freqtrade.freqai.freqai_interface - INFO - Training 2 timeranges
+2026-09-14 11:40:03,648 - freqtrade.freqai.freqai_interface - INFO - Training LINK/USDT:USDT, 9/12 pairs from 2022-12-02 00:00:00 to 2023-01-01 00:00:00, 1/2 trains
+2026-09-14 11:40:03,648 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_link_1672531200_prediction.feather
+2026-09-14 11:40:03,677 - FAI_V1 - INFO - FAI_V1 features for LINK/USDT:USDT (thr=0.020): 11 cols
+2026-09-14 11:40:03,684 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-LINK_1672531200\cb_link_1672531200
+2026-09-14 11:40:03,686 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training LINK/USDT:USDT --------------------
+2026-09-14 11:40:03,688 - freqtrade.freqai.data_kitchen - INFO - LINK/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:03,689 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-04 to 2022-12-29 --------------------
+2026-09-14 11:40:03,692 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:03,692 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:03,815 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training LINK/USDT:USDT (0.13 secs) --------------------
+2026-09-14 11:40:03,816 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:03,837 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:03,841 - freqtrade.freqai.freqai_interface - INFO - Training LINK/USDT:USDT, 9/12 pairs from 2022-12-09 00:00:00 to 2023-01-08 00:00:00, 2/2 trains
+2026-09-14 11:40:03,843 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_link_1673136000_prediction.feather
+2026-09-14 11:40:03,850 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-LINK_1673136000\cb_link_1673136000
+2026-09-14 11:40:03,851 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training LINK/USDT:USDT --------------------
+2026-09-14 11:40:03,854 - freqtrade.freqai.data_kitchen - INFO - LINK/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:03,854 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-11 to 2023-01-05 --------------------
+2026-09-14 11:40:03,857 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:03,857 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:03,957 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training LINK/USDT:USDT (0.11 secs) --------------------
+2026-09-14 11:40:03,958 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:03,980 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:03,990 - freqtrade.freqai.freqai_interface - INFO - Training 2 timeranges
+2026-09-14 11:40:03,991 - freqtrade.freqai.freqai_interface - INFO - Training DOT/USDT:USDT, 10/12 pairs from 2022-12-02 00:00:00 to 2023-01-01 00:00:00, 1/2 trains
+2026-09-14 11:40:03,992 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_dot_1672531200_prediction.feather
+2026-09-14 11:40:04,020 - FAI_V1 - INFO - FAI_V1 features for DOT/USDT:USDT (thr=0.020): 11 cols
+2026-09-14 11:40:04,029 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-DOT_1672531200\cb_dot_1672531200
+2026-09-14 11:40:04,029 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training DOT/USDT:USDT --------------------
+2026-09-14 11:40:04,031 - freqtrade.freqai.data_kitchen - INFO - DOT/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:04,033 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-04 to 2022-12-29 --------------------
+2026-09-14 11:40:04,035 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:04,035 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:04,138 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training DOT/USDT:USDT (0.11 secs) --------------------
+2026-09-14 11:40:04,138 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:04,157 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:04,162 - freqtrade.freqai.freqai_interface - INFO - Training DOT/USDT:USDT, 10/12 pairs from 2022-12-09 00:00:00 to 2023-01-08 00:00:00, 2/2 trains
+2026-09-14 11:40:04,162 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_dot_1673136000_prediction.feather
+2026-09-14 11:40:04,170 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-DOT_1673136000\cb_dot_1673136000
+2026-09-14 11:40:04,171 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training DOT/USDT:USDT --------------------
+2026-09-14 11:40:04,173 - freqtrade.freqai.data_kitchen - INFO - DOT/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:04,174 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-11 to 2023-01-05 --------------------
+2026-09-14 11:40:04,176 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:04,176 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:04,288 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training DOT/USDT:USDT (0.12 secs) --------------------
+2026-09-14 11:40:04,289 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:04,309 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:04,319 - freqtrade.freqai.freqai_interface - INFO - Training 2 timeranges
+2026-09-14 11:40:04,319 - freqtrade.freqai.freqai_interface - INFO - Training LTC/USDT:USDT, 11/12 pairs from 2022-12-02 00:00:00 to 2023-01-01 00:00:00, 1/2 trains
+2026-09-14 11:40:04,320 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_ltc_1672531200_prediction.feather
+2026-09-14 11:40:04,349 - FAI_V1 - INFO - FAI_V1 features for LTC/USDT:USDT (thr=0.020): 11 cols
+2026-09-14 11:40:04,356 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-LTC_1672531200\cb_ltc_1672531200
+2026-09-14 11:40:04,356 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training LTC/USDT:USDT --------------------
+2026-09-14 11:40:04,359 - freqtrade.freqai.data_kitchen - INFO - LTC/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:04,359 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-04 to 2022-12-29 --------------------
+2026-09-14 11:40:04,362 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:04,363 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:04,452 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training LTC/USDT:USDT (0.10 secs) --------------------
+2026-09-14 11:40:04,453 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:04,474 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:04,478 - freqtrade.freqai.freqai_interface - INFO - Training LTC/USDT:USDT, 11/12 pairs from 2022-12-09 00:00:00 to 2023-01-08 00:00:00, 2/2 trains
+2026-09-14 11:40:04,478 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_ltc_1673136000_prediction.feather
+2026-09-14 11:40:04,486 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-LTC_1673136000\cb_ltc_1673136000
+2026-09-14 11:40:04,486 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training LTC/USDT:USDT --------------------
+2026-09-14 11:40:04,488 - freqtrade.freqai.data_kitchen - INFO - LTC/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:04,489 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-11 to 2023-01-05 --------------------
+2026-09-14 11:40:04,492 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:04,492 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:04,591 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training LTC/USDT:USDT (0.10 secs) --------------------
+2026-09-14 11:40:04,592 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:04,612 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:04,622 - freqtrade.freqai.freqai_interface - INFO - Training 2 timeranges
+2026-09-14 11:40:04,623 - freqtrade.freqai.freqai_interface - INFO - Training UNI/USDT:USDT, 12/12 pairs from 2022-12-02 00:00:00 to 2023-01-01 00:00:00, 1/2 trains
+2026-09-14 11:40:04,623 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_uni_1672531200_prediction.feather
+2026-09-14 11:40:04,654 - FAI_V1 - INFO - FAI_V1 features for UNI/USDT:USDT (thr=0.020): 11 cols
+2026-09-14 11:40:04,661 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-UNI_1672531200\cb_uni_1672531200
+2026-09-14 11:40:04,662 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training UNI/USDT:USDT --------------------
+2026-09-14 11:40:04,664 - freqtrade.freqai.data_kitchen - INFO - UNI/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:04,665 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-04 to 2022-12-29 --------------------
+2026-09-14 11:40:04,668 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:04,669 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:04,767 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training UNI/USDT:USDT (0.10 secs) --------------------
+2026-09-14 11:40:04,769 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:04,788 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:04,793 - freqtrade.freqai.freqai_interface - INFO - Training UNI/USDT:USDT, 12/12 pairs from 2022-12-09 00:00:00 to 2023-01-08 00:00:00, 2/2 trains
+2026-09-14 11:40:04,793 - freqtrade.freqai.data_kitchen - INFO - Could not find backtesting prediction file at user_data\models\fai_v1\backtesting_predictions\cb_uni_1673136000_prediction.feather
+2026-09-14 11:40:04,801 - freqtrade.freqai.freqai_interface - INFO - Could not find model at user_data\models\fai_v1\sub-train-UNI_1673136000\cb_uni_1673136000
+2026-09-14 11:40:04,802 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Starting training UNI/USDT:USDT --------------------
+2026-09-14 11:40:04,805 - freqtrade.freqai.data_kitchen - INFO - UNI/USDT:USDT: dropped 0 training points due to NaNs in populated dataset 624.
+2026-09-14 11:40:04,805 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Training on data from 2022-12-11 to 2023-01-05 --------------------
+2026-09-14 11:40:04,808 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 11 features
+2026-09-14 11:40:04,809 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - Training model on 418 data points
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+2026-09-14 11:40:04,900 - freqtrade.freqai.base_models.BaseClassifierModel - INFO - -------------------- Done training UNI/USDT:USDT (0.10 secs) --------------------
+2026-09-14 11:40:04,900 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2026-09-14 11:40:04,921 - datasieve.pipeline - WARNING - Could not find step di in pipeline, returning None
+2026-09-14 11:40:04,939 - freqtrade.optimize.backtesting - INFO - Backtesting with data from 2023-01-01 00:00:00 up to 2023-01-15 00:00:00 (14 days).
+backtest -------------------------------------------------------------------------------------------------------------------------------------------------------------- 4/4     100% • 0:00:09 • 0:00:00
+backtest -------------------------------------------------------------------------------------------------------------------------------------------------------------- 336/336 100% • 0:00:10 • 0:00:00
+2026-09-14 11:40:06,616 - freqtrade.misc - INFO - dumping json to "user_data\backtest_results\backtest-result-2026-09-14_03-40-06.meta.json"
+Result for strategy FAI_V1
+                                                   BACKTESTING REPORT                                                   
+┌────────────────┬────────┬──────────────┬─────────────────┬──────────────┬───────────────────┬────────────────────────┐
+│           Pair │ Trades │ Avg Profit % │ Tot Profit USDT │ Tot Profit % │      Avg Duration │  Win  Draw  Loss  Win% │
+├────────────────┼────────┼──────────────┼─────────────────┼──────────────┼───────────────────┼────────────────────────┤
+│  SOL/USDT:USDT │      1 │       148.16 │        3668.637 │        36.69 │ 13 days, 23:00:00 │    1     0     0   100 │
+│  BTC/USDT:USDT │      1 │         26.4 │         650.540 │         6.51 │ 13 days, 23:00:00 │    1     0     0   100 │
+│  DOT/USDT:USDT │      1 │        -2.46 │         -48.676 │        -0.49 │           0:00:00 │    0     0     1     0 │
+│  UNI/USDT:USDT │      1 │        -2.66 │         -51.837 │        -0.52 │           0:00:00 │    0     0     1     0 │
+│  LTC/USDT:USDT │      1 │        -2.86 │         -56.239 │        -0.56 │           0:00:00 │    0     0     1     0 │
+│ LINK/USDT:USDT │      2 │        -2.01 │         -82.644 │        -0.83 │           0:30:00 │    0     0     2     0 │
+│ DOGE/USDT:USDT │      4 │        -2.28 │        -189.140 │        -1.89 │           0:30:00 │    0     0     4     0 │
+│  BNB/USDT:USDT │     13 │        -1.31 │        -312.024 │        -3.12 │          15:14:00 │    1     0    12   7.7 │
+│ AVAX/USDT:USDT │      7 │         -2.5 │        -324.663 │        -3.25 │          15:34:00 │    0     0     7     0 │
+│  ADA/USDT:USDT │      8 │        -2.49 │        -351.616 │        -3.52 │           9:08:00 │    0     0     8     0 │
+│  ETH/USDT:USDT │     15 │        -1.17 │        -365.116 │        -3.65 │           9:12:00 │    0     0    15     0 │
+│  XRP/USDT:USDT │     10 │        -2.23 │        -464.600 │        -4.65 │          14:42:00 │    0     0    10     0 │
+│          TOTAL │     64 │         0.92 │        2072.622 │        20.73 │          20:54:00 │    3     0    61   4.7 │
+└────────────────┴────────┴──────────────┴─────────────────┴──────────────┴───────────────────┴────────────────────────┘
+                                                LEFT OPEN TRADES REPORT                                                
+┌───────────────┬────────┬──────────────┬─────────────────┬──────────────┬───────────────────┬────────────────────────┐
+│          Pair │ Trades │ Avg Profit % │ Tot Profit USDT │ Tot Profit % │      Avg Duration │  Win  Draw  Loss  Win% │
+├───────────────┼────────┼──────────────┼─────────────────┼──────────────┼───────────────────┼────────────────────────┤
+│ SOL/USDT:USDT │      1 │       148.16 │        3668.637 │        36.69 │ 13 days, 23:00:00 │    1     0     0   100 │
+│ BTC/USDT:USDT │      1 │         26.4 │         650.540 │         6.51 │ 13 days, 23:00:00 │    1     0     0   100 │
+│ BNB/USDT:USDT │      1 │         0.92 │           7.351 │         0.07 │          22:00:00 │    1     0     0   100 │
+│ ETH/USDT:USDT │      1 │        -0.47 │          -9.174 │        -0.09 │          23:00:00 │    0     0     1     0 │
+│         TOTAL │      4 │        43.75 │        4317.354 │        43.17 │  7 days, 10:45:00 │    3     0     1  75.0 │
+└───────────────┴────────┴──────────────┴─────────────────┴──────────────┴───────────────────┴────────────────────────┘
+                                                  ENTER TAG STATS                                                  
+┌───────────┬─────────┬──────────────┬─────────────────┬──────────────┬──────────────────┬────────────────────────┐
+│ Enter Tag │ Entries │ Avg Profit % │ Tot Profit USDT │ Tot Profit % │     Avg Duration │  Win  Draw  Loss  Win% │
+├───────────┼─────────┼──────────────┼─────────────────┼──────────────┼──────────────────┼────────────────────────┤
+│  fai_long │       3 │         57.5 │        4278.241 │        42.78 │ 9 days, 22:40:00 │    2     0     1  66.7 │
+│ fai_short │      61 │        -1.86 │       -2205.619 │       -22.06 │         10:12:00 │    1     0    60   1.6 │
+│     TOTAL │      64 │         0.92 │        2072.622 │        20.73 │         20:54:00 │    3     0    61   4.7 │
+└───────────┴─────────┴──────────────┴─────────────────┴──────────────┴──────────────────┴────────────────────────┘
+                                                 EXIT REASON STATS                                                 
+┌─────────────┬───────┬──────────────┬─────────────────┬──────────────┬──────────────────┬────────────────────────┐
+│ Exit Reason │ Exits │ Avg Profit % │ Tot Profit USDT │ Tot Profit % │     Avg Duration │  Win  Draw  Loss  Win% │
+├─────────────┼───────┼──────────────┼─────────────────┼──────────────┼──────────────────┼────────────────────────┤
+│  force_exit │     4 │        43.75 │        4317.354 │        43.17 │ 7 days, 10:45:00 │    3     0     1  75.0 │
+│   stop_loss │    60 │        -1.93 │       -2244.732 │       -22.45 │         10:23:00 │    0     0    60     0 │
+│       TOTAL │    64 │         0.92 │        2072.622 │        20.73 │         20:54:00 │    3     0    61   4.7 │
+└─────────────┴───────┴──────────────┴─────────────────┴──────────────┴──────────────────┴────────────────────────┘
+                                                         MIXED TAG STATS                                                         
+┌───────────┬─────────────┬────────┬──────────────┬─────────────────┬──────────────┬───────────────────┬────────────────────────┐
+│ Enter Tag │ Exit Reason │ Trades │ Avg Profit % │ Tot Profit USDT │ Tot Profit % │      Avg Duration │  Win  Draw  Loss  Win% │
+├───────────┼─────────────┼────────┼──────────────┼─────────────────┼──────────────┼───────────────────┼────────────────────────┤
+│  fai_long │  force_exit │      2 │        87.28 │        4319.177 │        43.19 │ 13 days, 23:00:00 │    2     0     0   100 │
+│ fai_short │  force_exit │      2 │         0.22 │          -1.822 │        -0.02 │          22:30:00 │    1     0     1  50.0 │
+│  fai_long │   stop_loss │      1 │        -2.05 │         -40.936 │        -0.41 │   1 day, 22:00:00 │    0     0     1     0 │
+│ fai_short │   stop_loss │     59 │        -1.93 │       -2203.796 │       -22.04 │           9:47:00 │    0     0    59     0 │
+│     TOTAL │             │     64 │         0.92 │        2072.622 │        20.73 │          20:54:00 │    3     0    61   4.7 │
+└───────────┴─────────────┴────────┴──────────────┴─────────────────┴──────────────┴───────────────────┴────────────────────────┘
+                                   SUMMARY METRICS                                    
+┌────────────────────────────────────────┬───────────────────────────────────────────┐
+│ Metric                                 │ Value                                     │
+├────────────────────────────────────────┼───────────────────────────────────────────┤
+│ Backtesting from                       │ 2023-01-01 00:00:00                       │
+│ Backtesting to                         │ 2023-01-15 00:00:00                       │
+│ Trading Mode                           │ Isolated Futures                          │
+│ Max open trades                        │ 4                                         │
+│                                        │                                           │
+│ Total/Daily Avg Trades                 │ 64 / 4.57                                 │
+│ Starting balance                       │ 10000 USDT                                │
+│ Final balance                          │ 12072.622 USDT                            │
+│ Absolute profit                        │ 2072.622 USDT                             │
+│ Total profit %                         │ 20.73%                                    │
+│ CAGR %                                 │ 13473.28%                                 │
+│ Sharpe (closed trades)                 │ 6.07                                      │
+│ Sortino (closed trades)                │ 173.31                                    │
+│ Calmar (closed trades)                 │ 126.00                                    │
+│ SQN                                    │ 0.55                                      │
+│ Mean profit p-value                    │ 0.5834                                    │
+│ Profit factor                          │ 1.92                                      │
+│ Expectancy (Ratio)                     │ 32.38 (0.88)                              │
+│ Avg. daily profit                      │ 148.044 USDT                              │
+│ Avg. stake amount                      │ 1997.435 USDT                             │
+│ Market change                          │ 38.30%                                    │
+│ Total trade volume                     │ 262063.914 USDT                           │
+│                                        │                                           │
+│ Long / Short trades                    │ 3 / 61                                    │
+│ Long / Short profit %                  │ 42.78% / -22.06%                          │
+│ Long / Short profit USDT               │ 4278.241 / -2205.619                      │
+│                                        │                                           │
+│ Best Pair                              │ SOL/USDT:USDT 36.69%                      │
+│ Worst Pair                             │ XRP/USDT:USDT -4.65%                      │
+│ Best trade                             │ SOL/USDT:USDT 148.16%                     │
+│ Worst trade                            │ AVAX/USDT:USDT -4.49%                     │
+│ Best day                               │ 4317.354 USDT                             │
+│ Worst day                              │ -600.765 USDT                             │
+│ Days win/draw/lose                     │ 1 / 4 / 10                                │
+│ Min/Max/Avg. Duration Winners          │ 0d 22:00 / 13d 23:00 / 9d 14:40           │
+│ Min/Max/Avg. Duration Losers           │ 0d 00:00 / 5d 12:00 / 0d 10:35            │
+│ Max Consecutive Wins / Loss            │ 2 / 60                                    │
+│ Rejected Entry signals                 │ 2607                                      │
+│ Entry/Exit Timeouts                    │ 0 / 0                                     │
+│                                        │                                           │
+│ Min/Max balance (closed trades)        │ 7755.268 USDT / 12072.622 USDT            │
+│ Max % of account underwater            │ 22.45%                                    │
+│ Absolute drawdown                      │ 2244.732 USDT (22.45%)                    │
+│ Drawdown duration                      │ 12 days 09:00:00                          │
+│ Profit at drawdown start               │ 0 USDT                                    │
+│ Profit at drawdown end                 │ -2244.732 USDT                            │
+│ Drawdown start                         │ 2023-01-01 17:00:00                       │
+│ Drawdown end                           │ 2023-01-14 02:00:00                       │
+│                                        │                                           │
+│ Wallet based Metrics                   │                                           │
+│ Min/Max balance (wallet balance)       │ 7755.268 USDT / 10000 USDT                │
+│ Min/Max balance dates (wallet balance) │ 2023-01-14 03:00:00 / 2023-01-01 01:00:00 │
+│ Max % of account underwater (balance)  │ 22.45%                                    │
+│ Absolute drawdown (wallet balance)     │ 2244.732 USDT (22.45%)                    │
+│ Drawdown duration                      │ 13 days 02:00:00                          │
+│ Profit at drawdown start               │ 0 USDT                                    │
+│ Profit at drawdown end                 │ -2244.732 USDT                            │
+│ Drawdown start                         │ 2023-01-01 01:00:00                       │
+│ Drawdown end                           │ 2023-01-14 03:00:00                       │
+│ Sharpe (daily wallet balance)          │ -15.90                                    │
+│ Sortino (daily wallet balance)         │ -17.34                                    │
+│ Calmar (daily wallet balance)          │ -146.96                                   │
+└────────────────────────────────────────┴───────────────────────────────────────────┘
+
+Backtested 2023-01-01 00:00:00 -> 2023-01-15 00:00:00 | Max open trades : 4
+                                                          STRATEGY SUMMARY                                                           
+┌──────────┬────────┬──────────────┬─────────────────┬──────────────┬──────────────┬────────────────────────┬───────────────────────┐
+│ Strategy │ Trades │ Avg Profit % │ Tot Profit USDT │ Tot Profit % │ Avg Duration │  Win  Draw  Loss  Win% │              Drawdown │
+├──────────┼────────┼──────────────┼─────────────────┼──────────────┼──────────────┼────────────────────────┼───────────────────────┤
+│   FAI_V1 │     64 │         0.92 │        2072.622 │        20.73 │     20:54:00 │    3     0    61   4.7 │ 2244.732 USDT  22.45% │
+└──────────┴────────┴──────────────┴─────────────────┴──────────────┴──────────────┴────────────────────────┴───────────────────────┘

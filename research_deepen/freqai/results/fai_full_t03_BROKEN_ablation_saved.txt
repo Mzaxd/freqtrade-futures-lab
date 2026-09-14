@@ -1,0 +1,8 @@
+
+===== fai_full_t03.zip (strategy FAI_V1, threshold 03) =====
+full-run profit_total: -61.10%  starting_balance 10000
+[2021-22] {'trades': 1460, 'profit_abs': np.float64(-2957.1), 'profit_pct_vs_10k': np.float64(-29.57), 'PF': np.float64(0.97), 'avg_profit_pct': np.float64(0.0251), 'med_profit_pct': -0.014, 'winrate': np.float64(0.4979), 'n_short': 808, 'n_long': 652, 'avg_hold_h': np.float64(48.0), 'fee_abs': 0}
+[2023] {'trades': 732, 'profit_abs': np.float64(-3152.5), 'profit_pct_vs_10k': np.float64(-31.52), 'PF': np.float64(0.796), 'avg_profit_pct': np.float64(-0.2513), 'med_profit_pct': -0.1029, 'winrate': np.float64(0.4877), 'n_short': 415, 'n_long': 317, 'avg_hold_h': np.float64(47.9), 'fee_abs': 0}
+[2021] {'trades': 732, 'profit_abs': np.float64(-72.2), 'profit_pct_vs_10k': np.float64(-0.72), 'PF': np.float64(0.999), 'avg_profit_pct': np.float64(0.1444), 'med_profit_pct': -0.1556, 'winrate': np.float64(0.4904), 'n_short': 377, 'n_long': 355, 'avg_hold_h': np.float64(48.0), 'fee_abs': 0}
+[2022] {'trades': 728, 'profit_abs': np.float64(-2884.9), 'profit_pct_vs_10k': np.float64(-28.85), 'PF': np.float64(0.93), 'avg_profit_pct': np.float64(-0.0948), 'med_profit_pct': 0.0453, 'winrate': np.float64(0.5055), 'n_short': 431, 'n_long': 297, 'avg_hold_h': np.float64(48.0), 'fee_abs': 0}
+exits: {'force_exit': {'n': 4, 'mean_pct': 1.143}, 'stop_loss': {'n': 1, 'mean_pct': -99.182}, 'tb_timeout': {'n': 2187, 'mean_pct': -0.024}}

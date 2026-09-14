@@ -1,0 +1,49 @@
+{
+  "alignment": {
+    "max_abs_base_open_vs_1hopen_rel": 0.0,
+    "n_zero_check_gt_1e-4": 0
+  },
+  "base_cost_bps_ALL": {
+    "5": -1.81,
+    "50": 0.0,
+    "95": 2.18,
+    "99": 5.7,
+    "mean": 0.098641023887543,
+    "mean_abs": 0.7246000879474193
+  },
+  "chase_cost_bps_ALL": {
+    "5": -349.08,
+    "50": -9.41,
+    "95": 268.32,
+    "99": 592.84
+  },
+  "net_saving_by_year_o1_bps": {
+    "2021": -0.55,
+    "2022": -2.85,
+    "2023": -0.88
+  },
+  "net_saving_by_year_o1_fillrate": {
+    "2021": 0.978,
+    "2022": 0.975,
+    "2023": 0.978
+  },
+  "net_saving_by_year_o2_bps": {
+    "2021": 0.43,
+    "2022": -4.5,
+    "2023": -4.65
+  },
+  "stop_drag": {
+    "mean_slip_close_bps": 2.3345247049095605,
+    "mean_slip_ext_bps": 50.37934150447525,
+    "share_stoploss_trades": 0.6330275229357798,
+    "per_trade_avg_drag_close_bps": 1.4778183911812817,
+    "per_trade_avg_drag_ext_bps": 31.891509759713692,
+    "per_trade_avg_drag_hourext_bps": 82.69365842962631,
+    "stop_pct_distribution": {
+      "5": 1.81,
+      "50": 4.7,
+      "95": 12.68,
+      "99": 20.03
+    }
+  }
+}

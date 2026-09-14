@@ -1,0 +1,543 @@
+{
+  "selection_date_utc": "2026-09-14T03:48:10.922911+00:00",
+  "rule": "median daily close*volume (USDT notional) over 2021-01-01..2023-12-31, among active linear USDT perps listed (1d first candle) <= 2021-12-31, non-stable base",
+  "n_candidates": 89,
+  "top40": [
+    {
+      "symbol": "BTC/USDT:USDT",
+      "notional_median": 12992491367.63844,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "ETH/USDT:USDT",
+      "notional_median": 6134515532.0035305,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "SOL/USDT:USDT",
+      "notional_median": 745433066.0,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "XRP/USDT:USDT",
+      "notional_median": 644431854.38424,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "BNB/USDT:USDT",
+      "notional_median": 502026899.11840004,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "DOGE/USDT:USDT",
+      "notional_median": 423352850.67256,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "ADA/USDT:USDT",
+      "notional_median": 413972871.12500006,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "LTC/USDT:USDT",
+      "notional_median": 316393681.24014,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "LINK/USDT:USDT",
+      "notional_median": 305911627.33248,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "DOT/USDT:USDT",
+      "notional_median": 279696876.249,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "AVAX/USDT:USDT",
+      "notional_median": 255467603.27300003,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "1000SHIB/USDT:USDT",
+      "notional_median": 222738417.404394,
+      "days_in_window": 966,
+      "note": ""
+    },
+    {
+      "symbol": "ETC/USDT:USDT",
+      "notional_median": 198488866.48994,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "FIL/USDT:USDT",
+      "notional_median": 158353003.96559998,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "GALA/USDT:USDT",
+      "notional_median": 157104294.71224,
+      "days_in_window": 835,
+      "note": ""
+    },
+    {
+      "symbol": "BCH/USDT:USDT",
+      "notional_median": 149948590.3528,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "ATOM/USDT:USDT",
+      "notional_median": 140769647.60081,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "DYDX/USDT:USDT",
+      "notional_median": 139084210.0824,
+      "days_in_window": 843,
+      "note": ""
+    },
+    {
+      "symbol": "NEAR/USDT:USDT",
+      "notional_median": 134176900.926,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "SAND/USDT:USDT",
+      "notional_median": 120363895.89220001,
+      "days_in_window": 1071,
+      "note": ""
+    },
+    {
+      "symbol": "AXS/USDT:USDT",
+      "notional_median": 120199724.25,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "CRV/USDT:USDT",
+      "notional_median": 111355948.972,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "AAVE/USDT:USDT",
+      "notional_median": 101940359.696,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "SUSHI/USDT:USDT",
+      "notional_median": 92744831.11600001,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "UNI/USDT:USDT",
+      "notional_median": 88626503.988,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "TRX/USDT:USDT",
+      "notional_median": 80751704.3424,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "CHZ/USDT:USDT",
+      "notional_median": 77352389.24556,
+      "days_in_window": 1075,
+      "note": ""
+    },
+    {
+      "symbol": "RUNE/USDT:USDT",
+      "notional_median": 76721390.72,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "MANA/USDT:USDT",
+      "notional_median": 70352045.27315,
+      "days_in_window": 1022,
+      "note": ""
+    },
+    {
+      "symbol": "THETA/USDT:USDT",
+      "notional_median": 67645917.48322,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "MASK/USDT:USDT",
+      "notional_median": 62122950.624,
+      "days_in_window": 857,
+      "note": ""
+    },
+    {
+      "symbol": "XLM/USDT:USDT",
+      "notional_median": 58536986.119619995,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "ALGO/USDT:USDT",
+      "notional_median": 57505731.93477001,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "GRT/USDT:USDT",
+      "notional_median": 53021338.74171,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "VET/USDT:USDT",
+      "notional_median": 51155594.67282,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "XTZ/USDT:USDT",
+      "notional_median": 47584635.982999995,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "SNX/USDT:USDT",
+      "notional_median": 45637341.4642,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "EGLD/USDT:USDT",
+      "notional_median": 44982636.921000004,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "PEOPLE/USDT:USDT",
+      "notional_median": 44881639.30515,
+      "days_in_window": 738,
+      "note": ""
+    },
+    {
+      "symbol": "ZEC/USDT:USDT",
+      "notional_median": 44515998.480000004,
+      "days_in_window": 1095,
+      "note": ""
+    }
+  ],
+  "rejected_ranks_41_onward": [
+    {
+      "symbol": "XMR/USDT:USDT",
+      "notional_median": 41468923.636,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "1INCH/USDT:USDT",
+      "notional_median": 41085149.282400005,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "ENJ/USDT:USDT",
+      "notional_median": 40649906.1332,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "KAVA/USDT:USDT",
+      "notional_median": 40291401.17536,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "YFI/USDT:USDT",
+      "notional_median": 40041833.456,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "COMP/USDT:USDT",
+      "notional_median": 39916910.0405,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "NEO/USDT:USDT",
+      "notional_median": 37878963.10413,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "ALICE/USDT:USDT",
+      "notional_median": 34962739.321600005,
+      "days_in_window": 1021,
+      "note": ""
+    },
+    {
+      "symbol": "ZIL/USDT:USDT",
+      "notional_median": 34396134.5625,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "KNC/USDT:USDT",
+      "notional_median": 32437767.717,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "DASH/USDT:USDT",
+      "notional_median": 31106754.504320003,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "ENS/USDT:USDT",
+      "notional_median": 30813342.931450002,
+      "days_in_window": 762,
+      "note": ""
+    },
+    {
+      "symbol": "RSR/USDT:USDT",
+      "notional_median": 30383283.399720002,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "CELO/USDT:USDT",
+      "notional_median": 30332215.6742,
+      "days_in_window": 826,
+      "note": ""
+    },
+    {
+      "symbol": "ONE/USDT:USDT",
+      "notional_median": 30248388.666720003,
+      "days_in_window": 1019,
+      "note": ""
+    },
+    {
+      "symbol": "KSM/USDT:USDT",
+      "notional_median": 29181475.055000003,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "TRB/USDT:USDT",
+      "notional_median": 29176443.78,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "C98/USDT:USDT",
+      "notional_median": 27842120.3435,
+      "days_in_window": 860,
+      "note": ""
+    },
+    {
+      "symbol": "ROSE/USDT:USDT",
+      "notional_median": 27152775.74768,
+      "days_in_window": 731,
+      "note": ""
+    },
+    {
+      "symbol": "HBAR/USDT:USDT",
+      "notional_median": 26804789.13905,
+      "days_in_window": 1020,
+      "note": ""
+    },
+    {
+      "symbol": "RLC/USDT:USDT",
+      "notional_median": 26675204.8761,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "BAND/USDT:USDT",
+      "notional_median": 26360385.6671,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "AR/USDT:USDT",
+      "notional_median": 26185945.615999997,
+      "days_in_window": 825,
+      "note": ""
+    },
+    {
+      "symbol": "OGN/USDT:USDT",
+      "notional_median": 26136197.535800003,
+      "days_in_window": 1005,
+      "note": ""
+    },
+    {
+      "symbol": "MTL/USDT:USDT",
+      "notional_median": 25723713.255100004,
+      "days_in_window": 1006,
+      "note": ""
+    },
+    {
+      "symbol": "BEL/USDT:USDT",
+      "notional_median": 25606137.6694,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "CHR/USDT:USDT",
+      "notional_median": 25307634.3902,
+      "days_in_window": 1025,
+      "note": ""
+    },
+    {
+      "symbol": "ICP/USDT:USDT",
+      "notional_median": 24056752.5,
+      "days_in_window": 461,
+      "note": ""
+    },
+    {
+      "symbol": "QTUM/USDT:USDT",
+      "notional_median": 23859229.2,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "ANKR/USDT:USDT",
+      "notional_median": 23803524.68713,
+      "days_in_window": 1070,
+      "note": ""
+    },
+    {
+      "symbol": "CELR/USDT:USDT",
+      "notional_median": 22415577.38409,
+      "days_in_window": 1008,
+      "note": ""
+    },
+    {
+      "symbol": "HOT/USDT:USDT",
+      "notional_median": 22356768.254042998,
+      "days_in_window": 1007,
+      "note": ""
+    },
+    {
+      "symbol": "COTI/USDT:USDT",
+      "notional_median": 21912043.789440002,
+      "days_in_window": 1027,
+      "note": ""
+    },
+    {
+      "symbol": "ONT/USDT:USDT",
+      "notional_median": 21861946.97928,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "IOTA/USDT:USDT",
+      "notional_median": 21789185.047349997,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "ZRX/USDT:USDT",
+      "notional_median": 21222024.3631,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "BAT/USDT:USDT",
+      "notional_median": 21173062.302079998,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "GTC/USDT:USDT",
+      "notional_median": 20807546.31275,
+      "days_in_window": 934,
+      "note": ""
+    },
+    {
+      "symbol": "SFP/USDT:USDT",
+      "notional_median": 19816621.3935,
+      "days_in_window": 1041,
+      "note": ""
+    },
+    {
+      "symbol": "IOST/USDT:USDT",
+      "notional_median": 19406976.322678998,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "ZEN/USDT:USDT",
+      "notional_median": 19289198.939,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "SKL/USDT:USDT",
+      "notional_median": 19172250.05712,
+      "days_in_window": 1095,
+      "note": ""
+    },
+    {
+      "symbol": "RVN/USDT:USDT",
+      "notional_median": 16832043.096754998,
+      "days_in_window": 1042,
+      "note": ""
+    },
+    {
+      "symbol": "ARPA/USDT:USDT",
+      "notional_median": 15757358.847155001,
+      "days_in_window": 804,
+      "note": ""
+    },
+    {
+      "symbol": "IOTX/USDT:USDT",
+      "notional_median": 14498509.66341,
+      "days_in_window": 872,
+      "note": ""
+    },
+    {
+      "symbol": "LPT/USDT:USDT",
+      "notional_median": 13682913.6863,
+      "days_in_window": 781,
+      "note": ""
+    },
+    {
+      "symbol": "CTSI/USDT:USDT",
+      "notional_median": 12280241.889899999,
+      "days_in_window": 797,
+      "note": ""
+    },
+    {
+      "symbol": "1000XEC/USDT:USDT",
+      "notional_median": 10601707.95814,
+      "days_in_window": 836,
+      "note": ""
+    },
+    {
+      "symbol": "BTCDOM/USDT:USDT",
+      "notional_median": 6736896.3225,
+      "days_in_window": 924,
+      "note": ""
+    }
+  ]
+}

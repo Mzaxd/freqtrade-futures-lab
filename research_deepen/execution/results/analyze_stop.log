@@ -1,0 +1,6 @@
+[stop] 276 stoploss exits analysed; skipped: {'no_1m': 0, 'no_cross': 0, 'bad_align': 0}
+  ALL: n=276 close-est {0.5: -2.3, 0.95: 86.1, 0.99: 226.42} ext-est {0.5: 23.47, 0.95: 229.07, 0.99: 425.02} gap_share=0.0
+  short=True: n=107 close-est {0.5: -0.47, 0.95: 52.6, 0.99: 102.48} ext-est {0.5: 13.26, 0.95: 113.52, 0.99: 227.87} gap_share=0.0
+  short=False: n=169 close-est {0.5: -2.73, 0.95: 141.71, 0.99: 294.7} ext-est {0.5: 28.39, 0.95: 267.75, 0.99: 502.17} gap_share=0.0
+  cat=False: n=250 close-est {0.5: -3.37, 0.95: 64.54, 0.99: 188.65} ext-est {0.5: 21.05, 0.95: 222.9, 0.99: 376.51} gap_share=0.0
+  cat=True: n=26 close-est {0.5: 10.15, 0.95: 165.42, 0.99: 331.26} ext-est {0.5: 55.54, 0.95: 298.16, 0.99: 475.29} gap_share=0.0

@@ -1,0 +1,250 @@
+{
+  "selection_date_utc": "2026-09-14T03:27:44.427777+00:00",
+  "exchange": "binanceusdm (Binance USDT-M perpetual, linear swaps)",
+  "ranking_metric": "24h quoteVolume (USDT) from ccxt fetch_tickers snapshot",
+  "filters": "linear USDT perpetual, active, base not stable/fiat-pegged",
+  "top40": [
+    {
+      "symbol": "BTC/USDT:USDT",
+      "base": "BTC",
+      "quote_volume_24h": 7104946282.44
+    },
+    {
+      "symbol": "ETH/USDT:USDT",
+      "base": "ETH",
+      "quote_volume_24h": 7094611431.46
+    },
+    {
+      "symbol": "LSK/USDT:USDT",
+      "base": "LSK",
+      "quote_volume_24h": 2608523420.58123
+    },
+    {
+      "symbol": "ZEC/USDT:USDT",
+      "base": "ZEC",
+      "quote_volume_24h": 1648756814.78
+    },
+    {
+      "symbol": "SOL/USDT:USDT",
+      "base": "SOL",
+      "quote_volume_24h": 1260271649.5953
+    },
+    {
+      "symbol": "SKHYNIX/USDT:USDT",
+      "base": "SKHYNIX",
+      "quote_volume_24h": 859063072.5003
+    },
+    {
+      "symbol": "SNDK/USDT:USDT",
+      "base": "SNDK",
+      "quote_volume_24h": 780632408.8647
+    },
+    {
+      "symbol": "XAU/USDT:USDT",
+      "base": "XAU",
+      "quote_volume_24h": 677897162.82
+    },
+    {
+      "symbol": "XRP/USDT:USDT",
+      "base": "XRP",
+      "quote_volume_24h": 581082678.734
+    },
+    {
+      "symbol": "CL/USDT:USDT",
+      "base": "CL",
+      "quote_volume_24h": 530332775.7306
+    },
+    {
+      "symbol": "HYPE/USDT:USDT",
+      "base": "HYPE",
+      "quote_volume_24h": 475023016.37701
+    },
+    {
+      "symbol": "FIL/USDT:USDT",
+      "base": "FIL",
+      "quote_volume_24h": 439080740.99997
+    },
+    {
+      "symbol": "SOXL/USDT:USDT",
+      "base": "SOXL",
+      "quote_volume_24h": 424702976.1648
+    },
+    {
+      "symbol": "VTHO/USDT:USDT",
+      "base": "VTHO",
+      "quote_volume_24h": 323273455.6148806
+    },
+    {
+      "symbol": "DOGE/USDT:USDT",
+      "base": "DOGE",
+      "quote_volume_24h": 316587577.47291
+    },
+    {
+      "symbol": "BNB/USDT:USDT",
+      "base": "BNB",
+      "quote_volume_24h": 279678093.389
+    },
+    {
+      "symbol": "龙虾/USDT:USDT",
+      "base": "龙虾",
+      "quote_volume_24h": 279491450.983539
+    },
+    {
+      "symbol": "CVC/USDT:USDT",
+      "base": "CVC",
+      "quote_volume_24h": 275422888.68126
+    },
+    {
+      "symbol": "XAG/USDT:USDT",
+      "base": "XAG",
+      "quote_volume_24h": 256755199.893
+    },
+    {
+      "symbol": "MU/USDT:USDT",
+      "base": "MU",
+      "quote_volume_24h": 250058103.7841
+    },
+    {
+      "symbol": "KORU/USDT:USDT",
+      "base": "KORU",
+      "quote_volume_24h": 249092555.1259
+    },
+    {
+      "symbol": "SKHY/USDT:USDT",
+      "base": "SKHY",
+      "quote_volume_24h": 235187203.9314
+    },
+    {
+      "symbol": "BZ/USDT:USDT",
+      "base": "BZ",
+      "quote_volume_24h": 231938959.1237
+    },
+    {
+      "symbol": "STEEM/USDT:USDT",
+      "base": "STEEM",
+      "quote_volume_24h": 206660638.15922
+    },
+    {
+      "symbol": "SUI/USDT:USDT",
+      "base": "SUI",
+      "quote_volume_24h": 190020650.03048
+    },
+    {
+      "symbol": "牛来/USDT:USDT",
+      "base": "牛来",
+      "quote_volume_24h": 168198984.20536
+    },
+    {
+      "symbol": "1000PEPE/USDT:USDT",
+      "base": "1000PEPE",
+      "quote_volume_24h": 167749867.1124486
+    },
+    {
+      "symbol": "NEAR/USDT:USDT",
+      "base": "NEAR",
+      "quote_volume_24h": 160830911.945
+    },
+    {
+      "symbol": "BTW/USDT:USDT",
+      "base": "BTW",
+      "quote_volume_24h": 146749988.3025
+    },
+    {
+      "symbol": "UNI/USDT:USDT",
+      "base": "UNI",
+      "quote_volume_24h": 145124105.838
+    },
+    {
+      "symbol": "ARK/USDT:USDT",
+      "base": "ARK",
+      "quote_volume_24h": 141009082.2358
+    },
+    {
+      "symbol": "FLOCK/USDT:USDT",
+      "base": "FLOCK",
+      "quote_volume_24h": 134480400.22019
+    },
+    {
+      "symbol": "PUMP/USDT:USDT",
+      "base": "PUMP",
+      "quote_volume_24h": 124707432.604637
+    },
+    {
+      "symbol": "SPCX/USDT:USDT",
+      "base": "SPCX",
+      "quote_volume_24h": 122363137.0544
+    },
+    {
+      "symbol": "SNXX/USDT:USDT",
+      "base": "SNXX",
+      "quote_volume_24h": 120459041.1995
+    },
+    {
+      "symbol": "ADA/USDT:USDT",
+      "base": "ADA",
+      "quote_volume_24h": 119637085.0721
+    },
+    {
+      "symbol": "LINK/USDT:USDT",
+      "base": "LINK",
+      "quote_volume_24h": 117916950.663
+    },
+    {
+      "symbol": "REZ/USDT:USDT",
+      "base": "REZ",
+      "quote_volume_24h": 106670821.922424
+    },
+    {
+      "symbol": "ENA/USDT:USDT",
+      "base": "ENA",
+      "quote_volume_24h": 105817076.49948
+    },
+    {
+      "symbol": "PONS/USDT:USDT",
+      "base": "PONS",
+      "quote_volume_24h": 103092412.4659
+    }
+  ],
+  "next_10_for_disclosure": [
+    {
+      "symbol": "TAO/USDT:USDT",
+      "quote_volume_24h": 98640531.68
+    },
+    {
+      "symbol": "EWY/USDT:USDT",
+      "quote_volume_24h": 95125381.4735
+    },
+    {
+      "symbol": "WLD/USDT:USDT",
+      "quote_volume_24h": 90862140.4684
+    },
+    {
+      "symbol": "SAMSUNG/USDT:USDT",
+      "quote_volume_24h": 89331129.2612
+    },
+    {
+      "symbol": "MTL/USDT:USDT",
+      "quote_volume_24h": 77246452.4477
+    },
+    {
+      "symbol": "ARB/USDT:USDT",
+      "quote_volume_24h": 76663882.024335
+    },
+    {
+      "symbol": "QQQ/USDT:USDT",
+      "quote_volume_24h": 75665957.4236
+    },
+    {
+      "symbol": "POWR/USDT:USDT",
+      "quote_volume_24h": 74686854.31501
+    },
+    {
+      "symbol": "CRCL/USDT:USDT",
+      "quote_volume_24h": 73324367.3656
+    },
+    {
+      "symbol": "TRUMP/USDT:USDT",
+      "quote_volume_24h": 70584118.18974
+    }
+  ]
+}

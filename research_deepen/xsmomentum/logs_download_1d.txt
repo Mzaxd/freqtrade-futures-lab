@@ -1,0 +1,1008 @@
+2026-09-14 11:33:28,616 - freqtrade - INFO - freqtrade 2026.8
+2026-09-14 11:33:28,971 - numexpr.utils - INFO - Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
+2026-09-14 11:33:28,972 - numexpr.utils - INFO - NumExpr defaulting to 16 threads.
+2026-09-14 11:33:30,484 - freqtrade.configuration.load_config - INFO - Using config: D:/Code/AIQuant/freqtrade-futures-lab/research_deepen/xsmomentum/configs/download_candidates_1d.json ...
+2026-09-14 11:33:30,485 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-09-14 11:33:30,485 - freqtrade.loggers - INFO - Logfile configured
+2026-09-14 11:33:30,485 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-09-14 11:33:30,486 - freqtrade.configuration.configuration - INFO - Parameter --timerange detected: 20200101-20240101 ...
+2026-09-14 11:33:30,516 - freqtrade.configuration.configuration - INFO - Using user-data directory: D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir ...
+2026-09-14 11:33:30,517 - freqtrade.configuration.directory_operations - INFO - Created data directory: None
+2026-09-14 11:33:30,518 - freqtrade.configuration.configuration - INFO - Using data directory: D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance ...
+2026-09-14 11:33:30,518 - freqtrade.configuration.configuration - INFO - timeframes --timeframes: ['1d']
+2026-09-14 11:33:30,518 - freqtrade.configuration.configuration - INFO - Filter trades by timerange: 20200101-20240101
+2026-09-14 11:33:30,519 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-09-14 11:33:30,524 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2026-09-14 11:33:30,524 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-09-14 11:33:30,525 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-09-14 11:33:31,385 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-09-14 11:33:31,387 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.64
+2026-09-14 11:33:31,387 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2026-09-14 11:33:31,393 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2026-09-14 11:33:31,398 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2026-09-14 11:33:31,398 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange class 'Binance' ...
+2026-09-14 11:33:31,399 - freqtrade.exchange.exchange - INFO - Markets were not loaded. Loading them now..
+2026-09-14 11:33:33,346 - freqtrade.data.history.history_utils - INFO - About to download pairs: ['1000SHIB/USDT:USDT', '1000XEC/USDT:USDT', '1INCH/USDT:USDT', 'AAVE/USDT:USDT', 'ADA/USDT:USDT', 
+'ALGO/USDT:USDT', 'ALICE/USDT:USDT', 'ANKR/USDT:USDT', 'AR/USDT:USDT', 'ARPA/USDT:USDT', 'ATOM/USDT:USDT', 'AVAX/USDT:USDT', 'AXS/USDT:USDT', 'BAND/USDT:USDT', 'BAT/USDT:USDT', 'BCH/USDT:USDT', 
+'BEL/USDT:USDT', 'BNB/USDT:USDT', 'BTC/USDT:USDT', 'BTCDOM/USDT:USDT', 'C98/USDT:USDT', 'CELO/USDT:USDT', 'CELR/USDT:USDT', 'CHR/USDT:USDT', 'CHZ/USDT:USDT', 'COMP/USDT:USDT', 'COTI/USDT:USDT', 
+'CRV/USDT:USDT', 'CTSI/USDT:USDT', 'DASH/USDT:USDT', 'DOGE/USDT:USDT', 'DOT/USDT:USDT', 'DYDX/USDT:USDT', 'EGLD/USDT:USDT', 'ENJ/USDT:USDT', 'ENS/USDT:USDT', 'ETC/USDT:USDT', 'ETH/USDT:USDT', 
+'FIL/USDT:USDT', 'GALA/USDT:USDT', 'GRT/USDT:USDT', 'GTC/USDT:USDT', 'HBAR/USDT:USDT', 'HOT/USDT:USDT', 'ICP/USDT:USDT', 'IOST/USDT:USDT', 'IOTA/USDT:USDT', 'IOTX/USDT:USDT', 'KAVA/USDT:USDT', 
+'KNC/USDT:USDT', 'KSM/USDT:USDT', 'LINK/USDT:USDT', 'LPT/USDT:USDT', 'LTC/USDT:USDT', 'MANA/USDT:USDT', 'MASK/USDT:USDT', 'MTL/USDT:USDT', 'NEAR/USDT:USDT', 'NEO/USDT:USDT', 'OGN/USDT:USDT', 
+'ONE/USDT:USDT', 'ONT/USDT:USDT', 'PEOPLE/USDT:USDT', 'QTUM/USDT:USDT', 'RLC/USDT:USDT', 'ROSE/USDT:USDT', 'RSR/USDT:USDT', 'RUNE/USDT:USDT', 'RVN/USDT:USDT', 'SAND/USDT:USDT', 'SFP/USDT:USDT', 
+'SKL/USDT:USDT', 'SNX/USDT:USDT', 'SOL/USDT:USDT', 'SUSHI/USDT:USDT', 'THETA/USDT:USDT', 'TRB/USDT:USDT', 'TRX/USDT:USDT', 'UNI/USDT:USDT', 'VET/USDT:USDT', 'XLM/USDT:USDT', 'XMR/USDT:USDT', 
+'XRP/USDT:USDT', 'XTZ/USDT:USDT', 'YFI/USDT:USDT', 'ZEC/USDT:USDT', 'ZEN/USDT:USDT', 'ZIL/USDT:USDT', 'ZRX/USDT:USDT'], intervals: ['1d'] to 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance
+2026-09-14 11:33:33,386 - freqtrade.data.history.history_utils - INFO - Download history data for "1000SHIB/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:33:33,766 - freqtrade.exchange.binance - INFO - Candle-data for 1000SHIB/USDT:USDT available starting with 2021-05-10T00:00:00+00:00.
+2026-09-14 11:33:34,945 - freqtrade.data.history.history_utils - INFO - Downloaded data for 1000SHIB/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:33:34,997 - freqtrade.data.history.history_utils - INFO - Download history data for "1000SHIB/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:33:35,388 - freqtrade.exchange.binance - INFO - Candle-data for 1000SHIB/USDT:USDT available starting with 2021-05-10T09:00:00+00:00.
+2026-09-14 11:33:40,405 - freqtrade.data.history.history_utils - INFO - Downloaded data for 1000SHIB/USDT:USDT, 1h, mark with length 23452.
+2026-09-14 11:33:40,418 - freqtrade.data.history.history_utils - INFO - Download history data for "1000SHIB/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:33:42,597 - freqtrade.data.history.history_utils - INFO - Downloaded data for 1000SHIB/USDT:USDT, 1h, funding_rate with length 3888.
+2026-09-14 11:33:42,606 - freqtrade.data.history.history_utils - INFO - Download history data for "1000XEC/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:33:43,002 - freqtrade.exchange.binance - INFO - Candle-data for 1000XEC/USDT:USDT available starting with 2021-09-17T00:00:00+00:00.
+2026-09-14 11:33:43,543 - freqtrade.data.history.history_utils - INFO - Downloaded data for 1000XEC/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:33:43,551 - freqtrade.data.history.history_utils - INFO - Download history data for "1000XEC/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:33:43,949 - freqtrade.exchange.binance - INFO - Candle-data for 1000XEC/USDT:USDT available starting with 2021-09-17T02:00:00+00:00.
+2026-09-14 11:33:48,374 - freqtrade.data.history.history_utils - INFO - Downloaded data for 1000XEC/USDT:USDT, 1h, mark with length 20458.
+2026-09-14 11:33:48,386 - freqtrade.data.history.history_utils - INFO - Download history data for "1000XEC/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:33:50,569 - freqtrade.data.history.history_utils - INFO - Downloaded data for 1000XEC/USDT:USDT, 1h, funding_rate with length 3499.
+2026-09-14 11:33:50,574 - freqtrade.data.history.history_utils - INFO - Download history data for "1INCH/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:33:50,975 - freqtrade.exchange.binance - INFO - Candle-data for 1INCH/USDT:USDT available starting with 2020-12-25T00:00:00+00:00.
+2026-09-14 11:33:51,641 - freqtrade.data.history.history_utils - INFO - Downloaded data for 1INCH/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:33:51,647 - freqtrade.data.history.history_utils - INFO - Download history data for "1INCH/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:33:52,035 - freqtrade.exchange.binance - INFO - Candle-data for 1INCH/USDT:USDT available starting with 2020-12-25T08:00:00+00:00.
+2026-09-14 11:33:57,656 - freqtrade.data.history.history_utils - INFO - Downloaded data for 1INCH/USDT:USDT, 1h, mark with length 26446.
+2026-09-14 11:33:57,670 - freqtrade.data.history.history_utils - INFO - Download history data for "1INCH/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:33:59,852 - freqtrade.data.history.history_utils - INFO - Downloaded data for 1INCH/USDT:USDT, 1h, funding_rate with length 4296.
+2026-09-14 11:33:59,859 - freqtrade.data.history.history_utils - INFO - Download history data for "AAVE/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:00,243 - freqtrade.exchange.binance - INFO - Candle-data for AAVE/USDT:USDT available starting with 2020-10-16T00:00:00+00:00.
+2026-09-14 11:34:00,886 - freqtrade.data.history.history_utils - INFO - Downloaded data for AAVE/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:34:00,892 - freqtrade.data.history.history_utils - INFO - Download history data for "AAVE/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:01,292 - freqtrade.exchange.binance - INFO - Candle-data for AAVE/USDT:USDT available starting with 2020-10-16T03:00:00+00:00.
+2026-09-14 11:34:07,336 - freqtrade.data.history.history_utils - INFO - Downloaded data for AAVE/USDT:USDT, 1h, mark with length 28442.
+2026-09-14 11:34:07,359 - freqtrade.data.history.history_utils - INFO - Download history data for "AAVE/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:09,552 - freqtrade.data.history.history_utils - INFO - Downloaded data for AAVE/USDT:USDT, 1h, funding_rate with length 4507.
+2026-09-14 11:34:09,559 - freqtrade.data.history.history_utils - INFO - Download history data for "ADA/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:09,924 - freqtrade.exchange.binance - INFO - Candle-data for ADA/USDT:USDT available starting with 2020-01-31T00:00:00+00:00.
+2026-09-14 11:34:10,571 - freqtrade.data.history.history_utils - INFO - Downloaded data for ADA/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:34:10,577 - freqtrade.data.history.history_utils - INFO - Download history data for "ADA/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:10,980 - freqtrade.exchange.binance - INFO - Candle-data for ADA/USDT:USDT available starting with 2020-01-19T09:00:00+00:00.
+2026-09-14 11:34:18,309 - freqtrade.data.history.history_utils - INFO - Downloaded data for ADA/USDT:USDT, 1h, mark with length 34929.
+2026-09-14 11:34:18,355 - freqtrade.data.history.history_utils - INFO - Download history data for "ADA/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:20,542 - freqtrade.data.history.history_utils - INFO - Downloaded data for ADA/USDT:USDT, 1h, funding_rate with length 5319.
+2026-09-14 11:34:20,548 - freqtrade.data.history.history_utils - INFO - Download history data for "ALGO/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:20,989 - freqtrade.exchange.binance - INFO - Candle-data for ALGO/USDT:USDT available starting with 2020-06-16T00:00:00+00:00.
+2026-09-14 11:34:21,813 - freqtrade.data.history.history_utils - INFO - Downloaded data for ALGO/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:34:21,820 - freqtrade.data.history.history_utils - INFO - Download history data for "ALGO/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:22,209 - freqtrade.exchange.binance - INFO - Candle-data for ALGO/USDT:USDT available starting with 2020-05-26T11:00:00+00:00.
+2026-09-14 11:34:28,941 - freqtrade.data.history.history_utils - INFO - Downloaded data for ALGO/USDT:USDT, 1h, mark with length 31935.
+2026-09-14 11:34:28,956 - freqtrade.data.history.history_utils - INFO - Download history data for "ALGO/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:31,146 - freqtrade.data.history.history_utils - INFO - Downloaded data for ALGO/USDT:USDT, 1h, funding_rate with length 4935.
+2026-09-14 11:34:31,181 - freqtrade.data.history.history_utils - INFO - Download history data for "ALICE/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:31,565 - freqtrade.exchange.binance - INFO - Candle-data for ALICE/USDT:USDT available starting with 2021-03-16T00:00:00+00:00.
+2026-09-14 11:34:32,175 - freqtrade.data.history.history_utils - INFO - Downloaded data for ALICE/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:34:32,182 - freqtrade.data.history.history_utils - INFO - Download history data for "ALICE/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:32,590 - freqtrade.exchange.binance - INFO - Candle-data for ALICE/USDT:USDT available starting with 2021-03-15T15:00:00+00:00.
+2026-09-14 11:34:37,906 - freqtrade.data.history.history_utils - INFO - Downloaded data for ALICE/USDT:USDT, 1h, mark with length 24949.
+2026-09-14 11:34:37,919 - freqtrade.data.history.history_utils - INFO - Download history data for "ALICE/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:40,105 - freqtrade.data.history.history_utils - INFO - Downloaded data for ALICE/USDT:USDT, 1h, funding_rate with length 4056.
+2026-09-14 11:34:40,112 - freqtrade.data.history.history_utils - INFO - Download history data for "ANKR/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:40,497 - freqtrade.exchange.binance - INFO - Candle-data for ANKR/USDT:USDT available starting with 2021-01-26T00:00:00+00:00.
+2026-09-14 11:34:41,112 - freqtrade.data.history.history_utils - INFO - Downloaded data for ANKR/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:34:41,120 - freqtrade.data.history.history_utils - INFO - Download history data for "ANKR/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:41,509 - freqtrade.exchange.binance - INFO - Candle-data for ANKR/USDT:USDT available starting with 2021-01-25T14:00:00+00:00.
+2026-09-14 11:34:47,032 - freqtrade.data.history.history_utils - INFO - Downloaded data for ANKR/USDT:USDT, 1h, mark with length 25947.
+2026-09-14 11:34:47,048 - freqtrade.data.history.history_utils - INFO - Download history data for "ANKR/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:49,222 - freqtrade.data.history.history_utils - INFO - Downloaded data for ANKR/USDT:USDT, 1h, funding_rate with length 4203.
+2026-09-14 11:34:49,230 - freqtrade.data.history.history_utils - INFO - Download history data for "AR/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:49,599 - freqtrade.exchange.binance - INFO - Candle-data for AR/USDT:USDT available starting with 2021-09-28T00:00:00+00:00.
+2026-09-14 11:34:50,134 - freqtrade.data.history.history_utils - INFO - Downloaded data for AR/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:34:50,141 - freqtrade.data.history.history_utils - INFO - Download history data for "AR/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:50,546 - freqtrade.exchange.binance - INFO - Candle-data for AR/USDT:USDT available starting with 2021-09-27T02:00:00+00:00.
+2026-09-14 11:34:54,863 - freqtrade.data.history.history_utils - INFO - Downloaded data for AR/USDT:USDT, 1h, mark with length 19959.
+2026-09-14 11:34:54,875 - freqtrade.data.history.history_utils - INFO - Download history data for "AR/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:57,069 - freqtrade.data.history.history_utils - INFO - Downloaded data for AR/USDT:USDT, 1h, funding_rate with length 3469.
+2026-09-14 11:34:57,076 - freqtrade.data.history.history_utils - INFO - Download history data for "ARPA/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:57,453 - freqtrade.exchange.binance - INFO - Candle-data for ARPA/USDT:USDT available starting with 2021-10-19T00:00:00+00:00.
+2026-09-14 11:34:57,983 - freqtrade.data.history.history_utils - INFO - Downloaded data for ARPA/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:34:57,988 - freqtrade.data.history.history_utils - INFO - Download history data for "ARPA/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:34:58,384 - freqtrade.exchange.binance - INFO - Candle-data for ARPA/USDT:USDT available starting with 2021-10-19T02:00:00+00:00.
+2026-09-14 11:35:02,593 - freqtrade.data.history.history_utils - INFO - Downloaded data for ARPA/USDT:USDT, 1h, mark with length 19460.
+2026-09-14 11:35:02,603 - freqtrade.data.history.history_utils - INFO - Download history data for "ARPA/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:04,872 - freqtrade.data.history.history_utils - INFO - Downloaded data for ARPA/USDT:USDT, 1h, funding_rate with length 3403.
+2026-09-14 11:35:04,878 - freqtrade.data.history.history_utils - INFO - Download history data for "ATOM/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:06,532 - freqtrade.exchange.binance - INFO - Candle-data for ATOM/USDT:USDT available starting with 2020-02-07T00:00:00+00:00.
+2026-09-14 11:35:07,271 - freqtrade.data.history.history_utils - INFO - Downloaded data for ATOM/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:35:07,287 - freqtrade.data.history.history_utils - INFO - Download history data for "ATOM/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:07,902 - freqtrade.exchange.binance - INFO - Candle-data for ATOM/USDT:USDT available starting with 2020-02-06T08:00:00+00:00.
+2026-09-14 11:35:15,132 - freqtrade.data.history.history_utils - INFO - Downloaded data for ATOM/USDT:USDT, 1h, mark with length 34430.
+2026-09-14 11:35:15,148 - freqtrade.data.history.history_utils - INFO - Download history data for "ATOM/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:17,334 - freqtrade.data.history.history_utils - INFO - Downloaded data for ATOM/USDT:USDT, 1h, funding_rate with length 5265.
+2026-09-14 11:35:17,341 - freqtrade.data.history.history_utils - INFO - Download history data for "AVAX/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:17,692 - freqtrade.exchange.binance - INFO - Candle-data for AVAX/USDT:USDT available starting with 2020-09-23T00:00:00+00:00.
+2026-09-14 11:35:18,320 - freqtrade.data.history.history_utils - INFO - Downloaded data for AVAX/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:35:18,327 - freqtrade.data.history.history_utils - INFO - Download history data for "AVAX/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:18,719 - freqtrade.exchange.binance - INFO - Candle-data for AVAX/USDT:USDT available starting with 2020-09-22T09:00:00+00:00.
+2026-09-14 11:35:24,854 - freqtrade.data.history.history_utils - INFO - Downloaded data for AVAX/USDT:USDT, 1h, mark with length 28941.
+2026-09-14 11:35:24,877 - freqtrade.data.history.history_utils - INFO - Download history data for "AVAX/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:27,062 - freqtrade.data.history.history_utils - INFO - Downloaded data for AVAX/USDT:USDT, 1h, funding_rate with length 4578.
+2026-09-14 11:35:27,068 - freqtrade.data.history.history_utils - INFO - Download history data for "AXS/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:27,440 - freqtrade.exchange.binance - INFO - Candle-data for AXS/USDT:USDT available starting with 2020-11-20T00:00:00+00:00.
+2026-09-14 11:35:28,054 - freqtrade.data.history.history_utils - INFO - Downloaded data for AXS/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:35:28,060 - freqtrade.data.history.history_utils - INFO - Download history data for "AXS/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:28,459 - freqtrade.exchange.binance - INFO - Candle-data for AXS/USDT:USDT available starting with 2020-11-20T03:00:00+00:00.
+2026-09-14 11:35:34,274 - freqtrade.data.history.history_utils - INFO - Downloaded data for AXS/USDT:USDT, 1h, mark with length 27444.
+2026-09-14 11:35:34,288 - freqtrade.data.history.history_utils - INFO - Download history data for "AXS/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:36,479 - freqtrade.data.history.history_utils - INFO - Downloaded data for AXS/USDT:USDT, 1h, funding_rate with length 4402.
+2026-09-14 11:35:36,486 - freqtrade.data.history.history_utils - INFO - Download history data for "BAND/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:36,896 - freqtrade.exchange.binance - INFO - Candle-data for BAND/USDT:USDT available starting with 2020-07-29T00:00:00+00:00.
+2026-09-14 11:35:37,513 - freqtrade.data.history.history_utils - INFO - Downloaded data for BAND/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:35:37,527 - freqtrade.data.history.history_utils - INFO - Download history data for "BAND/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:37,940 - freqtrade.exchange.binance - INFO - Candle-data for BAND/USDT:USDT available starting with 2020-07-29T03:00:00+00:00.
+2026-09-14 11:35:44,363 - freqtrade.data.history.history_utils - INFO - Downloaded data for BAND/USDT:USDT, 1h, mark with length 30438.
+2026-09-14 11:35:44,379 - freqtrade.data.history.history_utils - INFO - Download history data for "BAND/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:46,541 - freqtrade.data.history.history_utils - INFO - Downloaded data for BAND/USDT:USDT, 1h, funding_rate with length 4744.
+2026-09-14 11:35:46,549 - freqtrade.data.history.history_utils - INFO - Download history data for "BAT/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:46,928 - freqtrade.exchange.binance - INFO - Candle-data for BAT/USDT:USDT available starting with 2020-02-13T00:00:00+00:00.
+2026-09-14 11:35:47,554 - freqtrade.data.history.history_utils - INFO - Downloaded data for BAT/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:35:47,561 - freqtrade.data.history.history_utils - INFO - Download history data for "BAT/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:47,954 - freqtrade.exchange.binance - INFO - Candle-data for BAT/USDT:USDT available starting with 2020-02-13T04:00:00+00:00.
+2026-09-14 11:35:55,187 - freqtrade.data.history.history_utils - INFO - Downloaded data for BAT/USDT:USDT, 1h, mark with length 34430.
+2026-09-14 11:35:55,202 - freqtrade.data.history.history_utils - INFO - Download history data for "BAT/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:57,395 - freqtrade.data.history.history_utils - INFO - Downloaded data for BAT/USDT:USDT, 1h, funding_rate with length 5245.
+2026-09-14 11:35:57,400 - freqtrade.data.history.history_utils - INFO - Download history data for "BCH/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:35:58,405 - freqtrade.data.history.history_utils - INFO - Downloaded data for BCH/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:35:58,412 - freqtrade.data.history.history_utils - INFO - Download history data for "BCH/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:06,262 - freqtrade.data.history.history_utils - INFO - Downloaded data for BCH/USDT:USDT, 1h, mark with length 35428.
+2026-09-14 11:36:06,280 - freqtrade.data.history.history_utils - INFO - Download history data for "BCH/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:08,449 - freqtrade.data.history.history_utils - INFO - Downloaded data for BCH/USDT:USDT, 1h, funding_rate with length 5375.
+2026-09-14 11:36:08,456 - freqtrade.data.history.history_utils - INFO - Download history data for "BEL/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:08,835 - freqtrade.exchange.binance - INFO - Candle-data for BEL/USDT:USDT available starting with 2020-11-18T00:00:00+00:00.
+2026-09-14 11:36:09,441 - freqtrade.data.history.history_utils - INFO - Downloaded data for BEL/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:36:09,447 - freqtrade.data.history.history_utils - INFO - Download history data for "BEL/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:09,866 - freqtrade.exchange.binance - INFO - Candle-data for BEL/USDT:USDT available starting with 2020-11-18T02:00:00+00:00.
+2026-09-14 11:36:15,691 - freqtrade.data.history.history_utils - INFO - Downloaded data for BEL/USDT:USDT, 1h, mark with length 27444.
+2026-09-14 11:36:15,705 - freqtrade.data.history.history_utils - INFO - Download history data for "BEL/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:17,897 - freqtrade.data.history.history_utils - INFO - Downloaded data for BEL/USDT:USDT, 1h, funding_rate with length 4408.
+2026-09-14 11:36:17,903 - freqtrade.data.history.history_utils - INFO - Download history data for "BNB/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:18,286 - freqtrade.exchange.binance - INFO - Candle-data for BNB/USDT:USDT available starting with 2020-02-10T00:00:00+00:00.
+2026-09-14 11:36:18,921 - freqtrade.data.history.history_utils - INFO - Downloaded data for BNB/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:36:18,927 - freqtrade.data.history.history_utils - INFO - Download history data for "BNB/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:26,751 - freqtrade.data.history.history_utils - INFO - Downloaded data for BNB/USDT:USDT, 1h, mark with length 35428.
+2026-09-14 11:36:26,768 - freqtrade.data.history.history_utils - INFO - Download history data for "BNB/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:28,941 - freqtrade.data.history.history_utils - INFO - Downloaded data for BNB/USDT:USDT, 1h, funding_rate with length 5254.
+2026-09-14 11:36:28,948 - freqtrade.data.history.history_utils - INFO - Download history data for "BTC/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:29,978 - freqtrade.data.history.history_utils - INFO - Downloaded data for BTC/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:36:29,984 - freqtrade.data.history.history_utils - INFO - Download history data for "BTC/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:37,822 - freqtrade.data.history.history_utils - INFO - Downloaded data for BTC/USDT:USDT, 1h, mark with length 35428.
+2026-09-14 11:36:37,836 - freqtrade.data.history.history_utils - INFO - Download history data for "BTC/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:40,032 - freqtrade.data.history.history_utils - INFO - Downloaded data for BTC/USDT:USDT, 1h, funding_rate with length 5375.
+2026-09-14 11:36:40,038 - freqtrade.data.history.history_utils - INFO - Download history data for "BTCDOM/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:40,419 - freqtrade.exchange.binance - INFO - Candle-data for BTCDOM/USDT:USDT available starting with 2021-06-21T00:00:00+00:00.
+2026-09-14 11:36:40,924 - freqtrade.data.history.history_utils - INFO - Downloaded data for BTCDOM/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:36:40,931 - freqtrade.data.history.history_utils - INFO - Download history data for "BTCDOM/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:41,336 - freqtrade.exchange.binance - INFO - Candle-data for BTCDOM/USDT:USDT available starting with 2021-06-21T02:00:00+00:00.
+2026-09-14 11:36:46,167 - freqtrade.data.history.history_utils - INFO - Downloaded data for BTCDOM/USDT:USDT, 1h, mark with length 22454.
+2026-09-14 11:36:46,181 - freqtrade.data.history.history_utils - INFO - Download history data for "BTCDOM/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:48,355 - freqtrade.data.history.history_utils - INFO - Downloaded data for BTCDOM/USDT:USDT, 1h, funding_rate with length 3763.
+2026-09-14 11:36:48,360 - freqtrade.data.history.history_utils - INFO - Download history data for "C98/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:48,730 - freqtrade.exchange.binance - INFO - Candle-data for C98/USDT:USDT available starting with 2021-08-24T00:00:00+00:00.
+2026-09-14 11:36:49,260 - freqtrade.data.history.history_utils - INFO - Downloaded data for C98/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:36:49,266 - freqtrade.data.history.history_utils - INFO - Download history data for "C98/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:49,664 - freqtrade.exchange.binance - INFO - Candle-data for C98/USDT:USDT available starting with 2021-08-24T02:00:00+00:00.
+2026-09-14 11:36:54,320 - freqtrade.data.history.history_utils - INFO - Downloaded data for C98/USDT:USDT, 1h, mark with length 20957.
+2026-09-14 11:36:54,339 - freqtrade.data.history.history_utils - INFO - Download history data for "C98/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:56,511 - freqtrade.data.history.history_utils - INFO - Downloaded data for C98/USDT:USDT, 1h, funding_rate with length 3571.
+2026-09-14 11:36:56,516 - freqtrade.data.history.history_utils - INFO - Download history data for "CELO/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:56,895 - freqtrade.exchange.binance - INFO - Candle-data for CELO/USDT:USDT available starting with 2021-09-27T00:00:00+00:00.
+2026-09-14 11:36:57,400 - freqtrade.data.history.history_utils - INFO - Downloaded data for CELO/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:36:57,405 - freqtrade.data.history.history_utils - INFO - Download history data for "CELO/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:36:57,787 - freqtrade.exchange.binance - INFO - Candle-data for CELO/USDT:USDT available starting with 2021-09-27T02:00:00+00:00.
+2026-09-14 11:37:02,127 - freqtrade.data.history.history_utils - INFO - Downloaded data for CELO/USDT:USDT, 1h, mark with length 19959.
+2026-09-14 11:37:02,138 - freqtrade.data.history.history_utils - INFO - Download history data for "CELO/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:04,306 - freqtrade.data.history.history_utils - INFO - Downloaded data for CELO/USDT:USDT, 1h, funding_rate with length 3469.
+2026-09-14 11:37:04,322 - freqtrade.data.history.history_utils - INFO - Download history data for "CELR/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:04,688 - freqtrade.exchange.binance - INFO - Candle-data for CELR/USDT:USDT available starting with 2021-03-29T00:00:00+00:00.
+2026-09-14 11:37:05,311 - freqtrade.data.history.history_utils - INFO - Downloaded data for CELR/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:37:05,316 - freqtrade.data.history.history_utils - INFO - Download history data for "CELR/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:05,704 - freqtrade.exchange.binance - INFO - Candle-data for CELR/USDT:USDT available starting with 2021-03-29T05:00:00+00:00.
+2026-09-14 11:37:10,978 - freqtrade.data.history.history_utils - INFO - Downloaded data for CELR/USDT:USDT, 1h, mark with length 24450.
+2026-09-14 11:37:11,001 - freqtrade.data.history.history_utils - INFO - Download history data for "CELR/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:13,189 - freqtrade.data.history.history_utils - INFO - Downloaded data for CELR/USDT:USDT, 1h, funding_rate with length 4015.
+2026-09-14 11:37:13,195 - freqtrade.data.history.history_utils - INFO - Download history data for "CHR/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:13,561 - freqtrade.exchange.binance - INFO - Candle-data for CHR/USDT:USDT available starting with 2021-03-12T00:00:00+00:00.
+2026-09-14 11:37:14,201 - freqtrade.data.history.history_utils - INFO - Downloaded data for CHR/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:37:14,208 - freqtrade.data.history.history_utils - INFO - Download history data for "CHR/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:14,612 - freqtrade.exchange.binance - INFO - Candle-data for CHR/USDT:USDT available starting with 2021-03-12T03:00:00+00:00.
+2026-09-14 11:37:19,954 - freqtrade.data.history.history_utils - INFO - Downloaded data for CHR/USDT:USDT, 1h, mark with length 24949.
+2026-09-14 11:37:19,966 - freqtrade.data.history.history_utils - INFO - Download history data for "CHR/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:22,989 - freqtrade.data.history.history_utils - INFO - Downloaded data for CHR/USDT:USDT, 1h, funding_rate with length 4066.
+2026-09-14 11:37:22,995 - freqtrade.data.history.history_utils - INFO - Download history data for "CHZ/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:23,357 - freqtrade.exchange.binance - INFO - Candle-data for CHZ/USDT:USDT available starting with 2021-01-21T00:00:00+00:00.
+2026-09-14 11:37:23,971 - freqtrade.data.history.history_utils - INFO - Downloaded data for CHZ/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:37:23,978 - freqtrade.data.history.history_utils - INFO - Download history data for "CHZ/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:24,383 - freqtrade.exchange.binance - INFO - Candle-data for CHZ/USDT:USDT available starting with 2020-12-28T03:00:00+00:00.
+2026-09-14 11:37:30,016 - freqtrade.data.history.history_utils - INFO - Downloaded data for CHZ/USDT:USDT, 1h, mark with length 26446.
+2026-09-14 11:37:30,037 - freqtrade.data.history.history_utils - INFO - Download history data for "CHZ/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:32,229 - freqtrade.data.history.history_utils - INFO - Downloaded data for CHZ/USDT:USDT, 1h, funding_rate with length 4288.
+2026-09-14 11:37:32,235 - freqtrade.data.history.history_utils - INFO - Download history data for "COMP/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:32,618 - freqtrade.exchange.binance - INFO - Candle-data for COMP/USDT:USDT available starting with 2020-06-30T00:00:00+00:00.
+2026-09-14 11:37:33,331 - freqtrade.data.history.history_utils - INFO - Downloaded data for COMP/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:37:33,336 - freqtrade.data.history.history_utils - INFO - Download history data for "COMP/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:33,733 - freqtrade.exchange.binance - INFO - Candle-data for COMP/USDT:USDT available starting with 2020-06-30T02:00:00+00:00.
+2026-09-14 11:37:40,281 - freqtrade.data.history.history_utils - INFO - Downloaded data for COMP/USDT:USDT, 1h, mark with length 30937.
+2026-09-14 11:37:40,296 - freqtrade.data.history.history_utils - INFO - Download history data for "COMP/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:42,473 - freqtrade.data.history.history_utils - INFO - Downloaded data for COMP/USDT:USDT, 1h, funding_rate with length 4831.
+2026-09-14 11:37:42,479 - freqtrade.data.history.history_utils - INFO - Download history data for "COTI/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:42,854 - freqtrade.exchange.binance - INFO - Candle-data for COTI/USDT:USDT available starting with 2021-03-10T00:00:00+00:00.
+2026-09-14 11:37:43,473 - freqtrade.data.history.history_utils - INFO - Downloaded data for COTI/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:37:43,480 - freqtrade.data.history.history_utils - INFO - Download history data for "COTI/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:43,890 - freqtrade.exchange.binance - INFO - Candle-data for COTI/USDT:USDT available starting with 2021-03-10T03:00:00+00:00.
+2026-09-14 11:37:49,228 - freqtrade.data.history.history_utils - INFO - Downloaded data for COTI/USDT:USDT, 1h, mark with length 24949.
+2026-09-14 11:37:49,240 - freqtrade.data.history.history_utils - INFO - Download history data for "COTI/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:51,415 - freqtrade.data.history.history_utils - INFO - Downloaded data for COTI/USDT:USDT, 1h, funding_rate with length 4072.
+2026-09-14 11:37:51,431 - freqtrade.data.history.history_utils - INFO - Download history data for "CRV/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:51,803 - freqtrade.exchange.binance - INFO - Candle-data for CRV/USDT:USDT available starting with 2020-09-01T00:00:00+00:00.
+2026-09-14 11:37:52,430 - freqtrade.data.history.history_utils - INFO - Downloaded data for CRV/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:37:52,445 - freqtrade.data.history.history_utils - INFO - Download history data for "CRV/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:37:52,835 - freqtrade.exchange.binance - INFO - Candle-data for CRV/USDT:USDT available starting with 2020-09-01T03:00:00+00:00.
+2026-09-14 11:37:59,062 - freqtrade.data.history.history_utils - INFO - Downloaded data for CRV/USDT:USDT, 1h, mark with length 29440.
+2026-09-14 11:37:59,085 - freqtrade.data.history.history_utils - INFO - Download history data for "CRV/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:01,263 - freqtrade.data.history.history_utils - INFO - Downloaded data for CRV/USDT:USDT, 1h, funding_rate with length 4642.
+2026-09-14 11:38:01,270 - freqtrade.data.history.history_utils - INFO - Download history data for "CTSI/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:01,628 - freqtrade.exchange.binance - INFO - Candle-data for CTSI/USDT:USDT available starting with 2021-10-26T00:00:00+00:00.
+2026-09-14 11:38:02,141 - freqtrade.data.history.history_utils - INFO - Downloaded data for CTSI/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:38:02,148 - freqtrade.data.history.history_utils - INFO - Download history data for "CTSI/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:02,552 - freqtrade.exchange.binance - INFO - Candle-data for CTSI/USDT:USDT available starting with 2021-10-26T02:00:00+00:00.
+2026-09-14 11:38:06,774 - freqtrade.data.history.history_utils - INFO - Downloaded data for CTSI/USDT:USDT, 1h, mark with length 19460.
+2026-09-14 11:38:06,785 - freqtrade.data.history.history_utils - INFO - Download history data for "CTSI/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:08,971 - freqtrade.data.history.history_utils - INFO - Downloaded data for CTSI/USDT:USDT, 1h, funding_rate with length 3382.
+2026-09-14 11:38:08,978 - freqtrade.data.history.history_utils - INFO - Download history data for "DASH/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:09,357 - freqtrade.exchange.binance - INFO - Candle-data for DASH/USDT:USDT available starting with 2020-02-04T00:00:00+00:00.
+2026-09-14 11:38:09,975 - freqtrade.data.history.history_utils - INFO - Downloaded data for DASH/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:38:09,981 - freqtrade.data.history.history_utils - INFO - Download history data for "DASH/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:10,383 - freqtrade.exchange.binance - INFO - Candle-data for DASH/USDT:USDT available starting with 2020-02-04T05:00:00+00:00.
+2026-09-14 11:38:17,680 - freqtrade.data.history.history_utils - INFO - Downloaded data for DASH/USDT:USDT, 1h, mark with length 34430.
+2026-09-14 11:38:17,695 - freqtrade.data.history.history_utils - INFO - Download history data for "DASH/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:19,859 - freqtrade.data.history.history_utils - INFO - Downloaded data for DASH/USDT:USDT, 1h, funding_rate with length 5272.
+2026-09-14 11:38:19,864 - freqtrade.data.history.history_utils - INFO - Download history data for "DOGE/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:20,237 - freqtrade.exchange.binance - INFO - Candle-data for DOGE/USDT:USDT available starting with 2020-07-10T00:00:00+00:00.
+2026-09-14 11:38:20,865 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOGE/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:38:20,870 - freqtrade.data.history.history_utils - INFO - Download history data for "DOGE/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:21,266 - freqtrade.exchange.binance - INFO - Candle-data for DOGE/USDT:USDT available starting with 2020-07-10T03:00:00+00:00.
+2026-09-14 11:38:27,776 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOGE/USDT:USDT, 1h, mark with length 30937.
+2026-09-14 11:38:27,790 - freqtrade.data.history.history_utils - INFO - Download history data for "DOGE/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:29,962 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOGE/USDT:USDT, 1h, funding_rate with length 4801.
+2026-09-14 11:38:29,968 - freqtrade.data.history.history_utils - INFO - Download history data for "DOT/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:30,326 - freqtrade.exchange.binance - INFO - Candle-data for DOT/USDT:USDT available starting with 2020-08-22T00:00:00+00:00.
+2026-09-14 11:38:30,959 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOT/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:38:30,965 - freqtrade.data.history.history_utils - INFO - Download history data for "DOT/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:31,352 - freqtrade.exchange.binance - INFO - Candle-data for DOT/USDT:USDT available starting with 2020-08-20T02:00:00+00:00.
+2026-09-14 11:38:37,664 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOT/USDT:USDT, 1h, mark with length 29939.
+2026-09-14 11:38:37,678 - freqtrade.data.history.history_utils - INFO - Download history data for "DOT/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:39,870 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOT/USDT:USDT, 1h, funding_rate with length 4678.
+2026-09-14 11:38:39,877 - freqtrade.data.history.history_utils - INFO - Download history data for "DYDX/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:40,235 - freqtrade.exchange.binance - INFO - Candle-data for DYDX/USDT:USDT available starting with 2021-09-10T00:00:00+00:00.
+2026-09-14 11:38:40,755 - freqtrade.data.history.history_utils - INFO - Downloaded data for DYDX/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:38:40,761 - freqtrade.data.history.history_utils - INFO - Download history data for "DYDX/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:41,150 - freqtrade.exchange.binance - INFO - Candle-data for DYDX/USDT:USDT available starting with 2021-09-09T08:00:00+00:00.
+2026-09-14 11:38:45,574 - freqtrade.data.history.history_utils - INFO - Downloaded data for DYDX/USDT:USDT, 1h, mark with length 20458.
+2026-09-14 11:38:45,585 - freqtrade.data.history.history_utils - INFO - Download history data for "DYDX/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:47,756 - freqtrade.data.history.history_utils - INFO - Downloaded data for DYDX/USDT:USDT, 1h, funding_rate with length 3522.
+2026-09-14 11:38:47,762 - freqtrade.data.history.history_utils - INFO - Download history data for "EGLD/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:48,135 - freqtrade.exchange.binance - INFO - Candle-data for EGLD/USDT:USDT available starting with 2020-09-14T00:00:00+00:00.
+2026-09-14 11:38:48,855 - freqtrade.data.history.history_utils - INFO - Downloaded data for EGLD/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:38:48,888 - freqtrade.data.history.history_utils - INFO - Download history data for "EGLD/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:49,297 - freqtrade.exchange.binance - INFO - Candle-data for EGLD/USDT:USDT available starting with 2020-09-13T11:00:00+00:00.
+2026-09-14 11:38:55,416 - freqtrade.data.history.history_utils - INFO - Downloaded data for EGLD/USDT:USDT, 1h, mark with length 28941.
+2026-09-14 11:38:55,431 - freqtrade.data.history.history_utils - INFO - Download history data for "EGLD/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:57,597 - freqtrade.data.history.history_utils - INFO - Downloaded data for EGLD/USDT:USDT, 1h, funding_rate with length 4605.
+2026-09-14 11:38:57,602 - freqtrade.data.history.history_utils - INFO - Download history data for "ENJ/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:57,973 - freqtrade.exchange.binance - INFO - Candle-data for ENJ/USDT:USDT available starting with 2020-09-29T00:00:00+00:00.
+2026-09-14 11:38:58,603 - freqtrade.data.history.history_utils - INFO - Downloaded data for ENJ/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:38:58,635 - freqtrade.data.history.history_utils - INFO - Download history data for "ENJ/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:38:59,024 - freqtrade.exchange.binance - INFO - Candle-data for ENJ/USDT:USDT available starting with 2020-09-29T02:00:00+00:00.
+2026-09-14 11:39:05,140 - freqtrade.data.history.history_utils - INFO - Downloaded data for ENJ/USDT:USDT, 1h, mark with length 28941.
+2026-09-14 11:39:05,154 - freqtrade.data.history.history_utils - INFO - Download history data for "ENJ/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:07,330 - freqtrade.data.history.history_utils - INFO - Downloaded data for ENJ/USDT:USDT, 1h, funding_rate with length 4558.
+2026-09-14 11:39:07,336 - freqtrade.data.history.history_utils - INFO - Download history data for "ENS/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:07,717 - freqtrade.exchange.binance - INFO - Candle-data for ENS/USDT:USDT available starting with 2021-11-30T00:00:00+00:00.
+2026-09-14 11:39:08,228 - freqtrade.data.history.history_utils - INFO - Downloaded data for ENS/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:39:08,235 - freqtrade.data.history.history_utils - INFO - Download history data for "ENS/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:08,642 - freqtrade.exchange.binance - INFO - Candle-data for ENS/USDT:USDT available starting with 2021-11-29T08:00:00+00:00.
+2026-09-14 11:39:12,653 - freqtrade.data.history.history_utils - INFO - Downloaded data for ENS/USDT:USDT, 1h, mark with length 18462.
+2026-09-14 11:39:12,662 - freqtrade.data.history.history_utils - INFO - Download history data for "ENS/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:14,829 - freqtrade.data.history.history_utils - INFO - Downloaded data for ENS/USDT:USDT, 1h, funding_rate with length 3279.
+2026-09-14 11:39:14,835 - freqtrade.data.history.history_utils - INFO - Download history data for "ETC/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:15,216 - freqtrade.exchange.binance - INFO - Candle-data for ETC/USDT:USDT available starting with 2020-01-16T00:00:00+00:00.
+2026-09-14 11:39:15,840 - freqtrade.data.history.history_utils - INFO - Downloaded data for ETC/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:39:15,846 - freqtrade.data.history.history_utils - INFO - Download history data for "ETC/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:16,230 - freqtrade.exchange.binance - INFO - Candle-data for ETC/USDT:USDT available starting with 2020-01-16T06:00:00+00:00.
+2026-09-14 11:39:23,567 - freqtrade.data.history.history_utils - INFO - Downloaded data for ETC/USDT:USDT, 1h, mark with length 34929.
+2026-09-14 11:39:23,584 - freqtrade.data.history.history_utils - INFO - Download history data for "ETC/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:25,752 - freqtrade.data.history.history_utils - INFO - Downloaded data for ETC/USDT:USDT, 1h, funding_rate with length 5329.
+2026-09-14 11:39:25,768 - freqtrade.data.history.history_utils - INFO - Download history data for "ETH/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:26,880 - freqtrade.data.history.history_utils - INFO - Downloaded data for ETH/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:39:26,886 - freqtrade.data.history.history_utils - INFO - Download history data for "ETH/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:34,731 - freqtrade.data.history.history_utils - INFO - Downloaded data for ETH/USDT:USDT, 1h, mark with length 35428.
+2026-09-14 11:39:34,774 - freqtrade.data.history.history_utils - INFO - Download history data for "ETH/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:36,973 - freqtrade.data.history.history_utils - INFO - Downloaded data for ETH/USDT:USDT, 1h, funding_rate with length 5375.
+2026-09-14 11:39:36,979 - freqtrade.data.history.history_utils - INFO - Download history data for "FIL/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:37,348 - freqtrade.exchange.binance - INFO - Candle-data for FIL/USDT:USDT available starting with 2020-10-16T00:00:00+00:00.
+2026-09-14 11:39:37,968 - freqtrade.data.history.history_utils - INFO - Downloaded data for FIL/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:39:37,974 - freqtrade.data.history.history_utils - INFO - Download history data for "FIL/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:38,356 - freqtrade.exchange.binance - INFO - Candle-data for FIL/USDT:USDT available starting with 2020-10-16T02:00:00+00:00.
+2026-09-14 11:39:44,383 - freqtrade.data.history.history_utils - INFO - Downloaded data for FIL/USDT:USDT, 1h, mark with length 28442.
+2026-09-14 11:39:44,395 - freqtrade.data.history.history_utils - INFO - Download history data for "FIL/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:46,591 - freqtrade.data.history.history_utils - INFO - Downloaded data for FIL/USDT:USDT, 1h, funding_rate with length 4507.
+2026-09-14 11:39:46,597 - freqtrade.data.history.history_utils - INFO - Download history data for "GALA/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:46,974 - freqtrade.exchange.binance - INFO - Candle-data for GALA/USDT:USDT available starting with 2021-09-18T00:00:00+00:00.
+2026-09-14 11:39:47,488 - freqtrade.data.history.history_utils - INFO - Downloaded data for GALA/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:39:47,494 - freqtrade.data.history.history_utils - INFO - Download history data for "GALA/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:47,871 - freqtrade.exchange.binance - INFO - Candle-data for GALA/USDT:USDT available starting with 2021-09-17T09:00:00+00:00.
+2026-09-14 11:39:52,293 - freqtrade.data.history.history_utils - INFO - Downloaded data for GALA/USDT:USDT, 1h, mark with length 20458.
+2026-09-14 11:39:52,304 - freqtrade.data.history.history_utils - INFO - Download history data for "GALA/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:54,485 - freqtrade.data.history.history_utils - INFO - Downloaded data for GALA/USDT:USDT, 1h, funding_rate with length 3498.
+2026-09-14 11:39:54,490 - freqtrade.data.history.history_utils - INFO - Download history data for "GRT/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:54,862 - freqtrade.exchange.binance - INFO - Candle-data for GRT/USDT:USDT available starting with 2020-12-19T00:00:00+00:00.
+2026-09-14 11:39:55,540 - freqtrade.data.history.history_utils - INFO - Downloaded data for GRT/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:39:55,546 - freqtrade.data.history.history_utils - INFO - Download history data for "GRT/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:39:55,943 - freqtrade.exchange.binance - INFO - Candle-data for GRT/USDT:USDT available starting with 2020-12-19T05:00:00+00:00.
+2026-09-14 11:40:01,680 - freqtrade.data.history.history_utils - INFO - Downloaded data for GRT/USDT:USDT, 1h, mark with length 26945.
+2026-09-14 11:40:01,694 - freqtrade.data.history.history_utils - INFO - Download history data for "GRT/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:03,867 - freqtrade.data.history.history_utils - INFO - Downloaded data for GRT/USDT:USDT, 1h, funding_rate with length 4315.
+2026-09-14 11:40:03,873 - freqtrade.data.history.history_utils - INFO - Download history data for "GTC/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:04,345 - freqtrade.exchange.binance - INFO - Candle-data for GTC/USDT:USDT available starting with 2021-06-11T00:00:00+00:00.
+2026-09-14 11:40:05,021 - freqtrade.data.history.history_utils - INFO - Downloaded data for GTC/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:40:05,027 - freqtrade.data.history.history_utils - INFO - Download history data for "GTC/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:05,442 - freqtrade.exchange.binance - INFO - Candle-data for GTC/USDT:USDT available starting with 2021-06-11T02:00:00+00:00.
+2026-09-14 11:40:10,283 - freqtrade.data.history.history_utils - INFO - Downloaded data for GTC/USDT:USDT, 1h, mark with length 22454.
+2026-09-14 11:40:10,297 - freqtrade.data.history.history_utils - INFO - Download history data for "GTC/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:12,479 - freqtrade.data.history.history_utils - INFO - Downloaded data for GTC/USDT:USDT, 1h, funding_rate with length 3793.
+2026-09-14 11:40:12,484 - freqtrade.data.history.history_utils - INFO - Download history data for "HBAR/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:12,919 - freqtrade.exchange.binance - INFO - Candle-data for HBAR/USDT:USDT available starting with 2021-03-17T00:00:00+00:00.
+2026-09-14 11:40:13,541 - freqtrade.data.history.history_utils - INFO - Downloaded data for HBAR/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:40:13,548 - freqtrade.data.history.history_utils - INFO - Download history data for "HBAR/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:13,953 - freqtrade.exchange.binance - INFO - Candle-data for HBAR/USDT:USDT available starting with 2021-03-17T03:00:00+00:00.
+2026-09-14 11:40:19,271 - freqtrade.data.history.history_utils - INFO - Downloaded data for HBAR/USDT:USDT, 1h, mark with length 24949.
+2026-09-14 11:40:19,284 - freqtrade.data.history.history_utils - INFO - Download history data for "HBAR/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:21,464 - freqtrade.data.history.history_utils - INFO - Downloaded data for HBAR/USDT:USDT, 1h, funding_rate with length 4051.
+2026-09-14 11:40:21,470 - freqtrade.data.history.history_utils - INFO - Download history data for "HOT/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:21,850 - freqtrade.exchange.binance - INFO - Candle-data for HOT/USDT:USDT available starting with 2021-03-30T00:00:00+00:00.
+2026-09-14 11:40:22,548 - freqtrade.data.history.history_utils - INFO - Downloaded data for HOT/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:40:22,555 - freqtrade.data.history.history_utils - INFO - Download history data for "HOT/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:22,951 - freqtrade.exchange.binance - INFO - Candle-data for HOT/USDT:USDT available starting with 2021-03-30T03:00:00+00:00.
+2026-09-14 11:40:28,181 - freqtrade.data.history.history_utils - INFO - Downloaded data for HOT/USDT:USDT, 1h, mark with length 24450.
+2026-09-14 11:40:28,193 - freqtrade.data.history.history_utils - INFO - Download history data for "HOT/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:30,367 - freqtrade.data.history.history_utils - INFO - Downloaded data for HOT/USDT:USDT, 1h, funding_rate with length 4012.
+2026-09-14 11:40:30,373 - freqtrade.data.history.history_utils - INFO - Download history data for "ICP/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:30,749 - freqtrade.exchange.binance - INFO - Candle-data for ICP/USDT:USDT available starting with 2022-09-27T00:00:00+00:00.
+2026-09-14 11:40:31,169 - freqtrade.data.history.history_utils - INFO - Downloaded data for ICP/USDT:USDT, 1d, futures with length 498.
+2026-09-14 11:40:31,175 - freqtrade.data.history.history_utils - INFO - Download history data for "ICP/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:31,577 - freqtrade.exchange.binance - INFO - Candle-data for ICP/USDT:USDT available starting with 2021-05-11T02:00:00+00:00.
+2026-09-14 11:40:36,592 - freqtrade.data.history.history_utils - INFO - Downloaded data for ICP/USDT:USDT, 1h, mark with length 23452.
+2026-09-14 11:40:36,603 - freqtrade.data.history.history_utils - INFO - Download history data for "ICP/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:38,782 - freqtrade.data.history.history_utils - INFO - Downloaded data for ICP/USDT:USDT, 1h, funding_rate with length 3886.
+2026-09-14 11:40:38,788 - freqtrade.data.history.history_utils - INFO - Download history data for "IOST/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:39,163 - freqtrade.exchange.binance - INFO - Candle-data for IOST/USDT:USDT available starting with 2020-02-21T00:00:00+00:00.
+2026-09-14 11:40:39,856 - freqtrade.data.history.history_utils - INFO - Downloaded data for IOST/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:40:39,861 - freqtrade.data.history.history_utils - INFO - Download history data for "IOST/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:40,250 - freqtrade.exchange.binance - INFO - Candle-data for IOST/USDT:USDT available starting with 2020-02-19T11:00:00+00:00.
+2026-09-14 11:40:47,398 - freqtrade.data.history.history_utils - INFO - Downloaded data for IOST/USDT:USDT, 1h, mark with length 33931.
+2026-09-14 11:40:47,416 - freqtrade.data.history.history_utils - INFO - Download history data for "IOST/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:49,611 - freqtrade.data.history.history_utils - INFO - Downloaded data for IOST/USDT:USDT, 1h, funding_rate with length 5221.
+2026-09-14 11:40:49,617 - freqtrade.data.history.history_utils - INFO - Download history data for "IOTA/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:49,986 - freqtrade.exchange.binance - INFO - Candle-data for IOTA/USDT:USDT available starting with 2020-02-12T00:00:00+00:00.
+2026-09-14 11:40:50,616 - freqtrade.data.history.history_utils - INFO - Downloaded data for IOTA/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:40:50,622 - freqtrade.data.history.history_utils - INFO - Download history data for "IOTA/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:40:51,013 - freqtrade.exchange.binance - INFO - Candle-data for IOTA/USDT:USDT available starting with 2020-02-12T04:00:00+00:00.
+2026-09-14 11:40:58,229 - freqtrade.data.history.history_utils - INFO - Downloaded data for IOTA/USDT:USDT, 1h, mark with length 34430.
+2026-09-14 11:40:58,247 - freqtrade.data.history.history_utils - INFO - Download history data for "IOTA/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:00,449 - freqtrade.data.history.history_utils - INFO - Downloaded data for IOTA/USDT:USDT, 1h, funding_rate with length 5248.
+2026-09-14 11:41:00,456 - freqtrade.data.history.history_utils - INFO - Download history data for "IOTX/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:00,838 - freqtrade.exchange.binance - INFO - Candle-data for IOTX/USDT:USDT available starting with 2021-08-12T00:00:00+00:00.
+2026-09-14 11:41:01,353 - freqtrade.data.history.history_utils - INFO - Downloaded data for IOTX/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:41:01,360 - freqtrade.data.history.history_utils - INFO - Download history data for "IOTX/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:01,736 - freqtrade.exchange.binance - INFO - Candle-data for IOTX/USDT:USDT available starting with 2021-08-11T10:00:00+00:00.
+2026-09-14 11:41:06,437 - freqtrade.data.history.history_utils - INFO - Downloaded data for IOTX/USDT:USDT, 1h, mark with length 20957.
+2026-09-14 11:41:06,448 - freqtrade.data.history.history_utils - INFO - Download history data for "IOTX/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:08,627 - freqtrade.data.history.history_utils - INFO - Downloaded data for IOTX/USDT:USDT, 1h, funding_rate with length 3609.
+2026-09-14 11:41:08,633 - freqtrade.data.history.history_utils - INFO - Download history data for "KAVA/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:09,057 - freqtrade.exchange.binance - INFO - Candle-data for KAVA/USDT:USDT available starting with 2020-07-28T00:00:00+00:00.
+2026-09-14 11:41:09,674 - freqtrade.data.history.history_utils - INFO - Downloaded data for KAVA/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:41:09,689 - freqtrade.data.history.history_utils - INFO - Download history data for "KAVA/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:10,082 - freqtrade.exchange.binance - INFO - Candle-data for KAVA/USDT:USDT available starting with 2020-07-28T03:00:00+00:00.
+2026-09-14 11:41:16,495 - freqtrade.data.history.history_utils - INFO - Downloaded data for KAVA/USDT:USDT, 1h, mark with length 30438.
+2026-09-14 11:41:16,509 - freqtrade.data.history.history_utils - INFO - Download history data for "KAVA/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:18,699 - freqtrade.data.history.history_utils - INFO - Downloaded data for KAVA/USDT:USDT, 1h, funding_rate with length 4747.
+2026-09-14 11:41:18,706 - freqtrade.data.history.history_utils - INFO - Download history data for "KNC/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:19,088 - freqtrade.exchange.binance - INFO - Candle-data for KNC/USDT:USDT available starting with 2020-06-22T00:00:00+00:00.
+2026-09-14 11:41:19,691 - freqtrade.data.history.history_utils - INFO - Downloaded data for KNC/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:41:19,697 - freqtrade.data.history.history_utils - INFO - Download history data for "KNC/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:20,086 - freqtrade.exchange.binance - INFO - Candle-data for KNC/USDT:USDT available starting with 2020-06-22T06:00:00+00:00.
+2026-09-14 11:41:26,628 - freqtrade.data.history.history_utils - INFO - Downloaded data for KNC/USDT:USDT, 1h, mark with length 30937.
+2026-09-14 11:41:26,641 - freqtrade.data.history.history_utils - INFO - Download history data for "KNC/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:28,833 - freqtrade.data.history.history_utils - INFO - Downloaded data for KNC/USDT:USDT, 1h, funding_rate with length 4855.
+2026-09-14 11:41:28,838 - freqtrade.data.history.history_utils - INFO - Download history data for "KSM/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:29,215 - freqtrade.exchange.binance - INFO - Candle-data for KSM/USDT:USDT available starting with 2020-10-14T00:00:00+00:00.
+2026-09-14 11:41:29,830 - freqtrade.data.history.history_utils - INFO - Downloaded data for KSM/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:41:29,837 - freqtrade.data.history.history_utils - INFO - Download history data for "KSM/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:30,226 - freqtrade.exchange.binance - INFO - Candle-data for KSM/USDT:USDT available starting with 2020-10-14T03:00:00+00:00.
+2026-09-14 11:41:36,249 - freqtrade.data.history.history_utils - INFO - Downloaded data for KSM/USDT:USDT, 1h, mark with length 28442.
+2026-09-14 11:41:36,262 - freqtrade.data.history.history_utils - INFO - Download history data for "KSM/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:38,476 - freqtrade.data.history.history_utils - INFO - Downloaded data for KSM/USDT:USDT, 1h, funding_rate with length 4513.
+2026-09-14 11:41:38,484 - freqtrade.data.history.history_utils - INFO - Download history data for "LINK/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:38,874 - freqtrade.exchange.binance - INFO - Candle-data for LINK/USDT:USDT available starting with 2020-01-17T00:00:00+00:00.
+2026-09-14 11:41:39,488 - freqtrade.data.history.history_utils - INFO - Downloaded data for LINK/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:41:39,494 - freqtrade.data.history.history_utils - INFO - Download history data for "LINK/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:39,900 - freqtrade.exchange.binance - INFO - Candle-data for LINK/USDT:USDT available starting with 2020-01-17T07:00:00+00:00.
+2026-09-14 11:41:47,218 - freqtrade.data.history.history_utils - INFO - Downloaded data for LINK/USDT:USDT, 1h, mark with length 34929.
+2026-09-14 11:41:47,242 - freqtrade.data.history.history_utils - INFO - Download history data for "LINK/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:49,425 - freqtrade.data.history.history_utils - INFO - Downloaded data for LINK/USDT:USDT, 1h, funding_rate with length 5326.
+2026-09-14 11:41:49,432 - freqtrade.data.history.history_utils - INFO - Download history data for "LPT/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:49,811 - freqtrade.exchange.binance - INFO - Candle-data for LPT/USDT:USDT available starting with 2021-11-11T00:00:00+00:00.
+2026-09-14 11:41:50,333 - freqtrade.data.history.history_utils - INFO - Downloaded data for LPT/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:41:50,339 - freqtrade.data.history.history_utils - INFO - Download history data for "LPT/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:50,732 - freqtrade.exchange.binance - INFO - Candle-data for LPT/USDT:USDT available starting with 2021-11-11T02:00:00+00:00.
+2026-09-14 11:41:54,854 - freqtrade.data.history.history_utils - INFO - Downloaded data for LPT/USDT:USDT, 1h, mark with length 18961.
+2026-09-14 11:41:54,864 - freqtrade.data.history.history_utils - INFO - Download history data for "LPT/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:57,056 - freqtrade.data.history.history_utils - INFO - Downloaded data for LPT/USDT:USDT, 1h, funding_rate with length 3592.
+2026-09-14 11:41:57,063 - freqtrade.data.history.history_utils - INFO - Download history data for "LTC/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:57,435 - freqtrade.exchange.binance - INFO - Candle-data for LTC/USDT:USDT available starting with 2020-01-09T00:00:00+00:00.
+2026-09-14 11:41:58,063 - freqtrade.data.history.history_utils - INFO - Downloaded data for LTC/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:41:58,069 - freqtrade.data.history.history_utils - INFO - Download history data for "LTC/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:41:58,468 - freqtrade.exchange.binance - INFO - Candle-data for LTC/USDT:USDT available starting with 2020-01-09T04:00:00+00:00.
+2026-09-14 11:42:05,803 - freqtrade.data.history.history_utils - INFO - Downloaded data for LTC/USDT:USDT, 1h, mark with length 34929.
+2026-09-14 11:42:05,819 - freqtrade.data.history.history_utils - INFO - Download history data for "LTC/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:08,004 - freqtrade.data.history.history_utils - INFO - Downloaded data for LTC/USDT:USDT, 1h, funding_rate with length 5350.
+2026-09-14 11:42:08,015 - freqtrade.data.history.history_utils - INFO - Download history data for "MANA/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:08,397 - freqtrade.exchange.binance - INFO - Candle-data for MANA/USDT:USDT available starting with 2021-03-15T00:00:00+00:00.
+2026-09-14 11:42:09,011 - freqtrade.data.history.history_utils - INFO - Downloaded data for MANA/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:42:09,018 - freqtrade.data.history.history_utils - INFO - Download history data for "MANA/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:09,430 - freqtrade.exchange.binance - INFO - Candle-data for MANA/USDT:USDT available starting with 2021-03-15T03:00:00+00:00.
+2026-09-14 11:42:14,744 - freqtrade.data.history.history_utils - INFO - Downloaded data for MANA/USDT:USDT, 1h, mark with length 24949.
+2026-09-14 11:42:14,766 - freqtrade.data.history.history_utils - INFO - Download history data for "MANA/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:16,948 - freqtrade.data.history.history_utils - INFO - Downloaded data for MANA/USDT:USDT, 1h, funding_rate with length 4057.
+2026-09-14 11:42:16,963 - freqtrade.data.history.history_utils - INFO - Download history data for "MASK/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:17,330 - freqtrade.exchange.binance - INFO - Candle-data for MASK/USDT:USDT available starting with 2021-08-27T00:00:00+00:00.
+2026-09-14 11:42:17,853 - freqtrade.data.history.history_utils - INFO - Downloaded data for MASK/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:42:17,859 - freqtrade.data.history.history_utils - INFO - Download history data for "MASK/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:18,248 - freqtrade.exchange.binance - INFO - Candle-data for MASK/USDT:USDT available starting with 2021-08-26T02:00:00+00:00.
+2026-09-14 11:42:22,764 - freqtrade.data.history.history_utils - INFO - Downloaded data for MASK/USDT:USDT, 1h, mark with length 20957.
+2026-09-14 11:42:22,775 - freqtrade.data.history.history_utils - INFO - Download history data for "MASK/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:24,977 - freqtrade.data.history.history_utils - INFO - Downloaded data for MASK/USDT:USDT, 1h, funding_rate with length 3565.
+2026-09-14 11:42:25,011 - freqtrade.data.history.history_utils - INFO - Download history data for "MTL/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:25,371 - freqtrade.exchange.binance - INFO - Candle-data for MTL/USDT:USDT available starting with 2021-03-31T00:00:00+00:00.
+2026-09-14 11:42:25,998 - freqtrade.data.history.history_utils - INFO - Downloaded data for MTL/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:42:26,004 - freqtrade.data.history.history_utils - INFO - Download history data for "MTL/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:26,407 - freqtrade.exchange.binance - INFO - Candle-data for MTL/USDT:USDT available starting with 2021-03-30T12:00:00+00:00.
+2026-09-14 11:42:31,644 - freqtrade.data.history.history_utils - INFO - Downloaded data for MTL/USDT:USDT, 1h, mark with length 24450.
+2026-09-14 11:42:31,657 - freqtrade.data.history.history_utils - INFO - Download history data for "MTL/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:33,830 - freqtrade.data.history.history_utils - INFO - Downloaded data for MTL/USDT:USDT, 1h, funding_rate with length 4014.
+2026-09-14 11:42:33,847 - freqtrade.data.history.history_utils - INFO - Download history data for "NEAR/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:34,225 - freqtrade.exchange.binance - INFO - Candle-data for NEAR/USDT:USDT available starting with 2020-10-15T00:00:00+00:00.
+2026-09-14 11:42:34,847 - freqtrade.data.history.history_utils - INFO - Downloaded data for NEAR/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:42:34,852 - freqtrade.data.history.history_utils - INFO - Download history data for "NEAR/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:35,270 - freqtrade.exchange.binance - INFO - Candle-data for NEAR/USDT:USDT available starting with 2020-10-14T09:00:00+00:00.
+2026-09-14 11:42:41,304 - freqtrade.data.history.history_utils - INFO - Downloaded data for NEAR/USDT:USDT, 1h, mark with length 28442.
+2026-09-14 11:42:41,319 - freqtrade.data.history.history_utils - INFO - Download history data for "NEAR/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:43,504 - freqtrade.data.history.history_utils - INFO - Downloaded data for NEAR/USDT:USDT, 1h, funding_rate with length 4512.
+2026-09-14 11:42:43,511 - freqtrade.data.history.history_utils - INFO - Download history data for "NEO/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:43,889 - freqtrade.exchange.binance - INFO - Candle-data for NEO/USDT:USDT available starting with 2020-02-17T00:00:00+00:00.
+2026-09-14 11:42:44,504 - freqtrade.data.history.history_utils - INFO - Downloaded data for NEO/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:42:44,509 - freqtrade.data.history.history_utils - INFO - Download history data for "NEO/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:44,910 - freqtrade.exchange.binance - INFO - Candle-data for NEO/USDT:USDT available starting with 2020-02-17T04:00:00+00:00.
+2026-09-14 11:42:52,046 - freqtrade.data.history.history_utils - INFO - Downloaded data for NEO/USDT:USDT, 1h, mark with length 33931.
+2026-09-14 11:42:52,062 - freqtrade.data.history.history_utils - INFO - Download history data for "NEO/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:54,266 - freqtrade.data.history.history_utils - INFO - Downloaded data for NEO/USDT:USDT, 1h, funding_rate with length 5233.
+2026-09-14 11:42:54,274 - freqtrade.data.history.history_utils - INFO - Download history data for "OGN/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:54,624 - freqtrade.exchange.binance - INFO - Candle-data for OGN/USDT:USDT available starting with 2021-04-01T00:00:00+00:00.
+2026-09-14 11:42:55,245 - freqtrade.data.history.history_utils - INFO - Downloaded data for OGN/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:42:55,251 - freqtrade.data.history.history_utils - INFO - Download history data for "OGN/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:42:55,642 - freqtrade.exchange.binance - INFO - Candle-data for OGN/USDT:USDT available starting with 2021-04-01T02:00:00+00:00.
+2026-09-14 11:43:00,874 - freqtrade.data.history.history_utils - INFO - Downloaded data for OGN/USDT:USDT, 1h, mark with length 24450.
+2026-09-14 11:43:00,887 - freqtrade.data.history.history_utils - INFO - Download history data for "OGN/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:03,083 - freqtrade.data.history.history_utils - INFO - Downloaded data for OGN/USDT:USDT, 1h, funding_rate with length 4006.
+2026-09-14 11:43:03,101 - freqtrade.data.history.history_utils - INFO - Download history data for "ONE/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:03,478 - freqtrade.exchange.binance - INFO - Candle-data for ONE/USDT:USDT available starting with 2021-03-18T00:00:00+00:00.
+2026-09-14 11:43:04,111 - freqtrade.data.history.history_utils - INFO - Downloaded data for ONE/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:43:04,118 - freqtrade.data.history.history_utils - INFO - Download history data for "ONE/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:04,503 - freqtrade.exchange.binance - INFO - Candle-data for ONE/USDT:USDT available starting with 2021-03-18T02:00:00+00:00.
+2026-09-14 11:43:09,843 - freqtrade.data.history.history_utils - INFO - Downloaded data for ONE/USDT:USDT, 1h, mark with length 24949.
+2026-09-14 11:43:09,857 - freqtrade.data.history.history_utils - INFO - Download history data for "ONE/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:12,034 - freqtrade.data.history.history_utils - INFO - Downloaded data for ONE/USDT:USDT, 1h, funding_rate with length 4048.
+2026-09-14 11:43:12,041 - freqtrade.data.history.history_utils - INFO - Download history data for "ONT/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:12,623 - freqtrade.exchange.binance - INFO - Candle-data for ONT/USDT:USDT available starting with 2020-02-11T00:00:00+00:00.
+2026-09-14 11:43:13,242 - freqtrade.data.history.history_utils - INFO - Downloaded data for ONT/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:43:13,247 - freqtrade.data.history.history_utils - INFO - Download history data for "ONT/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:13,623 - freqtrade.exchange.binance - INFO - Candle-data for ONT/USDT:USDT available starting with 2020-02-11T05:00:00+00:00.
+2026-09-14 11:43:20,861 - freqtrade.data.history.history_utils - INFO - Downloaded data for ONT/USDT:USDT, 1h, mark with length 34430.
+2026-09-14 11:43:20,878 - freqtrade.data.history.history_utils - INFO - Download history data for "ONT/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:23,078 - freqtrade.data.history.history_utils - INFO - Downloaded data for ONT/USDT:USDT, 1h, funding_rate with length 5251.
+2026-09-14 11:43:23,114 - freqtrade.data.history.history_utils - INFO - Download history data for "PEOPLE/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:23,486 - freqtrade.exchange.binance - INFO - Candle-data for PEOPLE/USDT:USDT available starting with 2021-12-24T00:00:00+00:00.
+2026-09-14 11:43:23,992 - freqtrade.data.history.history_utils - INFO - Downloaded data for PEOPLE/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:43:23,998 - freqtrade.data.history.history_utils - INFO - Download history data for "PEOPLE/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:24,395 - freqtrade.exchange.binance - INFO - Candle-data for PEOPLE/USDT:USDT available starting with 2021-12-23T11:00:00+00:00.
+2026-09-14 11:43:28,307 - freqtrade.data.history.history_utils - INFO - Downloaded data for PEOPLE/USDT:USDT, 1h, mark with length 17963.
+2026-09-14 11:43:28,317 - freqtrade.data.history.history_utils - INFO - Download history data for "PEOPLE/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:30,492 - freqtrade.data.history.history_utils - INFO - Downloaded data for PEOPLE/USDT:USDT, 1h, funding_rate with length 3207.
+2026-09-14 11:43:30,508 - freqtrade.data.history.history_utils - INFO - Download history data for "QTUM/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:30,882 - freqtrade.exchange.binance - INFO - Candle-data for QTUM/USDT:USDT available starting with 2020-02-20T00:00:00+00:00.
+2026-09-14 11:43:31,495 - freqtrade.data.history.history_utils - INFO - Downloaded data for QTUM/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:43:31,501 - freqtrade.data.history.history_utils - INFO - Download history data for "QTUM/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:31,894 - freqtrade.exchange.binance - INFO - Candle-data for QTUM/USDT:USDT available starting with 2020-02-19T11:00:00+00:00.
+2026-09-14 11:43:39,024 - freqtrade.data.history.history_utils - INFO - Downloaded data for QTUM/USDT:USDT, 1h, mark with length 33931.
+2026-09-14 11:43:39,040 - freqtrade.data.history.history_utils - INFO - Download history data for "QTUM/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:41,229 - freqtrade.data.history.history_utils - INFO - Downloaded data for QTUM/USDT:USDT, 1h, funding_rate with length 5226.
+2026-09-14 11:43:41,247 - freqtrade.data.history.history_utils - INFO - Download history data for "RLC/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:41,627 - freqtrade.exchange.binance - INFO - Candle-data for RLC/USDT:USDT available starting with 2020-07-31T00:00:00+00:00.
+2026-09-14 11:43:42,250 - freqtrade.data.history.history_utils - INFO - Downloaded data for RLC/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:43:42,257 - freqtrade.data.history.history_utils - INFO - Download history data for "RLC/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:42,632 - freqtrade.exchange.binance - INFO - Candle-data for RLC/USDT:USDT available starting with 2020-07-31T02:00:00+00:00.
+2026-09-14 11:43:49,056 - freqtrade.data.history.history_utils - INFO - Downloaded data for RLC/USDT:USDT, 1h, mark with length 30438.
+2026-09-14 11:43:49,069 - freqtrade.data.history.history_utils - INFO - Download history data for "RLC/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:51,240 - freqtrade.data.history.history_utils - INFO - Downloaded data for RLC/USDT:USDT, 1h, funding_rate with length 4738.
+2026-09-14 11:43:51,247 - freqtrade.data.history.history_utils - INFO - Download history data for "ROSE/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:51,610 - freqtrade.exchange.binance - INFO - Candle-data for ROSE/USDT:USDT available starting with 2021-12-31T00:00:00+00:00.
+2026-09-14 11:43:52,137 - freqtrade.data.history.history_utils - INFO - Downloaded data for ROSE/USDT:USDT, 1d, futures with length 997.
+2026-09-14 11:43:52,143 - freqtrade.data.history.history_utils - INFO - Download history data for "ROSE/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:52,551 - freqtrade.exchange.binance - INFO - Candle-data for ROSE/USDT:USDT available starting with 2021-12-30T02:00:00+00:00.
+2026-09-14 11:43:56,452 - freqtrade.data.history.history_utils - INFO - Downloaded data for ROSE/USDT:USDT, 1h, mark with length 17963.
+2026-09-14 11:43:56,462 - freqtrade.data.history.history_utils - INFO - Download history data for "ROSE/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:58,674 - freqtrade.data.history.history_utils - INFO - Downloaded data for ROSE/USDT:USDT, 1h, funding_rate with length 3187.
+2026-09-14 11:43:58,680 - freqtrade.data.history.history_utils - INFO - Download history data for "RSR/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:43:59,038 - freqtrade.exchange.binance - INFO - Candle-data for RSR/USDT:USDT available starting with 2020-10-19T00:00:00+00:00.
+2026-09-14 11:43:59,652 - freqtrade.data.history.history_utils - INFO - Downloaded data for RSR/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:43:59,666 - freqtrade.data.history.history_utils - INFO - Download history data for "RSR/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:00,072 - freqtrade.exchange.binance - INFO - Candle-data for RSR/USDT:USDT available starting with 2020-10-19T05:00:00+00:00.
+2026-09-14 11:44:06,089 - freqtrade.data.history.history_utils - INFO - Downloaded data for RSR/USDT:USDT, 1h, mark with length 28442.
+2026-09-14 11:44:06,103 - freqtrade.data.history.history_utils - INFO - Download history data for "RSR/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:08,282 - freqtrade.data.history.history_utils - INFO - Downloaded data for RSR/USDT:USDT, 1h, funding_rate with length 4498.
+2026-09-14 11:44:08,289 - freqtrade.data.history.history_utils - INFO - Download history data for "RUNE/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:08,656 - freqtrade.exchange.binance - INFO - Candle-data for RUNE/USDT:USDT available starting with 2020-09-04T00:00:00+00:00.
+2026-09-14 11:44:09,273 - freqtrade.data.history.history_utils - INFO - Downloaded data for RUNE/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:44:09,279 - freqtrade.data.history.history_utils - INFO - Download history data for "RUNE/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:09,681 - freqtrade.exchange.binance - INFO - Candle-data for RUNE/USDT:USDT available starting with 2020-09-04T03:00:00+00:00.
+2026-09-14 11:44:15,916 - freqtrade.data.history.history_utils - INFO - Downloaded data for RUNE/USDT:USDT, 1h, mark with length 29440.
+2026-09-14 11:44:15,931 - freqtrade.data.history.history_utils - INFO - Download history data for "RUNE/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:18,154 - freqtrade.data.history.history_utils - INFO - Downloaded data for RUNE/USDT:USDT, 1h, funding_rate with length 4633.
+2026-09-14 11:44:18,162 - freqtrade.data.history.history_utils - INFO - Download history data for "RVN/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:18,540 - freqtrade.exchange.binance - INFO - Candle-data for RVN/USDT:USDT available starting with 2021-02-23T00:00:00+00:00.
+2026-09-14 11:44:19,155 - freqtrade.data.history.history_utils - INFO - Downloaded data for RVN/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:44:19,161 - freqtrade.data.history.history_utils - INFO - Download history data for "RVN/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:19,547 - freqtrade.exchange.binance - INFO - Candle-data for RVN/USDT:USDT available starting with 2021-02-23T03:00:00+00:00.
+2026-09-14 11:44:24,983 - freqtrade.data.history.history_utils - INFO - Downloaded data for RVN/USDT:USDT, 1h, mark with length 25448.
+2026-09-14 11:44:24,995 - freqtrade.data.history.history_utils - INFO - Download history data for "RVN/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:27,148 - freqtrade.data.history.history_utils - INFO - Downloaded data for RVN/USDT:USDT, 1h, funding_rate with length 4117.
+2026-09-14 11:44:27,155 - freqtrade.data.history.history_utils - INFO - Download history data for "SAND/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:27,530 - freqtrade.exchange.binance - INFO - Candle-data for SAND/USDT:USDT available starting with 2021-01-25T00:00:00+00:00.
+2026-09-14 11:44:28,151 - freqtrade.data.history.history_utils - INFO - Downloaded data for SAND/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:44:28,185 - freqtrade.data.history.history_utils - INFO - Download history data for "SAND/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:28,577 - freqtrade.exchange.binance - INFO - Candle-data for SAND/USDT:USDT available starting with 2021-01-25T02:00:00+00:00.
+2026-09-14 11:44:34,119 - freqtrade.data.history.history_utils - INFO - Downloaded data for SAND/USDT:USDT, 1h, mark with length 25947.
+2026-09-14 11:44:34,132 - freqtrade.data.history.history_utils - INFO - Download history data for "SAND/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:36,305 - freqtrade.data.history.history_utils - INFO - Downloaded data for SAND/USDT:USDT, 1h, funding_rate with length 4204.
+2026-09-14 11:44:36,311 - freqtrade.data.history.history_utils - INFO - Download history data for "SFP/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:36,683 - freqtrade.exchange.binance - INFO - Candle-data for SFP/USDT:USDT available starting with 2021-02-24T00:00:00+00:00.
+2026-09-14 11:44:37,302 - freqtrade.data.history.history_utils - INFO - Downloaded data for SFP/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:44:37,307 - freqtrade.data.history.history_utils - INFO - Download history data for "SFP/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:37,697 - freqtrade.exchange.binance - INFO - Candle-data for SFP/USDT:USDT available starting with 2021-02-24T02:00:00+00:00.
+2026-09-14 11:44:43,109 - freqtrade.data.history.history_utils - INFO - Downloaded data for SFP/USDT:USDT, 1h, mark with length 25448.
+2026-09-14 11:44:43,131 - freqtrade.data.history.history_utils - INFO - Download history data for "SFP/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:45,316 - freqtrade.data.history.history_utils - INFO - Downloaded data for SFP/USDT:USDT, 1h, funding_rate with length 4114.
+2026-09-14 11:44:45,322 - freqtrade.data.history.history_utils - INFO - Download history data for "SKL/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:45,680 - freqtrade.exchange.binance - INFO - Candle-data for SKL/USDT:USDT available starting with 2020-12-08T00:00:00+00:00.
+2026-09-14 11:44:46,297 - freqtrade.data.history.history_utils - INFO - Downloaded data for SKL/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:44:46,304 - freqtrade.data.history.history_utils - INFO - Download history data for "SKL/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:46,706 - freqtrade.exchange.binance - INFO - Candle-data for SKL/USDT:USDT available starting with 2020-12-08T04:00:00+00:00.
+2026-09-14 11:44:52,429 - freqtrade.data.history.history_utils - INFO - Downloaded data for SKL/USDT:USDT, 1h, mark with length 26945.
+2026-09-14 11:44:52,443 - freqtrade.data.history.history_utils - INFO - Download history data for "SKL/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:54,624 - freqtrade.data.history.history_utils - INFO - Downloaded data for SKL/USDT:USDT, 1h, funding_rate with length 4348.
+2026-09-14 11:44:54,630 - freqtrade.data.history.history_utils - INFO - Download history data for "SNX/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:55,036 - freqtrade.exchange.binance - INFO - Candle-data for SNX/USDT:USDT available starting with 2020-08-14T00:00:00+00:00.
+2026-09-14 11:44:55,654 - freqtrade.data.history.history_utils - INFO - Downloaded data for SNX/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:44:55,659 - freqtrade.data.history.history_utils - INFO - Download history data for "SNX/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:44:56,055 - freqtrade.exchange.binance - INFO - Candle-data for SNX/USDT:USDT available starting with 2020-08-14T03:00:00+00:00.
+2026-09-14 11:45:02,388 - freqtrade.data.history.history_utils - INFO - Downloaded data for SNX/USDT:USDT, 1h, mark with length 29939.
+2026-09-14 11:45:02,400 - freqtrade.data.history.history_utils - INFO - Download history data for "SNX/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:04,717 - freqtrade.data.history.history_utils - INFO - Downloaded data for SNX/USDT:USDT, 1h, funding_rate with length 4696.
+2026-09-14 11:45:04,726 - freqtrade.data.history.history_utils - INFO - Download history data for "SOL/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:05,300 - freqtrade.exchange.binance - INFO - Candle-data for SOL/USDT:USDT available starting with 2020-09-14T00:00:00+00:00.
+2026-09-14 11:45:05,960 - freqtrade.data.history.history_utils - INFO - Downloaded data for SOL/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:45:05,967 - freqtrade.data.history.history_utils - INFO - Download history data for "SOL/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:06,351 - freqtrade.exchange.binance - INFO - Candle-data for SOL/USDT:USDT available starting with 2020-09-13T11:00:00+00:00.
+2026-09-14 11:45:12,694 - freqtrade.data.history.history_utils - INFO - Downloaded data for SOL/USDT:USDT, 1h, mark with length 28941.
+2026-09-14 11:45:12,708 - freqtrade.data.history.history_utils - INFO - Download history data for "SOL/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:14,899 - freqtrade.data.history.history_utils - INFO - Downloaded data for SOL/USDT:USDT, 1h, funding_rate with length 4680.
+2026-09-14 11:45:14,907 - freqtrade.data.history.history_utils - INFO - Download history data for "SUSHI/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:15,271 - freqtrade.exchange.binance - INFO - Candle-data for SUSHI/USDT:USDT available starting with 2020-09-04T00:00:00+00:00.
+2026-09-14 11:45:15,923 - freqtrade.data.history.history_utils - INFO - Downloaded data for SUSHI/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:45:15,930 - freqtrade.data.history.history_utils - INFO - Download history data for "SUSHI/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:16,337 - freqtrade.exchange.binance - INFO - Candle-data for SUSHI/USDT:USDT available starting with 2020-09-04T03:00:00+00:00.
+2026-09-14 11:45:22,563 - freqtrade.data.history.history_utils - INFO - Downloaded data for SUSHI/USDT:USDT, 1h, mark with length 29440.
+2026-09-14 11:45:22,587 - freqtrade.data.history.history_utils - INFO - Download history data for "SUSHI/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:24,789 - freqtrade.data.history.history_utils - INFO - Downloaded data for SUSHI/USDT:USDT, 1h, funding_rate with length 4633.
+2026-09-14 11:45:24,796 - freqtrade.data.history.history_utils - INFO - Download history data for "THETA/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:25,164 - freqtrade.exchange.binance - INFO - Candle-data for THETA/USDT:USDT available starting with 2020-05-27T00:00:00+00:00.
+2026-09-14 11:45:25,785 - freqtrade.data.history.history_utils - INFO - Downloaded data for THETA/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:45:25,791 - freqtrade.data.history.history_utils - INFO - Download history data for "THETA/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:26,180 - freqtrade.exchange.binance - INFO - Candle-data for THETA/USDT:USDT available starting with 2020-05-26T11:00:00+00:00.
+2026-09-14 11:45:32,909 - freqtrade.data.history.history_utils - INFO - Downloaded data for THETA/USDT:USDT, 1h, mark with length 31935.
+2026-09-14 11:45:32,924 - freqtrade.data.history.history_utils - INFO - Download history data for "THETA/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:35,104 - freqtrade.data.history.history_utils - INFO - Downloaded data for THETA/USDT:USDT, 1h, funding_rate with length 4935.
+2026-09-14 11:45:35,112 - freqtrade.data.history.history_utils - INFO - Download history data for "TRB/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:35,479 - freqtrade.exchange.binance - INFO - Candle-data for TRB/USDT:USDT available starting with 2020-09-03T00:00:00+00:00.
+2026-09-14 11:45:36,090 - freqtrade.data.history.history_utils - INFO - Downloaded data for TRB/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:45:36,097 - freqtrade.data.history.history_utils - INFO - Download history data for "TRB/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:36,502 - freqtrade.exchange.binance - INFO - Candle-data for TRB/USDT:USDT available starting with 2020-09-03T02:00:00+00:00.
+2026-09-14 11:45:42,744 - freqtrade.data.history.history_utils - INFO - Downloaded data for TRB/USDT:USDT, 1h, mark with length 29440.
+2026-09-14 11:45:42,759 - freqtrade.data.history.history_utils - INFO - Download history data for "TRB/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:44,957 - freqtrade.data.history.history_utils - INFO - Downloaded data for TRB/USDT:USDT, 1h, funding_rate with length 4870.
+2026-09-14 11:45:44,964 - freqtrade.data.history.history_utils - INFO - Download history data for "TRX/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:45,377 - freqtrade.exchange.binance - INFO - Candle-data for TRX/USDT:USDT available starting with 2020-01-15T00:00:00+00:00.
+2026-09-14 11:45:46,015 - freqtrade.data.history.history_utils - INFO - Downloaded data for TRX/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:45:46,025 - freqtrade.data.history.history_utils - INFO - Download history data for "TRX/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:46,397 - freqtrade.exchange.binance - INFO - Candle-data for TRX/USDT:USDT available starting with 2020-01-15T03:00:00+00:00.
+2026-09-14 11:45:53,721 - freqtrade.data.history.history_utils - INFO - Downloaded data for TRX/USDT:USDT, 1h, mark with length 34929.
+2026-09-14 11:45:53,739 - freqtrade.data.history.history_utils - INFO - Download history data for "TRX/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:55,932 - freqtrade.data.history.history_utils - INFO - Downloaded data for TRX/USDT:USDT, 1h, funding_rate with length 5332.
+2026-09-14 11:45:55,949 - freqtrade.data.history.history_utils - INFO - Download history data for "UNI/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:56,312 - freqtrade.exchange.binance - INFO - Candle-data for UNI/USDT:USDT available starting with 2020-09-18T00:00:00+00:00.
+2026-09-14 11:45:56,947 - freqtrade.data.history.history_utils - INFO - Downloaded data for UNI/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:45:56,955 - freqtrade.data.history.history_utils - INFO - Download history data for "UNI/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:45:57,355 - freqtrade.exchange.binance - INFO - Candle-data for UNI/USDT:USDT available starting with 2020-09-17T07:00:00+00:00.
+2026-09-14 11:46:03,482 - freqtrade.data.history.history_utils - INFO - Downloaded data for UNI/USDT:USDT, 1h, mark with length 28941.
+2026-09-14 11:46:03,498 - freqtrade.data.history.history_utils - INFO - Download history data for "UNI/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:46:05,685 - freqtrade.data.history.history_utils - INFO - Downloaded data for UNI/USDT:USDT, 1h, funding_rate with length 4594.
+2026-09-14 11:46:05,703 - freqtrade.data.history.history_utils - INFO - Download history data for "VET/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:46:06,079 - freqtrade.exchange.binance - INFO - Candle-data for VET/USDT:USDT available starting with 2020-02-14T00:00:00+00:00.
+2026-09-14 11:46:06,695 - freqtrade.data.history.history_utils - INFO - Downloaded data for VET/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:46:06,701 - freqtrade.data.history.history_utils - INFO - Download history data for "VET/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:46:07,088 - freqtrade.exchange.binance - INFO - Candle-data for VET/USDT:USDT available starting with 2020-02-14T03:00:00+00:00.
+2026-09-14 11:46:14,344 - freqtrade.data.history.history_utils - INFO - Downloaded data for VET/USDT:USDT, 1h, mark with length 34430.
+2026-09-14 11:46:14,361 - freqtrade.data.history.history_utils - INFO - Download history data for "VET/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:46:16,535 - freqtrade.data.history.history_utils - INFO - Downloaded data for VET/USDT:USDT, 1h, funding_rate with length 5242.
+2026-09-14 11:46:16,544 - freqtrade.data.history.history_utils - INFO - Download history data for "XLM/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:46:16,904 - freqtrade.exchange.binance - INFO - Candle-data for XLM/USDT:USDT available starting with 2020-01-20T00:00:00+00:00.
+2026-09-14 11:46:17,538 - freqtrade.data.history.history_utils - INFO - Downloaded data for XLM/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:46:17,544 - freqtrade.data.history.history_utils - INFO - Download history data for "XLM/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:46:18,149 - freqtrade.exchange.binance - INFO - Candle-data for XLM/USDT:USDT available starting with 2020-01-19T09:00:00+00:00.
+2026-09-14 11:46:25,460 - freqtrade.data.history.history_utils - INFO - Downloaded data for XLM/USDT:USDT, 1h, mark with length 34929.
+2026-09-14 11:46:25,478 - freqtrade.data.history.history_utils - INFO - Download history data for "XLM/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:46:27,653 - freqtrade.data.history.history_utils - INFO - Downloaded data for XLM/USDT:USDT, 1h, funding_rate with length 5319.
+2026-09-14 11:46:27,661 - freqtrade.data.history.history_utils - INFO - Download history data for "XMR/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:46:28,091 - freqtrade.exchange.binance - INFO - Candle-data for XMR/USDT:USDT available starting with 2020-02-03T00:00:00+00:00.
+2026-09-14 11:46:28,692 - freqtrade.data.history.history_utils - INFO - Downloaded data for XMR/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:46:28,725 - freqtrade.data.history.history_utils - INFO - Download history data for "XMR/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:46:29,131 - freqtrade.exchange.binance - INFO - Candle-data for XMR/USDT:USDT available starting with 2020-01-19T09:00:00+00:00.
+2026-09-14 11:46:36,471 - freqtrade.data.history.history_utils - INFO - Downloaded data for XMR/USDT:USDT, 1h, mark with length 34929.
+2026-09-14 11:46:36,489 - freqtrade.data.history.history_utils - INFO - Download history data for "XMR/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:46:38,676 - freqtrade.data.history.history_utils - INFO - Downloaded data for XMR/USDT:USDT, 1h, funding_rate with length 5319.
+2026-09-14 11:46:38,682 - freqtrade.data.history.history_utils - INFO - Download history data for "XRP/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:46:39,043 - freqtrade.exchange.binance - INFO - Candle-data for XRP/USDT:USDT available starting with 2020-01-06T00:00:00+00:00.
+2026-09-14 11:46:39,671 - freqtrade.data.history.history_utils - INFO - Downloaded data for XRP/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:46:39,676 - freqtrade.data.history.history_utils - INFO - Download history data for "XRP/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:46:40,089 - freqtrade.exchange.binance - INFO - Candle-data for XRP/USDT:USDT available starting with 2020-01-06T03:00:00+00:00.
+2026-09-14 11:46:47,535 - freqtrade.data.history.history_utils - INFO - Downloaded data for XRP/USDT:USDT, 1h, mark with length 35428.
+2026-09-14 11:46:47,552 - freqtrade.data.history.history_utils - INFO - Download history data for "XRP/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:46:49,754 - freqtrade.data.history.history_utils - INFO - Downloaded data for XRP/USDT:USDT, 1h, funding_rate with length 5359.
+2026-09-14 11:46:49,761 - freqtrade.data.history.history_utils - INFO - Download history data for "XTZ/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:46:50,108 - freqtrade.exchange.binance - INFO - Candle-data for XTZ/USDT:USDT available starting with 2020-02-06T00:00:00+00:00.
+2026-09-14 11:46:50,743 - freqtrade.data.history.history_utils - INFO - Downloaded data for XTZ/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:46:50,749 - freqtrade.data.history.history_utils - INFO - Download history data for "XTZ/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:46:51,137 - freqtrade.exchange.binance - INFO - Candle-data for XTZ/USDT:USDT available starting with 2020-02-04T05:00:00+00:00.
+2026-09-14 11:46:58,369 - freqtrade.data.history.history_utils - INFO - Downloaded data for XTZ/USDT:USDT, 1h, mark with length 34430.
+2026-09-14 11:46:58,410 - freqtrade.data.history.history_utils - INFO - Download history data for "XTZ/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:00,593 - freqtrade.data.history.history_utils - INFO - Downloaded data for XTZ/USDT:USDT, 1h, funding_rate with length 5272.
+2026-09-14 11:47:00,601 - freqtrade.data.history.history_utils - INFO - Download history data for "YFI/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:00,963 - freqtrade.exchange.binance - INFO - Candle-data for YFI/USDT:USDT available starting with 2020-08-31T00:00:00+00:00.
+2026-09-14 11:47:01,575 - freqtrade.data.history.history_utils - INFO - Downloaded data for YFI/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:47:01,579 - freqtrade.data.history.history_utils - INFO - Download history data for "YFI/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:01,977 - freqtrade.exchange.binance - INFO - Candle-data for YFI/USDT:USDT available starting with 2020-08-31T05:00:00+00:00.
+2026-09-14 11:47:08,230 - freqtrade.data.history.history_utils - INFO - Downloaded data for YFI/USDT:USDT, 1h, mark with length 29440.
+2026-09-14 11:47:08,244 - freqtrade.data.history.history_utils - INFO - Download history data for "YFI/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:10,414 - freqtrade.data.history.history_utils - INFO - Downloaded data for YFI/USDT:USDT, 1h, funding_rate with length 4645.
+2026-09-14 11:47:10,420 - freqtrade.data.history.history_utils - INFO - Download history data for "ZEC/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:10,778 - freqtrade.exchange.binance - INFO - Candle-data for ZEC/USDT:USDT available starting with 2020-02-05T00:00:00+00:00.
+2026-09-14 11:47:11,399 - freqtrade.data.history.history_utils - INFO - Downloaded data for ZEC/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:47:11,406 - freqtrade.data.history.history_utils - INFO - Download history data for "ZEC/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:11,811 - freqtrade.exchange.binance - INFO - Candle-data for ZEC/USDT:USDT available starting with 2020-02-04T05:00:00+00:00.
+2026-09-14 11:47:19,052 - freqtrade.data.history.history_utils - INFO - Downloaded data for ZEC/USDT:USDT, 1h, mark with length 34430.
+2026-09-14 11:47:19,078 - freqtrade.data.history.history_utils - INFO - Download history data for "ZEC/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:21,249 - freqtrade.data.history.history_utils - INFO - Downloaded data for ZEC/USDT:USDT, 1h, funding_rate with length 5272.
+2026-09-14 11:47:21,256 - freqtrade.data.history.history_utils - INFO - Download history data for "ZEN/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:21,821 - freqtrade.exchange.binance - INFO - Candle-data for ZEN/USDT:USDT available starting with 2020-11-24T00:00:00+00:00.
+2026-09-14 11:47:22,452 - freqtrade.data.history.history_utils - INFO - Downloaded data for ZEN/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:47:22,457 - freqtrade.data.history.history_utils - INFO - Download history data for "ZEN/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:22,839 - freqtrade.exchange.binance - INFO - Candle-data for ZEN/USDT:USDT available starting with 2020-11-24T03:00:00+00:00.
+2026-09-14 11:47:28,667 - freqtrade.data.history.history_utils - INFO - Downloaded data for ZEN/USDT:USDT, 1h, mark with length 27444.
+2026-09-14 11:47:28,681 - freqtrade.data.history.history_utils - INFO - Download history data for "ZEN/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:30,869 - freqtrade.data.history.history_utils - INFO - Downloaded data for ZEN/USDT:USDT, 1h, funding_rate with length 4390.
+2026-09-14 11:47:30,885 - freqtrade.data.history.history_utils - INFO - Download history data for "ZIL/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:31,238 - freqtrade.exchange.binance - INFO - Candle-data for ZIL/USDT:USDT available starting with 2020-06-18T00:00:00+00:00.
+2026-09-14 11:47:31,854 - freqtrade.data.history.history_utils - INFO - Downloaded data for ZIL/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:47:31,860 - freqtrade.data.history.history_utils - INFO - Download history data for "ZIL/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:32,256 - freqtrade.exchange.binance - INFO - Candle-data for ZIL/USDT:USDT available starting with 2020-06-17T07:00:00+00:00.
+2026-09-14 11:47:38,891 - freqtrade.data.history.history_utils - INFO - Downloaded data for ZIL/USDT:USDT, 1h, mark with length 31436.
+2026-09-14 11:47:38,904 - freqtrade.data.history.history_utils - INFO - Download history data for "ZIL/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:41,077 - freqtrade.data.history.history_utils - INFO - Downloaded data for ZIL/USDT:USDT, 1h, funding_rate with length 4870.
+2026-09-14 11:47:41,082 - freqtrade.data.history.history_utils - INFO - Download history data for "ZRX/USDT:USDT", 1d, futures and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:41,447 - freqtrade.exchange.binance - INFO - Candle-data for ZRX/USDT:USDT available starting with 2020-06-24T00:00:00+00:00.
+2026-09-14 11:47:42,056 - freqtrade.data.history.history_utils - INFO - Downloaded data for ZRX/USDT:USDT, 1d, futures with length 1496.
+2026-09-14 11:47:42,091 - freqtrade.data.history.history_utils - INFO - Download history data for "ZRX/USDT:USDT", 1h, mark and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:42,493 - freqtrade.exchange.binance - INFO - Candle-data for ZRX/USDT:USDT available starting with 2020-06-24T02:00:00+00:00.
+2026-09-14 11:47:49,016 - freqtrade.data.history.history_utils - INFO - Downloaded data for ZRX/USDT:USDT, 1h, mark with length 30937.
+2026-09-14 11:47:49,028 - freqtrade.data.history.history_utils - INFO - Download history data for "ZRX/USDT:USDT", 1h, funding_rate and store in 
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\xsmomentum\userdir\data\binance. From 2020-01-01T00:00:00 to 2024-01-01T00:00:00
+2026-09-14 11:47:51,222 - freqtrade.data.history.history_utils - INFO - Downloaded data for ZRX/USDT:USDT, 1h, funding_rate with length 4849.
+Timeframe                 ----------------------------------------------------------------------------------------------------------------------------------------------- 3/3   100% • 0:00:09 • 0:00:00
+Downloading ZRX/USDT:USDT ----------------------------------------------------------------------------------------------------------------------------------------------- 89/89 100% • 0:14:17 • 0:00:00

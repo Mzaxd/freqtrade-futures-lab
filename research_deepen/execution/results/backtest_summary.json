@@ -1,0 +1,18 @@
+{
+  "strategy": "EXE_OPT4",
+  "backtest_start": "2021-01-01 00:00:00",
+  "backtest_end": "2024-01-01 00:00:00",
+  "n_trades": 436,
+  "n_open": 0,
+  "exit_reasons": {
+    "stop_loss": 276,
+    "exit_signal": 152,
+    "time_stop_60d": 4,
+    "force_exit": 4
+  },
+  "direction": {
+    "long": 248,
+    "short": 188
+  },
+  "tot_profit_ratio_equity_pct": 1464.0864527403003
+}

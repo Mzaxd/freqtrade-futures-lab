@@ -1,0 +1,137 @@
+2026-09-14 11:24:48,978 - freqtrade - INFO - freqtrade 2026.8
+2026-09-14 11:24:49,378 - numexpr.utils - INFO - Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
+2026-09-14 11:24:49,378 - numexpr.utils - INFO - NumExpr defaulting to 16 threads.
+2026-09-14 11:24:51,017 - freqtrade.configuration.load_config - INFO - Using config: research_deepen/xexchange/configs/bybit_fut.json ...
+2026-09-14 11:24:51,018 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-09-14 11:24:51,019 - freqtrade.loggers - INFO - Logfile configured
+2026-09-14 11:24:51,019 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-09-14 11:24:51,019 - freqtrade.configuration.configuration - INFO - Parameter --timerange detected: 20200901-20240101 ...
+2026-09-14 11:24:51,030 - freqtrade.configuration.configuration - INFO - Using user-data directory: user_data ...
+2026-09-14 11:24:51,030 - freqtrade.configuration.directory_operations - INFO - Created data directory: None
+2026-09-14 11:24:51,031 - freqtrade.configuration.configuration - INFO - Using data directory: user_data\data\bybit ...
+2026-09-14 11:24:51,031 - freqtrade.configuration.configuration - INFO - timeframes --timeframes: ['1h']
+2026-09-14 11:24:51,031 - freqtrade.configuration.configuration - INFO - Filter trades by timerange: 20200901-20240101
+2026-09-14 11:24:51,032 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-09-14 11:24:51,035 - freqtrade.exchange.check_exchange - INFO - Exchange "bybit" is officially supported by the Freqtrade development team.
+2026-09-14 11:24:51,035 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-09-14 11:24:51,036 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-09-14 11:24:52,087 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-09-14 11:24:52,088 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.64
+2026-09-14 11:24:52,088 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap', 'defaultSettle': 'USDT'}}
+2026-09-14 11:24:52,092 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap', 'defaultSettle': 'USDT'}}
+2026-09-14 11:24:52,096 - freqtrade.exchange.exchange - INFO - Using Exchange "Bybit"
+2026-09-14 11:24:52,096 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange class 'Bybit' ...
+2026-09-14 11:24:52,097 - freqtrade.exchange.exchange - INFO - Markets were not loaded. Loading them now..
+2026-09-14 11:25:07,441 - freqtrade.misc - INFO - dumping json to "user_data\data\bybit\futures\leverage_tiers_.json"
+2026-09-14 11:25:07,518 - freqtrade.data.history.history_utils - INFO - About to download pairs: ['BTC/USDT:USDT', 'ETH/USDT:USDT', 'SOL/USDT:USDT', 'BNB/USDT:USDT', 'XRP/USDT:USDT', 'ADA/USDT:USDT', 
+'DOGE/USDT:USDT', 'AVAX/USDT:USDT', 'LINK/USDT:USDT', 'DOT/USDT:USDT', 'LTC/USDT:USDT', 'UNI/USDT:USDT'], intervals: ['1h'] to user_data\data\bybit
+2026-09-14 11:25:07,557 - freqtrade.data.history.history_utils - INFO - Download history data for "BTC/USDT:USDT", 1h, futures and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:25:10,848 - freqtrade.data.history.history_utils - INFO - Downloaded data for BTC/USDT:USDT, 1h, futures with length 29999.
+2026-09-14 11:25:10,886 - freqtrade.data.history.history_utils - INFO - Download history data for "BTC/USDT:USDT", 1h, mark and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:25:14,153 - freqtrade.data.history.history_utils - INFO - Downloaded data for BTC/USDT:USDT, 1h, mark with length 29999.
+2026-09-14 11:25:14,168 - freqtrade.data.history.history_utils - INFO - Download history data for "BTC/USDT:USDT", 1h, funding_rate and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:25:29,309 - freqtrade.data.history.history_utils - INFO - Downloaded data for BTC/USDT:USDT, 1h, funding_rate with length 3850.
+2026-09-14 11:25:29,317 - freqtrade.data.history.history_utils - INFO - Download history data for "ETH/USDT:USDT", 1h, futures and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:25:32,596 - freqtrade.data.history.history_utils - INFO - Downloaded data for ETH/USDT:USDT, 1h, futures with length 25319.
+2026-09-14 11:25:32,612 - freqtrade.data.history.history_utils - INFO - Download history data for "ETH/USDT:USDT", 1h, mark and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:25:35,895 - freqtrade.data.history.history_utils - INFO - Downloaded data for ETH/USDT:USDT, 1h, mark with length 25319.
+2026-09-14 11:25:35,908 - freqtrade.data.history.history_utils - INFO - Download history data for "ETH/USDT:USDT", 1h, funding_rate and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:25:51,055 - freqtrade.data.history.history_utils - INFO - Downloaded data for ETH/USDT:USDT, 1h, funding_rate with length 3700.
+2026-09-14 11:25:51,062 - freqtrade.data.history.history_utils - INFO - Download history data for "SOL/USDT:USDT", 1h, futures and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:25:54,342 - freqtrade.data.history.history_utils - INFO - Downloaded data for SOL/USDT:USDT, 1h, futures with length 20183.
+2026-09-14 11:25:54,356 - freqtrade.data.history.history_utils - INFO - Download history data for "SOL/USDT:USDT", 1h, mark and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:25:57,650 - freqtrade.data.history.history_utils - INFO - Downloaded data for SOL/USDT:USDT, 1h, mark with length 20183.
+2026-09-14 11:25:57,673 - freqtrade.data.history.history_utils - INFO - Download history data for "SOL/USDT:USDT", 1h, funding_rate and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:26:12,822 - freqtrade.data.history.history_utils - INFO - Downloaded data for SOL/USDT:USDT, 1h, funding_rate with length 3307.
+2026-09-14 11:26:12,829 - freqtrade.data.history.history_utils - INFO - Download history data for "BNB/USDT:USDT", 1h, futures and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:26:16,089 - freqtrade.data.history.history_utils - INFO - Downloaded data for BNB/USDT:USDT, 1h, futures with length 22768.
+2026-09-14 11:26:16,112 - freqtrade.data.history.history_utils - INFO - Download history data for "BNB/USDT:USDT", 1h, mark and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:26:19,397 - freqtrade.data.history.history_utils - INFO - Downloaded data for BNB/USDT:USDT, 1h, mark with length 22771.
+2026-09-14 11:26:19,443 - freqtrade.data.history.history_utils - INFO - Download history data for "BNB/USDT:USDT", 1h, funding_rate and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:26:34,616 - freqtrade.data.history.history_utils - INFO - Downloaded data for BNB/USDT:USDT, 1h, funding_rate with length 2947.
+2026-09-14 11:26:34,623 - freqtrade.data.history.history_utils - INFO - Download history data for "XRP/USDT:USDT", 1h, futures and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:26:37,903 - freqtrade.data.history.history_utils - INFO - Downloaded data for XRP/USDT:USDT, 1h, futures with length 23894.
+2026-09-14 11:26:37,919 - freqtrade.data.history.history_utils - INFO - Download history data for "XRP/USDT:USDT", 1h, mark and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:26:41,197 - freqtrade.data.history.history_utils - INFO - Downloaded data for XRP/USDT:USDT, 1h, mark with length 23897.
+2026-09-14 11:26:41,219 - freqtrade.data.history.history_utils - INFO - Download history data for "XRP/USDT:USDT", 1h, funding_rate and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:26:56,356 - freqtrade.data.history.history_utils - INFO - Downloaded data for XRP/USDT:USDT, 1h, funding_rate with length 3087.
+2026-09-14 11:26:56,362 - freqtrade.data.history.history_utils - INFO - Download history data for "ADA/USDT:USDT", 1h, futures and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:26:59,660 - freqtrade.data.history.history_utils - INFO - Downloaded data for ADA/USDT:USDT, 1h, futures with length 25240.
+2026-09-14 11:26:59,686 - freqtrade.data.history.history_utils - INFO - Download history data for "ADA/USDT:USDT", 1h, mark and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:27:02,951 - freqtrade.data.history.history_utils - INFO - Downloaded data for ADA/USDT:USDT, 1h, mark with length 25241.
+2026-09-14 11:27:02,963 - freqtrade.data.history.history_utils - INFO - Download history data for "ADA/USDT:USDT", 1h, funding_rate and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:27:18,132 - freqtrade.data.history.history_utils - INFO - Downloaded data for ADA/USDT:USDT, 1h, funding_rate with length 3256.
+2026-09-14 11:27:18,138 - freqtrade.data.history.history_utils - INFO - Download history data for "DOGE/USDT:USDT", 1h, futures and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:27:21,429 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOGE/USDT:USDT, 1h, futures with length 23413.
+2026-09-14 11:27:21,444 - freqtrade.data.history.history_utils - INFO - Download history data for "DOGE/USDT:USDT", 1h, mark and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:27:24,732 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOGE/USDT:USDT, 1h, mark with length 23413.
+2026-09-14 11:27:24,744 - freqtrade.data.history.history_utils - INFO - Download history data for "DOGE/USDT:USDT", 1h, funding_rate and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:27:39,910 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOGE/USDT:USDT, 1h, funding_rate with length 3027.
+2026-09-14 11:27:39,915 - freqtrade.data.history.history_utils - INFO - Download history data for "AVAX/USDT:USDT", 1h, futures and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:27:43,177 - freqtrade.data.history.history_utils - INFO - Downloaded data for AVAX/USDT:USDT, 1h, futures with length 20895.
+2026-09-14 11:27:43,195 - freqtrade.data.history.history_utils - INFO - Download history data for "AVAX/USDT:USDT", 1h, mark and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:27:46,472 - freqtrade.data.history.history_utils - INFO - Downloaded data for AVAX/USDT:USDT, 1h, mark with length 20898.
+2026-09-14 11:27:46,486 - freqtrade.data.history.history_utils - INFO - Download history data for "AVAX/USDT:USDT", 1h, funding_rate and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:28:01,658 - freqtrade.data.history.history_utils - INFO - Downloaded data for AVAX/USDT:USDT, 1h, funding_rate with length 2712.
+2026-09-14 11:28:01,663 - freqtrade.data.history.history_utils - INFO - Download history data for "LINK/USDT:USDT", 1h, futures and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:28:04,928 - freqtrade.data.history.history_utils - INFO - Downloaded data for LINK/USDT:USDT, 1h, futures with length 28790.
+2026-09-14 11:28:04,943 - freqtrade.data.history.history_utils - INFO - Download history data for "LINK/USDT:USDT", 1h, mark and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:28:08,215 - freqtrade.data.history.history_utils - INFO - Downloaded data for LINK/USDT:USDT, 1h, mark with length 28793.
+2026-09-14 11:28:08,229 - freqtrade.data.history.history_utils - INFO - Download history data for "LINK/USDT:USDT", 1h, funding_rate and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:28:23,399 - freqtrade.data.history.history_utils - INFO - Downloaded data for LINK/USDT:USDT, 1h, funding_rate with length 3700.
+2026-09-14 11:28:23,405 - freqtrade.data.history.history_utils - INFO - Download history data for "DOT/USDT:USDT", 1h, futures and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:28:26,693 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOT/USDT:USDT, 1h, futures with length 25238.
+2026-09-14 11:28:26,714 - freqtrade.data.history.history_utils - INFO - Download history data for "DOT/USDT:USDT", 1h, mark and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:28:29,973 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOT/USDT:USDT, 1h, mark with length 25241.
+2026-09-14 11:28:29,986 - freqtrade.data.history.history_utils - INFO - Download history data for "DOT/USDT:USDT", 1h, funding_rate and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:28:45,153 - freqtrade.data.history.history_utils - INFO - Downloaded data for DOT/USDT:USDT, 1h, funding_rate with length 3256.
+2026-09-14 11:28:45,159 - freqtrade.data.history.history_utils - INFO - Download history data for "LTC/USDT:USDT", 1h, futures and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:28:48,433 - freqtrade.data.history.history_utils - INFO - Downloaded data for LTC/USDT:USDT, 1h, futures with length 28790.
+2026-09-14 11:28:48,456 - freqtrade.data.history.history_utils - INFO - Download history data for "LTC/USDT:USDT", 1h, mark and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:28:51,732 - freqtrade.data.history.history_utils - INFO - Downloaded data for LTC/USDT:USDT, 1h, mark with length 28838.
+2026-09-14 11:28:51,756 - freqtrade.data.history.history_utils - INFO - Download history data for "LTC/USDT:USDT", 1h, funding_rate and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:29:06,897 - freqtrade.data.history.history_utils - INFO - Downloaded data for LTC/USDT:USDT, 1h, funding_rate with length 3700.
+2026-09-14 11:29:06,930 - freqtrade.data.history.history_utils - INFO - Download history data for "UNI/USDT:USDT", 1h, futures and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:29:10,219 - freqtrade.data.history.history_utils - INFO - Downloaded data for UNI/USDT:USDT, 1h, futures with length 19079.
+2026-09-14 11:29:10,231 - freqtrade.data.history.history_utils - INFO - Download history data for "UNI/USDT:USDT", 1h, mark and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:29:13,513 - freqtrade.data.history.history_utils - INFO - Downloaded data for UNI/USDT:USDT, 1h, mark with length 19079.
+2026-09-14 11:29:13,525 - freqtrade.data.history.history_utils - INFO - Download history data for "UNI/USDT:USDT", 1h, funding_rate and store in user_data\data\bybit. From 2020-09-01T00:00:00 to 
+2024-01-01T00:00:00
+2026-09-14 11:29:28,672 - freqtrade.data.history.history_utils - INFO - Downloaded data for UNI/USDT:USDT, 1h, funding_rate with length 3256.
+Timeframe                 ----------------------------------------------------------------------------------------------------------------------------------------------- 3/3   100% • 0:00:21 • 0:00:00
+Downloading UNI/USDT:USDT ----------------------------------------------------------------------------------------------------------------------------------------------- 12/12 100% • 0:04:21 • 0:00:00

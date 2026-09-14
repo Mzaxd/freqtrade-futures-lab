@@ -1,0 +1,42 @@
+D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\joblib\externals\loky\backend\context.py:136: UserWarning: Could not find the number of physical cores for the following reason:
+[WinError 2] 系统找不到指定的文件。
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\freqai\.venv-freqai\Lib\site-packages\joblib\externals\loky\backend\context.py", line 257, in _count_physical_cores
+    cpu_info = subprocess.run(
+               ^^^^^^^^^^^^^^^
+  File "C:\Users\Caihaohan\AppData\Roaming\uv\python\cpython-3.11.11-windows-x86_64-none\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Caihaohan\AppData\Roaming\uv\python\cpython-3.11.11-windows-x86_64-none\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Caihaohan\AppData\Roaming\uv\python\cpython-3.11.11-windows-x86_64-none\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== GAIN importance (mean over all sub-train models), identifier=fai_v1 ===
+ 16.96%  %-funding_ma3d
+ 15.16%  %-rvol_48h
+ 14.76%  %-ret_168h
+ 10.29%  %-ret_24h
+  9.48%  %-ret_72h
+  7.00%  %-atr_ratio
+  6.83%  %-mom_z_72h
+  6.28%  %-funding_rate
+  5.20%  %-rvol_12h
+  5.17%  %-dk_vol_ratio
+  2.88%  %-volume_rel_24h
+
+=== PERMUTATION importance (logloss increase / AUC drop, walk-forward eval) ===
+                  d_logloss_mean  d_auc_mean    n
+feature                                          
+%-ret_168h               0.00164    -0.00106  159
+%-funding_ma3d           0.00145     0.00472  159
+%-ret_24h                0.00026     0.00093  159
+%-volume_rel_24h         0.00003    -0.00000  159
+%-funding_rate           0.00000     0.00095  159
+%-atr_ratio             -0.00075    -0.00066  159
+%-dk_vol_ratio          -0.00078     0.00078  159
+%-rvol_48h              -0.00085    -0.00018  159
+%-rvol_12h              -0.00088    -0.00149  159
+%-mom_z_72h             -0.00094    -0.00192  159
+%-ret_72h               -0.00098     0.00210  159

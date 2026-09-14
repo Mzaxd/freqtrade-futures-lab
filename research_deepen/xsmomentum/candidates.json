@@ -1,0 +1,452 @@
+{
+  "generated_utc": "2026-09-14T03:30:16.352734+00:00",
+  "cutoff_rule": "onboardDate <= 2021-12-31, active linear USDT perp, non-stable base",
+  "count": 89,
+  "candidates": [
+    {
+      "symbol": "1000SHIB/USDT:USDT",
+      "base": "1000SHIB",
+      "onboardDate": "2021-05-10T07:00:00+00:00"
+    },
+    {
+      "symbol": "1000XEC/USDT:USDT",
+      "base": "1000XEC",
+      "onboardDate": "2021-09-16T07:00:00+00:00"
+    },
+    {
+      "symbol": "1INCH/USDT:USDT",
+      "base": "1INCH",
+      "onboardDate": "2020-12-25T07:00:00+00:00"
+    },
+    {
+      "symbol": "AAVE/USDT:USDT",
+      "base": "AAVE",
+      "onboardDate": "2020-10-16T07:00:00+00:00"
+    },
+    {
+      "symbol": "ADA/USDT:USDT",
+      "base": "ADA",
+      "onboardDate": "2020-01-31T08:00:00+00:00"
+    },
+    {
+      "symbol": "ALGO/USDT:USDT",
+      "base": "ALGO",
+      "onboardDate": "2020-06-16T09:00:00+00:00"
+    },
+    {
+      "symbol": "ALICE/USDT:USDT",
+      "base": "ALICE",
+      "onboardDate": "2021-03-15T07:00:00+00:00"
+    },
+    {
+      "symbol": "ANKR/USDT:USDT",
+      "base": "ANKR",
+      "onboardDate": "2021-01-25T07:00:00+00:00"
+    },
+    {
+      "symbol": "AR/USDT:USDT",
+      "base": "AR",
+      "onboardDate": "2021-09-28T07:00:00+00:00"
+    },
+    {
+      "symbol": "ARPA/USDT:USDT",
+      "base": "ARPA",
+      "onboardDate": "2021-10-18T07:00:00+00:00"
+    },
+    {
+      "symbol": "ATOM/USDT:USDT",
+      "base": "ATOM",
+      "onboardDate": "2020-02-07T12:10:00+00:00"
+    },
+    {
+      "symbol": "AVAX/USDT:USDT",
+      "base": "AVAX",
+      "onboardDate": "2020-09-23T07:00:00+00:00"
+    },
+    {
+      "symbol": "AXS/USDT:USDT",
+      "base": "AXS",
+      "onboardDate": "2020-11-20T07:00:00+00:00"
+    },
+    {
+      "symbol": "BAND/USDT:USDT",
+      "base": "BAND",
+      "onboardDate": "2020-07-29T07:00:00+00:00"
+    },
+    {
+      "symbol": "BAT/USDT:USDT",
+      "base": "BAT",
+      "onboardDate": "2020-02-13T08:05:00+00:00"
+    },
+    {
+      "symbol": "BCH/USDT:USDT",
+      "base": "BCH",
+      "onboardDate": "2019-12-19T08:55:00+00:00"
+    },
+    {
+      "symbol": "BEL/USDT:USDT",
+      "base": "BEL",
+      "onboardDate": "2020-11-18T07:00:00+00:00"
+    },
+    {
+      "symbol": "BNB/USDT:USDT",
+      "base": "BNB",
+      "onboardDate": "2020-02-10T08:00:00+00:00"
+    },
+    {
+      "symbol": "BTC/USDT:USDT",
+      "base": "BTC",
+      "onboardDate": "2019-09-08T17:55:00+00:00"
+    },
+    {
+      "symbol": "BTCDOM/USDT:USDT",
+      "base": "BTCDOM",
+      "onboardDate": "2021-06-17T07:00:00+00:00"
+    },
+    {
+      "symbol": "C98/USDT:USDT",
+      "base": "C98",
+      "onboardDate": "2021-08-23T07:00:00+00:00"
+    },
+    {
+      "symbol": "CELO/USDT:USDT",
+      "base": "CELO",
+      "onboardDate": "2021-09-26T07:00:00+00:00"
+    },
+    {
+      "symbol": "CELR/USDT:USDT",
+      "base": "CELR",
+      "onboardDate": "2021-03-29T07:00:00+00:00"
+    },
+    {
+      "symbol": "CHR/USDT:USDT",
+      "base": "CHR",
+      "onboardDate": "2021-03-12T07:00:00+00:00"
+    },
+    {
+      "symbol": "CHZ/USDT:USDT",
+      "base": "CHZ",
+      "onboardDate": "2021-01-21T07:00:00+00:00"
+    },
+    {
+      "symbol": "COMP/USDT:USDT",
+      "base": "COMP",
+      "onboardDate": "2020-06-30T09:00:00+00:00"
+    },
+    {
+      "symbol": "COTI/USDT:USDT",
+      "base": "COTI",
+      "onboardDate": "2021-03-09T07:00:00+00:00"
+    },
+    {
+      "symbol": "CRV/USDT:USDT",
+      "base": "CRV",
+      "onboardDate": "2020-09-01T07:00:00+00:00"
+    },
+    {
+      "symbol": "CTSI/USDT:USDT",
+      "base": "CTSI",
+      "onboardDate": "2021-10-25T07:00:00+00:00"
+    },
+    {
+      "symbol": "DASH/USDT:USDT",
+      "base": "DASH",
+      "onboardDate": "2020-02-04T08:05:00+00:00"
+    },
+    {
+      "symbol": "DOGE/USDT:USDT",
+      "base": "DOGE",
+      "onboardDate": "2020-07-10T09:00:00+00:00"
+    },
+    {
+      "symbol": "DOT/USDT:USDT",
+      "base": "DOT",
+      "onboardDate": "2020-08-22T07:00:00+00:00"
+    },
+    {
+      "symbol": "DYDX/USDT:USDT",
+      "base": "DYDX",
+      "onboardDate": "2021-09-09T07:00:00+00:00"
+    },
+    {
+      "symbol": "EGLD/USDT:USDT",
+      "base": "EGLD",
+      "onboardDate": "2020-09-14T07:00:00+00:00"
+    },
+    {
+      "symbol": "ENJ/USDT:USDT",
+      "base": "ENJ",
+      "onboardDate": "2020-09-29T07:00:00+00:00"
+    },
+    {
+      "symbol": "ENS/USDT:USDT",
+      "base": "ENS",
+      "onboardDate": "2021-11-29T07:00:00+00:00"
+    },
+    {
+      "symbol": "ETC/USDT:USDT",
+      "base": "ETC",
+      "onboardDate": "2020-01-16T08:00:00+00:00"
+    },
+    {
+      "symbol": "ETH/USDT:USDT",
+      "base": "ETH",
+      "onboardDate": "2019-11-27T07:45:00+00:00"
+    },
+    {
+      "symbol": "FIL/USDT:USDT",
+      "base": "FIL",
+      "onboardDate": "2020-10-16T06:00:00+00:00"
+    },
+    {
+      "symbol": "GALA/USDT:USDT",
+      "base": "GALA",
+      "onboardDate": "2021-09-17T07:00:00+00:00"
+    },
+    {
+      "symbol": "GRT/USDT:USDT",
+      "base": "GRT",
+      "onboardDate": "2020-12-18T07:00:00+00:00"
+    },
+    {
+      "symbol": "GTC/USDT:USDT",
+      "base": "GTC",
+      "onboardDate": "2021-03-15T07:00:00+00:00"
+    },
+    {
+      "symbol": "HBAR/USDT:USDT",
+      "base": "HBAR",
+      "onboardDate": "2021-03-17T07:00:00+00:00"
+    },
+    {
+      "symbol": "HOT/USDT:USDT",
+      "base": "HOT",
+      "onboardDate": "2021-03-30T07:00:00+00:00"
+    },
+    {
+      "symbol": "ICP/USDT:USDT",
+      "base": "ICP",
+      "onboardDate": "2021-07-30T07:00:00+00:00"
+    },
+    {
+      "symbol": "IOST/USDT:USDT",
+      "base": "IOST",
+      "onboardDate": "2020-02-21T08:05:00+00:00"
+    },
+    {
+      "symbol": "IOTA/USDT:USDT",
+      "base": "IOTA",
+      "onboardDate": "2020-02-12T08:00:00+00:00"
+    },
+    {
+      "symbol": "IOTX/USDT:USDT",
+      "base": "IOTX",
+      "onboardDate": "2021-08-11T07:00:00+00:00"
+    },
+    {
+      "symbol": "KAVA/USDT:USDT",
+      "base": "KAVA",
+      "onboardDate": "2020-07-28T07:05:00+00:00"
+    },
+    {
+      "symbol": "KNC/USDT:USDT",
+      "base": "KNC",
+      "onboardDate": "2020-06-22T08:50:00+00:00"
+    },
+    {
+      "symbol": "KSM/USDT:USDT",
+      "base": "KSM",
+      "onboardDate": "2020-10-14T07:00:00+00:00"
+    },
+    {
+      "symbol": "LINK/USDT:USDT",
+      "base": "LINK",
+      "onboardDate": "2020-01-17T08:00:00+00:00"
+    },
+    {
+      "symbol": "LPT/USDT:USDT",
+      "base": "LPT",
+      "onboardDate": "2021-11-10T07:00:00+00:00"
+    },
+    {
+      "symbol": "LTC/USDT:USDT",
+      "base": "LTC",
+      "onboardDate": "2020-01-09T08:05:00+00:00"
+    },
+    {
+      "symbol": "MANA/USDT:USDT",
+      "base": "MANA",
+      "onboardDate": "2021-03-14T07:00:00+00:00"
+    },
+    {
+      "symbol": "MASK/USDT:USDT",
+      "base": "MASK",
+      "onboardDate": "2021-07-16T07:00:00+00:00"
+    },
+    {
+      "symbol": "MTL/USDT:USDT",
+      "base": "MTL",
+      "onboardDate": "2021-03-31T07:00:00+00:00"
+    },
+    {
+      "symbol": "NEAR/USDT:USDT",
+      "base": "NEAR",
+      "onboardDate": "2020-10-15T08:00:00+00:00"
+    },
+    {
+      "symbol": "NEO/USDT:USDT",
+      "base": "NEO",
+      "onboardDate": "2020-02-17T08:45:00+00:00"
+    },
+    {
+      "symbol": "OGN/USDT:USDT",
+      "base": "OGN",
+      "onboardDate": "2021-03-31T07:00:00+00:00"
+    },
+    {
+      "symbol": "ONE/USDT:USDT",
+      "base": "ONE",
+      "onboardDate": "2021-03-17T07:00:00+00:00"
+    },
+    {
+      "symbol": "ONT/USDT:USDT",
+      "base": "ONT",
+      "onboardDate": "2020-02-11T08:05:00+00:00"
+    },
+    {
+      "symbol": "PEOPLE/USDT:USDT",
+      "base": "PEOPLE",
+      "onboardDate": "2021-12-23T07:00:00+00:00"
+    },
+    {
+      "symbol": "QTUM/USDT:USDT",
+      "base": "QTUM",
+      "onboardDate": "2020-02-20T08:05:00+00:00"
+    },
+    {
+      "symbol": "RLC/USDT:USDT",
+      "base": "RLC",
+      "onboardDate": "2020-07-31T07:00:00+00:00"
+    },
+    {
+      "symbol": "ROSE/USDT:USDT",
+      "base": "ROSE",
+      "onboardDate": "2021-12-31T07:00:00+00:00"
+    },
+    {
+      "symbol": "RSR/USDT:USDT",
+      "base": "RSR",
+      "onboardDate": "2020-10-19T07:05:00+00:00"
+    },
+    {
+      "symbol": "RUNE/USDT:USDT",
+      "base": "RUNE",
+      "onboardDate": "2020-09-04T07:10:00+00:00"
+    },
+    {
+      "symbol": "RVN/USDT:USDT",
+      "base": "RVN",
+      "onboardDate": "2021-02-23T07:00:00+00:00"
+    },
+    {
+      "symbol": "SAND/USDT:USDT",
+      "base": "SAND",
+      "onboardDate": "2021-01-18T07:00:00+00:00"
+    },
+    {
+      "symbol": "SFP/USDT:USDT",
+      "base": "SFP",
+      "onboardDate": "2021-02-24T07:00:00+00:00"
+    },
+    {
+      "symbol": "SKL/USDT:USDT",
+      "base": "SKL",
+      "onboardDate": "2020-08-24T07:00:00+00:00"
+    },
+    {
+      "symbol": "SNX/USDT:USDT",
+      "base": "SNX",
+      "onboardDate": "2020-08-14T07:00:00+00:00"
+    },
+    {
+      "symbol": "SOL/USDT:USDT",
+      "base": "SOL",
+      "onboardDate": "2020-09-14T07:00:00+00:00"
+    },
+    {
+      "symbol": "SUSHI/USDT:USDT",
+      "base": "SUSHI",
+      "onboardDate": "2020-09-04T07:00:00+00:00"
+    },
+    {
+      "symbol": "THETA/USDT:USDT",
+      "base": "THETA",
+      "onboardDate": "2020-05-27T08:00:00+00:00"
+    },
+    {
+      "symbol": "TRB/USDT:USDT",
+      "base": "TRB",
+      "onboardDate": "2020-09-03T07:00:00+00:00"
+    },
+    {
+      "symbol": "TRX/USDT:USDT",
+      "base": "TRX",
+      "onboardDate": "2020-01-15T08:05:00+00:00"
+    },
+    {
+      "symbol": "UNI/USDT:USDT",
+      "base": "UNI",
+      "onboardDate": "2020-09-18T07:00:00+00:00"
+    },
+    {
+      "symbol": "VET/USDT:USDT",
+      "base": "VET",
+      "onboardDate": "2020-02-14T08:00:00+00:00"
+    },
+    {
+      "symbol": "XLM/USDT:USDT",
+      "base": "XLM",
+      "onboardDate": "2020-01-20T08:00:00+00:00"
+    },
+    {
+      "symbol": "XMR/USDT:USDT",
+      "base": "XMR",
+      "onboardDate": "2020-02-03T08:00:00+00:00"
+    },
+    {
+      "symbol": "XRP/USDT:USDT",
+      "base": "XRP",
+      "onboardDate": "2020-01-06T08:20:00+00:00"
+    },
+    {
+      "symbol": "XTZ/USDT:USDT",
+      "base": "XTZ",
+      "onboardDate": "2020-02-06T08:00:00+00:00"
+    },
+    {
+      "symbol": "YFI/USDT:USDT",
+      "base": "YFI",
+      "onboardDate": "2020-08-31T07:00:00+00:00"
+    },
+    {
+      "symbol": "ZEC/USDT:USDT",
+      "base": "ZEC",
+      "onboardDate": "2020-02-05T08:00:00+00:00"
+    },
+    {
+      "symbol": "ZEN/USDT:USDT",
+      "base": "ZEN",
+      "onboardDate": "2020-11-24T07:00:00+00:00"
+    },
+    {
+      "symbol": "ZIL/USDT:USDT",
+      "base": "ZIL",
+      "onboardDate": "2020-06-18T09:00:00+00:00"
+    },
+    {
+      "symbol": "ZRX/USDT:USDT",
+      "base": "ZRX",
+      "onboardDate": "2020-06-24T09:00:00+00:00"
+    }
+  ]
+}

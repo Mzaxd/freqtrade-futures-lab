@@ -1,0 +1,38 @@
+{
+  "is_ls_max_sharpe": 1.2931688837711313,
+  "is_ls_max_key": "lb30_sk0_h10_LS",
+  "plateau_threshold_sharpe": 1.034535107016905,
+  "plateau_cells": 5,
+  "plateau_ok": true,
+  "plateau_median_sharpe": 1.1540126428479374,
+  "plateau_member_keys": [
+    "lb7_sk0_h10_LS",
+    "lb14_sk0_h1_LS",
+    "lb14_sk0_h10_LS",
+    "lb30_sk0_h1_LS",
+    "lb30_sk0_h10_LS"
+  ],
+  "plateau_members_sharpe": {
+    "lb7_sk0_h10_LS": 1.1540126428479374,
+    "lb14_sk0_h1_LS": 1.1535701388967403,
+    "lb14_sk0_h10_LS": 1.0403034189233638,
+    "lb30_sk0_h1_LS": 1.2805429713222114,
+    "lb30_sk0_h10_LS": 1.2931688837711313
+  },
+  "coord_median": {
+    "lookback": 14.0,
+    "skip": 0.0,
+    "hold": 10.0
+  },
+  "selected": {
+    "key": "lb14_sk0_h10_LS",
+    "lookback": 14,
+    "skip": 0,
+    "hold": 10,
+    "is_sharpe": 1.0403034189233638,
+    "is_total": 2.1093799703911005,
+    "is_maxdd": -0.6293648012690137,
+    "is_pf": 1.2188334395779854,
+    "is_hit": 0.5150684931506849
+  }
+}

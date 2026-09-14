@@ -1,0 +1,195 @@
+{
+  "leverage": 2.0,
+  "mmr_assumed": 0.01,
+  "liq_move_pct": 49.494949494949495,
+  "stop_pct_distribution": {
+    "p50": 4.475341970645913,
+    "p95": 11.990081516331415,
+    "max": 15.000000000000005
+  },
+  "gap_needed_pct_distribution": {
+    "p50": 45.01960752430358,
+    "min": 34.49494949494949
+  },
+  "n_liquidation_exits_in_backtest": 0,
+  "stop_pct_atr_distribution": {
+    "p50": 4.475341970645913,
+    "max": 41.97614376874336
+  },
+  "effective_stop_pct_distribution": {
+    "p50": 4.475341970645913,
+    "p95": 11.990081516331415,
+    "max": 15.000000000000005
+  },
+  "max_1m_bar_per_coin": {
+    "AVAX/USDT:USDT": {
+      "max_1m_range_pct": 20.158420874279905,
+      "when": "2021-05-19 13:42:00+00:00",
+      "n_bars_range_gt10pct": 38,
+      "n_bars_range_gt20pct": 1
+    },
+    "DOGE/USDT:USDT": {
+      "max_1m_range_pct": 31.735864438362544,
+      "when": "2021-01-29 03:21:00+00:00",
+      "n_bars_range_gt10pct": 81,
+      "n_bars_range_gt20pct": 4
+    },
+    "BTC/USDT:USDT": {
+      "max_1m_range_pct": 28.274021035110042,
+      "when": "2021-07-26 01:01:00+00:00",
+      "n_bars_range_gt10pct": 7,
+      "n_bars_range_gt20pct": 1
+    },
+    "ETH/USDT:USDT": {
+      "max_1m_range_pct": 46.6798764728492,
+      "when": "2021-05-19 13:11:00+00:00",
+      "n_bars_range_gt10pct": 18,
+      "n_bars_range_gt20pct": 5
+    },
+    "SOL/USDT:USDT": {
+      "max_1m_range_pct": 24.03189066059227,
+      "when": "2022-12-29 22:38:00+00:00",
+      "n_bars_range_gt10pct": 34,
+      "n_bars_range_gt20pct": 4
+    },
+    "LINK/USDT:USDT": {
+      "max_1m_range_pct": 23.192060522248443,
+      "when": "2021-05-19 13:42:00+00:00",
+      "n_bars_range_gt10pct": 17,
+      "n_bars_range_gt20pct": 2
+    },
+    "XRP/USDT:USDT": {
+      "max_1m_range_pct": 18.272191431336324,
+      "when": "2021-04-18 03:35:00+00:00",
+      "n_bars_range_gt10pct": 27,
+      "n_bars_range_gt20pct": 0
+    },
+    "DOT/USDT:USDT": {
+      "max_1m_range_pct": 27.148763965866102,
+      "when": "2021-05-19 13:24:00+00:00",
+      "n_bars_range_gt10pct": 43,
+      "n_bars_range_gt20pct": 13
+    },
+    "UNI/USDT:USDT": {
+      "max_1m_range_pct": 24.335084372195944,
+      "when": "2021-02-22 14:17:00+00:00",
+      "n_bars_range_gt10pct": 14,
+      "n_bars_range_gt20pct": 3
+    },
+    "BNB/USDT:USDT": {
+      "max_1m_range_pct": 22.26842644488639,
+      "when": "2021-05-19 13:21:00+00:00",
+      "n_bars_range_gt10pct": 29,
+      "n_bars_range_gt20pct": 3
+    },
+    "ADA/USDT:USDT": {
+      "max_1m_range_pct": 28.148115008351237,
+      "when": "2021-05-19 13:20:00+00:00",
+      "n_bars_range_gt10pct": 34,
+      "n_bars_range_gt20pct": 11
+    },
+    "LTC/USDT:USDT": {
+      "max_1m_range_pct": 36.58345927354215,
+      "when": "2021-05-19 13:33:00+00:00",
+      "n_bars_range_gt10pct": 36,
+      "n_bars_range_gt20pct": 6
+    }
+  },
+  "max_1m_range_across_universe_pct": 46.6798764728492,
+  "top_extreme_1m_events": [
+    {
+      "pair": "ETH/USDT:USDT",
+      "ts": "2021-05-19 13:11:00+00:00",
+      "range_pct": 46.6798764728492,
+      "trade_open_nearby": false
+    },
+    {
+      "pair": "LTC/USDT:USDT",
+      "ts": "2021-05-19 13:33:00+00:00",
+      "range_pct": 36.58345927354215,
+      "trade_open_nearby": false
+    },
+    {
+      "pair": "DOGE/USDT:USDT",
+      "ts": "2021-01-29 03:21:00+00:00",
+      "range_pct": 31.735864438362544,
+      "trade_open_nearby": true,
+      "nearby_trade_window": "2021-01-28 07:00:00+00:00 -> 2021-01-29 09:00:00+00:00"
+    },
+    {
+      "pair": "DOGE/USDT:USDT",
+      "ts": "2021-05-19 13:01:00+00:00",
+      "range_pct": 29.56358190240675,
+      "trade_open_nearby": false
+    },
+    {
+      "pair": "ETH/USDT:USDT",
+      "ts": "2021-05-19 13:10:00+00:00",
+      "range_pct": 29.264627012734323,
+      "trade_open_nearby": false
+    },
+    {
+      "pair": "LTC/USDT:USDT",
+      "ts": "2021-05-19 13:56:00+00:00",
+      "range_pct": 29.15713071339827,
+      "trade_open_nearby": false
+    },
+    {
+      "pair": "LTC/USDT:USDT",
+      "ts": "2021-05-19 13:58:00+00:00",
+      "range_pct": 29.14768307589733,
+      "trade_open_nearby": false
+    },
+    {
+      "pair": "LTC/USDT:USDT",
+      "ts": "2021-05-19 13:54:00+00:00",
+      "range_pct": 28.583857582652932,
+      "trade_open_nearby": false
+    },
+    {
+      "pair": "BTC/USDT:USDT",
+      "ts": "2021-07-26 01:01:00+00:00",
+      "range_pct": 28.274021035110042,
+      "trade_open_nearby": true,
+      "nearby_trade_window": "2021-07-24 00:00:00+00:00 -> 2021-08-26 06:00:00+00:00"
+    },
+    {
+      "pair": "ADA/USDT:USDT",
+      "ts": "2021-05-19 13:20:00+00:00",
+      "range_pct": 28.148115008351237,
+      "trade_open_nearby": false
+    },
+    {
+      "pair": "LTC/USDT:USDT",
+      "ts": "2021-05-19 13:57:00+00:00",
+      "range_pct": 27.582545917825673,
+      "trade_open_nearby": false
+    },
+    {
+      "pair": "DOT/USDT:USDT",
+      "ts": "2021-05-19 13:24:00+00:00",
+      "range_pct": 27.148763965866102,
+      "trade_open_nearby": false
+    },
+    {
+      "pair": "ADA/USDT:USDT",
+      "ts": "2021-05-19 13:21:00+00:00",
+      "range_pct": 26.776411752448436,
+      "trade_open_nearby": false
+    },
+    {
+      "pair": "DOGE/USDT:USDT",
+      "ts": "2021-05-19 12:55:00+00:00",
+      "range_pct": 26.145387904703725,
+      "trade_open_nearby": false
+    },
+    {
+      "pair": "DOT/USDT:USDT",
+      "ts": "2021-05-19 13:45:00+00:00",
+      "range_pct": 25.96959048963908,
+      "trade_open_nearby": false
+    }
+  ],
+  "trades_checked": 436,
+  "trades_with_singlebar_breach_of_gap": 0
+}

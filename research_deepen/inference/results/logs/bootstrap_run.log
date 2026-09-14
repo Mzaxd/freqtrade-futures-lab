@@ -1,0 +1,25 @@
+done inf_opt4
+done inf_opt2b
+done inf_nfilite
+done combo404020
+
+=== inf_opt4 (obs maxDD -14.89%, obs UWfrac 83.7%, obs max UW 78d) ===
+stationary b=10  DD p50   19.7%  p90   28.3%  p95   31.3%  p99   37.7%  worst   58.8%  P(DD>20%)  47.6%  P(DD>30%)   6.7%  UWfrac p95  92.0%  UWdays p95   392
+iid daily        DD p50   21.5%  p90   30.9%  p95   34.4%  p99   41.2%  worst   51.7%  P(DD>20%)  60.5%  P(DD>30%)  12.0%  UWfrac p95  91.8%  UWdays p95   427
+trade shuffle    DD p50   19.2%  p90   25.8%  p95   28.2%  p99   32.8%  worst   46.2%  P(DD>20%)  42.8%  P(DD>30%)   2.8%  UWtrades p95   117
+
+=== inf_opt2b (obs maxDD -23.47%, obs UWfrac 80.1%, obs max UW 508d) ===
+stationary b=10  DD p50   26.5%  p90   40.1%  p95   44.4%  p99   53.3%  worst   78.6%  P(DD>20%)  80.3%  P(DD>30%)  35.9%  UWfrac p95  87.3%  UWdays p95   610
+iid daily        DD p50   26.7%  p90   40.7%  p95   45.7%  p99   56.3%  worst   73.9%  P(DD>20%)  80.5%  P(DD>30%)  36.2%  UWfrac p95  89.4%  UWdays p95   644
+trade shuffle    DD p50   23.6%  p90   32.5%  p95   35.5%  p99   40.9%  worst   52.2%  P(DD>20%)  76.1%  P(DD>30%)  16.9%  UWtrades p95    53
+
+=== inf_nfilite (obs maxDD -3.11%, obs UWfrac 42.2%, obs max UW 171d) ===
+stationary b=10  DD p50    3.1%  p90    5.2%  p95    5.9%  p99    7.5%  worst   12.4%  P(DD>20%)   0.0%  P(DD>30%)   0.0%  UWfrac p95  58.5%  UWdays p95   304
+iid daily        DD p50    3.1%  p90    5.1%  p95    5.8%  p99    7.4%  worst   13.4%  P(DD>20%)   0.0%  P(DD>30%)   0.0%  UWfrac p95  52.8%  UWdays p95   232
+trade shuffle    DD p50    3.0%  p90    4.2%  p95    4.6%  p99    5.6%  worst    8.3%  P(DD>20%)   0.0%  P(DD>30%)   0.0%  UWtrades p95    63
+
+=== combo404020 (obs maxDD -12.41%, obs UWfrac 80.8%, obs max UW 262d) ===
+stationary b=10  DD p50   11.7%  p90   17.0%  p95   18.9%  p99   23.0%  worst   34.1%  P(DD>20%)   3.1%  P(DD>30%)   0.1%  UWfrac p95  88.7%  UWdays p95   314
+iid daily        DD p50   11.9%  p90   17.5%  p95   19.6%  p99   24.6%  worst   36.7%  P(DD>20%)   4.4%  P(DD>30%)   0.1%  UWfrac p95  88.7%  UWdays p95   302
+
+saved -> D:\Code\AIQuant\freqtrade-futures-lab\research_deepen\inference\results\bootstrap_results.json

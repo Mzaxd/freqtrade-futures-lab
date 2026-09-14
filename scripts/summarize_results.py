@@ -83,18 +83,19 @@ def one_row(label: str, zip_path: Path) -> dict:
 
 
 def main():
-    tag = sys.argv[1]
+    # sanitize the user-supplied tag before it becomes part of a filename
+    tag = str(sys.argv[1]).replace("/", "_").replace("\\", "_").replace("..", "_")
     rows = [one_row(Path(a).name.replace(".zip", ""), Path(a)) for a in sys.argv[2:]]
     df = pd.DataFrame(rows)[COLS]
     REPORTS.mkdir(parents=True, exist_ok=True)
     csv_path = REPORTS / f"summary_{tag}.csv"
     md_path = REPORTS / f"summary_{tag}.md"
     df.to_csv(csv_path, index=False)
-    with open(md_path, "w") as f:
-        f.write(f"# Backtest summary: {tag}\n\n")
-        f.write(f"Generated from: {[Path(a).name for a in sys.argv[2:]]}\n\n")
-        f.write(df.to_markdown(index=False))
-        f.write("\n")
+    md_path.write_text(
+        f"# Backtest summary: {tag}\n\n"
+        f"Generated from: {[Path(a).name for a in sys.argv[2:]]}\n\n"
+        f"{df.to_markdown(index=False)}\n"
+    )
     print(df.to_string(index=False))
     print(f"\nwrote {csv_path} and {md_path}")
 

@@ -1,0 +1,61 @@
+{
+  "sr_daily": 0.09128851818544802,
+  "sr_annualized": 1.449160300045757,
+  "T_days": 1095,
+  "skew": 10.688263157048189,
+  "kurtosis": 179.88892712863293,
+  "grid_sharpe_daily_mean": 0.06718685465308231,
+  "grid_sharpe_daily_std": 0.009587851622925133,
+  "grid_sharpe_daily_min": 0.05036814556435499,
+  "grid_sharpe_daily_max": 0.09226784759777923,
+  "var_sr_across_grid": 9.19268987432281e-05,
+  "PSR_vs_zero": 0.999999175411355,
+  "historical_trial_count_breakdown": {
+    "phase1_opt1_hyperopt_epochs": 67,
+    "phase2_opt2_volsys_epochs": 150,
+    "phase4_paramtune_epochs": 477,
+    "phase4_structure_variants": 15,
+    "phase4_merge_candidates": 3
+  },
+  "dsr_curve": [
+    {
+      "N_trials": 50,
+      "SR0_daily": 0.021824856308519786,
+      "DSR": 0.9998671041108723
+    },
+    {
+      "N_trials": 75,
+      "SR0_daily": 0.023276186283535463,
+      "DSR": 0.9998217508884593
+    },
+    {
+      "N_trials": 125,
+      "SR0_daily": 0.025006451508355093,
+      "DSR": 0.9997488465424396
+    },
+    {
+      "N_trials": 250,
+      "SR0_daily": 0.02720722675958027,
+      "DSR": 0.999615881082562
+    },
+    {
+      "N_trials": 477,
+      "SR0_daily": 0.029131177636176182,
+      "DSR": 0.9994487884216794
+    },
+    {
+      "N_trials": 712,
+      "SR0_daily": 0.030271196616265587,
+      "DSR": 0.9993203264719541
+    },
+    {
+      "N_trials": 787,
+      "SR0_daily": 0.030550479079719667,
+      "DSR": 0.9992848993256266
+    }
+  ],
+  "primary": {
+    "N_trials": 75,
+    "DSR": 0.9998217508884593
+  }
+}

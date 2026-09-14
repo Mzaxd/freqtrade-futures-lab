@@ -1,0 +1,12 @@
+{
+  "n_months": 36,
+  "pearson": 0.016465113197083252,
+  "spearman": 0.10373230373230374,
+  "xs_monthly_mean": 0.059818730723915386,
+  "xs_monthly_std": 0.3445929524456348,
+  "opt4_monthly_mean_usdt": 2894.8601065708335,
+  "opt4_monthly_std_usdt": 8242.287279880295,
+  "threshold": 0.3,
+  "criterion4_pass": true,
+  "window": "2021-01..2023-12"
+}
