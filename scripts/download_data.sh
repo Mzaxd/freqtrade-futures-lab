@@ -7,7 +7,12 @@ cd "$(dirname "$0")/.."
 
 START="${1:-20190101}"
 END="${2:-20260912}"
-FT=".venv/bin/freqtrade"
+# venv layout differs by OS: bin/ (unix) vs Scripts/ (windows)
+if [ -x ".venv/bin/freqtrade" ]; then
+  FT=".venv/bin/freqtrade"
+else
+  FT=".venv/Scripts/freqtrade.exe"
+fi
 
 mkdir -p user_data/logs
 

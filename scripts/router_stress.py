@@ -68,7 +68,7 @@ def main():
     for name, thr in (("thr_lo", "1.125"), ("thr_hi", "1.375")):
         outdir = ROOT / f"user_data/regimes_{name}"
         env = dict(os.environ, FTLAB_REGIME_THR=thr)
-        subprocess.run([".venv/bin/python", "user_data/strategies/regime_detector.py",
+        subprocess.run([sys.executable, "user_data/strategies/regime_detector.py",
                         "export", "--rules", "--start", "2020-01-01",
                         "--out", str(outdir)], cwd=ROOT, env=env, check=True,
                        capture_output=True)

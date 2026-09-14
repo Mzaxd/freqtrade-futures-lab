@@ -18,3 +18,8 @@ user_data/hyperopt_results/.last_result.json
 user_data/*.sqlite
 user_data/*.sqlite-shm
 user_data/*.sqlite-wal
+
+# research_deepen: regenerable heavy dirs (venv, downloaded data)
+.mimosa/
+research_deepen/freqai/.venv-freqai/
+research_deepen/xsmomentum/userdir/

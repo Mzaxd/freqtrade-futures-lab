@@ -170,7 +170,7 @@ def run(strategy: str, timerange: str, tag: str, extra_backtest_args: list[str] 
         finally:
             f.unlink(missing_ok=True)
     if zips:
-        subprocess.run([".venv/bin/python", "scripts/summarize_results.py", f"stress_{tag}"] + zips,
+        subprocess.run([sys.executable, "scripts/summarize_results.py", f"stress_{tag}"] + zips,
                        cwd=ROOT, check=True)
 
 
