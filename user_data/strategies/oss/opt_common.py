@@ -21,7 +21,6 @@ intended for backtest research; a live deployment would need to swap
 from __future__ import annotations
 
 import logging
-from functools import lru_cache
 from pathlib import Path
 from typing import Optional
 
@@ -33,20 +32,34 @@ FUNDING_FEATHER_DIR = Path(__file__).resolve().parents[2] / "data" / "binance" /
 
 _missing_pairs: set[str] = set()
 
+# Cache keyed on the feather file's mtime: a long-running live/dry-run process
+# picks up files refreshed by the daily download job WITHOUT a restart, while
+# backtests (file never changes mid-run) behave exactly as before.
+_funding_cache: dict[str, tuple[int, Optional[pd.Series]]] = {}
 
-@lru_cache(maxsize=64)
+
 def _funding_events(pair: str) -> Optional[pd.Series]:
     """Settled funding rates for `pair`, index=UTC settlement time. None if absent."""
     base = pair.split("/")[0]
     f = FUNDING_FEATHER_DIR / f"{base}_USDT_USDT-1h-funding_rate.feather"
-    if not f.exists():
+    try:
+        stamp = f.stat().st_mtime_ns
+    except OSError:
+        stamp = -1
+    cached = _funding_cache.get(pair)
+    if cached is not None and cached[0] == stamp:
+        return cached[1]
+    if stamp < 0:
         if pair not in _missing_pairs:
             _missing_pairs.add(pair)
             logger.warning("opt_common: no funding feather for %s (%s) — gate off", pair, f.name)
+        _funding_cache[pair] = (stamp, None)
         return None
     s = pd.read_feather(f)
     s["date"] = pd.to_datetime(s["date"], utc=True)
-    return s.set_index("date")["funding_rate"].sort_index()
+    out = s.set_index("date")["funding_rate"].sort_index()
+    _funding_cache[pair] = (stamp, out)
+    return out
 
 
 def attach_funding(dataframe: pd.DataFrame, pair: str) -> pd.DataFrame:

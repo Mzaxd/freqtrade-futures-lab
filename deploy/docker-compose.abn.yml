@@ -38,18 +38,11 @@ services:
       - "127.0.0.1:8083:8080"
     restart: unless-stopped
 
-  # 组合监控：每小时聚合三实例权益，算 30 天滚动回撤与峰值回撤，触线告警
-  portfolio-monitor:
+  # 自调度任务器：每日 00:10Z 数据刷新 + 00:40Z 组合监控（详见 scheduler_loop.sh）
+  abn-scheduler:
     image: freqtradeorg/freqtrade:2026.8
-    container_name: ft-abn-monitor
+    container_name: ft-abn-scheduler
     volumes:
       - ./:/freqtrade
-    command: >
-      python /freqtrade/deploy/monitor_portfolio.py
-      --bots http://sleeve-a-opt4:8080,http://sleeve-b-momregime:8080,http://sleeve-c-nfilite:8080
-      --interval 3600
-    environment:
-      FT_API_USER: CHANGEME_USER
-      FT_API_PASSWORD: CHANGEME_PASSWORD
-    depends_on: [sleeve-a-opt4, sleeve-b-momregime, sleeve-c-nfilite]
+    entrypoint: ["/bin/sh", "/freqtrade/deploy/scheduler_loop.sh"]
     restart: unless-stopped
