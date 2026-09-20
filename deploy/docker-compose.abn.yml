@@ -1,0 +1,55 @@
+services:
+  sleeve-a-opt4:
+    image: freqtradeorg/freqtrade:2026.8
+    container_name: ft-abn-a
+    volumes:
+      - ./:/freqtrade
+    command: >
+      trade --config deploy/config_sleeve_a.json
+      --strategy OPT4_VolatilitySystem
+      --db-url sqlite:////freqtrade/user_data/tradesv3_abn_a.dryrun.sqlite
+    ports:
+      - "127.0.0.1:8081:8080"
+    restart: unless-stopped
+
+  sleeve-b-momregime:
+    image: freqtradeorg/freqtrade:2026.8
+    container_name: ft-abn-b
+    volumes:
+      - ./:/freqtrade
+    command: >
+      trade --config deploy/config_sleeve_b.json
+      --strategy OPT2_MomRegime15mLb21
+      --db-url sqlite:////freqtrade/user_data/tradesv3_abn_b.dryrun.sqlite
+    ports:
+      - "127.0.0.1:8082:8080"
+    restart: unless-stopped
+
+  sleeve-c-nfilite:
+    image: freqtradeorg/freqtrade:2026.8
+    container_name: ft-abn-c
+    volumes:
+      - ./:/freqtrade
+    command: >
+      trade --config deploy/config_sleeve_c.json
+      --strategy OPT7_NFILite
+      --db-url sqlite:////freqtrade/user_data/tradesv3_abn_c.dryrun.sqlite
+    ports:
+      - "127.0.0.1:8083:8080"
+    restart: unless-stopped
+
+  # 组合监控：每小时聚合三实例权益，算 30 天滚动回撤与峰值回撤，触线告警
+  portfolio-monitor:
+    image: freqtradeorg/freqtrade:2026.8
+    container_name: ft-abn-monitor
+    volumes:
+      - ./:/freqtrade
+    command: >
+      python /freqtrade/deploy/monitor_portfolio.py
+      --bots http://sleeve-a-opt4:8080,http://sleeve-b-momregime:8080,http://sleeve-c-nfilite:8080
+      --interval 3600
+    environment:
+      FT_API_USER: CHANGEME_USER
+      FT_API_PASSWORD: CHANGEME_PASSWORD
+    depends_on: [sleeve-a-opt4, sleeve-b-momregime, sleeve-c-nfilite]
+    restart: unless-stopped
