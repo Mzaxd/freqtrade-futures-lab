@@ -23,22 +23,26 @@
     },
     "entry_pricing": {
         "price_side": "other",
-        "use_order_book": false,
+        "use_order_book": true,
         "price_last_balance": 0.0,
         "check_depth_of_market": {
             "enabled": false,
             "bids_to_ask_delta": 1
-        }
+        },
+        "order_book_top": 1
     },
     "exit_pricing": {
         "price_side": "other",
-        "use_order_book": false
+        "use_order_book": true,
+        "order_book_top": 1
     },
     "exchange": {
         "name": "binance",
         "key": "",
         "secret": "",
-        "ccxt_config": {},
+        "ccxt_config": {
+            "httpsProxy": "http://127.0.0.1:7897"
+        },
         "ccxt_async_config": {},
         "pair_whitelist": [
             "BTC/USDT:USDT",
