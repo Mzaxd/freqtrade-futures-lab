@@ -41,7 +41,9 @@
         "key": "",
         "secret": "",
         "ccxt_config": {
-            "httpsProxy": "http://127.0.0.1:7897"
+            "httpsProxy": "http://192.168.73.103:7897",
+            "wsProxy": "http://192.168.73.103:7897",
+            "wssProxy": "http://192.168.73.103:7897"
         },
         "ccxt_async_config": {},
         "pair_whitelist": [
