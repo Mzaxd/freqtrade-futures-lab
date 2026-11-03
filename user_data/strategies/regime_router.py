@@ -11,7 +11,7 @@
 # naming its sub-strategy; exits / stops / time-stops / risk budgets are all
 # keyed by that tag. Risk scales with regime confidence; no martingale, no
 # position adding; every trade has an ATR stop.
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import talib.abstract as ta
 from pandas import DataFrame
@@ -152,7 +152,20 @@ class RegimeRouter(IStrategy):
 
     def _last_closed(self, pair: str, until: datetime):
         df, _ = self.dp.get_analyzed_dataframe(pair, self.timeframe)
-        return df, df["date"].searchsorted(until) - 1
+        # live-mode fix: trade datetimes from the DB are tz-naive and
+        # nanosecond-resolution, while live dataframes are tz-aware and
+        # millisecond-resolution (pandas 2 + ccxt). Normalize the key to the
+        # series dtype before comparing or searchsorted raises (backtest
+        # data is ns/naive, so this branch is a no-op there).
+        import pandas as pd
+        s = df["date"]
+        key = pd.Timestamp(until)
+        if len(df):
+            if s.dt.tz is not None and key.tzinfo is None:
+                key = key.tz_localize("UTC")
+            if hasattr(s.dtype, "unit") and key.unit != s.dtype.unit:
+                key = key.as_unit(s.dtype.unit)
+        return df, s.searchsorted(key) - 1
 
     def _budget(self, tag: str) -> tuple[float, float, float, int]:
         """(risk, atr_stop_mult, atr_trail_mult, time_stop_hours) per sub-strategy."""
