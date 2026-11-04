@@ -1,0 +1,31 @@
+== 1. entry-time gate check (winner R3_C3h_N3_D30; market-gate arms use the same machinery) ==
+  MISMATCH BTC entry 2021-01-02 21:00 candle 2021-01-02 20:00:00+00:00 strategy=(True,False,False) csv=(True,True,False)
+  MISMATCH SOL entry 2021-01-03 09:00 candle 2021-01-03 08:00:00+00:00 strategy=(False,False,False) csv=(False,False,True)
+  MISMATCH SOL entry 2021-01-08 12:00 candle 2021-01-08 11:00:00+00:00 strategy=(True,False,False) csv=(True,True,False)
+  R3_is_R3_G2h.zip: entries=207 match=204 mismatch=3 na=0
+  MISMATCH BTC entry 2021-01-02 21:00 candle 2021-01-02 20:00:00+00:00 strategy=(True,False,False) csv=(True,True,False)
+  MISMATCH SOL entry 2021-01-03 09:00 candle 2021-01-03 08:00:00+00:00 strategy=(False,False,False) csv=(False,False,True)
+  MISMATCH SOL entry 2021-01-08 12:00 candle 2021-01-08 11:00:00+00:00 strategy=(True,False,False) csv=(True,True,False)
+  R3_is_R3_G4h.zip: entries=207 match=204 mismatch=3 na=0
+  MISMATCH ETH entry 2024-01-03 15:00 candle 2024-01-03 14:00:00+00:00 strategy=(True,False,False) csv=(True,True,False)
+  MISMATCH SOL entry 2024-01-03 15:00 candle 2024-01-03 14:00:00+00:00 strategy=(True,False,False) csv=(True,True,False)
+  R3_os_R3_C3h_N3_D30.zip: entries=264 match=262 mismatch=2 na=0
+== 2. calendar-window hourly check vs CSV ==
+  IS startup partial zone [2021-01-01..2021-02-01] BTC: hours=744 mismatch=68
+  IS startup partial zone [2021-01-01..2021-02-01] ETH: hours=744 mismatch=44
+  IS startup partial zone [2021-01-01..2021-02-01] SOL: hours=744 mismatch=82
+  2022 bear chop [2022-06-01..2022-09-01] BTC: hours=2208 mismatch=0
+  2022 bear chop [2022-06-01..2022-09-01] ETH: hours=2208 mismatch=0
+  2022 bear chop [2022-06-01..2022-09-01] SOL: hours=2208 mismatch=0
+  OS mid window [2025-01-01..2025-04-01] BTC: hours=2160 mismatch=0
+  OS mid window [2025-01-01..2025-04-01] ETH: hours=2160 mismatch=0
+  OS mid window [2025-01-01..2025-04-01] SOL: hours=2160 mismatch=0
+  2026 bleed window [2026-02-15..2026-04-15] BTC: hours=1416 mismatch=0
+  2026 bleed window [2026-02-15..2026-04-15] ETH: hours=1416 mismatch=0
+  2026 bleed window [2026-02-15..2026-04-15] SOL: hours=1416 mismatch=0
+  OS startup partial zone [2024-01-02..2024-02-01] BTC: hours=720 mismatch=70
+  OS startup partial zone [2024-01-02..2024-02-01] ETH: hours=720 mismatch=27
+  OS startup partial zone [2024-01-02..2024-02-01] SOL: hours=720 mismatch=21
+== 3. baseline vs C3h_N3_D30 IS stake comparison ==
+  joined trades=207  halved(~x0.5)=8  ratio min/med/max=0.500/1.000/1.034
+  entries identical (open dates match): True

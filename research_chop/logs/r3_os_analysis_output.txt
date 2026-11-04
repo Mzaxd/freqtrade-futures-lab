@@ -1,0 +1,34 @@
+curve BASE: 2024-01-02..2026-09-12 n=985 end_eq=18802 trades=264
+curve C3h_N3_D30: 2024-01-02..2026-09-12 n=985 end_eq=19026 trades=264
+curve C3p_N3_D30: 2024-01-02..2026-09-12 n=985 end_eq=19821 trades=256
+common OS return days: 2024-01-03..2026-09-12 n=984
+OS days n=984  chop days=496 (50.4%)  trend days=488
+
+== OS adjudication (PRE §4) ==
+            total  maxDD_full  chopDD  trend_ann  worst30
+name                                                     
+BASE        88.02      -39.72  -26.26      12.56   -16.52
+C3h_N3_D30  90.26      -37.35  -26.26      13.03   -16.52
+C3p_N3_D30  98.21      -37.44  -22.31      10.80   -16.52
+C3h_N3_D30: chop-DD improvement +0.00pp (FAIL, need >=+5pp) | trend ann loss -0.47pp (PASS, need <=2pp)
+C3p_N3_D30: chop-DD improvement +3.95pp (FAIL, need >=+5pp) | trend ann loss +1.76pp (PASS, need <=2pp)
+
+== Portfolio layer: 0.7*A' + 0.3*B3, OS window ==
+            total  maxDD  worst30
+name                             
+BASE        86.54 -30.99   -12.64
+C3h_N3_D30  87.83 -29.10   -12.68
+C3p_N3_D30  93.42 -29.18   -12.67
+
+== MC block bootstrap (block=30d, 2000 draws, seed=20261103), joint (rA, rB) resampling ==
+combo           hist worst30  MC med 30dDD  MC p95 30dDD   vs BASE  redline
+BASE                  -12.64        -13.45        -16.80     +0.00       ok
+C3h_N3_D30            -12.68        -13.30        -16.60     +0.20       ok
+C3p_N3_D30            -12.67        -13.30        -16.61     +0.19       ok
+
+== OS chop-day mask per pair (reference) ==
+  BTC: ON days 319 / 984
+  ETH: ON days 328 / 984
+  SOL: ON days 353 / 984
+
+saved research_chop/logs/r3_os_daily_returns.csv
