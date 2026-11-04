@@ -1,0 +1,10 @@
+{
+    "_comment": "research_ab Hyperopt-B overlay: ccxt fetchMarkets restricted to spot+linear so freqtrade startup does NOT call dapi.binance.com (delivery/inverse API), which is unreachable from this network today. Purely a connectivity workaround; pair validation and backtest math are unaffected (USDT-M pairs are linear markets).",
+    "exchange": {
+        "ccxt_config": {
+            "options": {
+                "fetchMarkets": ["spot", "linear"]
+            }
+        }
+    }
+}

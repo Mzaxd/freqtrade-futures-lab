@@ -21,3 +21,11 @@ user_data/*.sqlite-wal
 .mimosa/
 research_deepen/freqai/.venv-freqai/
 research_deepen/xsmomentum/userdir/
+
+# research_ab freeze (2026-11-04): keep reports/code/curves/key-zips only
+user_data/data/
+user_data/logs/*.log
+research_ab/logs/*.log
+research_ab/results/*.fthypt
+research_ab/hptB_userdir/
+research_ab/hptB_userdir_calmar/
