@@ -1,0 +1,44 @@
+# 草案,未部署 — 方案3 影子栈 compose(research_revive/pipe/drafts/)。
+# 与冻结 ABN 栈(deploy/docker-compose.abn.yml)并行:容器名/端口(8084/8085)/db 全新,互不干扰。
+# 不建 scheduler:数据刷新复用冻结栈 scheduler(00:10Z,12 币 1h/15m/5m/1d+funding,超集覆盖影子栈所需)。
+# 监控容器:日频轮询两影子实例 + K1-K10 哨兵(见 monitor_shadow.py 草案)。
+# 执行时复制到 deploy_shadow/docker-compose.shadow.yml。
+services:
+  rev-shadow-a:
+    image: freqtradeorg/freqtrade:2026.8
+    container_name: ft-rev-a
+    volumes:
+      - ./:/freqtrade
+    command: >
+      trade --config deploy_shadow/config_shadow_a_vt60f1.json
+      --strategy Rev_A_vt60f1
+      --db-url sqlite:////freqtrade/user_data/tradesv3_shadow_a.dryrun.sqlite
+    ports:
+      - "127.0.0.1:8084:8080"
+    restart: unless-stopped
+
+  rev-shadow-b:
+    image: freqtradeorg/freqtrade:2026.8
+    container_name: ft-rev-b
+    volumes:
+      - ./:/freqtrade
+    command: >
+      trade --config deploy_shadow/config_shadow_b_2xvt.json
+      --strategy Rev_B_2xvt
+      --db-url sqlite:////freqtrade/user_data/tradesv3_shadow_b.dryrun.sqlite
+    ports:
+      - "127.0.0.1:8085:8080"
+    restart: unless-stopped
+
+  rev-shadow-monitor:
+    image: freqtradeorg/freqtrade:2026.8
+    container_name: ft-rev-monitor
+    volumes:
+      - ./:/freqtrade
+    entrypoint: ["/bin/sh", "/freqtrade/deploy_shadow/monitor_loop.sh"]
+    restart: unless-stopped
+    # monitor_loop.sh(执行时新建,模仿 deploy/scheduler_loop.sh 的睡眠循环):
+    #   每日 00:50Z(冻结栈 00:10 刷新、00:40 冻结栈监控之后):
+    #     python deploy_shadow/monitor_shadow.py --once \
+    #       --bots http://rev-shadow-a:8080,http://rev-shadow-b:8080
+    #   退出码语义同 monitor_portfolio.py:0 正常 / 2 RED(停机红线)
