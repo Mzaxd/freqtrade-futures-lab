@@ -1,0 +1,5 @@
+sleeve,variant,n_blocked,n_total,blk_mean_bp,blk_win,oth_mean_bp,gain_by_year,gain_mean_pp
+SlowA_S12h,same_side,6,132,65.0,50.0,128.0,"{2021: np.float64(-2.7), 2022: np.float64(-0.7), 2023: np.float64(-0.4), 2024: np.float64(-0.0), 2025: np.float64(-0.0), 2026: np.float64(-0.0)}",-0.63
+SlowA_S12h,any_extreme,6,132,65.0,50.0,128.0,"{2021: np.float64(-2.7), 2022: np.float64(-0.7), 2023: np.float64(-0.4), 2024: np.float64(-0.0), 2025: np.float64(-0.0), 2026: np.float64(-0.0)}",-0.63
+A_S3h,same_side,1,489,-101.0,0.0,91.0,"{2021: np.float64(1.0), 2022: np.float64(-0.0), 2023: np.float64(-0.0), 2024: np.float64(-0.0), 2025: np.float64(-0.0), 2026: np.float64(-0.0)}",0.17
+A_S3h,any_extreme,4,489,278.0,25.0,89.0,"{2021: np.float64(2.0), 2022: np.float64(-0.0), 2023: np.float64(-5.8), 2024: np.float64(0.3), 2025: np.float64(-0.0), 2026: np.float64(-0.0)}",-0.58
