@@ -1,0 +1,196 @@
+2026-11-07 12:52:01,402 - freqtrade - INFO - freqtrade 2026.8
+2026-11-07 12:52:01,527 - numexpr.utils - INFO - NumExpr defaulting to 10 threads.
+2026-11-07 12:52:02,646 - freqtrade.configuration.load_config - INFO - Using config: user_data/configs/config_futures.json ...
+2026-11-07 12:52:02,647 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-11-07 12:52:02,647 - freqtrade.loggers - INFO - Logfile configured
+2026-11-07 12:52:02,648 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-11-07 12:52:02,648 - freqtrade.configuration.configuration - INFO - Using additional Strategy lookup path: user_data/strategies/oss
+2026-11-07 12:52:02,648 - freqtrade.configuration.configuration - INFO - Parameter --max-open-trades detected, overriding max_open_trades to: 3 ...
+2026-11-07 12:52:02,648 - freqtrade.configuration.configuration - INFO - Parameter --dry-run-wallet detected, overriding dry_run_wallet to: 7000.0 ...
+2026-11-07 12:52:02,648 - freqtrade.configuration.configuration - INFO - Parameter --timerange detected: 20210101-20240101 ...
+2026-11-07 12:52:02,648 - freqtrade.configuration.configuration - INFO - Using user-data directory: user_data ...
+2026-11-07 12:52:02,649 - freqtrade.configuration.configuration - INFO - Using data directory: user_data/data/binance ...
+2026-11-07 12:52:02,649 - freqtrade.configuration.configuration - INFO - Storing backtest results to user_data/backtest_results/crash_RVrank_is.zip ...
+2026-11-07 12:52:02,649 - freqtrade.configuration.configuration - WARNING - DEPRECATED: Using `--export-filename` has no impact when backtesting. Please use `--notes` to annotate backtest results and 
+`--backtest-directory` to specify the output directory. 
+2026-11-07 12:52:02,649 - freqtrade.configuration.configuration - INFO - Parameter --export detected: trades ...
+2026-11-07 12:52:02,649 - freqtrade.configuration.configuration - INFO - Parameter --cache=none detected ...
+2026-11-07 12:52:02,649 - freqtrade.configuration.configuration - INFO - Using pairs ['BTC/USDT:USDT', 'ETH/USDT:USDT', 'SOL/USDT:USDT']
+2026-11-07 12:52:02,649 - freqtrade.configuration.configuration - INFO - Filter trades by timerange: 20210101-20240101
+2026-11-07 12:52:02,650 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-11-07 12:52:02,653 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2026-11-07 12:52:02,654 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-11-07 12:52:02,655 - freqtrade.commands.optimize_commands - INFO - Starting freqtrade in Backtesting mode
+2026-11-07 12:52:02,655 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-11-07 12:52:02,655 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.91
+2026-11-07 12:52:02,655 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2026-11-07 12:52:02,657 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2026-11-07 12:52:02,658 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2026-11-07 12:52:03,786 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange class 'Binance' ...
+2026-11-07 12:52:03,802 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy crash_RVrank from '/Users/caihaohan/Code/freqtrade-futures-lab/user_data/strategies/oss/crash_overlay.py'...
+2026-11-07 12:52:03,802 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2026-11-07 12:52:03,802 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value from the configuration: USDT.
+2026-11-07 12:52:03,802 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value from the configuration: unlimited.
+2026-11-07 12:52:03,802 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value from the configuration: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 
+'unit': 'minutes'}.
+2026-11-07 12:52:03,802 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value from the configuration: 3.
+2026-11-07 12:52:03,803 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 100}
+2026-11-07 12:52:03,803 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 1h
+2026-11-07 12:52:03,803 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.3
+2026-11-07 12:52:03,803 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2026-11-07 12:52:03,803 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2026-11-07 12:52:03,803 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2026-11-07 12:52:03,803 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: True
+2026-11-07 12:52:03,803 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2026-11-07 12:52:03,803 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'market', 'exit': 'market', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2026-11-07 12:52:03,804 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2026-11-07 12:52:03,804 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2026-11-07 12:52:03,804 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2026-11-07 12:52:03,804 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 200
+2026-11-07 12:52:03,804 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2026-11-07 12:52:03,804 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2026-11-07 12:52:03,804 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2026-11-07 12:52:03,804 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2026-11-07 12:52:03,804 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2026-11-07 12:52:03,804 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2026-11-07 12:52:03,804 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2026-11-07 12:52:03,805 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2026-11-07 12:52:03,805 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: 0
+2026-11-07 12:52:03,805 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 3
+2026-11-07 12:52:03,805 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-11-07 12:52:03,807 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from 
+'/Users/caihaohan/Code/freqtrade-futures-lab/.venv/lib/python3.11/site-packages/freqtrade/plugins/pairlist/StaticPairList.py'...
+2026-11-07 12:52:03,810 - freqtrade.optimize.backtesting - INFO - Using fee 0.0500% - worst case fee from exchange (lowest tier).
+2026-11-07 12:52:03,898 - freqtrade.optimize.backtesting - INFO - Loading data from 2020-12-23 16:00:00 up to 2024-01-01 00:00:00 (1103 days).
+2026-11-07 12:52:04,235 - freqtrade.optimize.backtesting - INFO - Dataload complete. Calculating indicators
+2026-11-07 12:52:04,235 - freqtrade.optimize.backtesting - INFO - Running backtesting for Strategy crash_RVrank
+2026-11-07 12:52:04,236 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2026-11-07 12:52:04,236 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): resample_hours = 3
+2026-11-07 12:52:04,236 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): signal_atr_mult = 2.0
+2026-11-07 12:52:04,236 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2026-11-07 12:52:04,236 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): stop_atr_mult = 2.0
+2026-11-07 12:52:04,271 - freqtrade.optimize.backtesting - INFO - Backtesting with data from 2021-01-01 00:00:00 up to 2024-01-01 00:00:00 (1095 days).
+2026-11-07 12:52:04,370 - freqtrade.data.dataprovider - INFO - Loading data for BTC/USDT:USDT 1h from 2020-12-23 16:00:00 to 2024-01-01 00:00:00
+backtest ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4         100% • 0:00:00 • 0:00:00
+backtest ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26280/26280 100% • 0:00:16 • 0:00:00
+2026-11-07 12:52:20,964 - freqtrade.misc - INFO - dumping json to "user_data/backtest_results/backtest-result-2026-11-07_04-52-20.meta.json"
+Result for strategy crash_RVrank
+                                                  BACKTESTING REPORT                                                   
+┏━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃          Pair ┃ Trades ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃      Avg Duration ┃  Win  Draw  Loss  Win% ┃
+┡━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ SOL/USDT:USDT │     49 │        25.25 │       38048.412 │       543.55 │  12 days, 7:29:00 │   17     0    32  34.7 │
+│ BTC/USDT:USDT │     93 │         4.66 │       24708.363 │       352.98 │  8 days, 13:10:00 │   34     0    59  36.6 │
+│ ETH/USDT:USDT │     65 │        11.76 │       20471.540 │       292.45 │ 11 days, 12:51:00 │   25     0    40  38.5 │
+│         TOTAL │    207 │        11.76 │       83228.315 │      1188.98 │  10 days, 9:03:00 │   76     0   131  36.7 │
+└───────────────┴────────┴──────────────┴─────────────────┴──────────────┴───────────────────┴────────────────────────┘
+                                               LEFT OPEN TRADES REPORT                                                
+┏━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃          Pair ┃ Trades ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃     Avg Duration ┃  Win  Draw  Loss  Win% ┃
+┡━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ SOL/USDT:USDT │      1 │        17.14 │        1044.817 │        14.93 │ 10 days, 6:00:00 │    1     0     0   100 │
+│ ETH/USDT:USDT │      1 │         1.68 │         206.003 │         2.94 │  2 days, 6:00:00 │    1     0     0   100 │
+│         TOTAL │      2 │         9.41 │        1250.820 │        17.87 │  6 days, 6:00:00 │    2     0     0   100 │
+└───────────────┴────────┴──────────────┴─────────────────┴──────────────┴──────────────────┴────────────────────────┘
+                                                  ENTER TAG STATS                                                  
+┏━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Enter Tag ┃ Entries ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃     Avg Duration ┃  Win  Draw  Loss  Win% ┃
+┡━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│     OTHER │     207 │        11.76 │       83228.315 │      1188.98 │ 10 days, 9:03:00 │   76     0   131  36.7 │
+│     TOTAL │     207 │        11.76 │       83228.315 │      1188.98 │ 10 days, 9:03:00 │   76     0   131  36.7 │
+└───────────┴─────────┴──────────────┴─────────────────┴──────────────┴──────────────────┴────────────────────────┘
+                                                  EXIT REASON STATS                                                   
+┏━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃   Exit Reason ┃ Exits ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃      Avg Duration ┃  Win  Draw  Loss  Win% ┃
+┡━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│   exit_signal │    80 │        39.82 │      135151.183 │      1930.73 │ 20 days, 20:39:00 │   72     0     8  90.0 │
+│ time_stop_60d │     2 │       221.42 │        2780.995 │        39.73 │  60 days, 0:00:00 │    2     0     0   100 │
+│    force_exit │     2 │         9.41 │        1250.820 │        17.87 │   6 days, 6:00:00 │    2     0     0   100 │
+│     stop_loss │   123 │        -9.86 │      -55954.682 │      -799.35 │  2 days, 19:40:00 │    0     0   123     0 │
+│         TOTAL │   207 │        11.76 │       83228.315 │      1188.98 │  10 days, 9:03:00 │   76     0   131  36.7 │
+└───────────────┴───────┴──────────────┴─────────────────┴──────────────┴───────────────────┴────────────────────────┘
+                                                          MIXED TAG STATS                                                          
+┏━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Enter Tag ┃   Exit Reason ┃ Trades ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃      Avg Duration ┃  Win  Draw  Loss  Win% ┃
+┡━━━━━━━━━━━╇━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│           │   exit_signal │     80 │        39.82 │      135151.183 │      1930.73 │ 20 days, 20:39:00 │   72     0     8  90.0 │
+│           │ time_stop_60d │      2 │       221.42 │        2780.995 │        39.73 │  60 days, 0:00:00 │    2     0     0   100 │
+│           │    force_exit │      2 │         9.41 │        1250.820 │        17.87 │   6 days, 6:00:00 │    2     0     0   100 │
+│           │     stop_loss │    123 │        -9.86 │      -55954.682 │      -799.35 │  2 days, 19:40:00 │    0     0   123     0 │
+│     TOTAL │               │    207 │        11.76 │       83228.315 │      1188.98 │  10 days, 9:03:00 │   76     0   131  36.7 │
+└───────────┴───────────────┴────────┴──────────────┴─────────────────┴──────────────┴───────────────────┴────────────────────────┘
+                                   SUMMARY METRICS                                    
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Metric                                 ┃ Value                                     ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ Backtesting from                       │ 2021-01-01 00:00:00                       │
+│ Backtesting to                         │ 2024-01-01 00:00:00                       │
+│ Trading Mode                           │ Isolated Futures                          │
+│ Max open trades                        │ 3                                         │
+│                                        │                                           │
+│ Total/Daily Avg Trades                 │ 207 / 0.19                                │
+│ Starting balance                       │ 7000 USDT                                 │
+│ Final balance                          │ 90228.315 USDT                            │
+│ Absolute profit                        │ 83228.315 USDT                            │
+│ Total profit %                         │ 1188.98%                                  │
+│ CAGR %                                 │ 134.47%                                   │
+│ Sharpe (closed trades)                 │ 0.65                                      │
+│ Sortino (closed trades)                │ 5.92                                      │
+│ Calmar (closed trades)                 │ 148.63                                    │
+│ SQN                                    │ 2.59                                      │
+│ Mean profit p-value                    │ 0.01041                                   │
+│ Profit factor                          │ 2.44                                      │
+│ Expectancy (Ratio)                     │ 402.07 (0.91)                             │
+│ Avg. daily profit                      │ 76.008 USDT                               │
+│ Avg. stake amount                      │ 7193.132 USDT                             │
+│ Market change                          │ 2264.63%                                  │
+│ Total trade volume                     │ 6017251.524 USDT                          │
+│                                        │                                           │
+│ Long / Short trades                    │ 107 / 100                                 │
+│ Long / Short profit %                  │ 982.32% / 206.66%                         │
+│ Long / Short profit USDT               │ 68762.164 / 14466.151                     │
+│                                        │                                           │
+│ Best Pair                              │ SOL/USDT:USDT 543.55%                     │
+│ Worst Pair                             │ ETH/USDT:USDT 292.45%                     │
+│ Best trade                             │ SOL/USDT:USDT 391.46%                     │
+│ Worst trade                            │ SOL/USDT:USDT -42.91%                     │
+│ Best day                               │ 36384.129 USDT                            │
+│ Worst day                              │ -2183.622 USDT                            │
+│ Days win/draw/lose                     │ 58 / 942 / 95                             │
+│ Min/Max/Avg. Duration Winners          │ 2d 06:00 / 60d 00:00 / 23d 01:51          │
+│ Min/Max/Avg. Duration Losers           │ 0d 00:00 / 19d 18:00 / 3d 00:14           │
+│ Max Consecutive Wins / Loss            │ 4 / 9                                     │
+│ Rejected Entry signals                 │ 0                                         │
+│ Entry/Exit Timeouts                    │ 0 / 0                                     │
+│                                        │                                           │
+│ Min/Max balance (closed trades)        │ 6607.283 USDT / 92556.349 USDT            │
+│ Max % of account underwater            │ 13.96%                                    │
+│ Absolute drawdown                      │ 8574.883 USDT (13.96%)                    │
+│ Drawdown duration                      │ 109 days 03:00:00                         │
+│ Profit at drawdown start               │ 54437.421 USDT                            │
+│ Profit at drawdown end                 │ 45862.538 USDT                            │
+│ Drawdown start                         │ 2023-06-30 15:00:00                       │
+│ Drawdown end                           │ 2023-10-17 18:00:00                       │
+│                                        │                                           │
+│ Wallet based Metrics                   │                                           │
+│ Min/Max balance (wallet balance)       │ 6607.283 USDT / 92556.349 USDT            │
+│ Min/Max balance dates (wallet balance) │ 2021-02-15 03:00:00 / 2023-12-11 04:00:00 │
+│ Max % of account underwater (balance)  │ 13.96%                                    │
+│ Absolute drawdown (wallet balance)     │ 8574.883 USDT (13.96%)                    │
+│ Drawdown duration                      │ 109 days 03:00:00                         │
+│ Profit at drawdown start               │ 54437.421 USDT                            │
+│ Profit at drawdown end                 │ 45862.538 USDT                            │
+│ Drawdown start                         │ 2023-06-30 16:00:00                       │
+│ Drawdown end                           │ 2023-10-17 19:00:00                       │
+│ Sharpe (daily wallet balance)          │ 1.74                                      │
+│ Sortino (daily wallet balance)         │ 8.43                                      │
+│ Calmar (daily wallet balance)          │ 146.53                                    │
+└────────────────────────────────────────┴───────────────────────────────────────────┘
+
+Backtested 2021-01-01 00:00:00 -> 2024-01-01 00:00:00 | Max open trades : 3
+                                                              STRATEGY SUMMARY                                                               
+┏━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┓
+┃     Strategy ┃ Trades ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃     Avg Duration ┃  Win  Draw  Loss  Win% ┃              Drawdown ┃
+┡━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━┩
+│ crash_RVrank │    207 │        11.76 │       83228.315 │      1188.98 │ 10 days, 9:03:00 │   76     0   131  36.7 │ 8574.883 USDT  13.96% │
+└──────────────┴────────┴──────────────┴─────────────────┴──────────────┴──────────────────┴────────────────────────┴───────────────────────┘

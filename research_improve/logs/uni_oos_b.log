@@ -1,0 +1,627 @@
+2026-11-07 15:20:50,800 - freqtrade - INFO - freqtrade 2026.8
+2026-11-07 15:20:50,919 - numexpr.utils - INFO - NumExpr defaulting to 10 threads.
+2026-11-07 15:20:52,010 - freqtrade.configuration.load_config - INFO - Using config: user_data/configs/config_futures.json ...
+2026-11-07 15:20:52,011 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-11-07 15:20:52,011 - freqtrade.loggers - INFO - Logfile configured
+2026-11-07 15:20:52,011 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-11-07 15:20:52,012 - freqtrade.configuration.configuration - INFO - Using additional Strategy lookup path: user_data/strategies/oss
+2026-11-07 15:20:52,012 - freqtrade.configuration.configuration - INFO - Parameter --max-open-trades detected, overriding max_open_trades to: 4 ...
+2026-11-07 15:20:52,012 - freqtrade.configuration.configuration - INFO - Parameter --dry-run-wallet detected, overriding dry_run_wallet to: 7000.0 ...
+2026-11-07 15:20:52,012 - freqtrade.configuration.configuration - INFO - Parameter --timerange detected: 20230101-20261107 ...
+2026-11-07 15:20:52,012 - freqtrade.configuration.configuration - INFO - Using user-data directory: user_data ...
+2026-11-07 15:20:52,012 - freqtrade.configuration.configuration - INFO - Using data directory: user_data/data/binance ...
+2026-11-07 15:20:52,012 - freqtrade.configuration.configuration - INFO - Storing backtest results to user_data/backtest_results/uni_oos_b.zip ...
+2026-11-07 15:20:52,012 - freqtrade.configuration.configuration - WARNING - DEPRECATED: Using `--export-filename` has no impact when backtesting. Please use `--notes` to annotate backtest results and 
+`--backtest-directory` to specify the output directory. 
+2026-11-07 15:20:52,012 - freqtrade.configuration.configuration - INFO - Parameter --export detected: trades ...
+2026-11-07 15:20:52,012 - freqtrade.configuration.configuration - INFO - Parameter --cache=none detected ...
+2026-11-07 15:20:52,013 - freqtrade.configuration.configuration - INFO - Using pairs ['BTC/USDT:USDT', 'ETH/USDT:USDT', 'SOL/USDT:USDT', 'BNB/USDT:USDT', 'XRP/USDT:USDT', 'ADA/USDT:USDT', 
+'DOGE/USDT:USDT', 'AVAX/USDT:USDT', 'LINK/USDT:USDT', 'DOT/USDT:USDT', 'LTC/USDT:USDT', 'UNI/USDT:USDT', '0G/USDT:USDT', '1000BONK/USDT:USDT', '1000FLOKI/USDT:USDT', '1000LUNC/USDT:USDT', 
+'1000PEPE/USDT:USDT', '1000RATS/USDT:USDT', '1000SATS/USDT:USDT', 'ACH/USDT:USDT', 'AERO/USDT:USDT', 'AIXBT/USDT:USDT', 'ALT/USDT:USDT', 'APE/USDT:USDT', 'API3/USDT:USDT', 'APT/USDT:USDT', 
+'ARB/USDT:USDT', 'ARC/USDT:USDT', 'ARKM/USDT:USDT', 'ASTER/USDT:USDT', 'BB/USDT:USDT', 'BEAMX/USDT:USDT', 'BEAT/USDT:USDT', 'BERA/USDT:USDT', 'BIGTIME/USDT:USDT', 'BIO/USDT:USDT', 'BLUR/USDT:USDT', 
+'BOME/USDT:USDT', 'BSB/USDT:USDT', 'BTW/USDT:USDT', 'CAKE/USDT:USDT', 'CAP/USDT:USDT', 'CFX/USDT:USDT', 'CHIP/USDT:USDT', 'DOGS/USDT:USDT', 'EIGEN/USDT:USDT', 'ENA/USDT:USDT', 'ETHFI/USDT:USDT', 
+'FARTCOIN/USDT:USDT', 'FET/USDT:USDT', 'FLOW/USDT:USDT', 'GIGGLE/USDT:USDT', 'GMT/USDT:USDT', 'GRAM/USDT:USDT', 'GRASS/USDT:USDT', 'H/USDT:USDT', 'HYPE/USDT:USDT', 'IMX/USDT:USDT', 'INJ/USDT:USDT', 
+'IO/USDT:USDT', 'JASMY/USDT:USDT', 'JTO/USDT:USDT', 'JUP/USDT:USDT', 'KAITO/USDT:USDT', 'KAS/USDT:USDT', 'KITE/USDT:USDT', 'LAB/USDT:USDT', 'LDO/USDT:USDT', 'LIT/USDT:USDT', 'LUNA2/USDT:USDT', 
+'MAGIC/USDT:USDT', 'MANTA/USDT:USDT', 'MEME/USDT:USDT', 'MINA/USDT:USDT', 'MON/USDT:USDT', 'MOODENG/USDT:USDT', 'MOVE/USDT:USDT', 'MYX/USDT:USDT', 'NEIRO/USDT:USDT', 'NOT/USDT:USDT', 'ONDO/USDT:USDT',
+'OP/USDT:USDT', 'ORDI/USDT:USDT', 'PENDLE/USDT:USDT', 'PENGU/USDT:USDT', 'PIPPIN/USDT:USDT', 'PNUT/USDT:USDT', 'POL/USDT:USDT', 'POPCAT/USDT:USDT', 'PUMP/USDT:USDT', 'PYTH/USDT:USDT', 
+'RAYSOL/USDT:USDT', 'RE/USDT:USDT', 'RENDER/USDT:USDT', 'REZ/USDT:USDT', 'RIVER/USDT:USDT', 'S/USDT:USDT', 'SAGA/USDT:USDT', 'SEI/USDT:USDT', 'SPX/USDT:USDT', 'SSV/USDT:USDT', 'STRK/USDT:USDT', 
+'STX/USDT:USDT', 'SUI/USDT:USDT', 'TAO/USDT:USDT', 'TIA/USDT:USDT', 'TRUMP/USDT:USDT', 'TURBO/USDT:USDT', 'USELESS/USDT:USDT', 'VIRTUAL/USDT:USDT', 'VVV/USDT:USDT', 'W/USDT:USDT', 'WIF/USDT:USDT', 
+'WLD/USDT:USDT', 'WLFI/USDT:USDT', 'WOO/USDT:USDT', 'XAI/USDT:USDT', 'XPL/USDT:USDT', 'YGG/USDT:USDT', 'ZAMA/USDT:USDT', 'ZK/USDT:USDT', 'ZRO/USDT:USDT', '币安人生/USDT:USDT']
+2026-11-07 15:20:52,013 - freqtrade.configuration.configuration - INFO - Filter trades by timerange: 20230101-20261107
+2026-11-07 15:20:52,013 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-11-07 15:20:52,017 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2026-11-07 15:20:52,017 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-11-07 15:20:52,018 - freqtrade.commands.optimize_commands - INFO - Starting freqtrade in Backtesting mode
+2026-11-07 15:20:52,018 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-11-07 15:20:52,018 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.91
+2026-11-07 15:20:52,018 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2026-11-07 15:20:52,020 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2026-11-07 15:20:52,021 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2026-11-07 15:20:53,224 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange class 'Binance' ...
+2026-11-07 15:20:53,253 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy uni_ARL_ext from '/Users/caihaohan/Code/freqtrade-futures-lab/user_data/strategies/oss/uni_ARLGate.py'...
+2026-11-07 15:20:53,254 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2026-11-07 15:20:53,254 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value from the configuration: USDT.
+2026-11-07 15:20:53,254 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value from the configuration: unlimited.
+2026-11-07 15:20:53,254 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value from the configuration: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 
+'unit': 'minutes'}.
+2026-11-07 15:20:53,254 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value from the configuration: 4.
+2026-11-07 15:20:53,254 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 100}
+2026-11-07 15:20:53,254 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 1h
+2026-11-07 15:20:53,254 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.3
+2026-11-07 15:20:53,255 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2026-11-07 15:20:53,255 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2026-11-07 15:20:53,255 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2026-11-07 15:20:53,255 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: True
+2026-11-07 15:20:53,255 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2026-11-07 15:20:53,255 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'market', 'exit': 'market', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2026-11-07 15:20:53,255 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2026-11-07 15:20:53,255 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2026-11-07 15:20:53,255 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2026-11-07 15:20:53,256 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 200
+2026-11-07 15:20:53,256 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2026-11-07 15:20:53,256 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2026-11-07 15:20:53,256 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2026-11-07 15:20:53,256 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2026-11-07 15:20:53,256 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2026-11-07 15:20:53,256 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2026-11-07 15:20:53,256 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2026-11-07 15:20:53,256 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2026-11-07 15:20:53,256 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: 0
+2026-11-07 15:20:53,256 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 4
+2026-11-07 15:20:53,257 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-11-07 15:20:53,263 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from 
+'/Users/caihaohan/Code/freqtrade-futures-lab/.venv/lib/python3.11/site-packages/freqtrade/plugins/pairlist/StaticPairList.py'...
+2026-11-07 15:20:53,280 - freqtrade.optimize.backtesting - INFO - Using fee 0.0500% - worst case fee from exchange (lowest tier).
+2026-11-07 15:20:53,507 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 0G/USDT:USDT, futures, 1h, data starts at 2025-09-17 15:00:00
+2026-11-07 15:20:53,515 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 1000BONK/USDT:USDT, futures, 1h, data starts at 2023-11-22 14:00:00
+2026-11-07 15:20:53,525 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 1000FLOKI/USDT:USDT, futures, 1h, data starts at 2023-05-06 16:00:00
+2026-11-07 15:20:53,547 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 1000PEPE/USDT:USDT, futures, 1h, data starts at 2023-05-05 16:00:00
+2026-11-07 15:20:53,560 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 1000RATS/USDT:USDT, futures, 1h, data starts at 2023-12-15 14:00:00
+2026-11-07 15:20:53,569 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 1000SATS/USDT:USDT, futures, 1h, data starts at 2023-12-12 14:00:00
+2026-11-07 15:20:53,579 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ACH/USDT:USDT, futures, 1h, data starts at 2023-02-22 14:00:00
+2026-11-07 15:20:53,590 - freqtrade.data.history.datahandlers.idatahandler - WARNING - AERO/USDT:USDT, futures, 1h, data starts at 2024-12-04 14:00:00
+2026-11-07 15:20:53,599 - freqtrade.data.history.datahandlers.idatahandler - WARNING - AIXBT/USDT:USDT, futures, 1h, data starts at 2024-12-20 18:00:00
+2026-11-07 15:20:53,608 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ALT/USDT:USDT, futures, 1h, data starts at 2024-01-25 14:00:00
+2026-11-07 15:20:53,653 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ARB/USDT:USDT, futures, 1h, data starts at 2023-03-23 15:00:00
+2026-11-07 15:20:53,664 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ARC/USDT:USDT, futures, 1h, data starts at 2025-01-17 13:00:00
+2026-11-07 15:20:53,672 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ARKM/USDT:USDT, futures, 1h, data starts at 2023-07-28 02:00:00
+2026-11-07 15:20:53,682 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ASTER/USDT:USDT, futures, 1h, data starts at 2025-09-19 12:00:00
+2026-11-07 15:20:53,690 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BB/USDT:USDT, futures, 1h, data starts at 2024-05-13 12:00:00
+2026-11-07 15:20:53,699 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BEAMX/USDT:USDT, futures, 1h, data starts at 2023-11-17 13:00:00
+2026-11-07 15:20:53,708 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BEAT/USDT:USDT, futures, 1h, data starts at 2025-11-12 12:00:00
+2026-11-07 15:20:53,716 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BERA/USDT:USDT, futures, 1h, data starts at 2025-02-06 15:00:00
+2026-11-07 15:20:53,725 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BIGTIME/USDT:USDT, futures, 1h, data starts at 2023-10-12 14:00:00
+2026-11-07 15:20:53,735 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BIO/USDT:USDT, futures, 1h, data starts at 2025-01-03 12:00:00
+2026-11-07 15:20:53,744 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BLUR/USDT:USDT, futures, 1h, data starts at 2023-04-28 12:00:00
+2026-11-07 15:20:53,755 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BOME/USDT:USDT, futures, 1h, data starts at 2024-03-16 12:00:00
+2026-11-07 15:20:53,766 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BSB/USDT:USDT, futures, 1h, data starts at 2026-03-25 11:00:00
+2026-11-07 15:20:53,773 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BTW/USDT:USDT, futures, 1h, data starts at 2026-06-04 14:00:00
+2026-11-07 15:20:53,781 - freqtrade.data.history.datahandlers.idatahandler - WARNING - CAKE/USDT:USDT, futures, 1h, data starts at 2023-11-02 12:00:00
+2026-11-07 15:20:53,790 - freqtrade.data.history.datahandlers.idatahandler - WARNING - CAP/USDT:USDT, futures, 1h, data starts at 2026-06-27 11:00:00
+2026-11-07 15:20:53,798 - freqtrade.data.history.datahandlers.idatahandler - WARNING - CFX/USDT:USDT, futures, 1h, data starts at 2023-02-20 14:00:00
+2026-11-07 15:20:53,808 - freqtrade.data.history.datahandlers.idatahandler - WARNING - CHIP/USDT:USDT, futures, 1h, data starts at 2026-04-16 07:00:00
+2026-11-07 15:20:53,816 - freqtrade.data.history.datahandlers.idatahandler - WARNING - DOGS/USDT:USDT, futures, 1h, data starts at 2024-08-26 12:00:00
+2026-11-07 15:20:53,826 - freqtrade.data.history.datahandlers.idatahandler - WARNING - EIGEN/USDT:USDT, futures, 1h, data starts at 2024-10-01 06:00:00
+2026-11-07 15:20:53,837 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ENA/USDT:USDT, futures, 1h, data starts at 2024-04-02 12:00:00
+2026-11-07 15:20:53,848 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ETHFI/USDT:USDT, futures, 1h, data starts at 2024-03-18 15:00:00
+2026-11-07 15:20:53,857 - freqtrade.data.history.datahandlers.idatahandler - WARNING - FARTCOIN/USDT:USDT, futures, 1h, data starts at 2024-12-20 18:00:00
+2026-11-07 15:20:53,866 - freqtrade.data.history.datahandlers.idatahandler - WARNING - FET/USDT:USDT, futures, 1h, data starts at 2023-01-17 02:00:00
+2026-11-07 15:20:53,888 - freqtrade.data.history.datahandlers.idatahandler - WARNING - GIGGLE/USDT:USDT, futures, 1h, data starts at 2025-10-09 09:00:00
+2026-11-07 15:20:53,905 - freqtrade.data.history.datahandlers.idatahandler - WARNING - GRAM/USDT:USDT, futures, 1h, data starts at 2026-07-02 08:00:00
+2026-11-07 15:20:53,912 - freqtrade.data.history.datahandlers.idatahandler - WARNING - GRASS/USDT:USDT, futures, 1h, data starts at 2024-11-08 15:00:00
+2026-11-07 15:20:53,921 - freqtrade.data.history.datahandlers.idatahandler - WARNING - H/USDT:USDT, futures, 1h, data starts at 2025-06-25 09:00:00
+2026-11-07 15:20:53,929 - freqtrade.data.history.datahandlers.idatahandler - WARNING - HYPE/USDT:USDT, futures, 1h, data starts at 2025-05-30 10:00:00
+2026-11-07 15:20:53,962 - freqtrade.data.history.datahandlers.idatahandler - WARNING - IO/USDT:USDT, futures, 1h, data starts at 2024-06-11 14:00:00
+2026-11-07 15:20:53,985 - freqtrade.data.history.datahandlers.idatahandler - WARNING - JTO/USDT:USDT, futures, 1h, data starts at 2023-12-08 10:00:00
+2026-11-07 15:20:53,994 - freqtrade.data.history.datahandlers.idatahandler - WARNING - JUP/USDT:USDT, futures, 1h, data starts at 2024-01-31 18:00:00
+2026-11-07 15:20:54,004 - freqtrade.data.history.datahandlers.idatahandler - WARNING - KAITO/USDT:USDT, futures, 1h, data starts at 2025-02-20 13:00:00
+2026-11-07 15:20:54,013 - freqtrade.data.history.datahandlers.idatahandler - WARNING - KAS/USDT:USDT, futures, 1h, data starts at 2023-11-17 02:00:00
+2026-11-07 15:20:54,022 - freqtrade.data.history.datahandlers.idatahandler - WARNING - KITE/USDT:USDT, futures, 1h, data starts at 2025-10-29 10:00:00
+2026-11-07 15:20:54,029 - freqtrade.data.history.datahandlers.idatahandler - WARNING - LAB/USDT:USDT, futures, 1h, data starts at 2025-10-17 14:00:00
+2026-11-07 15:20:54,048 - freqtrade.data.history.datahandlers.idatahandler - WARNING - LIT/USDT:USDT, futures, 1h, data starts at 2025-12-23 17:00:00
+2026-11-07 15:20:54,066 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MAGIC/USDT:USDT, futures, 1h, data starts at 2023-01-25 03:00:00
+2026-11-07 15:20:54,079 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MANTA/USDT:USDT, futures, 1h, data starts at 2024-01-18 14:00:00
+2026-11-07 15:20:54,107 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MEME/USDT:USDT, futures, 1h, data starts at 2023-11-03 12:00:00
+2026-11-07 15:20:54,119 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MINA/USDT:USDT, futures, 1h, data starts at 2023-02-07 11:00:00
+2026-11-07 15:20:54,130 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MON/USDT:USDT, futures, 1h, data starts at 2025-10-10 07:00:00
+2026-11-07 15:20:54,137 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MOODENG/USDT:USDT, futures, 1h, data starts at 2024-10-25 10:00:00
+2026-11-07 15:20:54,146 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MOVE/USDT:USDT, futures, 1h, data starts at 2024-12-09 14:00:00
+2026-11-07 15:20:54,154 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MYX/USDT:USDT, futures, 1h, data starts at 2025-06-18 12:00:00
+2026-11-07 15:20:54,162 - freqtrade.data.history.datahandlers.idatahandler - WARNING - NEIRO/USDT:USDT, futures, 1h, data starts at 2024-09-16 11:00:00
+2026-11-07 15:20:54,170 - freqtrade.data.history.datahandlers.idatahandler - WARNING - NOT/USDT:USDT, futures, 1h, data starts at 2024-05-16 14:00:00
+2026-11-07 15:20:54,182 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ONDO/USDT:USDT, futures, 1h, data starts at 2024-01-20 13:00:00
+2026-11-07 15:20:54,206 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ORDI/USDT:USDT, futures, 1h, data starts at 2023-11-07 12:00:00
+2026-11-07 15:20:54,216 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PENDLE/USDT:USDT, futures, 1h, data starts at 2023-07-28 02:00:00
+2026-11-07 15:20:54,226 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PENGU/USDT:USDT, futures, 1h, data starts at 2024-12-17 16:00:00
+2026-11-07 15:20:54,235 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PIPPIN/USDT:USDT, futures, 1h, data starts at 2025-01-24 10:00:00
+2026-11-07 15:20:54,242 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PNUT/USDT:USDT, futures, 1h, data starts at 2024-11-11 12:00:00
+2026-11-07 15:20:54,251 - freqtrade.data.history.datahandlers.idatahandler - WARNING - POL/USDT:USDT, futures, 1h, data starts at 2024-09-13 12:00:00
+2026-11-07 15:20:54,260 - freqtrade.data.history.datahandlers.idatahandler - WARNING - POPCAT/USDT:USDT, futures, 1h, data starts at 2024-08-22 13:00:00
+2026-11-07 15:20:54,268 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PUMP/USDT:USDT, futures, 1h, data starts at 2025-07-10 07:00:00
+2026-11-07 15:20:54,276 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PYTH/USDT:USDT, futures, 1h, data starts at 2023-11-22 14:00:00
+2026-11-07 15:20:54,290 - freqtrade.data.history.datahandlers.idatahandler - WARNING - RAYSOL/USDT:USDT, futures, 1h, data starts at 2024-12-10 12:00:00
+2026-11-07 15:20:54,299 - freqtrade.data.history.datahandlers.idatahandler - WARNING - RE/USDT:USDT, futures, 1h, data starts at 2026-06-18 14:00:00
+2026-11-07 15:20:54,306 - freqtrade.data.history.datahandlers.idatahandler - WARNING - RENDER/USDT:USDT, futures, 1h, data starts at 2024-07-26 10:00:00
+2026-11-07 15:20:54,315 - freqtrade.data.history.datahandlers.idatahandler - WARNING - REZ/USDT:USDT, futures, 1h, data starts at 2024-04-30 14:00:00
+2026-11-07 15:20:54,325 - freqtrade.data.history.datahandlers.idatahandler - WARNING - RIVER/USDT:USDT, futures, 1h, data starts at 2025-10-17 14:00:00
+2026-11-07 15:20:54,332 - freqtrade.data.history.datahandlers.idatahandler - WARNING - S/USDT:USDT, futures, 1h, data starts at 2025-01-16 10:00:00
+2026-11-07 15:20:54,341 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SAGA/USDT:USDT, futures, 1h, data starts at 2024-04-09 10:00:00
+2026-11-07 15:20:54,350 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SEI/USDT:USDT, futures, 1h, data starts at 2023-08-17 02:00:00
+2026-11-07 15:20:54,361 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SPX/USDT:USDT, futures, 1h, data starts at 2024-12-10 12:00:00
+2026-11-07 15:20:54,369 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SSV/USDT:USDT, futures, 1h, data starts at 2023-02-24 12:00:00
+2026-11-07 15:20:54,380 - freqtrade.data.history.datahandlers.idatahandler - WARNING - STRK/USDT:USDT, futures, 1h, data starts at 2024-02-20 17:00:00
+2026-11-07 15:20:54,389 - freqtrade.data.history.datahandlers.idatahandler - WARNING - STX/USDT:USDT, futures, 1h, data starts at 2023-02-21 14:00:00
+2026-11-07 15:20:54,401 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SUI/USDT:USDT, futures, 1h, data starts at 2023-05-03 16:00:00
+2026-11-07 15:20:54,411 - freqtrade.data.history.datahandlers.idatahandler - WARNING - TAO/USDT:USDT, futures, 1h, data starts at 2024-04-11 14:00:00
+2026-11-07 15:20:54,421 - freqtrade.data.history.datahandlers.idatahandler - WARNING - TIA/USDT:USDT, futures, 1h, data starts at 2023-10-31 18:00:00
+2026-11-07 15:20:54,429 - freqtrade.data.history.datahandlers.idatahandler - WARNING - TRUMP/USDT:USDT, futures, 1h, data starts at 2025-01-18 13:00:00
+2026-11-07 15:20:54,437 - freqtrade.data.history.datahandlers.idatahandler - WARNING - TURBO/USDT:USDT, futures, 1h, data starts at 2024-05-30 15:00:00
+2026-11-07 15:20:54,447 - freqtrade.data.history.datahandlers.idatahandler - WARNING - USELESS/USDT:USDT, futures, 1h, data starts at 2025-08-15 12:00:00
+2026-11-07 15:20:54,456 - freqtrade.data.history.datahandlers.idatahandler - WARNING - VIRTUAL/USDT:USDT, futures, 1h, data starts at 2024-12-10 12:00:00
+2026-11-07 15:20:54,465 - freqtrade.data.history.datahandlers.idatahandler - WARNING - VVV/USDT:USDT, futures, 1h, data starts at 2025-01-29 08:00:00
+2026-11-07 15:20:54,473 - freqtrade.data.history.datahandlers.idatahandler - WARNING - W/USDT:USDT, futures, 1h, data starts at 2024-04-03 15:00:00
+2026-11-07 15:20:54,482 - freqtrade.data.history.datahandlers.idatahandler - WARNING - WIF/USDT:USDT, futures, 1h, data starts at 2024-01-18 14:00:00
+2026-11-07 15:20:54,491 - freqtrade.data.history.datahandlers.idatahandler - WARNING - WLD/USDT:USDT, futures, 1h, data starts at 2023-07-24 12:00:00
+2026-11-07 15:20:54,501 - freqtrade.data.history.datahandlers.idatahandler - WARNING - WLFI/USDT:USDT, futures, 1h, data starts at 2025-08-23 08:00:00
+2026-11-07 15:20:54,519 - freqtrade.data.history.datahandlers.idatahandler - WARNING - XAI/USDT:USDT, futures, 1h, data starts at 2024-01-09 14:00:00
+2026-11-07 15:20:54,527 - freqtrade.data.history.datahandlers.idatahandler - WARNING - XPL/USDT:USDT, futures, 1h, data starts at 2025-08-22 09:00:00
+2026-11-07 15:20:54,534 - freqtrade.data.history.datahandlers.idatahandler - WARNING - YGG/USDT:USDT, futures, 1h, data starts at 2023-08-05 03:00:00
+2026-11-07 15:20:54,543 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ZAMA/USDT:USDT, futures, 1h, data starts at 2026-01-09 09:00:00
+2026-11-07 15:20:54,549 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ZK/USDT:USDT, futures, 1h, data starts at 2024-06-17 11:00:00
+2026-11-07 15:20:54,558 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ZRO/USDT:USDT, futures, 1h, data starts at 2024-06-20 14:00:00
+2026-11-07 15:20:54,566 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 币安人生/USDT:USDT, futures, 1h, data starts at 2025-10-20 11:00:00
+2026-11-07 15:20:54,580 - freqtrade.optimize.backtesting - INFO - Loading data from 2022-12-23 16:00:00 up to 2026-11-07 00:00:00 (1414 days).
+2026-11-07 15:20:54,614 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 0G/USDT:USDT, funding_rate, 1h, data starts at 2025-09-17 16:00:00
+2026-11-07 15:20:54,617 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 1000BONK/USDT:USDT, funding_rate, 1h, data starts at 2023-11-22 16:00:00
+2026-11-07 15:20:54,620 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 1000FLOKI/USDT:USDT, funding_rate, 1h, data starts at 2023-05-06 16:00:00
+2026-11-07 15:20:54,625 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 1000PEPE/USDT:USDT, funding_rate, 1h, data starts at 2023-05-05 16:00:00
+2026-11-07 15:20:54,627 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 1000RATS/USDT:USDT, funding_rate, 1h, data starts at 2023-12-15 16:00:00
+2026-11-07 15:20:54,630 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 1000SATS/USDT:USDT, funding_rate, 1h, data starts at 2023-12-12 16:00:00
+2026-11-07 15:20:54,633 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ACH/USDT:USDT, funding_rate, 1h, data starts at 2023-02-22 08:00:00
+2026-11-07 15:20:54,636 - freqtrade.data.history.datahandlers.idatahandler - WARNING - AERO/USDT:USDT, funding_rate, 1h, data starts at 2024-12-04 16:00:00
+2026-11-07 15:20:54,638 - freqtrade.data.history.datahandlers.idatahandler - WARNING - AIXBT/USDT:USDT, funding_rate, 1h, data starts at 2024-12-20 20:00:00
+2026-11-07 15:20:54,641 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ALT/USDT:USDT, funding_rate, 1h, data starts at 2024-01-25 16:00:00
+2026-11-07 15:20:54,651 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ARB/USDT:USDT, funding_rate, 1h, data starts at 2023-03-23 08:00:00
+2026-11-07 15:20:54,654 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ARC/USDT:USDT, funding_rate, 1h, data starts at 2025-01-17 16:00:00
+2026-11-07 15:20:54,656 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ARKM/USDT:USDT, funding_rate, 1h, data starts at 2023-07-28 00:00:00
+2026-11-07 15:20:54,659 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ASTER/USDT:USDT, funding_rate, 1h, data starts at 2025-09-19 12:00:00
+2026-11-07 15:20:54,662 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BB/USDT:USDT, funding_rate, 1h, data starts at 2024-05-13 16:00:00
+2026-11-07 15:20:54,665 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BEAMX/USDT:USDT, funding_rate, 1h, data starts at 2023-11-17 08:00:00
+2026-11-07 15:20:54,668 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BEAT/USDT:USDT, funding_rate, 1h, data starts at 2025-11-12 12:00:00
+2026-11-07 15:20:54,671 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BERA/USDT:USDT, funding_rate, 1h, data starts at 2025-02-06 16:00:00
+2026-11-07 15:20:54,674 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BIGTIME/USDT:USDT, funding_rate, 1h, data starts at 2023-10-12 16:00:00
+2026-11-07 15:20:54,677 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BIO/USDT:USDT, funding_rate, 1h, data starts at 2025-01-03 16:00:00
+2026-11-07 15:20:54,681 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BLUR/USDT:USDT, funding_rate, 1h, data starts at 2023-04-28 08:00:00
+2026-11-07 15:20:54,683 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BOME/USDT:USDT, funding_rate, 1h, data starts at 2024-03-16 08:00:00
+2026-11-07 15:20:54,686 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BSB/USDT:USDT, funding_rate, 1h, data starts at 2026-03-25 12:00:00
+2026-11-07 15:20:54,689 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BTW/USDT:USDT, funding_rate, 1h, data starts at 2026-06-04 16:00:00
+2026-11-07 15:20:54,691 - freqtrade.data.history.datahandlers.idatahandler - WARNING - CAKE/USDT:USDT, funding_rate, 1h, data starts at 2023-11-02 16:00:00
+2026-11-07 15:20:54,694 - freqtrade.data.history.datahandlers.idatahandler - WARNING - CAP/USDT:USDT, funding_rate, 1h, data starts at 2026-06-27 12:00:00
+2026-11-07 15:20:54,697 - freqtrade.data.history.datahandlers.idatahandler - WARNING - CFX/USDT:USDT, funding_rate, 1h, data starts at 2023-02-20 08:00:00
+2026-11-07 15:20:54,700 - freqtrade.data.history.datahandlers.idatahandler - WARNING - CHIP/USDT:USDT, funding_rate, 1h, data starts at 2026-04-16 08:00:00
+2026-11-07 15:20:54,703 - freqtrade.data.history.datahandlers.idatahandler - WARNING - DOGS/USDT:USDT, funding_rate, 1h, data starts at 2024-08-26 16:00:00
+2026-11-07 15:20:54,706 - freqtrade.data.history.datahandlers.idatahandler - WARNING - EIGEN/USDT:USDT, funding_rate, 1h, data starts at 2024-10-01 08:00:00
+2026-11-07 15:20:54,708 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ENA/USDT:USDT, funding_rate, 1h, data starts at 2024-04-02 16:00:00
+2026-11-07 15:20:54,709 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for ETHFI/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,712 - freqtrade.data.history.datahandlers.idatahandler - WARNING - FARTCOIN/USDT:USDT, funding_rate, 1h, data starts at 2024-12-20 20:00:00
+2026-11-07 15:20:54,715 - freqtrade.data.history.datahandlers.idatahandler - WARNING - FET/USDT:USDT, funding_rate, 1h, data starts at 2023-01-17 00:00:00
+2026-11-07 15:20:54,718 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for GIGGLE/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,718 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for GMT/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,720 - freqtrade.data.history.datahandlers.idatahandler - WARNING - GRAM/USDT:USDT, funding_rate, 1h, data starts at 2026-07-02 08:00:00
+2026-11-07 15:20:54,723 - freqtrade.data.history.datahandlers.idatahandler - WARNING - GRASS/USDT:USDT, funding_rate, 1h, data starts at 2024-11-08 16:00:00
+2026-11-07 15:20:54,725 - freqtrade.data.history.datahandlers.idatahandler - WARNING - H/USDT:USDT, funding_rate, 1h, data starts at 2025-06-25 12:00:00
+2026-11-07 15:20:54,727 - freqtrade.data.history.datahandlers.idatahandler - WARNING - HYPE/USDT:USDT, funding_rate, 1h, data starts at 2025-05-30 12:00:00
+2026-11-07 15:20:54,734 - freqtrade.data.history.datahandlers.idatahandler - WARNING - IO/USDT:USDT, funding_rate, 1h, data starts at 2024-06-11 16:00:00
+2026-11-07 15:20:54,739 - freqtrade.data.history.datahandlers.idatahandler - WARNING - JTO/USDT:USDT, funding_rate, 1h, data starts at 2023-12-08 12:00:00
+2026-11-07 15:20:54,742 - freqtrade.data.history.datahandlers.idatahandler - WARNING - JUP/USDT:USDT, funding_rate, 1h, data starts at 2024-02-01 04:00:00
+2026-11-07 15:20:54,744 - freqtrade.data.history.datahandlers.idatahandler - WARNING - KAITO/USDT:USDT, funding_rate, 1h, data starts at 2025-02-20 16:00:00
+2026-11-07 15:20:54,746 - freqtrade.data.history.datahandlers.idatahandler - WARNING - KAS/USDT:USDT, funding_rate, 1h, data starts at 2023-11-17 00:00:00
+2026-11-07 15:20:54,749 - freqtrade.data.history.datahandlers.idatahandler - WARNING - KITE/USDT:USDT, funding_rate, 1h, data starts at 2025-10-29 12:00:00
+2026-11-07 15:20:54,749 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for LAB/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,750 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for LDO/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,752 - freqtrade.data.history.datahandlers.idatahandler - WARNING - LIT/USDT:USDT, funding_rate, 1h, data starts at 2025-12-23 20:00:00
+2026-11-07 15:20:54,757 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MAGIC/USDT:USDT, funding_rate, 1h, data starts at 2023-01-25 00:00:00
+2026-11-07 15:20:54,760 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MANTA/USDT:USDT, funding_rate, 1h, data starts at 2024-01-18 16:00:00
+2026-11-07 15:20:54,763 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MEME/USDT:USDT, funding_rate, 1h, data starts at 2023-11-03 16:00:00
+2026-11-07 15:20:54,765 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MINA/USDT:USDT, funding_rate, 1h, data starts at 2023-02-07 08:00:00
+2026-11-07 15:20:54,768 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MON/USDT:USDT, funding_rate, 1h, data starts at 2025-10-10 08:00:00
+2026-11-07 15:20:54,771 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MOODENG/USDT:USDT, funding_rate, 1h, data starts at 2024-10-25 12:00:00
+2026-11-07 15:20:54,774 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MOVE/USDT:USDT, funding_rate, 1h, data starts at 2024-12-09 16:00:00
+2026-11-07 15:20:54,777 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MYX/USDT:USDT, funding_rate, 1h, data starts at 2025-06-18 12:00:00
+2026-11-07 15:20:54,780 - freqtrade.data.history.datahandlers.idatahandler - WARNING - NEIRO/USDT:USDT, funding_rate, 1h, data starts at 2024-09-16 12:00:00
+2026-11-07 15:20:54,782 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for NOT/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,784 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ONDO/USDT:USDT, funding_rate, 1h, data starts at 2024-01-20 16:00:00
+2026-11-07 15:20:54,789 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ORDI/USDT:USDT, funding_rate, 1h, data starts at 2023-11-07 16:00:00
+2026-11-07 15:20:54,792 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PENDLE/USDT:USDT, funding_rate, 1h, data starts at 2023-07-28 00:00:00
+2026-11-07 15:20:54,795 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PENGU/USDT:USDT, funding_rate, 1h, data starts at 2024-12-17 16:00:00
+2026-11-07 15:20:54,798 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PIPPIN/USDT:USDT, funding_rate, 1h, data starts at 2025-01-24 12:00:00
+2026-11-07 15:20:54,801 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PNUT/USDT:USDT, funding_rate, 1h, data starts at 2024-11-11 16:00:00
+2026-11-07 15:20:54,804 - freqtrade.data.history.datahandlers.idatahandler - WARNING - POL/USDT:USDT, funding_rate, 1h, data starts at 2024-09-13 16:00:00
+2026-11-07 15:20:54,809 - freqtrade.data.history.datahandlers.idatahandler - WARNING - POPCAT/USDT:USDT, funding_rate, 1h, data starts at 2024-08-22 16:00:00
+2026-11-07 15:20:54,814 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PUMP/USDT:USDT, funding_rate, 1h, data starts at 2025-07-10 08:00:00
+2026-11-07 15:20:54,818 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PYTH/USDT:USDT, funding_rate, 1h, data starts at 2023-11-22 16:00:00
+2026-11-07 15:20:54,822 - freqtrade.data.history.datahandlers.idatahandler - WARNING - RAYSOL/USDT:USDT, funding_rate, 1h, data starts at 2024-12-10 16:00:00
+2026-11-07 15:20:54,826 - freqtrade.data.history.datahandlers.idatahandler - WARNING - RE/USDT:USDT, funding_rate, 1h, data starts at 2026-06-18 16:00:00
+2026-11-07 15:20:54,832 - freqtrade.data.history.datahandlers.idatahandler - WARNING - RENDER/USDT:USDT, funding_rate, 1h, data starts at 2024-07-26 12:00:00
+2026-11-07 15:20:54,838 - freqtrade.data.history.datahandlers.idatahandler - WARNING - REZ/USDT:USDT, funding_rate, 1h, data starts at 2024-04-30 16:00:00
+2026-11-07 15:20:54,842 - freqtrade.data.history.datahandlers.idatahandler - WARNING - RIVER/USDT:USDT, funding_rate, 1h, data starts at 2025-10-17 16:00:00
+2026-11-07 15:20:54,845 - freqtrade.data.history.datahandlers.idatahandler - WARNING - S/USDT:USDT, funding_rate, 1h, data starts at 2025-01-16 12:00:00
+2026-11-07 15:20:54,848 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SAGA/USDT:USDT, funding_rate, 1h, data starts at 2024-04-09 08:00:00
+2026-11-07 15:20:54,851 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SEI/USDT:USDT, funding_rate, 1h, data starts at 2023-08-17 00:00:00
+2026-11-07 15:20:54,852 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for SPX/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,853 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for SSV/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,853 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for STRK/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,853 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for STX/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,855 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SUI/USDT:USDT, funding_rate, 1h, data starts at 2023-05-03 16:00:00
+2026-11-07 15:20:54,856 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for TAO/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,857 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for TIA/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,857 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for TRUMP/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,858 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for TURBO/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,858 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for USELESS/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,858 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for VIRTUAL/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,858 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for VVV/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,859 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for W/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,861 - freqtrade.data.history.datahandlers.idatahandler - WARNING - WIF/USDT:USDT, funding_rate, 1h, data starts at 2024-01-18 16:00:00
+2026-11-07 15:20:54,863 - freqtrade.data.history.datahandlers.idatahandler - WARNING - WLD/USDT:USDT, funding_rate, 1h, data starts at 2023-07-24 16:00:00
+2026-11-07 15:20:54,865 - freqtrade.data.history.datahandlers.idatahandler - WARNING - WLFI/USDT:USDT, funding_rate, 1h, data starts at 2025-08-23 12:00:00
+2026-11-07 15:20:54,870 - freqtrade.data.history.datahandlers.idatahandler - WARNING - XAI/USDT:USDT, funding_rate, 1h, data starts at 2024-01-09 16:00:00
+2026-11-07 15:20:54,873 - freqtrade.data.history.datahandlers.idatahandler - WARNING - XPL/USDT:USDT, funding_rate, 1h, data starts at 2025-08-22 12:00:00
+2026-11-07 15:20:54,875 - freqtrade.data.history.datahandlers.idatahandler - WARNING - YGG/USDT:USDT, funding_rate, 1h, data starts at 2023-08-05 00:00:00
+2026-11-07 15:20:54,877 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ZAMA/USDT:USDT, funding_rate, 1h, data starts at 2026-01-09 12:00:00
+2026-11-07 15:20:54,880 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ZK/USDT:USDT, funding_rate, 1h, data starts at 2024-06-17 12:00:00
+2026-11-07 15:20:54,881 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for ZRO/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,881 - freqtrade.data.history.datahandlers.idatahandler - WARNING - No history for 币安人生/USDT:USDT, funding_rate, 1h found. Use `freqtrade download-data` to download the data
+2026-11-07 15:20:54,988 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 0G/USDT:USDT, mark, 1h, data starts at 2025-09-17 15:00:00
+2026-11-07 15:20:54,994 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 1000BONK/USDT:USDT, mark, 1h, data starts at 2023-11-22 12:00:00
+2026-11-07 15:20:55,001 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 1000FLOKI/USDT:USDT, mark, 1h, data starts at 2023-05-06 12:00:00
+2026-11-07 15:20:55,016 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 1000PEPE/USDT:USDT, mark, 1h, data starts at 2023-05-05 11:00:00
+2026-11-07 15:20:55,022 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 1000RATS/USDT:USDT, mark, 1h, data starts at 2023-12-15 13:00:00
+2026-11-07 15:20:55,028 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 1000SATS/USDT:USDT, mark, 1h, data starts at 2023-12-12 10:00:00
+2026-11-07 15:20:55,035 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ACH/USDT:USDT, mark, 1h, data starts at 2023-02-22 03:00:00
+2026-11-07 15:20:55,042 - freqtrade.data.history.datahandlers.idatahandler - WARNING - AERO/USDT:USDT, mark, 1h, data starts at 2024-12-04 13:00:00
+2026-11-07 15:20:55,048 - freqtrade.data.history.datahandlers.idatahandler - WARNING - AIXBT/USDT:USDT, mark, 1h, data starts at 2024-12-20 17:00:00
+2026-11-07 15:20:55,054 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ALT/USDT:USDT, mark, 1h, data starts at 2024-01-25 11:00:00
+2026-11-07 15:20:55,085 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ARB/USDT:USDT, mark, 1h, data starts at 2023-03-23 13:00:00
+2026-11-07 15:20:55,092 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ARC/USDT:USDT, mark, 1h, data starts at 2025-01-17 11:00:00
+2026-11-07 15:20:55,099 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ARKM/USDT:USDT, mark, 1h, data starts at 2023-07-27 14:00:00
+2026-11-07 15:20:55,105 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ASTER/USDT:USDT, mark, 1h, data starts at 2025-09-19 11:00:00
+2026-11-07 15:20:55,111 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BB/USDT:USDT, mark, 1h, data starts at 2024-05-13 11:00:00
+2026-11-07 15:20:55,117 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BEAMX/USDT:USDT, mark, 1h, data starts at 2023-11-17 07:00:00
+2026-11-07 15:20:55,124 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BEAT/USDT:USDT, mark, 1h, data starts at 2025-11-12 11:00:00
+2026-11-07 15:20:55,129 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BERA/USDT:USDT, mark, 1h, data starts at 2025-02-06 14:00:00
+2026-11-07 15:20:55,135 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BIGTIME/USDT:USDT, mark, 1h, data starts at 2023-10-12 13:00:00
+2026-11-07 15:20:55,142 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BIO/USDT:USDT, mark, 1h, data starts at 2025-01-03 10:00:00
+2026-11-07 15:20:55,148 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BLUR/USDT:USDT, mark, 1h, data starts at 2023-04-27 15:00:00
+2026-11-07 15:20:55,156 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BOME/USDT:USDT, mark, 1h, data starts at 2024-03-15 18:00:00
+2026-11-07 15:20:55,162 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BSB/USDT:USDT, mark, 1h, data starts at 2026-03-25 10:00:00
+2026-11-07 15:20:55,166 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BTW/USDT:USDT, mark, 1h, data starts at 2026-06-04 13:00:00
+2026-11-07 15:20:55,171 - freqtrade.data.history.datahandlers.idatahandler - WARNING - CAKE/USDT:USDT, mark, 1h, data starts at 2023-11-02 08:00:00
+2026-11-07 15:20:55,177 - freqtrade.data.history.datahandlers.idatahandler - WARNING - CAP/USDT:USDT, mark, 1h, data starts at 2026-06-27 11:00:00
+2026-11-07 15:20:55,182 - freqtrade.data.history.datahandlers.idatahandler - WARNING - CFX/USDT:USDT, mark, 1h, data starts at 2023-02-20 06:00:00
+2026-11-07 15:20:55,189 - freqtrade.data.history.datahandlers.idatahandler - WARNING - CHIP/USDT:USDT, mark, 1h, data starts at 2026-04-16 06:00:00
+2026-11-07 15:20:55,193 - freqtrade.data.history.datahandlers.idatahandler - WARNING - DOGS/USDT:USDT, mark, 1h, data starts at 2024-08-26 12:00:00
+2026-11-07 15:20:55,199 - freqtrade.data.history.datahandlers.idatahandler - WARNING - EIGEN/USDT:USDT, mark, 1h, data starts at 2024-10-01 05:00:00
+2026-11-07 15:20:55,205 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ENA/USDT:USDT, mark, 1h, data starts at 2024-04-02 08:00:00
+2026-11-07 15:20:55,212 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ETHFI/USDT:USDT, mark, 1h, data starts at 2024-03-18 12:00:00
+2026-11-07 15:20:55,218 - freqtrade.data.history.datahandlers.idatahandler - WARNING - FARTCOIN/USDT:USDT, mark, 1h, data starts at 2024-12-20 17:00:00
+2026-11-07 15:20:55,225 - freqtrade.data.history.datahandlers.idatahandler - WARNING - FET/USDT:USDT, mark, 1h, data starts at 2023-01-16 06:00:00
+2026-11-07 15:20:55,241 - freqtrade.data.history.datahandlers.idatahandler - WARNING - GIGGLE/USDT:USDT, mark, 1h, data starts at 2025-10-09 09:00:00
+2026-11-07 15:20:55,254 - freqtrade.data.history.datahandlers.idatahandler - WARNING - GRAM/USDT:USDT, mark, 1h, data starts at 2026-07-02 07:00:00
+2026-11-07 15:20:55,259 - freqtrade.data.history.datahandlers.idatahandler - WARNING - GRASS/USDT:USDT, mark, 1h, data starts at 2024-11-08 15:00:00
+2026-11-07 15:20:55,266 - freqtrade.data.history.datahandlers.idatahandler - WARNING - H/USDT:USDT, mark, 1h, data starts at 2025-06-25 09:00:00
+2026-11-07 15:20:55,271 - freqtrade.data.history.datahandlers.idatahandler - WARNING - HYPE/USDT:USDT, mark, 1h, data starts at 2025-05-30 09:00:00
+2026-11-07 15:20:55,292 - freqtrade.data.history.datahandlers.idatahandler - WARNING - IO/USDT:USDT, mark, 1h, data starts at 2024-06-11 12:00:00
+2026-11-07 15:20:55,307 - freqtrade.data.history.datahandlers.idatahandler - WARNING - JTO/USDT:USDT, mark, 1h, data starts at 2023-12-08 09:00:00
+2026-11-07 15:20:55,314 - freqtrade.data.history.datahandlers.idatahandler - WARNING - JUP/USDT:USDT, mark, 1h, data starts at 2024-01-31 17:00:00
+2026-11-07 15:20:55,320 - freqtrade.data.history.datahandlers.idatahandler - WARNING - KAITO/USDT:USDT, mark, 1h, data starts at 2025-02-20 12:00:00
+2026-11-07 15:20:55,326 - freqtrade.data.history.datahandlers.idatahandler - WARNING - KAS/USDT:USDT, mark, 1h, data starts at 2023-11-16 14:00:00
+2026-11-07 15:20:55,332 - freqtrade.data.history.datahandlers.idatahandler - WARNING - KITE/USDT:USDT, mark, 1h, data starts at 2025-10-29 10:00:00
+2026-11-07 15:20:55,337 - freqtrade.data.history.datahandlers.idatahandler - WARNING - LAB/USDT:USDT, mark, 1h, data starts at 2025-10-17 13:00:00
+2026-11-07 15:20:55,349 - freqtrade.data.history.datahandlers.idatahandler - WARNING - LIT/USDT:USDT, mark, 1h, data starts at 2025-12-23 16:00:00
+2026-11-07 15:20:55,363 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MAGIC/USDT:USDT, mark, 1h, data starts at 2023-01-23 12:00:00
+2026-11-07 15:20:55,371 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MANTA/USDT:USDT, mark, 1h, data starts at 2024-01-18 10:00:00
+2026-11-07 15:20:55,378 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MEME/USDT:USDT, mark, 1h, data starts at 2023-11-03 10:00:00
+2026-11-07 15:20:55,385 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MINA/USDT:USDT, mark, 1h, data starts at 2023-02-03 07:00:00
+2026-11-07 15:20:55,392 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MON/USDT:USDT, mark, 1h, data starts at 2025-10-10 07:00:00
+2026-11-07 15:20:55,397 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MOODENG/USDT:USDT, mark, 1h, data starts at 2024-10-25 09:00:00
+2026-11-07 15:20:55,404 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MOVE/USDT:USDT, mark, 1h, data starts at 2024-12-09 12:00:00
+2026-11-07 15:20:55,410 - freqtrade.data.history.datahandlers.idatahandler - WARNING - MYX/USDT:USDT, mark, 1h, data starts at 2025-06-18 11:00:00
+2026-11-07 15:20:55,415 - freqtrade.data.history.datahandlers.idatahandler - WARNING - NEIRO/USDT:USDT, mark, 1h, data starts at 2024-09-16 10:00:00
+2026-11-07 15:20:55,422 - freqtrade.data.history.datahandlers.idatahandler - WARNING - NOT/USDT:USDT, mark, 1h, data starts at 2024-05-16 13:00:00
+2026-11-07 15:20:55,428 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ONDO/USDT:USDT, mark, 1h, data starts at 2024-01-20 08:00:00
+2026-11-07 15:20:55,443 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ORDI/USDT:USDT, mark, 1h, data starts at 2023-11-07 11:00:00
+2026-11-07 15:20:55,450 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PENDLE/USDT:USDT, mark, 1h, data starts at 2023-07-25 09:00:00
+2026-11-07 15:20:55,457 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PENGU/USDT:USDT, mark, 1h, data starts at 2024-12-17 14:00:00
+2026-11-07 15:20:55,462 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PIPPIN/USDT:USDT, mark, 1h, data starts at 2025-01-24 08:00:00
+2026-11-07 15:20:55,468 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PNUT/USDT:USDT, mark, 1h, data starts at 2024-11-11 10:00:00
+2026-11-07 15:20:55,473 - freqtrade.data.history.datahandlers.idatahandler - WARNING - POL/USDT:USDT, mark, 1h, data starts at 2024-09-13 10:00:00
+2026-11-07 15:20:55,479 - freqtrade.data.history.datahandlers.idatahandler - WARNING - POPCAT/USDT:USDT, mark, 1h, data starts at 2024-08-22 12:00:00
+2026-11-07 15:20:55,485 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PUMP/USDT:USDT, mark, 1h, data starts at 2025-07-10 07:00:00
+2026-11-07 15:20:55,490 - freqtrade.data.history.datahandlers.idatahandler - WARNING - PYTH/USDT:USDT, mark, 1h, data starts at 2023-11-22 12:00:00
+2026-11-07 15:20:55,497 - freqtrade.data.history.datahandlers.idatahandler - WARNING - RAYSOL/USDT:USDT, mark, 1h, data starts at 2024-12-10 11:00:00
+2026-11-07 15:20:55,502 - freqtrade.data.history.datahandlers.idatahandler - WARNING - RE/USDT:USDT, mark, 1h, data starts at 2026-06-18 13:00:00
+2026-11-07 15:20:55,507 - freqtrade.data.history.datahandlers.idatahandler - WARNING - RENDER/USDT:USDT, mark, 1h, data starts at 2024-07-26 09:00:00
+2026-11-07 15:20:55,513 - freqtrade.data.history.datahandlers.idatahandler - WARNING - REZ/USDT:USDT, mark, 1h, data starts at 2024-04-30 13:00:00
+2026-11-07 15:20:55,519 - freqtrade.data.history.datahandlers.idatahandler - WARNING - RIVER/USDT:USDT, mark, 1h, data starts at 2025-10-17 13:00:00
+2026-11-07 15:20:55,524 - freqtrade.data.history.datahandlers.idatahandler - WARNING - S/USDT:USDT, mark, 1h, data starts at 2025-01-16 09:00:00
+2026-11-07 15:20:55,530 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SAGA/USDT:USDT, mark, 1h, data starts at 2024-04-09 08:00:00
+2026-11-07 15:20:55,537 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SEI/USDT:USDT, mark, 1h, data starts at 2023-08-16 09:00:00
+2026-11-07 15:20:55,543 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SPX/USDT:USDT, mark, 1h, data starts at 2024-12-10 11:00:00
+2026-11-07 15:20:55,549 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SSV/USDT:USDT, mark, 1h, data starts at 2023-02-23 06:00:00
+2026-11-07 15:20:55,556 - freqtrade.data.history.datahandlers.idatahandler - WARNING - STRK/USDT:USDT, mark, 1h, data starts at 2024-02-20 12:00:00
+2026-11-07 15:20:55,563 - freqtrade.data.history.datahandlers.idatahandler - WARNING - STX/USDT:USDT, mark, 1h, data starts at 2023-02-21 03:00:00
+2026-11-07 15:20:55,570 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SUI/USDT:USDT, mark, 1h, data starts at 2023-05-03 12:00:00
+2026-11-07 15:20:55,577 - freqtrade.data.history.datahandlers.idatahandler - WARNING - TAO/USDT:USDT, mark, 1h, data starts at 2024-04-11 12:00:00
+2026-11-07 15:20:55,583 - freqtrade.data.history.datahandlers.idatahandler - WARNING - TIA/USDT:USDT, mark, 1h, data starts at 2023-10-31 16:00:00
+2026-11-07 15:20:55,590 - freqtrade.data.history.datahandlers.idatahandler - WARNING - TRUMP/USDT:USDT, mark, 1h, data starts at 2025-01-18 11:00:00
+2026-11-07 15:20:55,595 - freqtrade.data.history.datahandlers.idatahandler - WARNING - TURBO/USDT:USDT, mark, 1h, data starts at 2024-05-30 14:00:00
+2026-11-07 15:20:55,601 - freqtrade.data.history.datahandlers.idatahandler - WARNING - USELESS/USDT:USDT, mark, 1h, data starts at 2025-08-15 11:00:00
+2026-11-07 15:20:55,607 - freqtrade.data.history.datahandlers.idatahandler - WARNING - VIRTUAL/USDT:USDT, mark, 1h, data starts at 2024-12-10 11:00:00
+2026-11-07 15:20:55,618 - freqtrade.data.history.datahandlers.idatahandler - WARNING - VVV/USDT:USDT, mark, 1h, data starts at 2025-01-29 06:00:00
+2026-11-07 15:20:55,628 - freqtrade.data.history.datahandlers.idatahandler - WARNING - W/USDT:USDT, mark, 1h, data starts at 2024-04-03 13:00:00
+2026-11-07 15:20:55,636 - freqtrade.data.history.datahandlers.idatahandler - WARNING - WIF/USDT:USDT, mark, 1h, data starts at 2024-01-18 08:00:00
+2026-11-07 15:20:55,644 - freqtrade.data.history.datahandlers.idatahandler - WARNING - WLD/USDT:USDT, mark, 1h, data starts at 2023-07-24 09:00:00
+2026-11-07 15:20:55,653 - freqtrade.data.history.datahandlers.idatahandler - WARNING - WLFI/USDT:USDT, mark, 1h, data starts at 2025-08-23 08:00:00
+2026-11-07 15:20:55,669 - freqtrade.data.history.datahandlers.idatahandler - WARNING - XAI/USDT:USDT, mark, 1h, data starts at 2024-01-09 10:00:00
+2026-11-07 15:20:55,676 - freqtrade.data.history.datahandlers.idatahandler - WARNING - XPL/USDT:USDT, mark, 1h, data starts at 2025-08-22 09:00:00
+2026-11-07 15:20:55,682 - freqtrade.data.history.datahandlers.idatahandler - WARNING - YGG/USDT:USDT, mark, 1h, data starts at 2023-08-04 12:00:00
+2026-11-07 15:20:55,689 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ZAMA/USDT:USDT, mark, 1h, data starts at 2026-01-09 08:00:00
+2026-11-07 15:20:55,695 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ZK/USDT:USDT, mark, 1h, data starts at 2024-06-17 10:00:00
+2026-11-07 15:20:55,703 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ZRO/USDT:USDT, mark, 1h, data starts at 2024-06-20 13:00:00
+2026-11-07 15:20:55,709 - freqtrade.data.history.datahandlers.idatahandler - WARNING - 币安人生/USDT:USDT, mark, 1h, data starts at 2025-10-20 10:00:00
+2026-11-07 15:21:07,111 - freqtrade.optimize.backtesting - INFO - Dataload complete. Calculating indicators
+2026-11-07 15:21:07,112 - freqtrade.optimize.backtesting - INFO - Running backtesting for Strategy uni_ARL_ext
+2026-11-07 15:21:07,112 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2026-11-07 15:21:07,112 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): resample_hours = 3
+2026-11-07 15:21:07,112 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): signal_atr_mult = 2.0
+2026-11-07 15:21:07,112 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2026-11-07 15:21:07,112 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): stop_atr_mult = 2.0
+2026-11-07 15:21:08,288 - freqtrade.optimize.backtesting - INFO - Backtesting with data from 2023-01-01 00:00:00 up to 2026-11-07 00:00:00 (1406 days).
+2026-11-07 15:21:10,862 - freqtrade.data.dataprovider - INFO - Loading data for BTC/USDT:USDT 1h from 2022-12-23 16:00:00 to 2026-11-07 00:00:00
+backtest ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4/4         100% • 0:00:17 • 0:00:00
+backtest ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 33744/33744 100% • 0:01:03 • 0:00:00
+2026-11-07 15:21:58,345 - freqtrade.misc - INFO - dumping json to "user_data/backtest_results/backtest-result-2026-11-07_07-21-58.meta.json"
+Result for strategy uni_ARL_ext
+                                                     BACKTESTING REPORT                                                      
+┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                Pair ┃ Trades ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃      Avg Duration ┃  Win  Draw  Loss  Win% ┃
+┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│       ENA/USDT:USDT │     11 │        61.94 │       20597.701 │       294.25 │  16 days, 5:33:00 │    4     0     7  36.4 │
+│       MYX/USDT:USDT │      3 │       804.31 │       20036.918 │       286.24 │  6 days, 20:00:00 │    1     0     2  33.3 │
+│       UNI/USDT:USDT │     22 │         6.84 │        9502.377 │       135.75 │   9 days, 1:44:00 │    7     0    15  31.8 │
+│       SOL/USDT:USDT │     31 │        15.23 │        8198.699 │       117.12 │ 10 days, 20:02:00 │   10     0    21  32.3 │
+│         H/USDT:USDT │     18 │        17.07 │        7011.886 │       100.17 │   4 days, 9:47:00 │    4     0    14  22.2 │
+│  币安人生/USDT:USDT │      6 │        70.97 │        6664.434 │        95.21 │   7 days, 3:10:00 │    1     0     5  16.7 │
+│       ARB/USDT:USDT │      4 │        36.89 │        5308.504 │        75.84 │ 12 days, 19:45:00 │    1     0     3  25.0 │
+│       BNB/USDT:USDT │     41 │         1.21 │        4037.594 │        57.68 │  7 days, 20:04:00 │   12     0    29  29.3 │
+│       BTC/USDT:USDT │     92 │         0.65 │        3941.050 │         56.3 │  5 days, 15:52:00 │   31     0    61  33.7 │
+│      ONDO/USDT:USDT │      3 │        27.54 │        3317.582 │        47.39 │   7 days, 4:20:00 │    2     0     1  66.7 │
+│      PUMP/USDT:USDT │      3 │        21.22 │        2735.036 │        39.07 │ 22 days, 15:00:00 │    1     0     2  33.3 │
+│      AVAX/USDT:USDT │     28 │        14.01 │        2709.417 │        38.71 │   8 days, 0:28:00 │    9     0    19  32.1 │
+│      BLUR/USDT:USDT │      9 │        15.57 │        1984.628 │        28.35 │  9 days, 12:53:00 │    3     0     6  33.3 │
+│        0G/USDT:USDT │      4 │        16.69 │        1688.676 │        24.12 │   2 days, 7:30:00 │    2     0     2  50.0 │
+│    POPCAT/USDT:USDT │      3 │        73.84 │        1624.036 │         23.2 │  24 days, 0:00:00 │    2     0     1  66.7 │
+│  1000PEPE/USDT:USDT │     12 │        -4.68 │        1501.057 │        21.44 │   4 days, 9:10:00 │    3     0     9  25.0 │
+│    PIPPIN/USDT:USDT │      5 │        15.05 │        1372.577 │        19.61 │    1 day, 6:00:00 │    2     0     3  40.0 │
+│      API3/USDT:USDT │      6 │        14.22 │        1200.337 │        17.15 │  7 days, 12:30:00 │    2     0     4  33.3 │
+│       APT/USDT:USDT │      8 │        46.51 │        1183.487 │        16.91 │  12 days, 9:30:00 │    5     0     3  62.5 │
+│     EIGEN/USDT:USDT │      1 │        36.77 │         957.564 │        13.68 │  24 days, 4:00:00 │    1     0     0   100 │
+│    RAYSOL/USDT:USDT │      1 │        61.59 │         907.509 │        12.96 │  60 days, 0:00:00 │    1     0     0   100 │
+│      CAKE/USDT:USDT │      4 │        29.33 │         773.016 │        11.04 │  6 days, 12:45:00 │    2     0     2  50.0 │
+│     NEIRO/USDT:USDT │      6 │         2.64 │         751.047 │        10.73 │   7 days, 5:30:00 │    2     0     4  33.3 │
+│     PENGU/USDT:USDT │      4 │        24.66 │         681.206 │         9.73 │  17 days, 8:45:00 │    2     0     2  50.0 │
+│  1000BONK/USDT:USDT │      3 │          8.7 │         671.946 │          9.6 │ 10 days, 19:20:00 │    1     0     2  33.3 │
+│      BEAT/USDT:USDT │      3 │        47.97 │         593.450 │         8.48 │  9 days, 10:20:00 │    1     0     2  33.3 │
+│       SUI/USDT:USDT │     11 │        11.62 │         586.527 │         8.38 │ 13 days, 15:05:00 │    5     0     6  45.5 │
+│       ALT/USDT:USDT │      6 │        13.95 │         575.426 │         8.22 │  15 days, 1:20:00 │    4     0     2  66.7 │
+│       CAP/USDT:USDT │      1 │        15.92 │         544.906 │         7.78 │   2 days, 9:00:00 │    1     0     0   100 │
+│      AERO/USDT:USDT │      3 │         3.61 │         535.322 │         7.65 │   5 days, 1:40:00 │    1     0     2  33.3 │
+│       FET/USDT:USDT │      6 │         9.81 │         525.532 │         7.51 │   4 days, 6:00:00 │    1     0     5  16.7 │
+│   VIRTUAL/USDT:USDT │      2 │         9.47 │         447.190 │         6.39 │ 13 days, 16:00:00 │    1     0     1  50.0 │
+│       DOT/USDT:USDT │      8 │         0.45 │         355.433 │         5.08 │  6 days, 23:08:00 │    2     0     6  25.0 │
+│     MAGIC/USDT:USDT │      7 │         3.87 │         202.870 │          2.9 │  9 days, 12:26:00 │    3     0     4  42.9 │
+│      BOME/USDT:USDT │      0 │          0.0 │           0.000 │          0.0 │              0:00 │    0     0     0     0 │
+│       BSB/USDT:USDT │      0 │          0.0 │           0.000 │          0.0 │              0:00 │    0     0     0     0 │
+│      DOGS/USDT:USDT │      0 │          0.0 │           0.000 │          0.0 │              0:00 │    0     0     0     0 │
+│     ETHFI/USDT:USDT │      0 │          0.0 │           0.000 │          0.0 │              0:00 │    0     0     0     0 │
+│    GIGGLE/USDT:USDT │      0 │          0.0 │           0.000 │          0.0 │              0:00 │    0     0     0     0 │
+│        IO/USDT:USDT │      0 │          0.0 │           0.000 │          0.0 │              0:00 │    0     0     0     0 │
+│      KITE/USDT:USDT │      0 │          0.0 │           0.000 │          0.0 │              0:00 │    0     0     0     0 │
+│      PYTH/USDT:USDT │      0 │          0.0 │           0.000 │          0.0 │              0:00 │    0     0     0     0 │
+│        RE/USDT:USDT │      0 │          0.0 │           0.000 │          0.0 │              0:00 │    0     0     0     0 │
+│    RENDER/USDT:USDT │      0 │          0.0 │           0.000 │          0.0 │              0:00 │    0     0     0     0 │
+│       REZ/USDT:USDT │      0 │          0.0 │           0.000 │          0.0 │              0:00 │    0     0     0     0 │
+│   USELESS/USDT:USDT │      0 │          0.0 │           0.000 │          0.0 │              0:00 │    0     0     0     0 │
+│       WIF/USDT:USDT │      0 │          0.0 │           0.000 │          0.0 │              0:00 │    0     0     0     0 │
+│      ZAMA/USDT:USDT │      0 │          0.0 │           0.000 │          0.0 │              0:00 │    0     0     0     0 │
+│    PENDLE/USDT:USDT │      2 │         28.1 │          -1.077 │        -0.02 │ 19 days, 13:30:00 │    1     0     1  50.0 │
+│     TURBO/USDT:USDT │      2 │        -6.86 │         -78.049 │        -1.11 │  6 days, 19:30:00 │    1     0     1  50.0 │
+│     GRASS/USDT:USDT │      1 │       -12.24 │        -120.427 │        -1.72 │  5 days, 16:00:00 │    0     0     1     0 │
+│   BIGTIME/USDT:USDT │      1 │       -16.55 │        -123.566 │        -1.77 │    1 day, 5:00:00 │    0     0     1     0 │
+│         W/USDT:USDT │      1 │       -17.75 │        -126.379 │        -1.81 │           0:00:00 │    0     0     1     0 │
+│         S/USDT:USDT │      1 │         -9.9 │        -135.263 │        -1.93 │    1 day, 6:00:00 │    0     0     1     0 │
+│  1000SATS/USDT:USDT │      6 │        11.04 │        -138.010 │        -1.97 │  6 days, 15:50:00 │    1     0     5  16.7 │
+│     BEAMX/USDT:USDT │      1 │        -11.6 │        -138.290 │        -1.98 │          19:00:00 │    0     0     1     0 │
+│     MANTA/USDT:USDT │      1 │        -10.9 │        -145.844 │        -2.08 │           4:00:00 │    0     0     1     0 │
+│      MOVE/USDT:USDT │      1 │       -13.17 │        -152.052 │        -2.17 │           2:00:00 │    0     0     1     0 │
+│       WOO/USDT:USDT │      1 │       -20.11 │        -170.313 │        -2.43 │ 19 days, 21:00:00 │    0     0     1     0 │
+│      MEME/USDT:USDT │      1 │       -22.81 │        -178.354 │        -2.55 │           3:00:00 │    0     0     1     0 │
+│       XAI/USDT:USDT │      1 │        -21.8 │        -200.806 │        -2.87 │   2 days, 1:00:00 │    0     0     1     0 │
+│       LDO/USDT:USDT │      2 │       -16.53 │        -202.142 │        -2.89 │   1 day, 12:30:00 │    0     0     2     0 │
+│       APE/USDT:USDT │      6 │        -4.53 │        -247.393 │        -3.53 │  2 days, 13:10:00 │    1     0     5  16.7 │
+│       CFX/USDT:USDT │      7 │         2.76 │        -254.353 │        -3.63 │  7 days, 15:34:00 │    2     0     5  28.6 │
+│       LTC/USDT:USDT │     16 │         1.53 │        -264.041 │        -3.77 │  11 days, 1:15:00 │    5     0    11  31.2 │
+│      DOGE/USDT:USDT │     13 │        -3.97 │        -273.550 │        -3.91 │  6 days, 22:46:00 │    2     0    11  15.4 │
+│     AIXBT/USDT:USDT │      1 │       -10.32 │        -287.636 │        -4.11 │ 10 days, 20:00:00 │    0     0     1     0 │
+│        BB/USDT:USDT │      4 │       -11.25 │        -305.372 │        -4.36 │   2 days, 2:15:00 │    1     0     3  25.0 │
+│       SSV/USDT:USDT │      4 │        -5.61 │        -312.088 │        -4.46 │   2 days, 1:30:00 │    1     0     3  25.0 │
+│       TAO/USDT:USDT │      4 │         -6.6 │        -339.548 │        -4.85 │ 13 days, 19:15:00 │    1     0     3  25.0 │
+│      PNUT/USDT:USDT │      2 │       -21.64 │        -352.957 │        -5.04 │ 15 days, 12:30:00 │    0     0     2     0 │
+│       POL/USDT:USDT │      2 │        -6.48 │        -389.507 │        -5.56 │   8 days, 0:00:00 │    0     0     2     0 │
+│       IMX/USDT:USDT │      3 │       -11.29 │        -412.603 │        -5.89 │   4 days, 2:40:00 │    0     0     3     0 │
+│        ZK/USDT:USDT │      1 │       -14.65 │        -422.122 │        -6.03 │   1 day, 13:00:00 │    0     0     1     0 │
+│      FLOW/USDT:USDT │      3 │       -12.92 │        -427.482 │        -6.11 │   3 days, 6:00:00 │    0     0     3     0 │
+│       INJ/USDT:USDT │      4 │        -7.69 │        -438.328 │        -6.26 │  6 days, 14:45:00 │    1     0     3  25.0 │
+│      SAGA/USDT:USDT │      1 │       -13.16 │        -438.622 │        -6.27 │   3 days, 4:00:00 │    0     0     1     0 │
+│       MON/USDT:USDT │      1 │       -11.34 │        -441.160 │         -6.3 │          21:00:00 │    0     0     1     0 │
+│      ORDI/USDT:USDT │      3 │       -14.82 │        -445.288 │        -6.36 │   3 days, 1:40:00 │    0     0     3     0 │
+│     ASTER/USDT:USDT │      1 │        -8.12 │        -482.131 │        -6.89 │           4:00:00 │    0     0     1     0 │
+│       JUP/USDT:USDT │      1 │       -12.86 │        -494.109 │        -7.06 │          17:00:00 │    0     0     1     0 │
+│      HYPE/USDT:USDT │      1 │        -9.36 │        -496.781 │         -7.1 │  7 days, 18:00:00 │    0     0     1     0 │
+│  1000RATS/USDT:USDT │      3 │       -21.71 │        -510.534 │        -7.29 │   3 days, 8:20:00 │    0     0     3     0 │
+│       NOT/USDT:USDT │      4 │       -14.55 │        -527.132 │        -7.53 │ 10 days, 12:45:00 │    0     0     4     0 │
+│     LUNA2/USDT:USDT │      5 │       -12.55 │        -563.229 │        -8.05 │   2 days, 1:48:00 │    0     0     5     0 │
+│       WLD/USDT:USDT │      3 │       -18.88 │        -569.498 │        -8.14 │  5 days, 20:20:00 │    0     0     3     0 │
+│      MINA/USDT:USDT │      9 │         0.37 │        -570.733 │        -8.15 │   3 days, 9:07:00 │    3     0     6  33.3 │
+│  1000LUNC/USDT:USDT │      5 │        -8.65 │        -572.741 │        -8.18 │          18:36:00 │    0     0     5     0 │
+│        OP/USDT:USDT │      6 │       -11.64 │        -572.926 │        -8.18 │  2 days, 23:10:00 │    1     0     5  16.7 │
+│       ACH/USDT:USDT │      9 │        -6.49 │        -588.819 │        -8.41 │  9 days, 23:00:00 │    2     0     7  22.2 │
+│       SEI/USDT:USDT │      2 │       -14.73 │        -604.616 │        -8.64 │  5 days, 10:30:00 │    0     0     2     0 │
+│       GMT/USDT:USDT │      5 │       -16.01 │        -630.646 │        -9.01 │   2 days, 7:36:00 │    0     0     5     0 │
+│      GRAM/USDT:USDT │      1 │        -8.34 │        -638.917 │        -9.13 │   1 day, 16:00:00 │    0     0     1     0 │
+│       BTW/USDT:USDT │      1 │       -58.87 │        -645.408 │        -9.22 │          10:00:00 │    0     0     1     0 │
+│      STRK/USDT:USDT │      1 │       -14.51 │        -683.966 │        -9.77 │ 15 days, 15:00:00 │    0     0     1     0 │
+│       YGG/USDT:USDT │      3 │       -22.44 │        -700.612 │       -10.01 │          10:20:00 │    0     0     3     0 │
+│       XPL/USDT:USDT │      6 │       -12.58 │        -755.361 │       -10.79 │   3 days, 6:30:00 │    1     0     5  16.7 │
+│       JTO/USDT:USDT │      3 │       -19.78 │        -764.883 │       -10.93 │ 10 days, 13:00:00 │    0     0     3     0 │
+│       ZRO/USDT:USDT │      4 │         -7.2 │        -849.006 │       -12.13 │  3 days, 18:00:00 │    1     0     3  25.0 │
+│       VVV/USDT:USDT │      2 │       -19.01 │        -861.714 │       -12.31 │   1 day, 13:30:00 │    0     0     2     0 │
+│      ARKM/USDT:USDT │      5 │       -16.02 │        -884.647 │       -12.64 │           6:12:00 │    0     0     5     0 │
+│     RIVER/USDT:USDT │      2 │       -17.64 │        -899.411 │       -12.85 │    1 day, 0:30:00 │    0     0     2     0 │
+│       SPX/USDT:USDT │      2 │       -16.41 │        -922.515 │       -13.18 │          17:00:00 │    0     0     2     0 │
+│      WLFI/USDT:USDT │      2 │       -13.05 │        -979.981 │        -14.0 │ 21 days, 12:30:00 │    0     0     2     0 │
+│     KAITO/USDT:USDT │      5 │        -4.63 │        -994.574 │       -14.21 │   5 days, 1:36:00 │    2     0     3  40.0 │
+│     JASMY/USDT:USDT │     12 │        -8.88 │       -1026.271 │       -14.66 │   5 days, 1:25:00 │    2     0    10  16.7 │
+│       XRP/USDT:USDT │     25 │        -2.01 │       -1141.630 │       -16.31 │  6 days, 23:55:00 │    7     0    18  28.0 │
+│       KAS/USDT:USDT │      3 │       -16.62 │       -1174.359 │       -16.78 │   4 days, 9:00:00 │    0     0     3     0 │
+│      LINK/USDT:USDT │      6 │         -8.6 │       -1184.041 │       -16.91 │   7 days, 6:00:00 │    1     0     5  16.7 │
+│       LIT/USDT:USDT │      3 │       -12.67 │       -1191.175 │       -17.02 │   3 days, 6:00:00 │    0     0     3     0 │
+│       STX/USDT:USDT │      5 │       -11.13 │       -1212.436 │       -17.32 │  10 days, 4:24:00 │    0     0     5     0 │
+│   MOODENG/USDT:USDT │      3 │       -22.81 │       -1300.989 │       -18.59 │  4 days, 16:20:00 │    0     0     3     0 │
+│       TIA/USDT:USDT │      5 │       -13.76 │       -1301.445 │       -18.59 │   2 days, 9:48:00 │    0     0     5     0 │
+│ 1000FLOKI/USDT:USDT │      7 │        -20.1 │       -1397.957 │       -19.97 │   6 days, 1:17:00 │    0     0     7     0 │
+│       BIO/USDT:USDT │      4 │       -13.26 │       -1447.582 │       -20.68 │  2 days, 11:00:00 │    0     0     4     0 │
+│       ARC/USDT:USDT │      6 │       -17.86 │       -1672.945 │        -23.9 │   1 day, 10:00:00 │    2     0     4  33.3 │
+│     TRUMP/USDT:USDT │      6 │        -6.02 │       -1802.610 │       -25.75 │   3 days, 1:20:00 │    1     0     5  16.7 │
+│      BERA/USDT:USDT │      6 │       -12.07 │       -1903.907 │        -27.2 │  2 days, 16:00:00 │    0     0     6     0 │
+│      CHIP/USDT:USDT │      3 │       -15.38 │       -1932.486 │       -27.61 │   3 days, 0:20:00 │    0     0     3     0 │
+│       ADA/USDT:USDT │     11 │        -7.94 │       -1941.645 │       -27.74 │  4 days, 21:44:00 │    1     0    10   9.1 │
+│       LAB/USDT:USDT │      5 │       -37.71 │       -1991.355 │       -28.45 │          13:36:00 │    0     0     5     0 │
+│  FARTCOIN/USDT:USDT │      6 │       -17.97 │       -2183.634 │       -31.19 │  2 days, 16:30:00 │    0     0     6     0 │
+│       ETH/USDT:USDT │     66 │         -0.5 │       -6613.464 │       -94.48 │   6 days, 5:58:00 │   15     0    51  22.7 │
+│               TOTAL │    745 │         5.47 │       55577.499 │       793.96 │  6 days, 23:11:00 │  186     0   559  25.0 │
+└─────────────────────┴────────┴──────────────┴─────────────────┴──────────────┴───────────────────┴────────────────────────┘
+                                                  LEFT OPEN TRADES REPORT                                                  
+┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃               Pair ┃ Trades ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃     Avg Duration ┃  Win  Draw  Loss  Win% ┃
+┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│     AERO/USDT:USDT │      1 │        34.01 │        1651.613 │        23.59 │ 14 days, 9:00:00 │    1     0     0   100 │
+│      BTC/USDT:USDT │      1 │         6.16 │         782.879 │        11.18 │   1 day, 9:00:00 │    1     0     0   100 │
+│      CAP/USDT:USDT │      1 │        15.92 │         544.906 │         7.78 │  2 days, 9:00:00 │    1     0     0   100 │
+│ 1000PEPE/USDT:USDT │      1 │        -3.52 │         -97.848 │         -1.4 │  8 days, 3:00:00 │    0     0     1     0 │
+│              TOTAL │      4 │        13.14 │        2881.549 │        41.16 │ 6 days, 13:30:00 │    3     0     1  75.0 │
+└────────────────────┴────────┴──────────────┴─────────────────┴──────────────┴──────────────────┴────────────────────────┘
+                                                  ENTER TAG STATS                                                  
+┏━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Enter Tag ┃ Entries ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃     Avg Duration ┃  Win  Draw  Loss  Win% ┃
+┡━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│     OTHER │     745 │         5.47 │       55577.499 │       793.96 │ 6 days, 23:11:00 │  186     0   559  25.0 │
+│     TOTAL │     745 │         5.47 │       55577.499 │       793.96 │ 6 days, 23:11:00 │  186     0   559  25.0 │
+└───────────┴─────────┴──────────────┴─────────────────┴──────────────┴──────────────────┴────────────────────────┘
+                                                  EXIT REASON STATS                                                  
+┏━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃   Exit Reason ┃ Exits ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃     Avg Duration ┃  Win  Draw  Loss  Win% ┃
+┡━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│   exit_signal │   227 │         41.8 │      156842.845 │      2240.61 │ 14 days, 9:53:00 │  176     0    51  77.5 │
+│ time_stop_60d │     5 │       228.35 │       26014.766 │       371.64 │ 60 days, 0:00:00 │    5     0     0   100 │
+│    force_exit │     4 │        13.14 │        2881.549 │        41.16 │ 6 days, 13:30:00 │    3     0     1  75.0 │
+│   liquidation │     1 │       -81.71 │        -327.827 │        -4.68 │         15:00:00 │    0     0     1     0 │
+│     stop_loss │   508 │       -12.85 │     -129833.835 │     -1854.77 │  3 days, 3:11:00 │    2     0   506   0.4 │
+│         TOTAL │   745 │         5.47 │       55577.499 │       793.96 │ 6 days, 23:11:00 │  186     0   559  25.0 │
+└───────────────┴───────┴──────────────┴─────────────────┴──────────────┴──────────────────┴────────────────────────┘
+                                                         MIXED TAG STATS                                                          
+┏━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Enter Tag ┃   Exit Reason ┃ Trades ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃     Avg Duration ┃  Win  Draw  Loss  Win% ┃
+┡━━━━━━━━━━━╇━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│           │   exit_signal │    227 │         41.8 │      156842.845 │      2240.61 │ 14 days, 9:53:00 │  176     0    51  77.5 │
+│           │ time_stop_60d │      5 │       228.35 │       26014.766 │       371.64 │ 60 days, 0:00:00 │    5     0     0   100 │
+│           │    force_exit │      4 │        13.14 │        2881.549 │        41.16 │ 6 days, 13:30:00 │    3     0     1  75.0 │
+│           │   liquidation │      1 │       -81.71 │        -327.827 │        -4.68 │         15:00:00 │    0     0     1     0 │
+│           │     stop_loss │    508 │       -12.85 │     -129833.835 │     -1854.77 │  3 days, 3:11:00 │    2     0   506   0.4 │
+│     TOTAL │               │    745 │         5.47 │       55577.499 │       793.96 │ 6 days, 23:11:00 │  186     0   559  25.0 │
+└───────────┴───────────────┴────────┴──────────────┴─────────────────┴──────────────┴──────────────────┴────────────────────────┘
+                                   SUMMARY METRICS                                    
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Metric                                 ┃ Value                                     ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ Backtesting from                       │ 2023-01-01 00:00:00                       │
+│ Backtesting to                         │ 2026-11-07 00:00:00                       │
+│ Trading Mode                           │ Isolated Futures                          │
+│ Max open trades                        │ 4                                         │
+│                                        │                                           │
+│ Total/Daily Avg Trades                 │ 745 / 0.53                                │
+│ Starting balance                       │ 7000 USDT                                 │
+│ Final balance                          │ 62577.499 USDT                            │
+│ Absolute profit                        │ 55577.499 USDT                            │
+│ Total profit %                         │ 793.96%                                   │
+│ CAGR %                                 │ 76.59%                                    │
+│ Sharpe (closed trades)                 │ 0.56                                      │
+│ Sortino (closed trades)                │ 4.58                                      │
+│ Calmar (closed trades)                 │ 37.00                                     │
+│ SQN                                    │ 1.52                                      │
+│ Mean profit p-value                    │ 0.1298                                    │
+│ Profit factor                          │ 1.41                                      │
+│ Expectancy (Ratio)                     │ 74.60 (0.31)                              │
+│ Avg. daily profit                      │ 39.529 USDT                               │
+│ Avg. stake amount                      │ 2632.124 USDT                             │
+│ Market change                          │ 20.24%                                    │
+│ Total trade volume                     │ 7892016.722 USDT                          │
+│                                        │                                           │
+│ Long / Short trades                    │ 435 / 310                                 │
+│ Long / Short profit %                  │ 800.13% / -6.17%                          │
+│ Long / Short profit USDT               │ 56009.310 / -431.811                      │
+│                                        │                                           │
+│ Best Pair                              │ ENA/USDT:USDT 294.25%                     │
+│ Worst Pair                             │ ETH/USDT:USDT -94.48%                     │
+│ Best trade                             │ MYX/USDT:USDT 2480.54%                    │
+│ Worst trade                            │ LAB/USDT:USDT -81.71%                     │
+│ Best day                               │ 20982.639 USDT                            │
+│ Worst day                              │ -2085.118 USDT                            │
+│ Days win/draw/lose                     │ 115 / 926 / 365                           │
+│ Min/Max/Avg. Duration Winners          │ 0d 09:00 / 60d 00:00 / 17d 09:54          │
+│ Min/Max/Avg. Duration Losers           │ 0d 00:00 / 51d 10:00 / 3d 11:46           │
+│ Max Consecutive Wins / Loss            │ 5 / 19                                    │
+│ Rejected Entry signals                 │ 15970                                     │
+│ Entry/Exit Timeouts                    │ 0 / 0                                     │
+│                                        │                                           │
+│ Min/Max balance (closed trades)        │ 6857.24 USDT / 69536.247 USDT             │
+│ Max % of account underwater            │ 41.49%                                    │
+│ Absolute drawdown                      │ 12943.115 USDT (29.16%)                   │
+│ Drawdown duration                      │ 232 days 11:00:00                         │
+│ Profit at drawdown start               │ 37389.437 USDT                            │
+│ Profit at drawdown end                 │ 24446.323 USDT                            │
+│ Drawdown start                         │ 2025-11-26 18:00:00                       │
+│ Drawdown end                           │ 2026-07-17 05:00:00                       │
+│                                        │                                           │
+│ Wallet based Metrics                   │                                           │
+│ Min/Max balance (wallet balance)       │ 6857.24 USDT / 69536.247 USDT             │
+│ Min/Max balance dates (wallet balance) │ 2023-01-06 07:00:00 / 2026-10-07 04:00:00 │
+│ Max % of account underwater (balance)  │ 41.49%                                    │
+│ Absolute drawdown (wallet balance)     │ 12943.115 USDT (29.16%)                   │
+│ Drawdown duration                      │ 232 days 11:00:00                         │
+│ Profit at drawdown start               │ 37389.437 USDT                            │
+│ Profit at drawdown end                 │ 24446.323 USDT                            │
+│ Drawdown start                         │ 2025-11-26 19:00:00                       │
+│ Drawdown end                           │ 2026-07-17 06:00:00                       │
+│ Sharpe (daily wallet balance)          │ 0.88                                      │
+│ Sortino (daily wallet balance)         │ 5.94                                      │
+│ Calmar (daily wallet balance)          │ 35.11                                     │
+└────────────────────────────────────────┴───────────────────────────────────────────┘
+
+Backtested 2023-01-01 00:00:00 -> 2026-11-07 00:00:00 | Max open trades : 4
+                                                              STRATEGY SUMMARY                                                               
+┏━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃    Strategy ┃ Trades ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃     Avg Duration ┃  Win  Draw  Loss  Win% ┃               Drawdown ┃
+┡━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ uni_ARL_ext │    745 │         5.47 │       55577.499 │       793.96 │ 6 days, 23:11:00 │  186     0   559  25.0 │ 12943.115 USDT  29.16% │
+└─────────────┴────────┴──────────────┴─────────────────┴──────────────┴──────────────────┴────────────────────────┴────────────────────────┘

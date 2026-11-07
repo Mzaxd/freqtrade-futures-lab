@@ -1,0 +1,558 @@
+[
+ {
+  "tag": "lvg_is_a_vt60",
+  "strategy": "LVG_A_vt60",
+  "cmd": "freqtrade backtesting --userdir user_data --config user_data/configs/config_futures.json --strategy-path user_data/strategies/oss --strategy LVG_A_vt60 --timerange 20210101-20240101 --max-open-trades 4 --dry-run-wallet 3000->7000 --cache none --export trades",
+  "zip": "user_data/backtest_results/lvg_is_a_vt60.zip",
+  "start_wallet": 7000.0,
+  "final_balance": 125259.1,
+  "profit_total_pct": 1689.4,
+  "liquidations": 0,
+  "trades": 207,
+  "left_open_at_end": 3,
+  "yearly_realized": {
+   "2021": 141.2,
+   "2022": 130.0,
+   "2023": 216.8,
+   "2024": 0.0
+  },
+  "final_year_anchored": {
+   "2024": 0.0
+  },
+  "maxdd_pct": 12.3,
+  "dd30_min_by_year": {
+   "2021": -4.0,
+   "2022": -12.5,
+   "2023": -10.0,
+   "2024": -4.9
+  },
+  "dd30_min_all": -12.5,
+  "dd30_min_all_anchored": -12.5,
+  "yearly": {
+   "2021": 141.2,
+   "2022": 130.0,
+   "2023": 216.8,
+   "2024": 0.0
+  },
+  "maxdd": 12.3,
+  "dd30": -12.5
+ },
+ {
+  "tag": "lvg_is_a_vt60f1",
+  "strategy": "LVG_A_vt60f1",
+  "cmd": "same but --strategy LVG_A_vt60f1 (T=60.6 clamp[1.0,2.0])",
+  "zip": "user_data/backtest_results/lvg_is_a_vt60f1.zip",
+  "start_wallet": 7000.0,
+  "final_balance": 141414.2,
+  "profit_total_pct": 1920.2,
+  "liquidations": 0,
+  "trades": 207,
+  "left_open_at_end": 3,
+  "yearly_realized": {
+   "2021": 170.7,
+   "2022": 132.4,
+   "2023": 215.5,
+   "2024": 0.0
+  },
+  "final_year_anchored": {
+   "2024": 0.0
+  },
+  "maxdd_pct": 12.3,
+  "dd30_min_by_year": {
+   "2021": -4.4,
+   "2022": -13.2,
+   "2023": -10.0,
+   "2024": -4.9
+  },
+  "dd30_min_all": -13.2,
+  "dd30_min_all_anchored": -13.2,
+  "yearly": {
+   "2021": 170.7,
+   "2022": 132.4,
+   "2023": 215.5,
+   "2024": 0.0
+  },
+  "maxdd": 12.3,
+  "dd30": -13.2
+ },
+ {
+  "tag": "lvg_is_a_vt50",
+  "strategy": "LVG_A_vt50",
+  "cmd": "same but --strategy LVG_A_vt50 (T=50.6 clamp[0.5,1.5])",
+  "zip": "user_data/backtest_results/lvg_is_a_vt50.zip",
+  "start_wallet": 7000.0,
+  "final_balance": 85616.2,
+  "profit_total_pct": 1123.1,
+  "liquidations": 0,
+  "trades": 207,
+  "left_open_at_end": 3,
+  "yearly_realized": {
+   "2021": 118.3,
+   "2022": 105.0,
+   "2023": 169.2,
+   "2024": 0.0
+  },
+  "final_year_anchored": {
+   "2024": 0.0
+  },
+  "maxdd_pct": 13.9,
+  "dd30_min_by_year": {
+   "2021": -3.9,
+   "2022": -9.9,
+   "2023": -10.9,
+   "2024": -4.1
+  },
+  "dd30_min_all": -10.9,
+  "dd30_min_all_anchored": -10.9,
+  "yearly": {
+   "2021": 118.3,
+   "2022": 105.0,
+   "2023": 169.2,
+   "2024": 0.0
+  },
+  "maxdd": 13.9,
+  "dd30": -10.9
+ },
+ {
+  "tag": "lvg_is_a_r2",
+  "strategy": "LVG_A_r2",
+  "cmd": "same but --strategy LVG_A_r2 (constant risk x2)",
+  "zip": "user_data/backtest_results/lvg_is_a_r2.zip",
+  "start_wallet": 7000.0,
+  "final_balance": 487722.1,
+  "profit_total_pct": 6867.5,
+  "liquidations": 0,
+  "trades": 207,
+  "left_open_at_end": 3,
+  "yearly_realized": {
+   "2021": 462.6,
+   "2022": 288.7,
+   "2023": 209.9,
+   "2024": 0.0
+  },
+  "final_year_anchored": {
+   "2024": 0.0
+  },
+  "maxdd_pct": 8.7,
+  "dd30_min_by_year": {
+   "2021": -8.7,
+   "2022": -16.2,
+   "2023": -10.1,
+   "2024": -7.4
+  },
+  "dd30_min_all": -16.2,
+  "dd30_min_all_anchored": -16.2,
+  "yearly": {
+   "2021": 462.6,
+   "2022": 288.7,
+   "2023": 209.9,
+   "2024": 0.0
+  },
+  "maxdd": 8.7,
+  "dd30": -16.2
+ },
+ {
+  "tag": "lvg_is_b_15x",
+  "strategy": "LVG_B_15x",
+  "cmd": "freqtrade backtesting ... --strategy LVG_B_15x --timerange 20210101-20240101 --max-open-trades 3 --dry-run-wallet 3000 --cache none --export trades",
+  "zip": "user_data/backtest_results/lvg_is_b_15x.zip",
+  "start_wallet": 3000.0,
+  "final_balance": 130783.8,
+  "profit_total_pct": 4259.5,
+  "liquidations": 0,
+  "trades": 63,
+  "left_open_at_end": 4,
+  "yearly_realized": {
+   "2021": 1134.8,
+   "2022": 3.3,
+   "2023": 66.1,
+   "2024": 0.0
+  },
+  "final_year_anchored": {
+   "2024": 0.0
+  },
+  "maxdd_pct": 11.4,
+  "dd30_min_by_year": {
+   "2021": -9.2,
+   "2022": -1.0,
+   "2023": -9.0,
+   "2024": 0.0
+  },
+  "dd30_min_all": -9.2,
+  "dd30_min_all_anchored": -9.2,
+  "yearly": {
+   "2021": 1134.8,
+   "2022": 3.3,
+   "2023": 66.1,
+   "2024": 0.0
+  },
+  "maxdd": 11.4,
+  "dd30": -9.2
+ },
+ {
+  "tag": "lvg_is_b_2x",
+  "strategy": "LVG_B_2x",
+  "cmd": "same but --strategy LVG_B_2x (fixed 2.0x)",
+  "zip": "user_data/backtest_results/lvg_is_b_2x.zip",
+  "start_wallet": 3000.0,
+  "final_balance": 258334.5,
+  "profit_total_pct": 8511.1,
+  "liquidations": 0,
+  "trades": 63,
+  "left_open_at_end": 4,
+  "yearly_realized": {
+   "2021": 1812.7,
+   "2022": 4.4,
+   "2023": 78.6,
+   "2024": 0.0
+  },
+  "final_year_anchored": {
+   "2024": 0.0
+  },
+  "maxdd_pct": 14.5,
+  "dd30_min_by_year": {
+   "2021": -10.7,
+   "2022": -1.1,
+   "2023": -11.3,
+   "2024": 0.0
+  },
+  "dd30_min_all": -11.3,
+  "dd30_min_all_anchored": -11.3,
+  "yearly": {
+   "2021": 1812.7,
+   "2022": 4.4,
+   "2023": 78.6,
+   "2024": 0.0
+  },
+  "maxdd": 14.5,
+  "dd30": -11.3
+ },
+ {
+  "tag": "lvg_is_b_2xvt",
+  "strategy": "LVG_B_2xvt",
+  "cmd": "same but --strategy LVG_B_2xvt (lev=clamp(2*60.6/RV30,1,2.5))",
+  "zip": "user_data/backtest_results/lvg_is_b_2xvt.zip",
+  "start_wallet": 3000.0,
+  "final_balance": 236134.9,
+  "profit_total_pct": 7771.2,
+  "liquidations": 0,
+  "trades": 63,
+  "left_open_at_end": 4,
+  "yearly_realized": {
+   "2021": 1352.9,
+   "2022": 3.3,
+   "2023": 88.3,
+   "2024": 0.0
+  },
+  "final_year_anchored": {
+   "2024": 0.0
+  },
+  "maxdd_pct": 16.8,
+  "dd30_min_by_year": {
+   "2021": -20.5,
+   "2022": -1.1,
+   "2023": -13.1,
+   "2024": 0.0
+  },
+  "dd30_min_all": -20.5,
+  "dd30_min_all_anchored": -20.5,
+  "yearly": {
+   "2021": 1352.9,
+   "2022": 3.3,
+   "2023": 88.3,
+   "2024": 0.0
+  },
+  "maxdd": 16.8,
+  "dd30": -20.5
+ },
+ {
+  "tag": "lvg_full_a_r2",
+  "strategy": "LVG_A_r2",
+  "cmd": "freqtrade backtesting ... --strategy LVG_A_r2 --timerange 20210101- --max-open-trades 4 --dry-run-wallet 7000 --cache none --export trades",
+  "zip": "user_data/backtest_results/lvg_full_a_r2.zip",
+  "start_wallet": 7000.0,
+  "final_balance": 934600.8,
+  "profit_total_pct": 13251.4,
+  "liquidations": 0,
+  "trades": 490,
+  "left_open_at_end": 4,
+  "yearly_realized": {
+   "2021": 462.6,
+   "2022": 288.7,
+   "2023": 209.9,
+   "2024": 63.0,
+   "2025": 40.9,
+   "2026": -20.7
+  },
+  "final_year_anchored": {
+   "2026": -14.2
+  },
+  "maxdd_pct": 47.8,
+  "dd30_min_by_year": {
+   "2021": -8.7,
+   "2022": -16.2,
+   "2023": -10.1,
+   "2024": -21.8,
+   "2025": -15.7,
+   "2026": -18.2
+  },
+  "dd30_min_all": -21.8,
+  "dd30_min_all_anchored": -21.8,
+  "yearly": {
+   "2021": 462.6,
+   "2022": 288.7,
+   "2023": 209.9,
+   "2024": 63.0,
+   "2025": 40.9,
+   "2026": -20.7
+  },
+  "maxdd": 47.8,
+  "dd30": -21.8
+ },
+ {
+  "tag": "lvg_full_b_2xvt",
+  "strategy": "LVG_B_2xvt",
+  "cmd": "freqtrade backtesting ... --strategy LVG_B_2xvt --timerange 20210101- --max-open-trades 3 --dry-run-wallet 3000 --cache none --export trades",
+  "zip": "user_data/backtest_results/lvg_full_b_2xvt.zip",
+  "start_wallet": 3000.0,
+  "final_balance": 655822.8,
+  "profit_total_pct": 21760.8,
+  "liquidations": 0,
+  "trades": 134,
+  "left_open_at_end": 1,
+  "yearly_realized": {
+   "2021": 1352.9,
+   "2022": 3.3,
+   "2023": 88.3,
+   "2024": 433.5,
+   "2025": 23.4,
+   "2026": 17.5
+  },
+  "final_year_anchored": {
+   "2026": 17.5
+  },
+  "maxdd_pct": 34.2,
+  "dd30_min_by_year": {
+   "2021": -20.5,
+   "2022": -1.1,
+   "2023": -13.1,
+   "2024": -14.6,
+   "2025": -22.4,
+   "2026": -10.8
+  },
+  "dd30_min_all": -22.4,
+  "dd30_min_all_anchored": -22.4,
+  "yearly": {
+   "2021": 1352.9,
+   "2022": 3.3,
+   "2023": 88.3,
+   "2024": 433.5,
+   "2025": 23.4,
+   "2026": 17.5
+  },
+  "maxdd": 34.2,
+  "dd30": -22.4
+ },
+ {
+  "tag": "baseline_A_ARL_2x",
+  "strategy": "ARL_2x",
+  "cmd": "pre-existing (CONTEXT section 2)",
+  "zip": "user_data/backtest_results/backtest-result-2026-11-07_03-54-11.zip",
+  "start_wallet": 7000.0,
+  "final_balance": 166167.4,
+  "profit_total_pct": 2273.8,
+  "liquidations": 0,
+  "trades": 490,
+  "left_open_at_end": 4,
+  "yearly_realized": {
+   "2021": 170.6,
+   "2022": 114.5,
+   "2023": 122.8,
+   "2024": 37.7,
+   "2025": 25.7,
+   "2026": 1.6
+  },
+  "final_year_anchored": {
+   "2026": 6.0
+  },
+  "maxdd_pct": 34.9,
+  "dd30_min_by_year": {
+   "2021": -4.4,
+   "2022": -8.4,
+   "2023": -10.7,
+   "2024": -12.6,
+   "2025": -9.0,
+   "2026": -11.3
+  },
+  "dd30_min_all": -12.6,
+  "dd30_min_all_anchored": -12.6,
+  "yearly": {
+   "2021": 170.6,
+   "2022": 114.5,
+   "2023": 122.8,
+   "2024": 37.7,
+   "2025": 25.7,
+   "2026": 1.6
+  },
+  "maxdd": 34.9,
+  "dd30": -12.6
+ },
+ {
+  "tag": "baseline_B_OPT2",
+  "strategy": "OPT2_MomRegime15mLb21",
+  "cmd": "pre-existing (CONTEXT section 2)",
+  "zip": "user_data/backtest_results/backtest-result-2026-11-07_03-56-10.zip",
+  "start_wallet": 3000.0,
+  "final_balance": 93176.2,
+  "profit_total_pct": 3005.9,
+  "liquidations": 0,
+  "trades": 134,
+  "left_open_at_end": 1,
+  "yearly_realized": {
+   "2021": 613.7,
+   "2022": 2.2,
+   "2023": 43.9,
+   "2024": 140.2,
+   "2025": 14.5,
+   "2026": 7.6
+  },
+  "final_year_anchored": {
+   "2026": 7.6
+  },
+  "maxdd_pct": 15.3,
+  "dd30_min_by_year": {
+   "2021": -8.2,
+   "2022": -0.7,
+   "2023": -6.1,
+   "2024": -6.1,
+   "2025": -9.3,
+   "2026": -4.5
+  },
+  "dd30_min_all": -9.3,
+  "dd30_min_all_anchored": -9.3,
+  "yearly": {
+   "2021": 613.7,
+   "2022": 2.2,
+   "2023": 43.9,
+   "2024": 140.2,
+   "2025": 14.5,
+   "2026": 7.6
+  },
+  "maxdd": 15.3,
+  "dd30": -9.3
+ },
+ {
+  "tag": "combo_full_r2_plus_2xvt",
+  "strategy": "lvg_full_a_r2 + lvg_full_b_2xvt (offline synth 7000/3000)",
+  "cmd": "offline portfolio synthesis per CONTEXT section 6",
+  "zip": null,
+  "start_wallet": 10000,
+  "final_balance": 1590424.0,
+  "yearly_realized": {
+   "2021": 729.7,
+   "2022": 138.8,
+   "2023": 182.2,
+   "2024": 119.2,
+   "2025": 34.4,
+   "2026": -7.7
+  },
+  "final_year_anchored": {
+   "2026": -3.5
+  },
+  "dd30_min_by_year": {
+   "2021": -11.0,
+   "2022": -12.7,
+   "2023": -8.1,
+   "2024": -17.3,
+   "2025": -10.9,
+   "2026": -14.5
+  },
+  "dd30_min_all": -17.3,
+  "dd30_min_all_anchored": -17.3,
+  "yearly": {
+   "2021": 729.7,
+   "2022": 138.8,
+   "2023": 182.2,
+   "2024": 119.2,
+   "2025": 34.4,
+   "2026": -7.7
+  },
+  "maxdd": null,
+  "dd30": -17.3
+ },
+ {
+  "tag": "combo_baseline_AB7030",
+  "strategy": "baseline_A_ARL_2x + baseline_B_OPT2 (offline synth 7000/3000)",
+  "cmd": "offline portfolio synthesis per CONTEXT section 6",
+  "zip": null,
+  "start_wallet": 10000,
+  "final_balance": 259344.0,
+  "yearly_realized": {
+   "2021": 303.6,
+   "2022": 54.9,
+   "2023": 95.2,
+   "2024": 64.1,
+   "2025": 21.5,
+   "2026": 3.7
+  },
+  "final_year_anchored": {
+   "2026": 6.6
+  },
+  "dd30_min_by_year": {
+   "2021": -4.6,
+   "2022": -5.5,
+   "2023": -7.5,
+   "2024": -9.4,
+   "2025": -5.8,
+   "2026": -8.1
+  },
+  "dd30_min_all": -9.4,
+  "dd30_min_all_anchored": -9.4,
+  "yearly": {
+   "2021": 303.6,
+   "2022": 54.9,
+   "2023": 95.2,
+   "2024": 64.1,
+   "2025": 21.5,
+   "2026": 3.7
+  },
+  "maxdd": null,
+  "dd30": -9.4
+ },
+ {
+  "tag": "line3_offline_Tp20_paper",
+  "strategy": "baseline AB70/30 x vol-scaling T_p=20 (paper)",
+  "cmd": "offline r*(20/RV30p(t-1)) clamp[0.5,2] on baseline daily returns (raw attribution)",
+  "zip": null,
+  "start_wallet": 10000,
+  "final_balance": 824644.0,
+  "yearly_realized": {
+   "2021": 307.9,
+   "2022": 89.3,
+   "2023": 210.0,
+   "2024": 137.4,
+   "2025": 37.2,
+   "2026": 5.8
+  },
+  "dd30_min_by_year": {
+   "2021": -3.6,
+   "2022": -6.8,
+   "2023": -11.5,
+   "2024": -8.5,
+   "2025": -9.8,
+   "2026": -14.0
+  },
+  "dd30_min_all": -14.0,
+  "note": "frictionless paper overlay (no funding/borrow/txn costs); shape only",
+  "yearly": {
+   "2021": 307.9,
+   "2022": 89.3,
+   "2023": 210.0,
+   "2024": 137.4,
+   "2025": 37.2,
+   "2026": 5.8
+  },
+  "maxdd": null,
+  "dd30": -14.0
+ }
+]

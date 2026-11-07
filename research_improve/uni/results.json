@@ -1,0 +1,101 @@
+[
+ {
+  "tag": "uni_probe_ext",
+  "arm": "probe",
+  "cmd": "probe: uni_ARL_ext 20250110-20250112 pool125 MOT4 w7000 (plumbing only, 0-info)",
+  "zip": "uni_probe_ext.zip",
+  "start_wallet": 7000.0,
+  "final_balance": 7000.0,
+  "total_return_pct": 0.0,
+  "yearly": {
+   "2025": 0.0
+  },
+  "dd30_min_pct_by_year": {
+   "2025": null
+  },
+  "maxdd": 0.0,
+  "dd30": null,
+  "trades": 0,
+  "oos_2024_2026_pct": null
+ },
+ {
+  "tag": "uni_full_a",
+  "arm": "a",
+  "cmd": ".venv/bin/freqtrade backtesting --userdir user_data --config user_data/configs/config_futures.json --strategy-path user_data/strategies/oss --strategy uni_ARL_frozen12 --timerange 20210101-20261107 --max-open-trades 4 -p <frozen12> --dry-run-wallet 7000 --cache none --export trades --export-filename user_data/backtest_results/uni_full_a.zip",
+  "zip": "uni_full_a.zip",
+  "start_wallet": 7000.0,
+  "final_balance": 224060.6,
+  "total_return_pct": 3100.9,
+  "yearly": {
+   "2021": 159.5,
+   "2022": 148.0,
+   "2023": 118.5,
+   "2024": 82.8,
+   "2025": -0.4,
+   "2026": 23.5
+  },
+  "dd30_min_pct_by_year": {
+   "2021": -11.4,
+   "2022": -8.3,
+   "2023": -14.2,
+   "2024": -11.7,
+   "2025": -14.0,
+   "2026": -22.3
+  },
+  "maxdd": 43.5,
+  "dd30": -22.3,
+  "trades": 904,
+  "win_2023_2026_pct": 391.3,
+  "oos_2024_2026_pct": 124.9
+ },
+ {
+  "tag": "uni_oos_b",
+  "arm": "b",
+  "cmd": ".venv/bin/freqtrade backtesting ... --strategy uni_ARL_ext --timerange 20230101-20261107 --max-open-trades 4 -p <pool125> --dry-run-wallet 7000 --cache none --export trades --export-filename user_data/backtest_results/uni_oos_b.zip",
+  "zip": "uni_oos_b.zip",
+  "start_wallet": 7000.0,
+  "final_balance": 62577.5,
+  "total_return_pct": 794.0,
+  "yearly": {
+   "2023": 128.6,
+   "2024": -4.0,
+   "2025": 133.8,
+   "2026": 80.8
+  },
+  "dd30_min_pct_by_year": {
+   "2023": -14.3,
+   "2024": -19.4,
+   "2025": -19.9,
+   "2026": -18.4
+  },
+  "maxdd": 29.2,
+  "dd30": -19.9,
+  "trades": 745,
+  "oos_2024_2026_pct": 305.8
+ },
+ {
+  "tag": "uni_oos_c",
+  "arm": "c",
+  "cmd": ".venv/bin/freqtrade backtesting ... --strategy uni_ARL_pit --timerange 20230101-20261107 --max-open-trades 4 -p <pool125> --dry-run-wallet 7000 --cache none --export trades --export-filename user_data/backtest_results/uni_oos_c.zip",
+  "zip": "uni_oos_c.zip",
+  "start_wallet": 7000.0,
+  "final_balance": 56094.4,
+  "total_return_pct": 701.3,
+  "yearly": {
+   "2023": 124.7,
+   "2024": 30.7,
+   "2025": 130.6,
+   "2026": 19.6
+  },
+  "dd30_min_pct_by_year": {
+   "2023": -15.7,
+   "2024": -17.2,
+   "2025": -25.1,
+   "2026": -20.6
+  },
+  "maxdd": 39.5,
+  "dd30": -25.1,
+  "trades": 705,
+  "oos_2024_2026_pct": 260.5
+ }
+]

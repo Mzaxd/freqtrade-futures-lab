@@ -1,0 +1,100 @@
+[
+  {
+    "tag": "baseline_ARL2x",
+    "cmd": "freqtrade backtesting --userdir user_data --config user_data/configs/config_futures.json --strategy-path user_data/strategies/oss --strategy ARL_2x --timerange 20210101-20240101 --max-open-trades 3 -p BTC/USDT:USDT ETH/USDT:USDT SOL/USDT:USDT --dry-run-wallet 7000 --cache none --export trades",
+    "zip": "user_data/backtest_results/backtest-result-2026-11-07_04-56-47.zip",
+    "start_wallet": 7000.0,
+    "final_balance": 91827.29,
+    "yearly": {
+      "2021": 170.6,
+      "2022": 114.5,
+      "2023": 122.8
+    },
+    "maxdd": -13.07,
+    "dd30": -10.67
+  },
+  {
+    "tag": "crash_RVfroz",
+    "cmd": "freqtrade backtesting --userdir user_data --config user_data/configs/config_futures.json --strategy-path user_data/strategies/oss --strategy crash_RVfroz --timerange 20210101-20240101 --max-open-trades 3 -p BTC/USDT:USDT ETH/USDT:USDT SOL/USDT:USDT --dry-run-wallet 7000 --cache none --export trades",
+    "zip": "user_data/backtest_results/backtest-result-2026-11-07_04-52-00.zip",
+    "start_wallet": 7000.0,
+    "final_balance": 84194.06,
+    "yearly": {
+      "2021": 157.7,
+      "2022": 106.5,
+      "2023": 122.8
+    },
+    "maxdd": -13.07,
+    "dd30": -10.67
+  },
+  {
+    "tag": "crash_RVrank",
+    "cmd": "freqtrade backtesting --userdir user_data --config user_data/configs/config_futures.json --strategy-path user_data/strategies/oss --strategy crash_RVrank --timerange 20210101-20240101 --max-open-trades 3 -p BTC/USDT:USDT ETH/USDT:USDT SOL/USDT:USDT --dry-run-wallet 7000 --cache none --export trades",
+    "zip": "user_data/backtest_results/backtest-result-2026-11-07_04-52-20.zip",
+    "start_wallet": 7000.0,
+    "final_balance": 90228.32,
+    "yearly": {
+      "2021": 170.6,
+      "2022": 110.7,
+      "2023": 122.9
+    },
+    "maxdd": -13.07,
+    "dd30": -10.67
+  },
+  {
+    "tag": "crash_RVpause",
+    "cmd": "freqtrade backtesting --userdir user_data --config user_data/configs/config_futures.json --strategy-path user_data/strategies/oss --strategy crash_RVpause --timerange 20210101-20240101 --max-open-trades 3 -p BTC/USDT:USDT ETH/USDT:USDT SOL/USDT:USDT --dry-run-wallet 7000 --cache none --export trades",
+    "zip": "user_data/backtest_results/backtest-result-2026-11-07_04-52-41.zip",
+    "start_wallet": 7000.0,
+    "final_balance": 88354.97,
+    "yearly": {
+      "2021": 170.6,
+      "2022": 106.4,
+      "2023": 122.8
+    },
+    "maxdd": -13.07,
+    "dd30": -10.67
+  },
+  {
+    "tag": "crash_DDband",
+    "cmd": "freqtrade backtesting --userdir user_data --config user_data/configs/config_futures.json --strategy-path user_data/strategies/oss --strategy crash_DDband --timerange 20210101-20240101 --max-open-trades 3 -p BTC/USDT:USDT ETH/USDT:USDT SOL/USDT:USDT --dry-run-wallet 7000 --cache none --export trades",
+    "zip": "user_data/backtest_results/backtest-result-2026-11-07_04-53-01.zip",
+    "start_wallet": 7000.0,
+    "final_balance": 73423.45,
+    "yearly": {
+      "2021": 170.6,
+      "2022": 114.5,
+      "2023": 78.2
+    },
+    "maxdd": -10.8,
+    "dd30": -8.36
+  },
+  {
+    "tag": "crash_RV_DD",
+    "cmd": "freqtrade backtesting --userdir user_data --config user_data/configs/config_futures.json --strategy-path user_data/strategies/oss --strategy crash_RV_DD --timerange 20210101-20240101 --max-open-trades 3 -p BTC/USDT:USDT ETH/USDT:USDT SOL/USDT:USDT --dry-run-wallet 7000 --cache none --export trades",
+    "zip": "user_data/backtest_results/backtest-result-2026-11-07_04-53-21.zip",
+    "start_wallet": 7000.0,
+    "final_balance": 72137.6,
+    "yearly": {
+      "2021": 170.6,
+      "2022": 110.7,
+      "2023": 78.2
+    },
+    "maxdd": -10.8,
+    "dd30": -8.36
+  },
+  {
+    "tag": "crash_DDband65",
+    "cmd": "freqtrade backtesting --userdir user_data --config user_data/configs/config_futures.json --strategy-path user_data/strategies/oss --strategy crash_DDband65 --timerange 20210101-20240101 --max-open-trades 3 -p BTC/USDT:USDT ETH/USDT:USDT SOL/USDT:USDT --dry-run-wallet 7000 --cache none --export trades",
+    "zip": "user_data/backtest_results/backtest-result-2026-11-07_04-53-42.zip",
+    "start_wallet": 7000.0,
+    "final_balance": 78976.01,
+    "yearly": {
+      "2021": 170.6,
+      "2022": 114.5,
+      "2023": 91.7
+    },
+    "maxdd": -11.49,
+    "dd30": -9.05
+  }
+]

@@ -189,6 +189,42 @@ class OPT9_VolatilitySystem(OPT8_VolatilitySystem):
                 return "time_stop_60d"
         return None
 
+    # ------------------------------------------------- risk-fraction hook
+    def _risk_fraction(self, side: str, current_time: datetime) -> float:
+        """Entry-risk multiplier hook (1.0 = flagship behavior). Round-2
+        variants (chain throttle / equity tiers) override this instead of
+        rewriting the sizing body."""
+        return 1.0
+
+    def custom_stake_amount(self, pair: str, current_time: datetime, current_rate: float,
+                            proposed_stake: float, min_stake: float | None, max_stake: float,
+                            leverage: float, entry_tag: str | None, side: str,
+                            **kwargs) -> float:
+        def conservative() -> float:
+            s = proposed_stake * 0.5
+            s = min(s, max_stake) if max_stake else s
+            if min_stake is not None:
+                s = max(s, min_stake)
+            return s
+
+        df, idx = self._signal_candle(pair, current_time)
+        if idx < 0:
+            return conservative()
+        row = df.iloc[idx]
+        atr = float(row["atr_raw"])
+        close = float(row["close"])
+        if atr != atr or atr <= 0 or close != close or close <= 0:
+            return conservative()
+        stop_pct = max(float(self.stop_atr_mult.value) * atr / close, self.stop_pct_floor)
+        equity = self.wallets.get_total_stake_amount()
+        risk = self.risk_pct * self._risk_fraction(side, current_time)
+        notional = equity * risk / stop_pct
+        stake = notional / max(leverage, 1.0)
+        stake = min(stake, equity * self.margin_cap, max_stake)
+        if min_stake is not None:
+            stake = max(stake, min_stake)
+        return stake
+
 
 # ---------------------------------------------------------------------------
 # All-off sanity variant: must reproduce the OPT4 baseline byte-for-byte
@@ -228,3 +264,141 @@ class OPT9d_BEFloor25(OPT9_VolatilitySystem):
     be_arm_r = 2.5
     cluster_circuit = False
     time_stop_exempt = False
+
+
+# ===========================================================================
+# Round-2 candidates (2026-11-01 evening program, items 3+5; each tested as a
+# SINGLE pre-registered delta vs the OPT4 baseline, circuit OFF, so results
+# stay comparable with the round-1 ablations).
+# ===========================================================================
+class OPT9f_AsymExit(OPT9_VolatilitySystem):
+    """Item 5 — deep-profit asymmetric reverse-exit.
+
+    For positions whose favorable excursion reached >= asym_arm_r x stop
+    distance, the adverse close_change threshold for the reverse-signal exit
+    drops from signal_atr_mult (2.0) to asym_atr_mult (1.0) x ATR.shift(1):
+    deep winners hand back less of the trend while the fat-tail runner logic
+    for everyone else is untouched. Different structure from the falsified
+    be_floor: no stop is moved, only the CONFIRMATION weakness changes, and
+    only for already-deep-profit positions.
+    """
+    be_floor = False
+    cluster_circuit = False
+    time_stop_exempt = False
+    asym_exit = True
+    asym_arm_r = 2.0
+    asym_atr_mult = 1.0
+
+    def custom_exit(self, pair: str, trade: Trade, current_time: datetime,
+                    current_rate: float, current_profit: float, **kwargs):
+        base = super().custom_exit(pair, trade, current_time, current_rate, current_profit)
+        if base is not None:
+            return base
+        if not self.asym_exit:
+            return None
+        atr_entry = self._anchored_atr(trade)
+        if atr_entry is None:
+            return None
+        stop_dist = float(self.stop_atr_mult.value) * atr_entry
+        if trade.is_short:
+            fav = trade.open_rate - (trade.min_rate or trade.open_rate)
+        else:
+            fav = (trade.max_rate or trade.open_rate) - trade.open_rate
+        if fav < self.asym_arm_r * stop_dist:
+            return None  # not a deep-profit position: stock exit logic only
+        df, idx = self._signal_candle(pair, current_time)
+        if idx < 1:
+            return None
+        row = df.iloc[idx]
+        atr_prev = df.iloc[idx - 1]["atr_raw"]
+        cc = row["close_change"]
+        if atr_prev != atr_prev or atr_prev <= 0 or cc != cc:
+            return None
+        adverse = -float(cc) if not trade.is_short else float(cc)
+        if adverse > self.asym_atr_mult * float(atr_prev):
+            return "asym_exit_2R"
+        return None
+
+
+class OPT9g_ChainRisk(OPT9_VolatilitySystem):
+    """Item 3 / H2 — one-sided cluster-chain risk throttle (no rejection).
+
+    Two or more one-sided stop clusters (same direction, >= cluster_stop_count
+    losses within cluster_window_h — the P2 cluster definition) with the latest
+    inside chain_window_days -> same-direction NEW entries risk x
+    chain_risk_factor (0.5). Never rejects an entry; expires after
+    chain_window_days without a fresh same-direction cluster.
+    """
+    be_floor = False
+    cluster_circuit = False
+    time_stop_exempt = False
+    chain_throttle = True
+    chain_window_days = 14
+    chain_risk_factor = 0.5
+
+    def _cluster_end_times(self, is_short: bool, now: datetime) -> list[datetime]:
+        try:
+            closed = Trade.get_trades_proxy(is_open=False)
+        except Exception:
+            return []
+        stops = sorted(
+            (t.close_date_utc for t in closed
+             if t.exit_reason == "stop_loss" and (t.close_profit or 0.0) < 0.0
+             and t.is_short == is_short and t.close_date_utc),
+        )
+        from datetime import timedelta as _td
+        ends, group = [], []
+        for ts in stops:
+            if group and (ts - group[-1]) > _td(hours=self.cluster_window_h):
+                if len(group) >= self.cluster_stop_count:
+                    ends.append(group[-1])
+                group = []
+            group.append(ts)
+        if len(group) >= self.cluster_stop_count:
+            ends.append(group[-1])
+        return [e for e in ends if e <= now]
+
+    def _risk_fraction(self, side: str, current_time: datetime) -> float:
+        if not self.chain_throttle:
+            return 1.0
+        from datetime import timedelta as _td
+        since = current_time - _td(days=self.chain_window_days)
+        ends = self._cluster_end_times(side == "short", current_time)
+        n_recent = sum(1 for e in ends if e >= since)
+        return self.chain_risk_factor if n_recent >= 2 else 1.0
+
+
+class OPT9h_EquityTier(OPT9_VolatilitySystem):
+    """Item 3 / H3 — equity-tiered compounding throttle (absolute-risk cap).
+
+    risk_pct by equity multiple of the initial 10k dry-run wallet:
+    <5x -> 1.0%, 5-10x -> 0.75%, >=10x -> 0.6%. Caps absolute per-trade /
+    per-cluster loss as equity compounds (the 12 largest single losses of
+    the benchmark all sat in the 11.6-12.8x equity band).
+    """
+    be_floor = False
+    cluster_circuit = False
+    time_stop_exempt = False
+    tier_risk = True
+    initial_wallet = 10_000.0
+
+    def _risk_fraction(self, side: str, current_time: datetime) -> float:
+        if not self.tier_risk:
+            return 1.0
+        eq = self.wallets.get_total_stake_amount()
+        mult = eq / self.initial_wallet
+        if mult < 5.0:
+            return 1.0
+        if mult < 10.0:
+            return 0.75
+        return 0.6
+
+
+class OPT9i_CircuitChain(OPT9g_ChainRisk):
+    """Stack test: P2 circuit breaker (rejection during clusters) + H2 chain
+    throttle (halve same-direction risk for 14d after a 2nd one-sided cluster).
+    Both mechanisms are direction-asymmetric cluster governors; the stack
+    keeps H2's sizing leg for entries P2 lets through after its 48h window."""
+    be_floor = False
+    time_stop_exempt = False
+    cluster_circuit = True  # (re-enable on top of the OPT9g chain throttle)

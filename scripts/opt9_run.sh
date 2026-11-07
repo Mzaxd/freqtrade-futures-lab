@@ -49,6 +49,7 @@ case "${1:-}" in
   base)    run OPT4_VolatilitySystem "$IS" base_is; run OPT9_Off "$IS" off_is; run OPT8b_VolatilitySystem "$IS" opt8b_is ;;
   ablate)  run OPT9a_BEFloor "$IS" a_is; run OPT9b_Circuit "$IS" b_is; run OPT9c_Exempt "$IS" c_is; run OPT9d_BEFloor25 "$IS" d_is ;;
   combined) run OPT9_VolatilitySystem "$IS" full_is ;;
+  round2)  run OPT9f_AsymExit "$IS" f_is; run OPT9g_ChainRisk "$IS" g_is; run OPT9h_EquityTier "$IS" h_is ;;
   burn)    run OPT4_VolatilitySystem "$BURN" base_burn; run OPT9_VolatilitySystem "$BURN" full_burn ;;
   stress)
     run OPT4_VolatilitySystem "$IS" base_fee3x --fee 0.0015

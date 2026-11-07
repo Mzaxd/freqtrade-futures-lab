@@ -1,0 +1,3398 @@
+[
+ {
+  "symbol": "BTC/USDT:USDT",
+  "ccxt_id": "BTCUSDT",
+  "onboard_ms": 1567965300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ETH/USDT:USDT",
+  "ccxt_id": "ETHUSDT",
+  "onboard_ms": 1574840700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BCH/USDT:USDT",
+  "ccxt_id": "BCHUSDT",
+  "onboard_ms": 1576745700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "XRP/USDT:USDT",
+  "ccxt_id": "XRPUSDT",
+  "onboard_ms": 1578298800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LTC/USDT:USDT",
+  "ccxt_id": "LTCUSDT",
+  "onboard_ms": 1578557100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TRX/USDT:USDT",
+  "ccxt_id": "TRXUSDT",
+  "onboard_ms": 1579075500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ETC/USDT:USDT",
+  "ccxt_id": "ETCUSDT",
+  "onboard_ms": 1579161600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LINK/USDT:USDT",
+  "ccxt_id": "LINKUSDT",
+  "onboard_ms": 1579248000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "XLM/USDT:USDT",
+  "ccxt_id": "XLMUSDT",
+  "onboard_ms": 1579507200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ADA/USDT:USDT",
+  "ccxt_id": "ADAUSDT",
+  "onboard_ms": 1580457600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "XMR/USDT:USDT",
+  "ccxt_id": "XMRUSDT",
+  "onboard_ms": 1580716800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DASH/USDT:USDT",
+  "ccxt_id": "DASHUSDT",
+  "onboard_ms": 1580803500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ZEC/USDT:USDT",
+  "ccxt_id": "ZECUSDT",
+  "onboard_ms": 1580889600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "XTZ/USDT:USDT",
+  "ccxt_id": "XTZUSDT",
+  "onboard_ms": 1580976000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BNB/USDT:USDT",
+  "ccxt_id": "BNBUSDT",
+  "onboard_ms": 1581321600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ATOM/USDT:USDT",
+  "ccxt_id": "ATOMUSDT",
+  "onboard_ms": 1581077400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ONT/USDT:USDT",
+  "ccxt_id": "ONTUSDT",
+  "onboard_ms": 1581408300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "IOTA/USDT:USDT",
+  "ccxt_id": "IOTAUSDT",
+  "onboard_ms": 1581494400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BAT/USDT:USDT",
+  "ccxt_id": "BATUSDT",
+  "onboard_ms": 1581581100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "VET/USDT:USDT",
+  "ccxt_id": "VETUSDT",
+  "onboard_ms": 1581667200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "NEO/USDT:USDT",
+  "ccxt_id": "NEOUSDT",
+  "onboard_ms": 1581929100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "QTUM/USDT:USDT",
+  "ccxt_id": "QTUMUSDT",
+  "onboard_ms": 1582185900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "IOST/USDT:USDT",
+  "ccxt_id": "IOSTUSDT",
+  "onboard_ms": 1582272300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "THETA/USDT:USDT",
+  "ccxt_id": "THETAUSDT",
+  "onboard_ms": 1590566400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ALGO/USDT:USDT",
+  "ccxt_id": "ALGOUSDT",
+  "onboard_ms": 1592298000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ZIL/USDT:USDT",
+  "ccxt_id": "ZILUSDT",
+  "onboard_ms": 1592470800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "KNC/USDT:USDT",
+  "ccxt_id": "KNCUSDT",
+  "onboard_ms": 1592815800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ZRX/USDT:USDT",
+  "ccxt_id": "ZRXUSDT",
+  "onboard_ms": 1592989200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "COMP/USDT:USDT",
+  "ccxt_id": "COMPUSDT",
+  "onboard_ms": 1593507600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DOGE/USDT:USDT",
+  "ccxt_id": "DOGEUSDT",
+  "onboard_ms": 1594371600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "KAVA/USDT:USDT",
+  "ccxt_id": "KAVAUSDT",
+  "onboard_ms": 1595919900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BAND/USDT:USDT",
+  "ccxt_id": "BANDUSDT",
+  "onboard_ms": 1596006000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "RLC/USDT:USDT",
+  "ccxt_id": "RLCUSDT",
+  "onboard_ms": 1596178800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MKR/USDT:USDT",
+  "ccxt_id": "MKRUSDT",
+  "onboard_ms": 1597302000000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "SNX/USDT:USDT",
+  "ccxt_id": "SNXUSDT",
+  "onboard_ms": 1597388400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DOT/USDT:USDT",
+  "ccxt_id": "DOTUSDT",
+  "onboard_ms": 1598079600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "YFI/USDT:USDT",
+  "ccxt_id": "YFIUSDT",
+  "onboard_ms": 1598857200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CRV/USDT:USDT",
+  "ccxt_id": "CRVUSDT",
+  "onboard_ms": 1598943600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TRB/USDT:USDT",
+  "ccxt_id": "TRBUSDT",
+  "onboard_ms": 1599116400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "RUNE/USDT:USDT",
+  "ccxt_id": "RUNEUSDT",
+  "onboard_ms": 1599203400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SUSHI/USDT:USDT",
+  "ccxt_id": "SUSHIUSDT",
+  "onboard_ms": 1599202800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "EGLD/USDT:USDT",
+  "ccxt_id": "EGLDUSDT",
+  "onboard_ms": 1600066800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SOL/USDT:USDT",
+  "ccxt_id": "SOLUSDT",
+  "onboard_ms": 1600066800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "UNI/USDT:USDT",
+  "ccxt_id": "UNIUSDT",
+  "onboard_ms": 1600412400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AVAX/USDT:USDT",
+  "ccxt_id": "AVAXUSDT",
+  "onboard_ms": 1600844400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ENJ/USDT:USDT",
+  "ccxt_id": "ENJUSDT",
+  "onboard_ms": 1601362800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FLM/USDT:USDT",
+  "ccxt_id": "FLMUSDT",
+  "onboard_ms": 1601362800000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "REN/USDT:USDT",
+  "ccxt_id": "RENUSDT",
+  "onboard_ms": 1602572400000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "KSM/USDT:USDT",
+  "ccxt_id": "KSMUSDT",
+  "onboard_ms": 1602658800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "NEAR/USDT:USDT",
+  "ccxt_id": "NEARUSDT",
+  "onboard_ms": 1602748800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AAVE/USDT:USDT",
+  "ccxt_id": "AAVEUSDT",
+  "onboard_ms": 1602831600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FIL/USDT:USDT",
+  "ccxt_id": "FILUSDT",
+  "onboard_ms": 1602828000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "RSR/USDT:USDT",
+  "ccxt_id": "RSRUSDT",
+  "onboard_ms": 1603091100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LRC/USDT:USDT",
+  "ccxt_id": "LRCUSDT",
+  "onboard_ms": 1603091100000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "BEL/USDT:USDT",
+  "ccxt_id": "BELUSDT",
+  "onboard_ms": 1605682800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AXS/USDT:USDT",
+  "ccxt_id": "AXSUSDT",
+  "onboard_ms": 1605855600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ALPHA/USDT:USDT",
+  "ccxt_id": "ALPHAUSDT",
+  "onboard_ms": 1606114800000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "ZEN/USDT:USDT",
+  "ccxt_id": "ZENUSDT",
+  "onboard_ms": 1606201200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SKL/USDT:USDT",
+  "ccxt_id": "SKLUSDT",
+  "onboard_ms": 1598252400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "GRT/USDT:USDT",
+  "ccxt_id": "GRTUSDT",
+  "onboard_ms": 1608274800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "1INCH/USDT:USDT",
+  "ccxt_id": "1INCHUSDT",
+  "onboard_ms": 1608879600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CHZ/USDT:USDT",
+  "ccxt_id": "CHZUSDT",
+  "onboard_ms": 1611212400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SAND/USDT:USDT",
+  "ccxt_id": "SANDUSDT",
+  "onboard_ms": 1610953200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ANKR/USDT:USDT",
+  "ccxt_id": "ANKRUSDT",
+  "onboard_ms": 1611558000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "UNFI/USDT:USDT",
+  "ccxt_id": "UNFIUSDT",
+  "onboard_ms": 1612854000000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "REEF/USDT:USDT",
+  "ccxt_id": "REEFUSDT",
+  "onboard_ms": 1611558000000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "RVN/USDT:USDT",
+  "ccxt_id": "RVNUSDT",
+  "onboard_ms": 1614063600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SFP/USDT:USDT",
+  "ccxt_id": "SFPUSDT",
+  "onboard_ms": 1614150000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "COTI/USDT:USDT",
+  "ccxt_id": "COTIUSDT",
+  "onboard_ms": 1615273200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CHR/USDT:USDT",
+  "ccxt_id": "CHRUSDT",
+  "onboard_ms": 1615532400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MANA/USDT:USDT",
+  "ccxt_id": "MANAUSDT",
+  "onboard_ms": 1615705200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ALICE/USDT:USDT",
+  "ccxt_id": "ALICEUSDT",
+  "onboard_ms": 1615791600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "HBAR/USDT:USDT",
+  "ccxt_id": "HBARUSDT",
+  "onboard_ms": 1615964400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ONE/USDT:USDT",
+  "ccxt_id": "ONEUSDT",
+  "onboard_ms": 1615964400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LINA/USDT:USDT",
+  "ccxt_id": "LINAUSDT",
+  "onboard_ms": 1615964400000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "CELR/USDT:USDT",
+  "ccxt_id": "CELRUSDT",
+  "onboard_ms": 1617001200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "HOT/USDT:USDT",
+  "ccxt_id": "HOTUSDT",
+  "onboard_ms": 1617087600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MTL/USDT:USDT",
+  "ccxt_id": "MTLUSDT",
+  "onboard_ms": 1617174000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "OGN/USDT:USDT",
+  "ccxt_id": "OGNUSDT",
+  "onboard_ms": 1617174000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "1000SHIB/USDT:USDT",
+  "ccxt_id": "1000SHIBUSDT",
+  "onboard_ms": 1620630000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BAKE/USDT:USDT",
+  "ccxt_id": "BAKEUSDT",
+  "onboard_ms": 1621321200000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "GTC/USDT:USDT",
+  "ccxt_id": "GTCUSDT",
+  "onboard_ms": 1615791600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "IOTX/USDT:USDT",
+  "ccxt_id": "IOTXUSDT",
+  "onboard_ms": 1628665200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "C98/USDT:USDT",
+  "ccxt_id": "C98USDT",
+  "onboard_ms": 1629702000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MASK/USDT:USDT",
+  "ccxt_id": "MASKUSDT",
+  "onboard_ms": 1626418800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DYDX/USDT:USDT",
+  "ccxt_id": "DYDXUSDT",
+  "onboard_ms": 1631170800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "1000XEC/USDT:USDT",
+  "ccxt_id": "1000XECUSDT",
+  "onboard_ms": 1631775600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "GALA/USDT:USDT",
+  "ccxt_id": "GALAUSDT",
+  "onboard_ms": 1631862000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CELO/USDT:USDT",
+  "ccxt_id": "CELOUSDT",
+  "onboard_ms": 1632639600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AR/USDT:USDT",
+  "ccxt_id": "ARUSDT",
+  "onboard_ms": 1632812400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ARPA/USDT:USDT",
+  "ccxt_id": "ARPAUSDT",
+  "onboard_ms": 1634540400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CTSI/USDT:USDT",
+  "ccxt_id": "CTSIUSDT",
+  "onboard_ms": 1635145200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LPT/USDT:USDT",
+  "ccxt_id": "LPTUSDT",
+  "onboard_ms": 1636527600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ENS/USDT:USDT",
+  "ccxt_id": "ENSUSDT",
+  "onboard_ms": 1638169200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PEOPLE/USDT:USDT",
+  "ccxt_id": "PEOPLEUSDT",
+  "onboard_ms": 1640242800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ROSE/USDT:USDT",
+  "ccxt_id": "ROSEUSDT",
+  "onboard_ms": 1640934000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DUSK/USDT:USDT",
+  "ccxt_id": "DUSKUSDT",
+  "onboard_ms": 1641452400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FLOW/USDT:USDT",
+  "ccxt_id": "FLOWUSDT",
+  "onboard_ms": 1644390000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "IMX/USDT:USDT",
+  "ccxt_id": "IMXUSDT",
+  "onboard_ms": 1644476400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "API3/USDT:USDT",
+  "ccxt_id": "API3USDT",
+  "onboard_ms": 1645426800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "GMT/USDT:USDT",
+  "ccxt_id": "GMTUSDT",
+  "onboard_ms": 1647241200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "APE/USDT:USDT",
+  "ccxt_id": "APEUSDT",
+  "onboard_ms": 1647500400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "WOO/USDT:USDT",
+  "ccxt_id": "WOOUSDT",
+  "onboard_ms": 1649314800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "JASMY/USDT:USDT",
+  "ccxt_id": "JASMYUSDT",
+  "onboard_ms": 1650351600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "OP/USDT:USDT",
+  "ccxt_id": "OPUSDT",
+  "onboard_ms": 1654066800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "INJ/USDT:USDT",
+  "ccxt_id": "INJUSDT",
+  "onboard_ms": 1660633200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "STG/USDT:USDT",
+  "ccxt_id": "STGUSDT",
+  "onboard_ms": 1661324400000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "SPELL/USDT:USDT",
+  "ccxt_id": "SPELLUSDT",
+  "onboard_ms": 1662361200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "1000LUNC/USDT:USDT",
+  "ccxt_id": "1000LUNCUSDT",
+  "onboard_ms": 1662620400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LUNA2/USDT:USDT",
+  "ccxt_id": "LUNA2USDT",
+  "onboard_ms": 1662706800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LDO/USDT:USDT",
+  "ccxt_id": "LDOUSDT",
+  "onboard_ms": 1663743600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ICP/USDT:USDT",
+  "ccxt_id": "ICPUSDT",
+  "onboard_ms": 1627628400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "APT/USDT:USDT",
+  "ccxt_id": "APTUSDT",
+  "onboard_ms": 1666076400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "QNT/USDT:USDT",
+  "ccxt_id": "QNTUSDT",
+  "onboard_ms": 1666076400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FET/USDT:USDT",
+  "ccxt_id": "FETUSDT",
+  "onboard_ms": 1673766000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FXS/USDT:USDT",
+  "ccxt_id": "FXSUSDT",
+  "onboard_ms": 1674111600000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "MAGIC/USDT:USDT",
+  "ccxt_id": "MAGICUSDT",
+  "onboard_ms": 1674457200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "T/USDT:USDT",
+  "ccxt_id": "TUSDT",
+  "onboard_ms": 1675148400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MINA/USDT:USDT",
+  "ccxt_id": "MINAUSDT",
+  "onboard_ms": 1675407600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ASTR/USDT:USDT",
+  "ccxt_id": "ASTRUSDT",
+  "onboard_ms": 1676271600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "GMX/USDT:USDT",
+  "ccxt_id": "GMXUSDT",
+  "onboard_ms": 1676530800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CFX/USDT:USDT",
+  "ccxt_id": "CFXUSDT",
+  "onboard_ms": 1676790000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "STX/USDT:USDT",
+  "ccxt_id": "STXUSDT",
+  "onboard_ms": 1676876400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ACH/USDT:USDT",
+  "ccxt_id": "ACHUSDT",
+  "onboard_ms": 1676962800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SSV/USDT:USDT",
+  "ccxt_id": "SSVUSDT",
+  "onboard_ms": 1677135600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CKB/USDT:USDT",
+  "ccxt_id": "CKBUSDT",
+  "onboard_ms": 1677481200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PERP/USDT:USDT",
+  "ccxt_id": "PERPUSDT",
+  "onboard_ms": 1677999600000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "TRU/USDT:USDT",
+  "ccxt_id": "TRUUSDT",
+  "onboard_ms": 1678086000000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "LQTY/USDT:USDT",
+  "ccxt_id": "LQTYUSDT",
+  "onboard_ms": 1678258800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "USDC/USDT:USDT",
+  "ccxt_id": "USDCUSDT",
+  "onboard_ms": 1678579200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ID/USDT:USDT",
+  "ccxt_id": "IDUSDT",
+  "onboard_ms": 1679529600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ARB/USDT:USDT",
+  "ccxt_id": "ARBUSDT",
+  "onboard_ms": 1679554800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "JOE/USDT:USDT",
+  "ccxt_id": "JOEUSDT",
+  "onboard_ms": 1679961600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TLM/USDT:USDT",
+  "ccxt_id": "TLMUSDT",
+  "onboard_ms": 1680048000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LEVER/USDT:USDT",
+  "ccxt_id": "LEVERUSDT",
+  "onboard_ms": 1680048000000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "RDNT/USDT:USDT",
+  "ccxt_id": "RDNTUSDT",
+  "onboard_ms": 1680566400000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "HFT/USDT:USDT",
+  "ccxt_id": "HFTUSDT",
+  "onboard_ms": 1680652800000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "XVS/USDT:USDT",
+  "ccxt_id": "XVSUSDT",
+  "onboard_ms": 1681257600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BLUR/USDT:USDT",
+  "ccxt_id": "BLURUSDT",
+  "onboard_ms": 1682553600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "EDU/USDT:USDT",
+  "ccxt_id": "EDUUSDT",
+  "onboard_ms": 1682640000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "IDEX/USDT:USDT",
+  "ccxt_id": "IDEXUSDT",
+  "onboard_ms": 1682985600000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "SUI/USDT:USDT",
+  "ccxt_id": "SUIUSDT",
+  "onboard_ms": 1683072000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "1000PEPE/USDT:USDT",
+  "ccxt_id": "1000PEPEUSDT",
+  "onboard_ms": 1683244800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "1000FLOKI/USDT:USDT",
+  "ccxt_id": "1000FLOKIUSDT",
+  "onboard_ms": 1683331200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "UMA/USDT:USDT",
+  "ccxt_id": "UMAUSDT",
+  "onboard_ms": 1683590400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "RAD/USDT:USDT",
+  "ccxt_id": "RADUSDT",
+  "onboard_ms": 1683590400000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "NMR/USDT:USDT",
+  "ccxt_id": "NMRUSDT",
+  "onboard_ms": 1687435200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MAV/USDT:USDT",
+  "ccxt_id": "MAVUSDT",
+  "onboard_ms": 1688040000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "XVG/USDT:USDT",
+  "ccxt_id": "XVGUSDT",
+  "onboard_ms": 1688558400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "WLD/USDT:USDT",
+  "ccxt_id": "WLDUSDT",
+  "onboard_ms": 1690200000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PENDLE/USDT:USDT",
+  "ccxt_id": "PENDLEUSDT",
+  "onboard_ms": 1690511400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ARKM/USDT:USDT",
+  "ccxt_id": "ARKMUSDT",
+  "onboard_ms": 1690512300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AGLD/USDT:USDT",
+  "ccxt_id": "AGLDUSDT",
+  "onboard_ms": 1690597800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "YGG/USDT:USDT",
+  "ccxt_id": "YGGUSDT",
+  "onboard_ms": 1691206200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DODOX/USDT:USDT",
+  "ccxt_id": "DODOXUSDT",
+  "onboard_ms": 1691496000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BNT/USDT:USDT",
+  "ccxt_id": "BNTUSDT",
+  "onboard_ms": 1691668800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SEI/USDT:USDT",
+  "ccxt_id": "SEIUSDT",
+  "onboard_ms": 1692239400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CYBER/USDT:USDT",
+  "ccxt_id": "CYBERUSDT",
+  "onboard_ms": 1692619200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "HIFI/USDT:USDT",
+  "ccxt_id": "HIFIUSDT",
+  "onboard_ms": 1694874600000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "ARK/USDT:USDT",
+  "ccxt_id": "ARKUSDT",
+  "onboard_ms": 1695133800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BICO/USDT:USDT",
+  "ccxt_id": "BICOUSDT",
+  "onboard_ms": 1695904200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BIGTIME/USDT:USDT",
+  "ccxt_id": "BIGTIMEUSDT",
+  "onboard_ms": 1697121000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BOND/USDT:USDT",
+  "ccxt_id": "BONDUSDT",
+  "onboard_ms": 1697380200000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "STPT/USDT:USDT",
+  "ccxt_id": "STPTUSDT",
+  "onboard_ms": 1697639400000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "WAXP/USDT:USDT",
+  "ccxt_id": "WAXPUSDT",
+  "onboard_ms": 1697640300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BSV/USDT:USDT",
+  "ccxt_id": "BSVUSDT",
+  "onboard_ms": 1697805000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "RIF/USDT:USDT",
+  "ccxt_id": "RIFUSDT",
+  "onboard_ms": 1697891400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "POLYX/USDT:USDT",
+  "ccxt_id": "POLYXUSDT",
+  "onboard_ms": 1698201000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "GAS/USDT:USDT",
+  "ccxt_id": "GASUSDT",
+  "onboard_ms": 1698201900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "POWR/USDT:USDT",
+  "ccxt_id": "POWRUSDT",
+  "onboard_ms": 1698373800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TIA/USDT:USDT",
+  "ccxt_id": "TIAUSDT",
+  "onboard_ms": 1698769800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SNT/USDT:USDT",
+  "ccxt_id": "SNTUSDT",
+  "onboard_ms": 1698928200000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "CAKE/USDT:USDT",
+  "ccxt_id": "CAKEUSDT",
+  "onboard_ms": 1698929100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MEME/USDT:USDT",
+  "ccxt_id": "MEMEUSDT",
+  "onboard_ms": 1699012800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TWT/USDT:USDT",
+  "ccxt_id": "TWTUSDT",
+  "onboard_ms": 1699021800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TOKEN/USDT:USDT",
+  "ccxt_id": "TOKENUSDT",
+  "onboard_ms": 1699023600000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "ORDI/USDT:USDT",
+  "ccxt_id": "ORDIUSDT",
+  "onboard_ms": 1699360200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "STEEM/USDT:USDT",
+  "ccxt_id": "STEEMUSDT",
+  "onboard_ms": 1699453800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ILV/USDT:USDT",
+  "ccxt_id": "ILVUSDT",
+  "onboard_ms": 1699633800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "KAS/USDT:USDT",
+  "ccxt_id": "KASUSDT",
+  "onboard_ms": 1700186400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BEAMX/USDT:USDT",
+  "ccxt_id": "BEAMXUSDT",
+  "onboard_ms": 1700227800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "1000BONK/USDT:USDT",
+  "ccxt_id": "1000BONKUSDT",
+  "onboard_ms": 1700661600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PYTH/USDT:USDT",
+  "ccxt_id": "PYTHUSDT",
+  "onboard_ms": 1700663400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SUPER/USDT:USDT",
+  "ccxt_id": "SUPERUSDT",
+  "onboard_ms": 1701003600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "USTC/USDT:USDT",
+  "ccxt_id": "USTCUSDT",
+  "onboard_ms": 1701088200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ONG/USDT:USDT",
+  "ccxt_id": "ONGUSDT",
+  "onboard_ms": 1701090000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ETHW/USDT:USDT",
+  "ccxt_id": "ETHWUSDT",
+  "onboard_ms": 1701174600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "JTO/USDT:USDT",
+  "ccxt_id": "JTOUSDT",
+  "onboard_ms": 1702029600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "1000SATS/USDT:USDT",
+  "ccxt_id": "1000SATSUSDT",
+  "onboard_ms": 1702389600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AUCTION/USDT:USDT",
+  "ccxt_id": "AUCTIONUSDT",
+  "onboard_ms": 1702645200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "1000RATS/USDT:USDT",
+  "ccxt_id": "1000RATSUSDT",
+  "onboard_ms": 1702648800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ACE/USDT:USDT",
+  "ccxt_id": "ACEUSDT",
+  "onboard_ms": 1702893600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MOVR/USDT:USDT",
+  "ccxt_id": "MOVRUSDT",
+  "onboard_ms": 1703593800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "XAI/USDT:USDT",
+  "ccxt_id": "XAIUSDT",
+  "onboard_ms": 1704808800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "WIF/USDT:USDT",
+  "ccxt_id": "WIFUSDT",
+  "onboard_ms": 1705587300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MANTA/USDT:USDT",
+  "ccxt_id": "MANTAUSDT",
+  "onboard_ms": 1705586400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ONDO/USDT:USDT",
+  "ccxt_id": "ONDOUSDT",
+  "onboard_ms": 1705755600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LSK/USDT:USDT",
+  "ccxt_id": "LSKUSDT",
+  "onboard_ms": 1706192100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ALT/USDT:USDT",
+  "ccxt_id": "ALTUSDT",
+  "onboard_ms": 1706191200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "JUP/USDT:USDT",
+  "ccxt_id": "JUPUSDT",
+  "onboard_ms": 1706725800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ZETA/USDT:USDT",
+  "ccxt_id": "ZETAUSDT",
+  "onboard_ms": 1706862600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "RONIN/USDT:USDT",
+  "ccxt_id": "RONINUSDT",
+  "onboard_ms": 1707193800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DYM/USDT:USDT",
+  "ccxt_id": "DYMUSDT",
+  "onboard_ms": 1707289200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "OM/USDT:USDT",
+  "ccxt_id": "OMUSDT",
+  "onboard_ms": 1707832800000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "PIXEL/USDT:USDT",
+  "ccxt_id": "PIXELUSDT",
+  "onboard_ms": 1708354800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "STRK/USDT:USDT",
+  "ccxt_id": "STRKUSDT",
+  "onboard_ms": 1708448400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "GLM/USDT:USDT",
+  "ccxt_id": "GLMUSDT",
+  "onboard_ms": 1708596000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PORTAL/USDT:USDT",
+  "ccxt_id": "PORTALUSDT",
+  "onboard_ms": 1709218800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AXL/USDT:USDT",
+  "ccxt_id": "AXLUSDT",
+  "onboard_ms": 1709307000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "METIS/USDT:USDT",
+  "ccxt_id": "METISUSDT",
+  "onboard_ms": 1710232200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AEVO/USDT:USDT",
+  "ccxt_id": "AEVOUSDT",
+  "onboard_ms": 1710336600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BOME/USDT:USDT",
+  "ccxt_id": "BOMEUSDT",
+  "onboard_ms": 1710592200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ETHFI/USDT:USDT",
+  "ccxt_id": "ETHFIUSDT",
+  "onboard_ms": 1710775800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ENA/USDT:USDT",
+  "ccxt_id": "ENAUSDT",
+  "onboard_ms": 1712061000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "W/USDT:USDT",
+  "ccxt_id": "WUSDT",
+  "onboard_ms": 1712158200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TNSR/USDT:USDT",
+  "ccxt_id": "TNSRUSDT",
+  "onboard_ms": 1712595600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SAGA/USDT:USDT",
+  "ccxt_id": "SAGAUSDT",
+  "onboard_ms": 1712658600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TAO/USDT:USDT",
+  "ccxt_id": "TAOUSDT",
+  "onboard_ms": 1712845800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "REZ/USDT:USDT",
+  "ccxt_id": "REZUSDT",
+  "onboard_ms": 1714485600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BB/USDT:USDT",
+  "ccxt_id": "BBUSDT",
+  "onboard_ms": 1715603400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "NOT/USDT:USDT",
+  "ccxt_id": "NOTUSDT",
+  "onboard_ms": 1715868000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TURBO/USDT:USDT",
+  "ccxt_id": "TURBOUSDT",
+  "onboard_ms": 1717083000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "IO/USDT:USDT",
+  "ccxt_id": "IOUSDT",
+  "onboard_ms": 1718114400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ZK/USDT:USDT",
+  "ccxt_id": "ZKUSDT",
+  "onboard_ms": 1718622000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MEW/USDT:USDT",
+  "ccxt_id": "MEWUSDT",
+  "onboard_ms": 1718632800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LISTA/USDT:USDT",
+  "ccxt_id": "LISTAUSDT",
+  "onboard_ms": 1718886600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ZRO/USDT:USDT",
+  "ccxt_id": "ZROUSDT",
+  "onboard_ms": 1718893800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "RENDER/USDT:USDT",
+  "ccxt_id": "RENDERUSDT",
+  "onboard_ms": 1721988000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BANANA/USDT:USDT",
+  "ccxt_id": "BANANAUSDT",
+  "onboard_ms": 1723687200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "RARE/USDT:USDT",
+  "ccxt_id": "RAREUSDT",
+  "onboard_ms": 1723726800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "G/USDT:USDT",
+  "ccxt_id": "GUSDT",
+  "onboard_ms": 1723725000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SYN/USDT:USDT",
+  "ccxt_id": "SYNUSDT",
+  "onboard_ms": 1723811400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BRETT/USDT:USDT",
+  "ccxt_id": "BRETTUSDT",
+  "onboard_ms": 1724150100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ALPACA/USDT:USDT",
+  "ccxt_id": "ALPACAUSDT",
+  "onboard_ms": 1724322600000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "POPCAT/USDT:USDT",
+  "ccxt_id": "POPCATUSDT",
+  "onboard_ms": 1724331600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SUN/USDT:USDT",
+  "ccxt_id": "SUNUSDT",
+  "onboard_ms": 1724331900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DOGS/USDT:USDT",
+  "ccxt_id": "DOGSUSDT",
+  "onboard_ms": 1724675400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CHESS/USDT:USDT",
+  "ccxt_id": "CHESSUSDT",
+  "onboard_ms": 1724916600000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "FLUX/USDT:USDT",
+  "ccxt_id": "FLUXUSDT",
+  "onboard_ms": 1725346800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BSW/USDT:USDT",
+  "ccxt_id": "BSWUSDT",
+  "onboard_ms": 1725516000000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "QUICK/USDT:USDT",
+  "ccxt_id": "QUICKUSDT",
+  "onboard_ms": 1725598800000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "RPL/USDT:USDT",
+  "ccxt_id": "RPLUSDT",
+  "onboard_ms": 1725885000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "POL/USDT:USDT",
+  "ccxt_id": "POLUSDT",
+  "onboard_ms": 1726229700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "1MBABYDOGE/USDT:USDT",
+  "ccxt_id": "1MBABYDOGEUSDT",
+  "onboard_ms": 1726486500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "NEIRO/USDT:USDT",
+  "ccxt_id": "NEIROUSDT",
+  "onboard_ms": 1726486200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FIDA/USDT:USDT",
+  "ccxt_id": "FIDAUSDT",
+  "onboard_ms": 1726749000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CATI/USDT:USDT",
+  "ccxt_id": "CATIUSDT",
+  "onboard_ms": 1726831800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "HMSTR/USDT:USDT",
+  "ccxt_id": "HMSTRUSDT",
+  "onboard_ms": 1727353800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "EIGEN/USDT:USDT",
+  "ccxt_id": "EIGENUSDT",
+  "onboard_ms": 1727762400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DIA/USDT:USDT",
+  "ccxt_id": "DIAUSDT",
+  "onboard_ms": 1727872200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "1000CAT/USDT:USDT",
+  "ccxt_id": "1000CATUSDT",
+  "onboard_ms": 1729513800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SCR/USDT:USDT",
+  "ccxt_id": "SCRUSDT",
+  "onboard_ms": 1729591200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "GOAT/USDT:USDT",
+  "ccxt_id": "GOATUSDT",
+  "onboard_ms": 1729776600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MOODENG/USDT:USDT",
+  "ccxt_id": "MOODENGUSDT",
+  "onboard_ms": 1729850400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SAFE/USDT:USDT",
+  "ccxt_id": "SAFEUSDT",
+  "onboard_ms": 1729859400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SANTOS/USDT:USDT",
+  "ccxt_id": "SANTOSUSDT",
+  "onboard_ms": 1730124000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "COW/USDT:USDT",
+  "ccxt_id": "COWUSDT",
+  "onboard_ms": 1730899800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CETUS/USDT:USDT",
+  "ccxt_id": "CETUSUSDT",
+  "onboard_ms": 1730901600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "1000000MOG/USDT:USDT",
+  "ccxt_id": "1000000MOGUSDT",
+  "onboard_ms": 1730982600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "GRASS/USDT:USDT",
+  "ccxt_id": "GRASSUSDT",
+  "onboard_ms": 1731079800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DRIFT/USDT:USDT",
+  "ccxt_id": "DRIFTUSDT",
+  "onboard_ms": 1731080700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SWELL/USDT:USDT",
+  "ccxt_id": "SWELLUSDT",
+  "onboard_ms": 1731081600000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "ACT/USDT:USDT",
+  "ccxt_id": "ACTUSDT",
+  "onboard_ms": 1731327300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PNUT/USDT:USDT",
+  "ccxt_id": "PNUTUSDT",
+  "onboard_ms": 1731328200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BAN/USDT:USDT",
+  "ccxt_id": "BANUSDT",
+  "onboard_ms": 1731929400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AKT/USDT:USDT",
+  "ccxt_id": "AKTUSDT",
+  "onboard_ms": 1731929400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "1000CHEEMS/USDT:USDT",
+  "ccxt_id": "1000CHEEMSUSDT",
+  "onboard_ms": 1732535100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "THE/USDT:USDT",
+  "ccxt_id": "THEUSDT",
+  "onboard_ms": 1732709700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MORPHO/USDT:USDT",
+  "ccxt_id": "MORPHOUSDT",
+  "onboard_ms": 1732717800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CHILLGUY/USDT:USDT",
+  "ccxt_id": "CHILLGUYUSDT",
+  "onboard_ms": 1732718700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "KAIA/USDT:USDT",
+  "ccxt_id": "KAIAUSDT",
+  "onboard_ms": 1733320800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AERO/USDT:USDT",
+  "ccxt_id": "AEROUSDT",
+  "onboard_ms": 1733321700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ACX/USDT:USDT",
+  "ccxt_id": "ACXUSDT",
+  "onboard_ms": 1733497200000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "ORCA/USDT:USDT",
+  "ccxt_id": "ORCAUSDT",
+  "onboard_ms": 1733497200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MOVE/USDT:USDT",
+  "ccxt_id": "MOVEUSDT",
+  "onboard_ms": 1733752800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "RAYSOL/USDT:USDT",
+  "ccxt_id": "RAYSOLUSDT",
+  "onboard_ms": 1733832000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "KOMA/USDT:USDT",
+  "ccxt_id": "KOMAUSDT",
+  "onboard_ms": 1733832900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "VIRTUAL/USDT:USDT",
+  "ccxt_id": "VIRTUALUSDT",
+  "onboard_ms": 1733833800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SPX/USDT:USDT",
+  "ccxt_id": "SPXUSDT",
+  "onboard_ms": 1733834700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ME/USDT:USDT",
+  "ccxt_id": "MEUSDT",
+  "onboard_ms": 1733850000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AVA/USDT:USDT",
+  "ccxt_id": "AVAUSDT",
+  "onboard_ms": 1734094800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "VELODROME/USDT:USDT",
+  "ccxt_id": "VELODROMEUSDT",
+  "onboard_ms": 1734106500000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "MOCA/USDT:USDT",
+  "ccxt_id": "MOCAUSDT",
+  "onboard_ms": 1734348600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "VANA/USDT:USDT",
+  "ccxt_id": "VANAUSDT",
+  "onboard_ms": 1734355800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PENGU/USDT:USDT",
+  "ccxt_id": "PENGUUSDT",
+  "onboard_ms": 1734452100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LUMIA/USDT:USDT",
+  "ccxt_id": "LUMIAUSDT",
+  "onboard_ms": 1734521400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "USUAL/USDT:USDT",
+  "ccxt_id": "USUALUSDT",
+  "onboard_ms": 1734526800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AIXBT/USDT:USDT",
+  "ccxt_id": "AIXBTUSDT",
+  "onboard_ms": 1734719400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FARTCOIN/USDT:USDT",
+  "ccxt_id": "FARTCOINUSDT",
+  "onboard_ms": 1734720300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "KMNO/USDT:USDT",
+  "ccxt_id": "KMNOUSDT",
+  "onboard_ms": 1734721200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CGPT/USDT:USDT",
+  "ccxt_id": "CGPTUSDT",
+  "onboard_ms": 1734722100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "HIVE/USDT:USDT",
+  "ccxt_id": "HIVEUSDT",
+  "onboard_ms": 1734953400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DEXE/USDT:USDT",
+  "ccxt_id": "DEXEUSDT",
+  "onboard_ms": 1735039800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PHA/USDT:USDT",
+  "ccxt_id": "PHAUSDT",
+  "onboard_ms": 1735558200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DF/USDT:USDT",
+  "ccxt_id": "DFUSDT",
+  "onboard_ms": 1735559100000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "GRIFFAIN/USDT:USDT",
+  "ccxt_id": "GRIFFAINUSDT",
+  "onboard_ms": 1735824600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ZEREBRO/USDT:USDT",
+  "ccxt_id": "ZEREBROUSDT",
+  "onboard_ms": 1735826400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BIO/USDT:USDT",
+  "ccxt_id": "BIOUSDT",
+  "onboard_ms": 1735906500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "COOKIE/USDT:USDT",
+  "ccxt_id": "COOKIEUSDT",
+  "onboard_ms": 1736249400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ALCH/USDT:USDT",
+  "ccxt_id": "ALCHUSDT",
+  "onboard_ms": 1736250300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SWARMS/USDT:USDT",
+  "ccxt_id": "SWARMSUSDT",
+  "onboard_ms": 1736252100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SONIC/USDT:USDT",
+  "ccxt_id": "SONICUSDT",
+  "onboard_ms": 1736319600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PROM/USDT:USDT",
+  "ccxt_id": "PROMUSDT",
+  "onboard_ms": 1736944200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "S/USDT:USDT",
+  "ccxt_id": "SUSDT",
+  "onboard_ms": 1737021600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SOLV/USDT:USDT",
+  "ccxt_id": "SOLVUSDT",
+  "onboard_ms": 1737116100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ARC/USDT:USDT",
+  "ccxt_id": "ARCUSDT",
+  "onboard_ms": 1737118800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AVAAI/USDT:USDT",
+  "ccxt_id": "AVAAIUSDT",
+  "onboard_ms": 1737119700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TRUMP/USDT:USDT",
+  "ccxt_id": "TRUMPUSDT",
+  "onboard_ms": 1737205200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MELANIA/USDT:USDT",
+  "ccxt_id": "MELANIAUSDT",
+  "onboard_ms": 1737365400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "VTHO/USDT:USDT",
+  "ccxt_id": "VTHOUSDT",
+  "onboard_ms": 1737538200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ANIME/USDT:USDT",
+  "ccxt_id": "ANIMEUSDT",
+  "onboard_ms": 1737651600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PIPPIN/USDT:USDT",
+  "ccxt_id": "PIPPINUSDT",
+  "onboard_ms": 1737713700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "VVV/USDT:USDT",
+  "ccxt_id": "VVVUSDT",
+  "onboard_ms": 1738138500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BERA/USDT:USDT",
+  "ccxt_id": "BERAUSDT",
+  "onboard_ms": 1738854000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TST/USDT:USDT",
+  "ccxt_id": "TSTUSDT",
+  "onboard_ms": 1739106000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LAYER/USDT:USDT",
+  "ccxt_id": "LAYERUSDT",
+  "onboard_ms": 1739288700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "HEI/USDT:USDT",
+  "ccxt_id": "HEIUSDT",
+  "onboard_ms": 1739437200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "GPS/USDT:USDT",
+  "ccxt_id": "GPSUSDT",
+  "onboard_ms": 1739811600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SHELL/USDT:USDT",
+  "ccxt_id": "SHELLUSDT",
+  "onboard_ms": 1739812500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "KAITO/USDT:USDT",
+  "ccxt_id": "KAITOUSDT",
+  "onboard_ms": 1740056400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "RED/USDT:USDT",
+  "ccxt_id": "REDUSDT",
+  "onboard_ms": 1741276800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "EPIC/USDT:USDT",
+  "ccxt_id": "EPICUSDT",
+  "onboard_ms": 1741852800000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "BMT/USDT:USDT",
+  "ccxt_id": "BMTUSDT",
+  "onboard_ms": 1742218200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MUBARAK/USDT:USDT",
+  "ccxt_id": "MUBARAKUSDT",
+  "onboard_ms": 1742219100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FORM/USDT:USDT",
+  "ccxt_id": "FORMUSDT",
+  "onboard_ms": 1742371200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TUT/USDT:USDT",
+  "ccxt_id": "TUTUSDT",
+  "onboard_ms": 1742461200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BROCCOLI714/USDT:USDT",
+  "ccxt_id": "BROCCOLI714USDT",
+  "onboard_ms": 1742547600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BROCCOLIF3B/USDT:USDT",
+  "ccxt_id": "BROCCOLIF3BUSDT",
+  "onboard_ms": 1742548500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SIREN/USDT:USDT",
+  "ccxt_id": "SIRENUSDT",
+  "onboard_ms": 1742634000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BANANAS31/USDT:USDT",
+  "ccxt_id": "BANANAS31USDT",
+  "onboard_ms": 1742634900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BR/USDT:USDT",
+  "ccxt_id": "BRUSDT",
+  "onboard_ms": 1742561100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PLUME/USDT:USDT",
+  "ccxt_id": "PLUMEUSDT",
+  "onboard_ms": 1742562000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "NIL/USDT:USDT",
+  "ccxt_id": "NILUSDT",
+  "onboard_ms": 1742821200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PARTI/USDT:USDT",
+  "ccxt_id": "PARTIUSDT",
+  "onboard_ms": 1742907600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "JELLYJELLY/USDT:USDT",
+  "ccxt_id": "JELLYJELLYUSDT",
+  "onboard_ms": 1743004800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MAVIA/USDT:USDT",
+  "ccxt_id": "MAVIAUSDT",
+  "onboard_ms": 1743008400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PAXG/USDT:USDT",
+  "ccxt_id": "PAXGUSDT",
+  "onboard_ms": 1743071400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "WAL/USDT:USDT",
+  "ccxt_id": "WALUSDT",
+  "onboard_ms": 1743089400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FUN/USDT:USDT",
+  "ccxt_id": "FUNUSDT",
+  "onboard_ms": 1743409800000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "MLN/USDT:USDT",
+  "ccxt_id": "MLNUSDT",
+  "onboard_ms": 1743410700000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "GUN/USDT:USDT",
+  "ccxt_id": "GUNUSDT",
+  "onboard_ms": 1743426000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ATH/USDT:USDT",
+  "ccxt_id": "ATHUSDT",
+  "onboard_ms": 1743608700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BABY/USDT:USDT",
+  "ccxt_id": "BABYUSDT",
+  "onboard_ms": 1743859800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FORTH/USDT:USDT",
+  "ccxt_id": "FORTHUSDT",
+  "onboard_ms": 1744101000000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "PROMPT/USDT:USDT",
+  "ccxt_id": "PROMPTUSDT",
+  "onboard_ms": 1744353000000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "STO/USDT:USDT",
+  "ccxt_id": "STOUSDT",
+  "onboard_ms": 1744469100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FHE/USDT:USDT",
+  "ccxt_id": "FHEUSDT",
+  "onboard_ms": 1744470000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "KERNEL/USDT:USDT",
+  "ccxt_id": "KERNELUSDT",
+  "onboard_ms": 1744632000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "WCT/USDT:USDT",
+  "ccxt_id": "WCTUSDT",
+  "onboard_ms": 1744714800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "INIT/USDT:USDT",
+  "ccxt_id": "INITUSDT",
+  "onboard_ms": 1744785000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BANK/USDT:USDT",
+  "ccxt_id": "BANKUSDT",
+  "onboard_ms": 1745001000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DEEP/USDT:USDT",
+  "ccxt_id": "DEEPUSDT",
+  "onboard_ms": 1745310600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "HYPER/USDT:USDT",
+  "ccxt_id": "HYPERUSDT",
+  "onboard_ms": 1745326800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FIS/USDT:USDT",
+  "ccxt_id": "FISUSDT",
+  "onboard_ms": 1745566200000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "JST/USDT:USDT",
+  "ccxt_id": "JSTUSDT",
+  "onboard_ms": 1745832600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SIGN/USDT:USDT",
+  "ccxt_id": "SIGNUSDT",
+  "onboard_ms": 1745838000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PUNDIX/USDT:USDT",
+  "ccxt_id": "PUNDIXUSDT",
+  "onboard_ms": 1746007200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CTK/USDT:USDT",
+  "ccxt_id": "CTKUSDT",
+  "onboard_ms": 1746008100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AIOT/USDT:USDT",
+  "ccxt_id": "AIOTUSDT",
+  "onboard_ms": 1746016200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DOLO/USDT:USDT",
+  "ccxt_id": "DOLOUSDT",
+  "onboard_ms": 1746068400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "HAEDAL/USDT:USDT",
+  "ccxt_id": "HAEDALUSDT",
+  "onboard_ms": 1746069300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SXT/USDT:USDT",
+  "ccxt_id": "SXTUSDT",
+  "onboard_ms": 1746174600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ASR/USDT:USDT",
+  "ccxt_id": "ASRUSDT",
+  "onboard_ms": 1746523800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ALPINE/USDT:USDT",
+  "ccxt_id": "ALPINEUSDT",
+  "onboard_ms": 1746524700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "B2/USDT:USDT",
+  "ccxt_id": "B2USDT",
+  "onboard_ms": 1746538200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MILK/USDT:USDT",
+  "ccxt_id": "MILKUSDT",
+  "onboard_ms": 1746539100000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "SYRUP/USDT:USDT",
+  "ccxt_id": "SYRUPUSDT",
+  "onboard_ms": 1746606600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "OBOL/USDT:USDT",
+  "ccxt_id": "OBOLUSDT",
+  "onboard_ms": 1746613800000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "DOOD/USDT:USDT",
+  "ccxt_id": "DOODUSDT",
+  "onboard_ms": 1746797400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "OG/USDT:USDT",
+  "ccxt_id": "OGUSDT",
+  "onboard_ms": 1747040400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SKYAI/USDT:USDT",
+  "ccxt_id": "SKYAIUSDT",
+  "onboard_ms": 1747129500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "NXPC/USDT:USDT",
+  "ccxt_id": "NXPCUSDT",
+  "onboard_ms": 1747290600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CVC/USDT:USDT",
+  "ccxt_id": "CVCUSDT",
+  "onboard_ms": 1747384200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AGT/USDT:USDT",
+  "ccxt_id": "AGTUSDT",
+  "onboard_ms": 1747737000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AWE/USDT:USDT",
+  "ccxt_id": "AWEUSDT",
+  "onboard_ms": 1747814400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "B/USDT:USDT",
+  "ccxt_id": "BUSDT",
+  "onboard_ms": 1747931400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SOON/USDT:USDT",
+  "ccxt_id": "SOONUSDT",
+  "onboard_ms": 1747989000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "HUMA/USDT:USDT",
+  "ccxt_id": "HUMAUSDT",
+  "onboard_ms": 1748264400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "A/USDT:USDT",
+  "ccxt_id": "AUSDT",
+  "onboard_ms": 1748419200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SOPH/USDT:USDT",
+  "ccxt_id": "SOPHUSDT",
+  "onboard_ms": 1748437200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MERL/USDT:USDT",
+  "ccxt_id": "MERLUSDT",
+  "onboard_ms": 1748507400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "HYPE/USDT:USDT",
+  "ccxt_id": "HYPEUSDT",
+  "onboard_ms": 1748601000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "1000000BOB/USDT:USDT",
+  "ccxt_id": "1000000BOBUSDT",
+  "onboard_ms": 1749112200000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "LA/USDT:USDT",
+  "ccxt_id": "LAUSDT",
+  "onboard_ms": 1749114000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "HOME/USDT:USDT",
+  "ccxt_id": "HOMEUSDT",
+  "onboard_ms": 1749555000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "RESOLV/USDT:USDT",
+  "ccxt_id": "RESOLVUSDT",
+  "onboard_ms": 1749562200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TAIKO/USDT:USDT",
+  "ccxt_id": "TAIKOUSDT",
+  "onboard_ms": 1749645000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SQD/USDT:USDT",
+  "ccxt_id": "SQDUSDT",
+  "onboard_ms": 1749645900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PUMPBTC/USDT:USDT",
+  "ccxt_id": "PUMPBTCUSDT",
+  "onboard_ms": 1749808800000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "SPK/USDT:USDT",
+  "ccxt_id": "SPKUSDT",
+  "onboard_ms": 1750150800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MYX/USDT:USDT",
+  "ccxt_id": "MYXUSDT",
+  "onboard_ms": 1750249800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "F/USDT:USDT",
+  "ccxt_id": "FUSDT",
+  "onboard_ms": 1750250700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "NEWT/USDT:USDT",
+  "ccxt_id": "NEWTUSDT",
+  "onboard_ms": 1750343400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "H/USDT:USDT",
+  "ccxt_id": "HUSDT",
+  "onboard_ms": 1750843800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SAHARA/USDT:USDT",
+  "ccxt_id": "SAHARAUSDT",
+  "onboard_ms": 1750939200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ICNT/USDT:USDT",
+  "ccxt_id": "ICNTUSDT",
+  "onboard_ms": 1751547600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BULLA/USDT:USDT",
+  "ccxt_id": "BULLAUSDT",
+  "onboard_ms": 1751619600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "IDOL/USDT:USDT",
+  "ccxt_id": "IDOLUSDT",
+  "onboard_ms": 1751620500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "M/USDT:USDT",
+  "ccxt_id": "MUSDT",
+  "onboard_ms": 1751880600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PUMP/USDT:USDT",
+  "ccxt_id": "PUMPUSDT",
+  "onboard_ms": 1752132600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CROSS/USDT:USDT",
+  "ccxt_id": "CROSSUSDT",
+  "onboard_ms": 1752143400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AIN/USDT:USDT",
+  "ccxt_id": "AINUSDT",
+  "onboard_ms": 1752144300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "C/USDT:USDT",
+  "ccxt_id": "CUSDT",
+  "onboard_ms": 1752570000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "VELVET/USDT:USDT",
+  "ccxt_id": "VELVETUSDT",
+  "onboard_ms": 1752570900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TAC/USDT:USDT",
+  "ccxt_id": "TACUSDT",
+  "onboard_ms": 1752575400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ERA/USDT:USDT",
+  "ccxt_id": "ERAUSDT",
+  "onboard_ms": 1752766200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TA/USDT:USDT",
+  "ccxt_id": "TAUSDT",
+  "onboard_ms": 1753083000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CVX/USDT:USDT",
+  "ccxt_id": "CVXUSDT",
+  "onboard_ms": 1753270200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SLP/USDT:USDT",
+  "ccxt_id": "SLPUSDT",
+  "onboard_ms": 1753271100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ZORA/USDT:USDT",
+  "ccxt_id": "ZORAUSDT",
+  "onboard_ms": 1753441200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TAG/USDT:USDT",
+  "ccxt_id": "TAGUSDT",
+  "onboard_ms": 1753442100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ZRC/USDT:USDT",
+  "ccxt_id": "ZRCUSDT",
+  "onboard_ms": 1753782300000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "ESPORTS/USDT:USDT",
+  "ccxt_id": "ESPORTSUSDT",
+  "onboard_ms": 1753783200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TREE/USDT:USDT",
+  "ccxt_id": "TREEUSDT",
+  "onboard_ms": 1753797600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PLAY/USDT:USDT",
+  "ccxt_id": "PLAYUSDT",
+  "onboard_ms": 1753954200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "NAORIS/USDT:USDT",
+  "ccxt_id": "NAORISUSDT",
+  "onboard_ms": 1753965000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TOWNS/USDT:USDT",
+  "ccxt_id": "TOWNSUSDT",
+  "onboard_ms": 1754404200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PROVE/USDT:USDT",
+  "ccxt_id": "PROVEUSDT",
+  "onboard_ms": 1754413200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "IN/USDT:USDT",
+  "ccxt_id": "INUSDT",
+  "onboard_ms": 1754562600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "YALA/USDT:USDT",
+  "ccxt_id": "YALAUSDT",
+  "onboard_ms": 1754584200000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "CARV/USDT:USDT",
+  "ccxt_id": "CARVUSDT",
+  "onboard_ms": 1754585100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AIO/USDT:USDT",
+  "ccxt_id": "AIOUSDT",
+  "onboard_ms": 1755084600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "XNY/USDT:USDT",
+  "ccxt_id": "XNYUSDT",
+  "onboard_ms": 1755085500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "USELESS/USDT:USDT",
+  "ccxt_id": "USELESSUSDT",
+  "onboard_ms": 1755260100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DAM/USDT:USDT",
+  "ccxt_id": "DAMUSDT",
+  "onboard_ms": 1755520200000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "SAPIEN/USDT:USDT",
+  "ccxt_id": "SAPIENUSDT",
+  "onboard_ms": 1755711000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "XPL/USDT:USDT",
+  "ccxt_id": "XPLUSDT",
+  "onboard_ms": 1755855000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "WLFI/USDT:USDT",
+  "ccxt_id": "WLFIUSDT",
+  "onboard_ms": 1755937800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SOMI/USDT:USDT",
+  "ccxt_id": "SOMIUSDT",
+  "onboard_ms": 1756114200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BAS/USDT:USDT",
+  "ccxt_id": "BASUSDT",
+  "onboard_ms": 1756215000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BTR/USDT:USDT",
+  "ccxt_id": "BTRUSDT",
+  "onboard_ms": 1756290600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MITO/USDT:USDT",
+  "ccxt_id": "MITOUSDT",
+  "onboard_ms": 1756398600000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "HEMI/USDT:USDT",
+  "ccxt_id": "HEMIUSDT",
+  "onboard_ms": 1756441800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LINEA/USDT:USDT",
+  "ccxt_id": "LINEAUSDT",
+  "onboard_ms": 1756715400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "Q/USDT:USDT",
+  "ccxt_id": "QUSDT",
+  "onboard_ms": 1756798200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ARIA/USDT:USDT",
+  "ccxt_id": "ARIAUSDT",
+  "onboard_ms": 1756897200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TAKE/USDT:USDT",
+  "ccxt_id": "TAKEUSDT",
+  "onboard_ms": 1756898100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PTB/USDT:USDT",
+  "ccxt_id": "PTBUSDT",
+  "onboard_ms": 1756902600000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "OPEN/USDT:USDT",
+  "ccxt_id": "OPENUSDT",
+  "onboard_ms": 1757336400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FLOCK/USDT:USDT",
+  "ccxt_id": "FLOCKUSDT",
+  "onboard_ms": 1757400300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SKY/USDT:USDT",
+  "ccxt_id": "SKYUSDT",
+  "onboard_ms": 1757401200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AVNT/USDT:USDT",
+  "ccxt_id": "AVNTUSDT",
+  "onboard_ms": 1757430000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "HOLO/USDT:USDT",
+  "ccxt_id": "HOLOUSDT",
+  "onboard_ms": 1757592000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "XPIN/USDT:USDT",
+  "ccxt_id": "XPINUSDT",
+  "onboard_ms": 1757664000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "UB/USDT:USDT",
+  "ccxt_id": "UBUSDT",
+  "onboard_ms": 1757673000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ZKC/USDT:USDT",
+  "ccxt_id": "ZKCUSDT",
+  "onboard_ms": 1757944800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TOSHI/USDT:USDT",
+  "ccxt_id": "TOSHIUSDT",
+  "onboard_ms": 1758087000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "STBL/USDT:USDT",
+  "ccxt_id": "STBLUSDT",
+  "onboard_ms": 1758087900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "0G/USDT:USDT",
+  "ccxt_id": "0GUSDT",
+  "onboard_ms": 1758123900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BARD/USDT:USDT",
+  "ccxt_id": "BARDUSDT",
+  "onboard_ms": 1758193200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ASTER/USDT:USDT",
+  "ccxt_id": "ASTERUSDT",
+  "onboard_ms": 1758283200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TRADOOR/USDT:USDT",
+  "ccxt_id": "TRADOORUSDT",
+  "onboard_ms": 1758285000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BLESS/USDT:USDT",
+  "ccxt_id": "BLESSUSDT",
+  "onboard_ms": 1758619800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FLUID/USDT:USDT",
+  "ccxt_id": "FLUIDUSDT",
+  "onboard_ms": 1758708900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "COAI/USDT:USDT",
+  "ccxt_id": "COAIUSDT",
+  "onboard_ms": 1758785400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "HANA/USDT:USDT",
+  "ccxt_id": "HANAUSDT",
+  "onboard_ms": 1758886200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MIRA/USDT:USDT",
+  "ccxt_id": "MIRAUSDT",
+  "onboard_ms": 1758888000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AKE/USDT:USDT",
+  "ccxt_id": "AKEUSDT",
+  "onboard_ms": 1758889800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ORDER/USDT:USDT",
+  "ccxt_id": "ORDERUSDT",
+  "onboard_ms": 1758890700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LIGHT/USDT:USDT",
+  "ccxt_id": "LIGHTUSDT",
+  "onboard_ms": 1758972600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "XAN/USDT:USDT",
+  "ccxt_id": "XANUSDT",
+  "onboard_ms": 1759141800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FF/USDT:USDT",
+  "ccxt_id": "FFUSDT",
+  "onboard_ms": 1759152600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "EDEN/USDT:USDT",
+  "ccxt_id": "EDENUSDT",
+  "onboard_ms": 1759230000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "NOM/USDT:USDT",
+  "ccxt_id": "NOMUSDT",
+  "onboard_ms": 1759305600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TRUTH/USDT:USDT",
+  "ccxt_id": "TRUTHUSDT",
+  "onboard_ms": 1759320000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "2Z/USDT:USDT",
+  "ccxt_id": "2ZUSDT",
+  "onboard_ms": 1759408200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "EVAA/USDT:USDT",
+  "ccxt_id": "EVAAUSDT",
+  "onboard_ms": 1759487400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LYN/USDT:USDT",
+  "ccxt_id": "LYNUSDT",
+  "onboard_ms": 1759735800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "KGEN/USDT:USDT",
+  "ccxt_id": "KGENUSDT",
+  "onboard_ms": 1759847400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "4/USDT:USDT",
+  "ccxt_id": "4USDT",
+  "onboard_ms": 1759923000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "GIGGLE/USDT:USDT",
+  "ccxt_id": "GIGGLEUSDT",
+  "onboard_ms": 1760003100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MON/USDT:USDT",
+  "ccxt_id": "MONUSDT",
+  "onboard_ms": 1760080500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "YB/USDT:USDT",
+  "ccxt_id": "YBUSDT",
+  "onboard_ms": 1760107500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MET/USDT:USDT",
+  "ccxt_id": "METUSDT",
+  "onboard_ms": 1760185800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "EUL/USDT:USDT",
+  "ccxt_id": "EULUSDT",
+  "onboard_ms": 1760365800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ENSO/USDT:USDT",
+  "ccxt_id": "ENSOUSDT",
+  "onboard_ms": 1760432400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CLO/USDT:USDT",
+  "ccxt_id": "CLOUSDT",
+  "onboard_ms": 1760441400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "RECALL/USDT:USDT",
+  "ccxt_id": "RECALLUSDT",
+  "onboard_ms": 1760531400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ZBT/USDT:USDT",
+  "ccxt_id": "ZBTUSDT",
+  "onboard_ms": 1760700600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LAB/USDT:USDT",
+  "ccxt_id": "LABUSDT",
+  "onboard_ms": 1760711400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "RIVER/USDT:USDT",
+  "ccxt_id": "RIVERUSDT",
+  "onboard_ms": 1760712300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "\u5e01\u5b89\u4eba\u751f/USDT:USDT",
+  "ccxt_id": "\u5e01\u5b89\u4eba\u751fUSDT",
+  "onboard_ms": 1760958000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BLUAI/USDT:USDT",
+  "ccxt_id": "BLUAIUSDT",
+  "onboard_ms": 1761046200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TURTLE/USDT:USDT",
+  "ccxt_id": "TURTLEUSDT",
+  "onboard_ms": 1761145200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "APR/USDT:USDT",
+  "ccxt_id": "APRUSDT",
+  "onboard_ms": 1761215400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ON/USDT:USDT",
+  "ccxt_id": "ONUSDT",
+  "onboard_ms": 1761294600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "KITE/USDT:USDT",
+  "ccxt_id": "KITEUSDT",
+  "onboard_ms": 1761733800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AT/USDT:USDT",
+  "ccxt_id": "ATUSDT",
+  "onboard_ms": 1761737400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CC/USDT:USDT",
+  "ccxt_id": "CCUSDT",
+  "onboard_ms": 1761912000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MMT/USDT:USDT",
+  "ccxt_id": "MMTUSDT",
+  "onboard_ms": 1762257600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TRUST/USDT:USDT",
+  "ccxt_id": "TRUSTUSDT",
+  "onboard_ms": 1762335000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "UAI/USDT:USDT",
+  "ccxt_id": "UAIUSDT",
+  "onboard_ms": 1762428600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FOLKS/USDT:USDT",
+  "ccxt_id": "FOLKSUSDT",
+  "onboard_ms": 1762432200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "STABLE/USDT:USDT",
+  "ccxt_id": "STABLEUSDT",
+  "onboard_ms": 1762430400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "JCT/USDT:USDT",
+  "ccxt_id": "JCTUSDT",
+  "onboard_ms": 1762770600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ALLO/USDT:USDT",
+  "ccxt_id": "ALLOUSDT",
+  "onboard_ms": 1762869600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CLANKER/USDT:USDT",
+  "ccxt_id": "CLANKERUSDT",
+  "onboard_ms": 1762948800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BEAT/USDT:USDT",
+  "ccxt_id": "BEATUSDT",
+  "onboard_ms": 1762949700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PIEVERSE/USDT:USDT",
+  "ccxt_id": "PIEVERSEUSDT",
+  "onboard_ms": 1763119800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SENT/USDT:USDT",
+  "ccxt_id": "SENTUSDT",
+  "onboard_ms": 1763124300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BOB/USDT:USDT",
+  "ccxt_id": "BOBUSDT",
+  "onboard_ms": 1763721900000,
+  "status": "SETTLING"
+ },
+ {
+  "symbol": "IRYS/USDT:USDT",
+  "ccxt_id": "IRYSUSDT",
+  "onboard_ms": 1764172800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "POWER/USDT:USDT",
+  "ccxt_id": "POWERUSDT",
+  "onboard_ms": 1765011600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "WET/USDT:USDT",
+  "ccxt_id": "WETUSDT",
+  "onboard_ms": 1765350000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "NIGHT/USDT:USDT",
+  "ccxt_id": "NIGHTUSDT",
+  "onboard_ms": 1765364400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "US/USDT:USDT",
+  "ccxt_id": "USUSDT",
+  "onboard_ms": 1765536300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CYS/USDT:USDT",
+  "ccxt_id": "CYSUSDT",
+  "onboard_ms": 1765537200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "RAVE/USDT:USDT",
+  "ccxt_id": "RAVEUSDT",
+  "onboard_ms": 1765726200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ZKP/USDT:USDT",
+  "ccxt_id": "ZKPUSDT",
+  "onboard_ms": 1766311200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "GUA/USDT:USDT",
+  "ccxt_id": "GUAUSDT",
+  "onboard_ms": 1766312100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "LIT/USDT:USDT",
+  "ccxt_id": "LITUSDT",
+  "onboard_ms": 1766511000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BREV/USDT:USDT",
+  "ccxt_id": "BREVUSDT",
+  "onboard_ms": 1767091500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "COLLECT/USDT:USDT",
+  "ccxt_id": "COLLECTUSDT",
+  "onboard_ms": 1767186900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MAGMA/USDT:USDT",
+  "ccxt_id": "MAGMAUSDT",
+  "onboard_ms": 1767187800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ZAMA/USDT:USDT",
+  "ccxt_id": "ZAMAUSDT",
+  "onboard_ms": 1767949200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FOGO/USDT:USDT",
+  "ccxt_id": "FOGOUSDT",
+  "onboard_ms": 1768053600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FRAX/USDT:USDT",
+  "ccxt_id": "FRAXUSDT",
+  "onboard_ms": 1768464000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SPORTFUN/USDT:USDT",
+  "ccxt_id": "SPORTFUNUSDT",
+  "onboard_ms": 1768571100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AIA/USDT:USDT",
+  "ccxt_id": "AIAUSDT",
+  "onboard_ms": 1768907700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ACU/USDT:USDT",
+  "ccxt_id": "ACUUSDT",
+  "onboard_ms": 1768999500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "\u6211\u8e0f\u9a6c\u6765\u4e86/USDT:USDT",
+  "ccxt_id": "\u6211\u8e0f\u9a6c\u6765\u4e86USDT",
+  "onboard_ms": 1769005800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ELSA/USDT:USDT",
+  "ccxt_id": "ELSAUSDT",
+  "onboard_ms": 1769066700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SKR/USDT:USDT",
+  "ccxt_id": "SKRUSDT",
+  "onboard_ms": 1769078700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SPACE/USDT:USDT",
+  "ccxt_id": "SPACEUSDT",
+  "onboard_ms": 1769168700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "FIGHT/USDT:USDT",
+  "ccxt_id": "FIGHTUSDT",
+  "onboard_ms": 1769170500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BIRB/USDT:USDT",
+  "ccxt_id": "BIRBUSDT",
+  "onboard_ms": 1769663700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "GWEI/USDT:USDT",
+  "ccxt_id": "GWEIUSDT",
+  "onboard_ms": 1769664600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MEGA/USDT:USDT",
+  "ccxt_id": "MEGAUSDT",
+  "onboard_ms": 1769775300000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "INX/USDT:USDT",
+  "ccxt_id": "INXUSDT",
+  "onboard_ms": 1769799600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "TRIA/USDT:USDT",
+  "ccxt_id": "TRIAUSDT",
+  "onboard_ms": 1770380100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ESP/USDT:USDT",
+  "ccxt_id": "ESPUSDT",
+  "onboard_ms": 1770711000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AZTEC/USDT:USDT",
+  "ccxt_id": "AZTECUSDT",
+  "onboard_ms": 1770784200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "OPN/USDT:USDT",
+  "ccxt_id": "OPNUSDT",
+  "onboard_ms": 1771686000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ROBO/USDT:USDT",
+  "ccxt_id": "ROBOUSDT",
+  "onboard_ms": 1772181900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "KAT/USDT:USDT",
+  "ccxt_id": "KATUSDT",
+  "onboard_ms": 1772427600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MANTRA/USDT:USDT",
+  "ccxt_id": "MANTRAUSDT",
+  "onboard_ms": 1772611200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "\u9f99\u867e/USDT:USDT",
+  "ccxt_id": "\u9f99\u867eUSDT",
+  "onboard_ms": 1773228600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CFG/USDT:USDT",
+  "ccxt_id": "CFGUSDT",
+  "onboard_ms": 1773666000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "EDGE/USDT:USDT",
+  "ccxt_id": "EDGEUSDT",
+  "onboard_ms": 1773928800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BSB/USDT:USDT",
+  "ccxt_id": "BSBUSDT",
+  "onboard_ms": 1774439100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "XAUT/USDT:USDT",
+  "ccxt_id": "XAUTUSDT",
+  "onboard_ms": 1774533600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BASED/USDT:USDT",
+  "ccxt_id": "BASEDUSDT",
+  "onboard_ms": 1774864800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PRL/USDT:USDT",
+  "ccxt_id": "PRLUSDT",
+  "onboard_ms": 1775039400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "GENIUS/USDT:USDT",
+  "ccxt_id": "GENIUSUSDT",
+  "onboard_ms": 1776310200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CHIP/USDT:USDT",
+  "ccxt_id": "CHIPUSDT",
+  "onboard_ms": 1776323700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "OPG/USDT:USDT",
+  "ccxt_id": "OPGUSDT",
+  "onboard_ms": 1776871800000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "AIGENSYN/USDT:USDT",
+  "ccxt_id": "AIGENSYNUSDT",
+  "onboard_ms": 1777472100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BILL/USDT:USDT",
+  "ccxt_id": "BILLUSDT",
+  "onboard_ms": 1778141700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PHAROS/USDT:USDT",
+  "ccxt_id": "PHAROSUSDT",
+  "onboard_ms": 1778735700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "STAR/USDT:USDT",
+  "ccxt_id": "STARUSDT",
+  "onboard_ms": 1778736600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CTR/USDT:USDT",
+  "ccxt_id": "CTRUSDT",
+  "onboard_ms": 1779960600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "SLX/USDT:USDT",
+  "ccxt_id": "SLXUSDT",
+  "onboard_ms": 1780299000000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ZEST/USDT:USDT",
+  "ccxt_id": "ZESTUSDT",
+  "onboard_ms": 1780581600000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "BTW/USDT:USDT",
+  "ccxt_id": "BTWUSDT",
+  "onboard_ms": 1780582500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "RE/USDT:USDT",
+  "ccxt_id": "REUSDT",
+  "onboard_ms": 1781791200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "ARX/USDT:USDT",
+  "ccxt_id": "ARXUSDT",
+  "onboard_ms": 1782189900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "O/USDT:USDT",
+  "ccxt_id": "OUSDT",
+  "onboard_ms": 1782301500000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "CAP/USDT:USDT",
+  "ccxt_id": "CAPUSDT",
+  "onboard_ms": 1782560700000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "GRAM/USDT:USDT",
+  "ccxt_id": "GRAMUSDT",
+  "onboard_ms": 1782979200000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DATAIP/USDT:USDT",
+  "ccxt_id": "DATAIPUSDT",
+  "onboard_ms": 1783061100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "GRVT/USDT:USDT",
+  "ccxt_id": "GRVTUSDT",
+  "onboard_ms": 1785501900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "DOS/USDT:USDT",
+  "ccxt_id": "DOSUSDT",
+  "onboard_ms": 1786460400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "\u725b\u6765/USDT:USDT",
+  "ccxt_id": "\u725b\u6765USDT",
+  "onboard_ms": 1788089400000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "MARSCOIN/USDT:USDT",
+  "ccxt_id": "MARSCOINUSDT",
+  "onboard_ms": 1788255900000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "PONS/USDT:USDT",
+  "ccxt_id": "PONSUSDT",
+  "onboard_ms": 1788677100000,
+  "status": "TRADING"
+ },
+ {
+  "symbol": "\u54c8\u57fa\u7c73/USDT:USDT",
+  "ccxt_id": "\u54c8\u57fa\u7c73USDT",
+  "onboard_ms": 1788678900000,
+  "status": "TRADING"
+ }
+]
